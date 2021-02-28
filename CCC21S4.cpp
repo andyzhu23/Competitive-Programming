@@ -1,6 +1,8 @@
 /*
  * there is no reason to first walk and then get to the train. Therefore, we should run dij to get the minimum
- * length from n to each point, in opposite way and then enumerate choices when swapping lines
+ * length from n to each point, in opposite way and then enumerate choices when swapping lines. We can improve the 
+ * time complexity by using priority_queue that will always give us the minimum answer, if the answer is outdated or swapped, then
+ * we just pop it out, otherwise we use the answer and push it back into the priority_queue
  */
 #include <cstdio>
 #include <iostream>
