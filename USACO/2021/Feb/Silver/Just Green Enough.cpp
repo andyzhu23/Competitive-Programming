@@ -1,12 +1,12 @@
 /*
  * for this question, during the contest, I did a two dimensional prefix sum and enumerated two of the points.
  * therefore getting the answer. the time complexity is O(n^4). I only got 5/10.
- * 
+ *
  * The actually way of solving this question is to enumerate every two rows, and try to find how many columns.
- * Ironically, this question was quite similar to the second question on the december silver contest, and I 
- * still didn't get it right :-(. 
- * 
- * Basically all you do is you enumerate the two columns, after that, you want to find the first right point and 
+ * Ironically, this question was quite similar to the second question on the december silver contest, and I
+ * still didn't get it right :-(.
+ *
+ * Basically all you do is you enumerate the two columns, after that, you want to find the first right point and
  * the first left point that is not ok to have in the sense that they contain numbers smaller than 100. We can get
  * that by using monotone stack, which can give us the answer in O(n) using stack. Note that we may over count
  * when two 100 are associated in the same region. We can easily avoid that by enumerating the right endpoint the
@@ -16,8 +16,9 @@
 
 #include <cstdio>
 #include <stack>
+#include <cstring>
 using namespace std;
-const int N = 5e2 + 10;
+const int N = 555;
 typedef stack<int> STK;
 typedef long long ll;
 STK stk;
@@ -40,12 +41,10 @@ signed main(){
     ll ans = 0;
     for(int i = 1;i<=n;i++){
         //reinitialize every array
-        for(int k = 1;k<=n;k++){
-            ok[k] = true;
-            hun[k] = false;
-            l[k] = 0;
-            r[k] = 0;
-        }
+        memset(ok, true, N);
+        memset(hun, false, N);
+        memset(l, 0, N);
+        memset(r, 0, N);
         for(int j = i;j<=n;j++){
             //initializing every array by using the result last time and add the result on the current row
             for(int k = 1;k<=n;k++){
@@ -58,13 +57,13 @@ signed main(){
             }
             // find the left point at most one of the 100 can go
             for(int k = 1;k<=n + 1;k++){
-                if(hun[k]) stk.push(k);
-                if(!ok[k] || k == n+ 1){
+                if(!ok[k] || k == n + 1){
                     while(!stk.empty()){
                         int cur = stk.top(); stk.pop();
                         r[cur] = k;
                     }
                 }
+                if(hun[k]) stk.push(k);
             }
             // find the right point at most one of the 100 can go
             for(int k = n;k>=0;k--){
@@ -74,7 +73,7 @@ signed main(){
                         l[cur] = k;
                         // got TLE for calculating the answers after, so I calculated them here
                         // all the possible length you can choose on the left multiply by the right
-                        ans += (cur - l[cur]) * (r[cur] - cur);
+                        ans += (cur - l[cur]) * 1ll * (r[cur] - cur) * 1ll;
                     }
                 }
                 if(hun[k]) stk.push(k);
