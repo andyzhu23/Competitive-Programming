@@ -18,7 +18,7 @@
 #include <stack>
 #include <cstring>
 using namespace std;
-const int N = 555;
+const int N = 5e2 + 10;
 typedef stack<int> STK;
 typedef long long ll;
 STK stk;
@@ -45,6 +45,7 @@ signed main(){
         memset(hun, false, N);
         memset(l, 0, N);
         memset(r, 0, N);
+
         for(int j = i;j<=n;j++){
             //initializing every array by using the result last time and add the result on the current row
             for(int k = 1;k<=n;k++){
@@ -57,13 +58,13 @@ signed main(){
             }
             // find the left point at most one of the 100 can go
             for(int k = 1;k<=n + 1;k++){
-                if(!ok[k] || k == n + 1){
+                if(hun[k]) stk.push(k);
+                if(!ok[k] || k == n+ 1){
                     while(!stk.empty()){
                         int cur = stk.top(); stk.pop();
                         r[cur] = k;
                     }
                 }
-                if(hun[k]) stk.push(k);
             }
             // find the right point at most one of the 100 can go
             for(int k = n;k>=0;k--){
@@ -73,7 +74,7 @@ signed main(){
                         l[cur] = k;
                         // got TLE for calculating the answers after, so I calculated them here
                         // all the possible length you can choose on the left multiply by the right
-                        ans += (cur - l[cur]) * 1ll * (r[cur] - cur) * 1ll;
+                        ans += (cur - l[cur]) * (r[cur] - cur);
                     }
                 }
                 if(hun[k]) stk.push(k);
