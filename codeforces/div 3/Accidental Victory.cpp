@@ -1,13 +1,13 @@
 /*
- * for this question, sort the players in order from smallest to biggest. 
- * We know for sure that if the kth player is possible to win, then any player greater than the kth player is 
- * possible to win no matter what. Because the k + ith player can just absorb all k players before and also has his 
+ * for this question, sort the players in order from smallest to biggest.
+ * We know for sure that if the kth player is possible to win, then any player greater than the kth player is
+ * possible to win no matter what. Because the k + ith player can just absorb all k players before and also has his
  * own points as well
- * 
- * knowing that, we then need to calculate the dividing point between possible winners, 
+ *
+ * knowing that, we then need to calculate the dividing point between possible winners,
  * and destined loser(like me in CCC 2021 :-(). We can use binarySearch to quickly find the dividing point.
- * 
- * note that we still need the original position of each player in order to give correct answers. 
+ *
+ * note that we still need the original position of each player in order to give correct answers.
  * Therefore I used a pair and the first value is the token and the second is the ID of the player
  */
 
@@ -16,6 +16,7 @@
 #define p pair<int, int>
 #define f first
 #define s second
+#define int long long
 using namespace std;
 const int N = 2e5 + 20;
 int n , t;
@@ -24,7 +25,7 @@ int res[N];
 bool isok(int x){
     int sum = 0;
     for(int i = 1;i<=n;i++){
-        if(i <= x){
+        if(a[i].f <= x){
             sum += a[i].f;
         } else {
             if(sum >= a[i].f){
@@ -65,7 +66,7 @@ void solve(){
     cout<<endl;
 }
 
-int main() {
+signed main() {
     cin>>t;
     while(t--){
         solve();
