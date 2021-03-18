@@ -12,7 +12,7 @@
  * Note that it is very important to break out of the for loop enumerating the possible columns as not doing so will
  * only give you a valid sequence, but not the shortest. Another note is that if you do not save the position of the
  * last column you enumerate, it will start from the first one the second time. We know that any position from start
- * to the last column is guaranteed not going to have any odd ones because you already solved them before. Therefore,
+ * to the last column you visited is guaranteed not going to have any odd ones because you already solved them before. Therefore,
  * safe up the position should drastically improve your time complexity from O(K ^ 2) to O(2K)
  */
 
