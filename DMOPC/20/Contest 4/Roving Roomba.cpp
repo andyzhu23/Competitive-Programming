@@ -119,7 +119,7 @@ void solve(){
     printf("%lld\n", ans);
 }
 
-signed main() {
+int main() {
     solve();
     return 0;
 }
