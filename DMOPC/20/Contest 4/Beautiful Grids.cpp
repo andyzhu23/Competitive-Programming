@@ -45,7 +45,7 @@ signed main() {
         vis2.insert(b);
     }
     // enumerate every row and column to cancel out as many odd rows and columns as possible
-    // same the position of the last column so we don't have to start from the beginning
+    // save the position of the last column so we don't have to start from the beginning
     auto pos = vis2.begin();
     // enumerate all the unique rows and columns in vis1 and vis2
     for(auto it = vis1.begin(); it != vis1.end(); it++){
