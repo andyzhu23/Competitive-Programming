@@ -1,3 +1,8 @@
+/*
+This algorithm figures out the first element greater than itself in the array
+*/
+
+
 #include <bits/stdc++.h>
 
 using namespace std;
