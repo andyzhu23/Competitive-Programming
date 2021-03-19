@@ -1,3 +1,9 @@
+/*
+this algorithm can find how many numbers between l and r are greater than a certain number
+
+
+*/
+
 #include <iostream>
 #include <cstdio>
 #include <cmath>
