@@ -22,3 +22,6 @@ CCC 2021 | S4 | complete | Reversed graph, Dijkstra, priority_queue | ***
 CF 702 | Advertising Agency | complete | Math, Fermat's little theorem | **
 CF 697 | Accidental Victory | complete | Binary Search, sorting | ***
 CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
+NOIP | 魔法阵 | complete | enumeration | ****
+CSP 2019 | 纪念品 ｜ complete | knapsack problem, dynamic programming | ****
+CSP 2019 | 加工零件 | complete | bfs, number theory | ****
