@@ -15,3 +15,10 @@ USACO Feb Silver | Just Green Enough | complete | Monotone Stack | ****
 USACO Jan Silver | Dance Mooves | complete | DFS, Graph Theory | **
 USACO Jan Silver | No Time to Paint | complete | Prefix Sum, Suffix Sum | ***
 USACO Jan Silver | Spaced Out | complete | enumeration, knowing two lines gives the whole grid | ***
+CCC 2021 | S1 | complete | implementation, double is not accurate | *
+CCC 2021 | S2 | complete | using two arrays instead of a 2d array | *
+CCC 2021 | S3 | complete | Prefix Sum, Binary Search, Math | ****
+CCC 2021 | S4 | complete | Reversed graph, Dijkstra, priority_queue | ***
+CF 702 | Advertising Agency | complete | Math, Fermat's little theorem | **
+CF 697 | Accidental Victory | complete | Binary Search, sorting | ***
+CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
