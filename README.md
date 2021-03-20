@@ -28,4 +28,4 @@ CSP 2019 | 加工零件 | complete | bfs, number theory | ****
 USACO 2020 Dec Silver | Cowntagion | complete | Graph Theory, Tree | **
 USACO 2020 Dec Silver | Rectangular Pasture | complete | 2D Prefix - sum, Multiplication Principle | ****
 USACO 2020 Dec Silver | Stuck in a Rut | incomplete | Disecretization | *****
-USACO 2020 Dec Bronz3e | Stuck in a Rut | incomplete | Disecretization | *****
+USACO 2020 Dec Bronze | Stuck in a Rut | incomplete | Disecretization | *****
