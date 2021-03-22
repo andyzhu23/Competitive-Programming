@@ -30,6 +30,7 @@
 #define f first
 #define s second
 #define pb push_back
+#define pf push_front
 #define mp make_pair
 using namespace std;
 typedef pair<int, int> pi;
