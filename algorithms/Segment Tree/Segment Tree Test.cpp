@@ -9,9 +9,28 @@
  */
 
 
-#include <cstdio>
-#include <algorithm>
+#include <bits/stdc++.h>
+#define endl "\n"
+#define f first
+#define s second
+#define pb push_back
+#define mp make_pair
 using namespace std;
+typedef pair<int, int> pi;
+typedef long long ll;
+typedef vector<int> vi;
+typedef vector<pi> vii;
+typedef map<int, int> mi;
+typedef unordered_map<int, int> umi;
+typedef unordered_set<int> usi;
+typedef set<int> si;
+typedef queue<int> qi;
+typedef queue<pi> qii;
+typedef stack<int> stki;
+typedef stack<pi> stkii;
+typedef priority_queue<int> pqi;
+typedef priority_queue<pi> pqii;
+const int MOD = 1e9 + 7;
 const int N = 1e5 + 10;
 int Min[N << 2], gcd[N << 2], getG[N << 2];
 int n, m, a[N];
