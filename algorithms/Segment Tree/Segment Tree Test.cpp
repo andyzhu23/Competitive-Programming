@@ -8,8 +8,24 @@
  * able to make me pass case 12
  */
 
-
-#include <bits/stdc++.h>
+#include <iostream>
+#include <cstdio>
+#include <map>
+#include <set>
+#include <queue>
+#include <stack>
+#include <unordered_set>
+#include <unordered_map>
+#include <algorithm>
+#include <cmath>
+#include <fstream>
+#include <string>
+#include <bitset>
+#include <deque>
+#include <iterator>
+#include <list>
+#include <vector>
+#include <random>
 #define endl "\n"
 #define f first
 #define s second
@@ -30,6 +46,10 @@ typedef stack<int> stki;
 typedef stack<pi> stkii;
 typedef priority_queue<int> pqi;
 typedef priority_queue<pi> pqii;
+typedef deque<int> dqi;
+typedef deque<pi> dqii;
+typedef list<int> li;
+typedef list<pi> lii;
 const int MOD = 1e9 + 7;
 const int N = 1e5 + 10;
 int Min[N << 2], gcd[N << 2], getG[N << 2];
