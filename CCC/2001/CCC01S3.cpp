@@ -6,17 +6,13 @@ string s[N];
 int a[N][2], f[N];
 vector<int> ans;
 
-int Find(int x){
+inline int Find(int x){
     if(x == f[x]) return x;
     return f[x] = Find(f[x]);
 }
 
-void Union(int fu, int fv){
-    for(int i = 1;i<N;i++){
-        if(f[i] == fu){
-            f[i] = fv;
-        }
-    }
+inline void Union(int x, int y){
+    f[x] = y;
 }
 
 int main(){
@@ -35,15 +31,16 @@ int main(){
             int v = a[j][1];
             int fu = Find(u);
             int fv = Find(v);
-            Union(fu,fv);
+            Union(fu, fv);
         }
-        if(f[1] != f[2]){
+        if(Find(1) != Find(2)){
             ans.push_back(i);
         }
     }
-    for(int i = 0;i<ans.size();i++){
+    for(int i = 0;i<int(ans.size());i++){
         int j = ans[i];
         cout<<s[j][0]<<s[j][1]<<endl;
     }
     cout<<"There are "<<ans.size()<< " disconnecting roads."<<endl;
+    return 0;
 }
