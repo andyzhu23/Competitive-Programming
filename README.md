@@ -34,6 +34,8 @@ CCC 2021 | S3 | complete | Prefix Sum, Binary Search, Math | ****
 CCC 2021 | S4 | complete | Reversed graph, Dijkstra, priority_queue | ***
 CCC 2018 | S4 | complete | Dynamic Programming, multiplication | ***
 CCC 2015 | S4 | complete | SPFA, add a dimension | **
+CCC 2002 | S4 | complete | Doing dp in an interval | ***
+CCC 2001 | S3 | complete | Disjoint Set | **
 
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
