@@ -33,6 +33,7 @@ CCC 2021 | S2 | complete | using two arrays instead of a 2d array | *
 CCC 2021 | S3 | complete | Prefix Sum, Binary Search, Math | ****
 CCC 2021 | S4 | complete | Reversed graph, Dijkstra, priority_queue | ***
 CCC 2018 | S4 | complete | Dynamic Programming, multiplication | ***
+CCC 2015 | S4 | complete | SPFA, add a dimension | **
 
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
