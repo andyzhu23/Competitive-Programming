@@ -28,6 +28,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | incomplete | Disecretization | *****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2020 | S3 | complete | Rolling Hash, compute hash value twice | ****
 CCC 2018 | S4 | complete | Dynamic Programming, multiplication | ***
 CCC 2021 | S1 | complete | implementation, double is not accurate | *
 CCC 2021 | S2 | complete | using two arrays instead of a 2d array | *
