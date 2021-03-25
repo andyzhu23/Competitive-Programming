@@ -41,6 +41,7 @@ CCC 2001 | S3 | complete | Disjoint Set | **
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 702 | Old Floppy Drive | complete | Prefix Sum, binarySearch, replace with Maximum | ****
 CF 702 | Advertising Agency | complete | Math, Fermat's little theorem | **
 CF 697 | Accidental Victory | complete | Binary Search, sorting | ***
 CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
