@@ -13,7 +13,7 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-USACO 2017 Jan Gold | Balanced Photo | incomplete | Segment Tree | **
+USACO 2017 Jan Gold | Balanced Photo | incomplete | Segment Tree, discretization | **
 USACO 2021 Feb Gold | Modern Art 3 | complete | Dynamic Programming | ***
 USACO 2021 Feb Silver | Comfortable Cows | complete | implementation | *
 USACO 2021 Feb Silver | Year of the Cows | complete | Greedy | *
