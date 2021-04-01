@@ -58,4 +58,5 @@ CSP 2019 | 加工零件 | complete | bfs, number theory | ****
 
 ### Other Problems
 Source | Problems | status | skills needed | rating
+-------|----------|--------|---------------|-------
 NA | Interval GCD | incomplete | Segment Tree, properties of GCD | ****
