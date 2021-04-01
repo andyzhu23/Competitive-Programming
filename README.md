@@ -1,6 +1,6 @@
-### Hello, I am a noob
+### Hello
 
-This is my Competitive-Programming Solution page, I mainly created it for myself to review all the solutions that I wrote
+This is my Competitive-Programming Solution page, I mainly created it for myself to review all the solutions that I coded
 
 
 # problems
