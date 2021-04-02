@@ -50,6 +50,9 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Chinese Contests Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCF Online | 重力球 | incomplete | | 
+CCF Online | 吃豆人 | incomplete | | 
+CCF Online | 切蛋糕 | incomplete | | 
 NOIP | 魔法阵 | complete | enumeration | ****
 CSP 2019 | 纪念品 | complete | knapsack problem, dynamic programming | ****
 CSP 2019 | 加工零件 | complete | bfs, number theory | ****
