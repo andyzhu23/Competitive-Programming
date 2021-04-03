@@ -5,7 +5,8 @@
 using namespace std;
 using ll = long long;
 const int N = 1e6 + 10;
-int n, a[N], st[N << 2], res1[N], res2[N];
+int n, a[N];
+ll st[N << 2], res1[N], res2[N]; // make sure this is long long
 
 inline void update(int rt, int l, int r, int pos, int val) {
     if (l == r) {
