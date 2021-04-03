@@ -63,5 +63,5 @@ Source | Problems | status | skills needed | rating
 NA | 维护序列 | incomplete | Segment Tree | 
 NA | 区间操作 | complete | Segment Tree | **
 NA | 区间异或 | incomplete | Segment Tree | 
-NA | 弱点 | incomplete | Segment Tree | 
-NA | Interval GCD | incomplete | Segment Tree, properties of GCD | ****
+NA | 弱点 | complete | Segment Tree | compute segment tree twice | **
+NA | Interval GCD | complete | two Segment Tree, properties of GCD, be careful about absolute value | ****
