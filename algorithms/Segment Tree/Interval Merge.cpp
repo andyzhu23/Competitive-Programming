@@ -8,7 +8,7 @@ struct node{
 node st[N << 2];
 int n, m, a[N];
 
-void push_up(int rt, int l, int r, int mid){
+inline void push_up(int rt, int l, int r, int mid){
     st[rt].lx = st[rt << 1].lx;
     st[rt].rx = st[rt << 1 | 1].rx;
     if(st[rt << 1].lx == mid - l + 1 && a[mid] < a[mid + 1]){
@@ -24,7 +24,7 @@ void push_up(int rt, int l, int r, int mid){
     st[rt].mx = max(st[rt].mx, max(st[rt << 1].mx, st[rt << 1 | 1].mx));
 }
 
-void build(int rt, int l, int r){
+inline void build(int rt, int l, int r){
     if(l == r){
         st[rt].mx = 1;
         st[rt].rx = st[rt].lx = 1;
@@ -36,7 +36,7 @@ void build(int rt, int l, int r){
     push_up(rt, l, r, mid);
 }
 
-node query(int rt, int l, int r, int x, int y){
+inline node query(int rt, int l, int r, int x, int y){
     if(l == x && y == r){
         return st[rt];
     }
@@ -64,7 +64,7 @@ node query(int rt, int l, int r, int x, int y){
     }
 }
 
-void update(int rt, int l, int r, int pos, int val){
+inline void update(int rt, int l, int r, int pos, int val){
     if(l == r) return;
     int mid = (l + r) >> 1;
     if(pos <= mid) update(rt << 1, l, mid, pos, val);
@@ -72,7 +72,7 @@ void update(int rt, int l, int r, int pos, int val){
     push_up(rt, l, r, mid);
 }
 
-void solve(){
+inline void solve(){
     char c;
     int A, B;
     cin>>c>>A>>B;
