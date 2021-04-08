@@ -65,8 +65,8 @@ CSP 2019 | 加工零件 | complete | bfs, number theory | ****
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-NA | 旅馆预订 ｜ incomplete | Segment Tree | ****
-NA | 47序列 ｜ incomplete | Segment Tree | ****
+NA | 旅馆预订 | incomplete | Segment Tree | ****
+NA | 47序列 | incomplete | Segment Tree | ****
 NA | 维护序列 | complete | Segment Tree, first multiply then addition | ***
 NA | 区间操作 | complete | Segment Tree | **
 NA | 区间异或 | incomplete | Segment Tree | 
