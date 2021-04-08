@@ -1,5 +1,9 @@
 ### Hello, This is my Competitive-Programming Solution page, I mainly created it for myself to review all the solutions that I coded
 
+# to do list
+task | date | time
+-----|------|-----
+Codeforces Round #713 | April 10th | 7:35am
 
 # problems
 ### DMOPC Problems
