@@ -6,6 +6,15 @@ task | date | time
 Codeforces Round #713 | April 10th | 7:35am
 
 # problems
+
+### incomplete Problems
+Source | Problems | status | skills needed | rating
+-------|----------|--------|---------------|-------
+NA | 区间异或 | incomplete | Segment Tree | 
+NA | 47序列 | incomplete | Segment Tree | ****
+CCF Online | 重力球 | incomplete | | 
+CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
+
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
