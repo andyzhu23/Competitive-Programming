@@ -11,7 +11,6 @@ Codeforces Round #713 | April 10th | 7:35am
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 NA | 区间异或 | incomplete | Segment Tree | 
-NA | 47序列 | incomplete | Segment Tree | ****
 CCF Online | 重力球 | incomplete | | 
 CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 
@@ -76,7 +75,7 @@ Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 NA | 小白逛公园 | complete | Segment Tree | **
 NA | 旅馆预订 | complete | Segment Tree | ****
-NA | 47序列 | incomplete | Segment Tree | ****
+NA | 47序列 | complete | Segment Tree | ****
 NA | 维护序列 | complete | Segment Tree, first multiply then addition | ***
 NA | 区间操作 | complete | Segment Tree | **
 NA | 区间异或 | incomplete | Segment Tree | 
