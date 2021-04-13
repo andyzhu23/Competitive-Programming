@@ -3,6 +3,11 @@
 # to do list
 task | date | time
 -----|------|-----
+Google Kickstart round B | April 18th | 4:00am
+
+# past events
+task | date | time
+-----|------|-----
 Codeforces Round #713 | April 10th | 7:35am
 
 # problems
