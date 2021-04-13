@@ -15,7 +15,16 @@ Codeforces Round #713 | April 10th | 7:35am
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-NA | 区间异或 | incomplete | Segment Tree | 
+USACO 21 Feb Gold | Count the Cows | incomplete | |
+USACO 21 Feb Gold | Stone Game | incomplete | |
+USACO 21 Open Gold | Permutation | incomplete | |
+USACO 21 Open Gold | Portals | incomplete | |
+USACO 21 Open Silver | Academia I | incomplete | |
+USACO 21 Open Silver | Maze Tac Toe | incomplete | |
+USACO 21 Open Bronze | Academia III | incomplete | |
+USACO 21 Open Bronze | Academia II | incomplete | |
+USACO 21 Open Bronze | Academia I | incomplete | |
+NA | 区间异或 | incomplete | Segment Tree | |
 CCF Online | 重力球 | incomplete | | 
 CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 
