@@ -28,6 +28,8 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO 2021 US Open Silver | Do You Know ABCs? | enumeration, brute force | **
+USACO 2021 US Open Gold | United Cows of Farmer John | enumerate r, binary search l | **
 USACO 2008 Nov Gold | Switching light | complete | Segment Tree, interval update | **
 USACO 2017 Jan Gold | Balanced Photo | complete | Segment Tree, discretization | **
 USACO 2021 Feb Gold | Modern Art 3 | complete | Dynamic Programming | ***
