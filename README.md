@@ -25,7 +25,6 @@ USACO 21 Open Silver | Maze Tac Toe | incomplete | |
 USACO 21 Open Bronze | Academia III | incomplete | |
 USACO 21 Open Bronze | Academia II | incomplete | |
 USACO 21 Open Bronze | Academia I | incomplete | |
-NA | 区间异或 | incomplete | Segment Tree | |
 CCF Online | 重力球 | incomplete | | 
 CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 
@@ -90,6 +89,7 @@ CSP 2019 | 加工零件 | complete | bfs, number theory | ****
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | 区间异或 | complete | Segment Tree | ***
 DMOJ | Cat Girls | complete | Dynamic Programming, Binary Search | **
 NA | 小白逛公园 | complete | Segment Tree | **
 NA | 旅馆预订 | complete | Segment Tree | ****
