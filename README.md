@@ -89,7 +89,7 @@ CSP 2019 | 加工零件 | complete | bfs, number theory | ****
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-NA | 区间异或 | complete | Segment Tree | ***
+NA | 区间异或 | complete | Segment Tree, property of xor, writing number as an array in binary | ***
 DMOJ | Cat Girls | complete | Dynamic Programming, Binary Search | **
 NA | 小白逛公园 | complete | Segment Tree | **
 NA | 旅馆预订 | complete | Segment Tree | ****
