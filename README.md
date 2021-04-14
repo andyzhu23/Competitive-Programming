@@ -92,7 +92,7 @@ Source | Problems | status | skills needed | rating
 NA | 区间异或 | complete | Segment Tree, property of xor, writing number as an array in binary | ***
 DMOJ | Cat Girls | complete | Dynamic Programming, Binary Search, this question is so wrong | **
 NA | 小白逛公园 | complete | Segment Tree | **
-NA | 旅馆预订 | complete | Segment Tree | ****
+USACO | 旅馆预订 | complete | Segment Tree | ****
 NA | 47序列 | complete | Segment Tree | ****
 NA | 维护序列 | complete | Segment Tree, first multiply then addition | ***
 NA | 区间操作 | complete | Segment Tree | **
