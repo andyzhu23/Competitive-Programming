@@ -1,5 +1,6 @@
 #include <iostream>
 #include <queue>
+#define endl "\n"
 #define p pair<int, int>
 #define f first
 #define s second
