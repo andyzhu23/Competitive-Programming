@@ -15,6 +15,7 @@ Codeforces Round #713 | April 10th | 7:35am
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NOIP 2017 D2T3 | 列队 | incomplete | |
 USACO 21 Feb Gold | Count the Cows | incomplete | |
 USACO 21 Feb Gold | Stone Game | incomplete | |
 USACO 21 Open Gold | Permutation | incomplete | |
