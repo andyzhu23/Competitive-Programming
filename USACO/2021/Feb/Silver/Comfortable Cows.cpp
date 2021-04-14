@@ -39,7 +39,7 @@ int main() {
 
         cin>>a>>b;
         // a and b is the pos of the current cow
-        a+= 1000; // make sure to add a hundred so there is enough room to place bellow or to the left of the cells
+        a+= 1000; // make sure to add a thousand so there is enough room to place bellow or to the left of the cells
         b+= 1000;
         if(added[a][b]){
             added[a][b] = false;
