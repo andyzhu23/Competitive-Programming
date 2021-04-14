@@ -1,11 +1,11 @@
 #include <iostream>
-#include <map>
+#include <unordered_map>
 #include <cmath>
 #define int long long
 using namespace std;
 typedef pair<int, string> cow;
 int n;
-map<string, cow> Map;
+unordered_map<string, cow> Map;
 
 string years[] = {"@" ,"Ox", "Tiger", "Rabbit", "Dragon",
                   "Snake", "Horse", "Goat", "Monkey",
