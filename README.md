@@ -96,8 +96,9 @@ CSP 2019 | 加工零件 | complete | bfs, number theory | ****
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | CamelCase | complete | Dynamic Programming, unordered_set | *
 NA | 区间异或 | complete | Segment Tree, property of xor, writing number as an array in binary | ***
-DMOJ | Cat Girls | complete | Dynamic Programming, Binary Search, this question is so wrong | **
+DMOJ | Cat Girls | complete | Dynamic Programming, Binary Search, this question is so wrong | *
 NA | 小白逛公园 | complete | Segment Tree | **
 USACO | 旅馆预订 | complete | Segment Tree | ****
 NA | 47序列 | complete | Segment Tree | ****
