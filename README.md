@@ -3,7 +3,7 @@
 # to do list
 task | date | time
 -----|------|-----
-Google Kickstart round B | April 18th | 4:00am
+Google Kickstart 2021 round B | April 18th | 4:00am
 
 # past events
 task | date | time
