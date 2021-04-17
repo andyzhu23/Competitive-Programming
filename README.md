@@ -16,6 +16,7 @@ Codeforces Round #713 | April 10th | 7:35am
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2012 | S4 | incomplete | | |
 CCC 2015 | S5 | incomplete | Dynamic Programming | |
 CCC 2019 | S4 | incomplete | Dynamic Programming, Segment Tree | |
 NOIP 2017 D2T3 | 列队 | incomplete | |
