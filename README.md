@@ -20,7 +20,6 @@ CCC 2014 | S5 | incomplete | Dynamic Programming | |
 CCC 2015 | S5 | incomplete | Dynamic Programming | |
 CCC 2019 | S4 | incomplete | Dynamic Programming, Segment Tree | |
 Codeforces #713 | Education | incomplete | |
-Codeforces #713 | Permutation by Sum | incomplete | |
 NOIP 2017 D2T3 | 列队 | incomplete | |
 USACO 21 Feb Gold | Count the Cows | incomplete | |
 USACO 21 Feb Gold | Stone Game | incomplete | |
@@ -76,6 +75,7 @@ CCC 2001 | S3 | complete | Disjoint Set | **
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 713 | Permutation by Sum | complete | Greedy, enumerate one by one | ***
 CF 713 | Short Task | complete | Calculate beforehand, number theory | ***
 CF 708 | K LCM | complete | greedy, let all other numbers be 1 only consider the last three | ***
 CF 702 | Old Floppy Drive | complete | Prefix Sum, binarySearch, replace with Maximum | ****
