@@ -7,7 +7,7 @@ task | date | time
 
 # past events
 task | date | time | score
------|------|-----｜----
+-----|------|-----｜------
 Google Kickstart 2021 round B | April 18th | 4:00am | 41/100
 Codeforces Round #713 | April 10th | 7:35am | 4/7
 
