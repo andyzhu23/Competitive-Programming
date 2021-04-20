@@ -1,10 +1,10 @@
 #include <iostream>
-#define int long long
 #define endl "\n"
 using namespace std;
 const int N = 5e5 + 10;
 typedef long long ll;
-int n, w, len = 0;
+int n, len = 0;
+ll w;
 ll dp[N], sum1[N], sum2[N];
 
 int binarySearch(){
