@@ -3,7 +3,7 @@
 # to do list
 task | date | time
 -----|------|-----
-
+DMOPC '20 April Contest | April 23 2021 - April 25 2021, 2021, 21:00 PDT - 21:00 PDT
 
 # past events
 task | date | time | score
