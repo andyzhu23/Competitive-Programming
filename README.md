@@ -62,6 +62,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2014 | S4 | complete | Discretization | ***
 CCC 2014 | S5 | complete | Dynamic Programming, save the result last time to avoid collision with other results | ****
 CCC 2020 | S4 | complete | enumeration, greedy | ****
 CCC 2020 | S3 | complete | Rolling Hash, compute hash value twice | ****
