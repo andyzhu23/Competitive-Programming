@@ -50,11 +50,7 @@ inline PI query(int rt, int l, int r, int x, int y){
     int mid = (l + r) >> 1;
     if(y <= mid) return query(rt << 1, l, mid, x, y);
     else if(x > mid) return query(rt << 1 | 1, mid + 1, r, x, y);
-    else {
-        PI a = query(rt << 1, l, mid, x, mid);
-        PI b = query(rt << 1 | 1, mid + 1, r, mid + 1, y);
-        return min(a, b);
-    }
+    else return min(query(rt << 1, l, mid, x, mid), query(rt << 1 | 1, mid + 1, r, mid + 1, y));
 }
 
 inline void solve(){
