@@ -7,7 +7,7 @@ int n, len = 0;
 ll w;
 ll dp[N], sum1[N], sum2[N];
 
-int binarySearch(){
+inline int binarySearch(){
     int l = 0, r = len - 1, ans = len;
     while(l <= r){
         int mid = (l + r) >> 1;
