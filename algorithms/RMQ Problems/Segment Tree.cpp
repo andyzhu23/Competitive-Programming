@@ -7,7 +7,7 @@ const int N = 1e5 + 10;
 int Max[N << 2];
 int n, m, a[N];
 
-void build(int rt, int l, int r){
+inline void build(int rt, int l, int r){
     if(l == r){
         Max[rt] = a[l];
         return;
@@ -18,7 +18,7 @@ void build(int rt, int l, int r){
     pushup(rt);
 }
 
-int query(int rt, int l, int r, int x, int y){
+inline int query(int rt, int l, int r, int x, int y){
     if(l == x && y == r){
         return Max[rt];
     }
