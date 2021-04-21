@@ -9,7 +9,7 @@ int n, m, a[N];
 
 inline void build(int rt, int l, int r){
     if(l == r){
-        Max[rt] = a[l];
+        cin >> Max[rt];
         return;
     }
     int mid = (l + r) >> 1;
@@ -29,16 +29,13 @@ inline int query(int rt, int l, int r, int x, int y){
 }
 
 int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0); cout.tie(0);
     cin>>n>>m;
-    for(int i = 1;i<=n;i++){
-        int x;
-        scanf("%d", &x);
-        a[i] = x;
-    }
     build(1, 1, n);
     for(int i = 1;i<=m;i++){
         int a, b;
-        scanf("%d %d", &a, &b);
+        cin>>a>>b;
         cout<<query(1, 1, n, a, b)<<endl;
     }
     return 0;
