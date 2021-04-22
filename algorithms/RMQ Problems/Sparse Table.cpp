@@ -1,4 +1,4 @@
-// time complexity O(nlogn + qloglogn)
+// time complexity O(NlogN + QloglogN)
 
 #include <iostream>
 #define endl "\n"
