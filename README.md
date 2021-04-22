@@ -17,6 +17,7 @@ Codeforces Round #713 | April 10th | 7:35am | 4/7
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2017 | S4 | incomplete | Kruskal algorithm, MST problem |
 CCC 2017 | S5 | incomplete | Segment Tree | |
 CCC 2014 | S4 | incomplete | | | 
 CCC 2019 | J5 | incomplete | Divide and Conquer | |
