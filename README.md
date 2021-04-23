@@ -60,7 +60,7 @@ USACO 2021 Jan Silver | No Time to Paint | complete | Prefix Sum, Suffix Sum | *
 USACO 2021 Jan Silver | Spaced Out | complete | enumeration, knowing two lines give the whole grid | ***
 USACO 2020 Dec Silver | Cowntagion | complete | Graph Theory, Tree | **
 USACO 2020 Dec Silver | Rectangular Pasture | complete | 2D Prefix - sum, Multiplication Principle | ****
-USACO 2020 Dec Silver | Stuck in a Rut | complete | Discretization,priority_queue，Topological order | *****
+USACO 2020 Dec Silver | Stuck in a Rut | complete | Discretization,priority_queue, Topological order | *****
 USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_queue | *****
 
 ### CCC Problems
