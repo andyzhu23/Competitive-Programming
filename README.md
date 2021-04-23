@@ -10,6 +10,9 @@ task | date | time | score | reflection
 -----|------|------|-------|-----------
 Google Kickstart 2021 round B | April 18th | 4:00am | 41/100 | good thing I got partial for C and D
 Codeforces Round #713 | April 10th | 7:35am | 4/7 | I ran out of time
+USACO 2021 US Open | April 2nd | 9:00am | 394/1000 (Gold) | P2 and P3 are out of my skill range currently
+USACO 2021 Feburary | Feb 17th | 9:00am | 800/1000 (Silver) | P2 make the array bigger
+USACO 2020 December | Dec 18th | 9:00 | 900/1000 | Final question using discretization
 
 # problems
 
