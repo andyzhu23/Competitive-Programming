@@ -8,7 +8,7 @@ DMOPC '20 April Contest | April 23 2021 - April 25 2021, 2021 | 21:00 PDT - 21:0
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
-Google Kickstart 2021 round B | April 18th | 4:00am | 41/100 | I could've gotten question b
+Google Kickstart 2021 round B | April 18th | 4:00am | 41/100 | good thing I got partial for C and D
 Codeforces Round #713 | April 10th | 7:35am | 4/7 | I ran out of time
 
 # problems
