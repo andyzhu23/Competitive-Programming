@@ -65,7 +65,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-CCC 2017 | S4 | complete | Kruskal algorithm, MST problem, run mst twice to see if you can use the pipe enhancer or not | ****
+CCC 2017 | S4 | complete | Kruskal algorithm, MST problem, run MST twice to see if a non-active pipe can be replaced | ****
 CCC 2014 | S4 | complete | Discretization | ***
 CCC 2014 | S5 | complete | Dynamic Programming, save the result last time to avoid collision with other results | ****
 CCC 2020 | S4 | complete | enumeration, greedy | ****
