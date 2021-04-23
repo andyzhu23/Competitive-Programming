@@ -18,7 +18,6 @@ Codeforces Round #713 | April 10th | 7:35am | 4/7
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 COCL c7 | P5 | incomplete | Graph Theory, Dynamic Programming |
-CCC 2017 | S4 | incomplete | Kruskal algorithm, MST problem |
 CCC 2017 | S5 | incomplete | Segment Tree | |
 CCC 2014 | S4 | incomplete | | | 
 CCC 2019 | J5 | incomplete | Divide and Conquer | |
@@ -66,6 +65,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2017 | S4 | complete | Kruskal algorithm, MST problem | ****
 CCC 2014 | S4 | complete | Discretization | ***
 CCC 2014 | S5 | complete | Dynamic Programming, save the result last time to avoid collision with other results | ****
 CCC 2020 | S4 | complete | enumeration, greedy | ****
