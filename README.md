@@ -91,16 +91,6 @@ CF 702 | Advertising Agency | complete | Math, Fermat's little theorem | **
 CF 697 | Accidental Victory | complete | Binary Search, sorting | ***
 CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 
-### Chinese Contests Problems
-Source | Problems | status | skills needed | rating
--------|----------|--------|---------------|-------
-CCF Online | 重力球 | incomplete | | 
-CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
-CCF Online | 切蛋糕 | complete | case enumeration you need not more than three cuts | ***
-NOIP | 魔法阵 | complete | enumeration | ****
-CSP 2019 | 纪念品 | complete | knapsack problem, dynamic programming | ****
-CSP 2019 | 加工零件 | complete | bfs, number theory | ****
-
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
@@ -115,3 +105,9 @@ NA | 维护序列 | complete | Segment Tree, first multiply then addition | ***
 NA | 区间操作 | complete | Segment Tree | **
 NA | 弱点 | complete | Segment Tree, compute segment tree twice | **
 NA | Interval GCD | complete | two Segment Tree, properties of GCD, be careful about absolute value | ****
+CCF Online | 重力球 | incomplete | | 
+CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
+CCF Online | 切蛋糕 | complete | case enumeration you need not more than three cuts | ***
+NOIP | 魔法阵 | complete | enumeration | ****
+CSP 2019 | 纪念品 | complete | knapsack problem, dynamic programming | ****
+CSP 2019 | 加工零件 | complete | bfs, number theory | ****
