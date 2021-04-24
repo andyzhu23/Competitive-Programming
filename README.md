@@ -45,7 +45,7 @@ CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 21 Round B | Problem B | complete | Pre-fix Sum, total three cases | **
-21 Round B | Problem D | complete | Segment Tree, offline calculation, dfs | ****
+21 Round B | Problem D | complete | Segment Tree, unsynchronized calculation, dfs | ****
 
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
