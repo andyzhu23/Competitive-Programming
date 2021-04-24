@@ -42,6 +42,11 @@ USACO 21 Open Bronze | Academia I | incomplete | |
 CCF Online | 重力球 | incomplete | | 
 CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 
+### Google Kickstart
+Source | Problems | status | skills needed | rating
+-------|----------|--------|---------------|-------
+21 Round B | Problem B | complete | Pre-fix Sum, total three cases | **
+
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
