@@ -20,7 +20,7 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-CCC 2018 | S5 | incomplete | Graph Theory, MST | |
+CCC 2018 | S5 | incomplete | Graph Theory, MST algorithms | |
 NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
 COCL c7 | P5 | incomplete | Graph Theory, Dynamic Programming |
 CCC 2017 | S5 | incomplete | Segment Tree | |
