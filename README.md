@@ -27,7 +27,6 @@ CCC 2017 | S5 | incomplete | Segment Tree | |
 CCC 2014 | S4 | incomplete | | | 
 CCC 2019 | J5 | incomplete | Divide and Conquer | |
 CCC 2012 | S4 | incomplete | | |
-CCC 2015 | S5 | incomplete | Dynamic Programming | |
 CCC 2019 | S4 | incomplete | Dynamic Programming, Segment Tree | |
 NOIP 2017 D2T3 | 列队 | incomplete | |
 USACO 21 Feb Gold | Count the Cows | incomplete | |
@@ -75,6 +74,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2015 | S5 | complete | Dynamic Programming, Greedy, four dimension dp state | **** |
 CCC 2017 | S4 | complete | Kruskal algorithm, MST problem, run MST twice to see if a non-active pipe can be replaced | ****
 CCC 2014 | S4 | complete | Discretization | ***
 CCC 2014 | S5 | complete | Dynamic Programming, save the result last time to avoid collision with other results | ****
