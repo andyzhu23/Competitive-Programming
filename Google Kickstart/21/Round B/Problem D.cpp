@@ -70,16 +70,14 @@ inline void dfs(int u, int fa) {
 }
 
 inline void init() {
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= n; i++)
         e[i].clear();
-        ans[i] = 0;
-    }
+    memset(ans, 0, sizeof(ans));
     memset(st, 0, sizeof(st));
     Map.clear();
 }
 
 inline void solve() {
-    init();
     cin >> n >> q;
     for (int i = 1; i < n; i++) {
         int u, v, l;
@@ -106,6 +104,7 @@ int main() {
     cin >> t;
     for (int i = 1; i <= t; i++) {
         cout << "Case #" << i << ": ";
+        init();
         solve();
         cout << endl;
     }
