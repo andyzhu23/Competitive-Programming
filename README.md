@@ -46,6 +46,7 @@ Source | Problems | status | skills needed | rating
 21 Round B | Problem C | complete | Maximum interval between primes | **
 21 Round B | Problem B | complete | Pre-fix Sum, total three cases | **
 21 Round B | Problem D | complete | Segment Tree, unsynchronized calculation, dfs | ****
+21 Round B | Problem A | complete | enumeration | *
 
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
