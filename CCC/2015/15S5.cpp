@@ -29,9 +29,7 @@ int main(){
                 if(i == 0 && k != 0){
                     dp[i][j][k][1] = dp[i][j][k - 1][0] + b[m - k + 1];
                     continue;
-                } else if(i == 0){
-                    continue;
-                }
+                } else if(i == 0) continue;
                 if(k != 0)
                     dp[i][j][k][1] = max(dp[i][j][k][1], max(dp[i - 1][j][k][0] + a[i], dp[i][j][k - 1][0] + b[m - k + 1]));
                 else dp[i][j][k][1] = dp[i - 1][j][k][0] + a[i];
