@@ -52,6 +52,8 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 20 Contest 5 | Home Row | complete | enumeration | *
+DMOPC 20 Contest 5 | On the Clock | complete | enumeration, double inacurrate | **
 DMOPC 20 Contest 4 | Beautiful Grid | complete | Greedy, enumeration | ***
 DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | ****
 
