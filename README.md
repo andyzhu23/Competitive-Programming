@@ -109,6 +109,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+COCL | Zapis | complete | Dynamic Programming, enumerations | ***
 DMOJ | Dominos Tiling | complete | Dynamic Programming, two cases | *
 DMOJ | CamelCase | complete | Dynamic Programming, unordered_set | *
 NA | 区间异或 | complete | Segment Tree, property of xor, writing number as an array in binary | ***
