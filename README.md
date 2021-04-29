@@ -109,6 +109,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | dynamic range minimum query | complete | Segment Tree | *
 COCL | Zapis | complete | Dynamic Programming, iomanip | ***
 DMOJ | Dominos Tiling | complete | Dynamic Programming, two cases | *
 DMOJ | CamelCase | complete | Dynamic Programming, unordered_set | *
