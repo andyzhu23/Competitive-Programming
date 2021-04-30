@@ -44,7 +44,7 @@ CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 ### Google Kickstart
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-21 Round B | Problem D | complete | Segment Tree, unsynchronized calculation, dfs | ****
+21 Round B | Problem D | complete | Segment Tree, offline/unsynchronized calculation, dfs | ****
 21 Round B | Problem C | complete | Maximum interval between primes | **
 21 Round B | Problem B | complete | Pre-fix Sum, total three cases | **
 21 Round B | Problem A | complete | enumeration | *
@@ -60,7 +60,8 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-USACO 2019 Dec Silver | Milk Visit | complete | Sparse Table | **
+USACO 2019 Dec Gold | Milk Visits | complete | Sparse Table, offline/unsynchronized calculation | ****
+USACO 2019 Dec Silver | Milk Visits | complete | Sparse Table | **
 USACO 2021 US Open Silver | Do You Know ABCs? | complete | enumeration, brute force | **
 USACO 2021 US Open Gold | United Cows of Farmer John | complete | enumerate r, binary search l | **
 USACO 2008 Nov Gold | Switching light | complete | Segment Tree, interval update | **
