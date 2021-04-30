@@ -70,6 +70,10 @@ typedef unordered_map<string, string> UMS;
 const int INF = 1e9;
 const int MOD = 1e9 + 7;
 
+inline void CMP(int a, int b){
+    return a > b;
+}
+
 inline void copy(int a[], int b[], int sz){
     for(int i = 0;i<=sz;i++)
         a[i] = b[i];
