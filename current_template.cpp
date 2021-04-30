@@ -28,6 +28,7 @@
 #include <bitset>
 #include <iterator>
 #include <deque>
+#include <random>
 #define endl "\n"
 #define l_b lower_bound
 #define u_b upper_bound
@@ -103,6 +104,7 @@ inline bool is_prime(ll x){
 }
 
 int main(){
+    srand(time(0));
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
