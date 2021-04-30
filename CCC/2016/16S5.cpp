@@ -29,8 +29,8 @@
 #include <iterator>
 #include <deque>
 #define endl "\n"
-#define lb lower_bound
-#define ub upper_bound
+#define l_b lower_bound
+#define u_b upper_bound
 #define ins insert
 #define fir first
 #define sec second
@@ -132,3 +132,8 @@ int main(){
     }
     return 0;
 }
+
+/*
+watch out for how you cacluate l and r
+be careful when l or r is 0 as it means they are actually n
+ */
