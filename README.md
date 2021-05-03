@@ -26,7 +26,7 @@ CCC 2018 | S5 | incomplete | Graph Theory, MST algorithms | |
 NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
 COCL c7 | P5 | incomplete | Graph Theory, Dynamic Programming |
 CCC 2017 | S5 | incomplete | Segment Tree | |
-CCC 2019 | J5 | incomplete | Divide and Conquer | |
+CCC 2019/DMOJ add on | J5 | incomplete | Divide and Conquer | |
 CCC 2012 | S4 | incomplete | | |
 CCC 2019 | S4 | incomplete | Dynamic Programming, Segment Tree | |
 NOIP 2017 D2T3 | 列队 | incomplete | |
