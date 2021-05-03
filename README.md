@@ -82,6 +82,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2019 | J5 | complete | run dfs twice | ***
 CCC 2016 | S5 | complete | Binary rate multiply, xor | *****
 CCC 2015 | S5 | complete | Dynamic Programming, Greedy, four dimensional dp state | **** |
 CCC 2017 | S4 | complete | Kruskal algorithm, MST problem, run MST twice to see if a non-active pipe can be replaced | ****
