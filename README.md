@@ -3,7 +3,7 @@
 # to do list
 task | date | time
 -----|------|-----
-
+An Animal Contest 2 | May 7th - May 10th | 9:00 pm |
 
 # past events
 task | date | time | score | reflection
