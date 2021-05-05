@@ -21,6 +21,8 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+P3036 | 树上最远点对|incomplete | lca|
+P3035 | 区间lca | incomplete | lca | 
 CF1062E | Company | incomplete | LCA | 
 USACO 2016 Feb Gold | Fenced In | incomplete | MST algorithm | 
 CCC 2018 | S5 | incomplete | Graph Theory, MST algorithms | |
