@@ -21,7 +21,6 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-USACO 15 Dec | Max Flow | incomplete | LCA |
 P3036 | 树上最远点对|incomplete | lca|
 P3035 | 区间lca | incomplete | lca | 
 CF1062E | Company | incomplete | LCA | 
@@ -65,6 +64,7 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO 2019 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
 USACO 2019 Dec Gold | Milk Visits | complete | Sparse Table, offline/unsynchronized calculation | ****
 USACO 2019 Dec Silver | Milk Visits | complete | Sparse Table | **
 USACO 2021 US Open Silver | Do You Know ABCs? | complete | enumeration, brute force | **
