@@ -118,6 +118,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | 次小生成树 | complete | LCA, first getMax, then update x, y | ****
 DMOJ | dynamic range minimum query | complete | Segment Tree | *
 COCL | Zapis | complete | Dynamic Programming, iomanip | ***
 DMOJ | Dominos Tiling | complete | Dynamic Programming, two cases | *
