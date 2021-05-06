@@ -42,6 +42,9 @@
 #define mp make_pair
 #define random(a, b) rand() % (b - a + 1) + a
 #define log(a, b) log(a) / log(b)
+#define UM unordered_map;
+#define US unordered_set;
+#define V vector;
 using ll = long long;
 using lb = long double;
 using namespace std;
@@ -69,8 +72,9 @@ typedef unordered_map<ll, ll> UMLL;
 typedef unordered_map<string, string> UMS;
 const int INF = 1e9;
 const int MOD = 1e9 + 7;
+const int dir[8][2] = {{0, 1}, {0, 0}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
 
-inline void CMP(int a, int b){
+inline bool CMP(int a, int b){
     return a > b;
 }
 
@@ -86,7 +90,7 @@ inline int gcd(int a, int b){
 }
 
 inline int lcm(int a, int b){
-    return a * b / gcd(a, b);
+    return a / gcd(a, b) * b;
 }
 
 inline int getMid(int l, int r){
