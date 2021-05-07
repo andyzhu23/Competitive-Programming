@@ -22,7 +22,7 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 P3036 | 树上最远点对|incomplete | lca|
-P3035 | 区间lca | incomplete | lca | 
+
 CF1062E | Company | incomplete | LCA | 
 USACO 2016 Feb Gold | Fenced In | incomplete | MST algorithm | 
 CCC 2018 | S5 | incomplete | Graph Theory, MST algorithms | |
@@ -118,6 +118,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | 区间lca | complete | lca, segment tree/sparse table | ****
 NA | 次小生成树 | complete | LCA, first getMax, then update x, y | ****
 DMOJ | dynamic range minimum query | complete | Segment Tree | *
 COCL | Zapis | complete | Dynamic Programming, iomanip | ***
