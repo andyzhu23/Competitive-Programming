@@ -22,8 +22,6 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 P3036 | 树上最远点对|incomplete | lca|
-
-CF1062E | Company | incomplete | LCA | 
 USACO 2016 Feb Gold | Fenced In | incomplete | MST algorithm | 
 CCC 2018 | S5 | incomplete | Graph Theory, MST algorithms | |
 NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
@@ -106,6 +104,7 @@ CCC 2001 | S3 | complete | Disjoint Set | **
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 520 | Company | incomplete | LCA, segment tree/sparse tree | *****
 CF 713 | Education | complete | enumeration, not greedy | ***
 CF 713 | Permutation by Sum | complete | Greedy, enumerate one by one | ***
 CF 713 | Short Task | complete | Calculate beforehand, number theory | ***
