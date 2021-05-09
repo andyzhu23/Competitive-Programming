@@ -82,6 +82,11 @@ USACO 2020 Dec Silver | Rectangular Pasture | complete | 2D Prefix - sum, Multip
 USACO 2020 Dec Silver | Stuck in a Rut | complete | Discretization, priority_queue, Topological order | *****
 USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_queue | *****
 
+### CCO Problems
+Source | Problems | status | skills needed | rating
+-------|----------|--------|---------------|-------
+CCO 2015 | P2 | complete | Bitmasking | ****
+
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
