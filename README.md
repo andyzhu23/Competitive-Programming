@@ -90,6 +90,7 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2013 | S3 | compelte | enumeration | *
 CCC 2019 | J5 | complete | run dfs twice | ***
 CCC 2016 | S5 | complete | Binary rate multiply, xor | *****
 CCC 2015 | S5 | complete | Dynamic Programming, Greedy, four dimensional dp state | **** |
