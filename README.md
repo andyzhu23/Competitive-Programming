@@ -43,6 +43,14 @@ USACO 21 Open Bronze | Academia II | incomplete | |
 USACO 21 Open Bronze | Academia I | incomplete | |
 CCF Online | 重力球 | incomplete | | 
 CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
+C2 P3 | Koala Balloon | incomplete | binary search, prefix sum | ***
+
+### An Animal Contest
+Source | Problems | status | skills needed | rating
+-------|----------|--------|---------------|-------
+C2 P1 | Koala Konundrum | complete | greedy | **
+C2 P2 | Koala Party | complete | case enumeration | **
+C2 P4 | Koala Gambling | complete | case enumeration, greedy | ***
 
 ### Google Kickstart
 Source | Problems | status | skills needed | rating
