@@ -23,6 +23,7 @@
 #include <queue>
 #include <stack>
 #include <memory>
+#include <memory.h>
 #include <string>
 #include <algorithm>
 #include <bitset>
@@ -72,44 +73,15 @@ typedef unordered_map<ll, ll> UMLL;
 typedef unordered_map<string, string> UMS;
 const int INF = 1e9;
 const int MOD = 1e9 + 7;
-const int dir[8][2] = {{0, 1}, {0, 0}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
-
-inline bool CMP(int a, int b){
-    return a > b;
-}
-
-inline void copy(int a[], int b[], int sz){
-    for(int i = 0;i<=sz;i++)
-        a[i] = b[i];
-}
-
-inline int gcd(int a, int b){
-    if(a == 0) return b;
-    if(b == 0) return a;
-    return gcd(b, a % b);
-}
-
-inline int lcm(int a, int b){
-    return a / gcd(a, b) * b;
-}
-
-inline int getMid(int l, int r){
-    return (l + r) >> 1;
-}
-
-inline ll fast_pow(ll a, ll b){
-    if(b == 1) return a;
-    ll tmp = fast_pow(a, b / 2);
-    if(b % 2 == 1) return tmp * tmp * a;
-    else return tmp * tmp;
-}
-
-inline bool is_prime(ll x){
-    for(ll i = 2; i * i <= x;i++){
-        if(x % i == 0) return false;
-    }
-    return true;
-}
+const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
+inline int lowbit(int x){return x & (- x);}
+inline bool CMP(int a, int b){return a > b;}
+inline void copy(int a[], int b[], int sz){for(int i = 0;i<=sz;i++) a[i] = b[i];}
+inline int gcd(int a, int b){if(a == 0) return b; if(b == 0) return a; return gcd(b, a % b);}
+inline int lcm(int a, int b){return a / gcd(a, b) * b;}
+inline int getMid(int l, int r){return (l + r) >> 1;}
+inline ll fast_pow(ll a, ll b){if(b == 1) return a;ll tmp = fast_pow(a, b / 2);if(b % 2 == 1) return tmp * tmp * a;else return tmp * tmp;}
+inline bool is_prime(ll x){for(ll i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 
 int main(){
     srand(time(0));
