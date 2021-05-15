@@ -84,8 +84,15 @@ inline ll fast_pow(ll a, ll b){if(b == 1) return a;ll tmp = fast_pow(a, b / 2);i
 inline bool is_prime(ll x){for(ll i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 const int N = 1e5 + 10;
 ll c[N], n, m;
-inline ll query(int a){ ll ans = 0; for(int i = a;i; i-= lowbit(i)) ans+= c[i]; return ans;}
-inline void update(int a, int b){for(int i = a;i<=n;i+=lowbit(i)) c[i] += b;}
+inline ll query(int a){ 
+    ll ans = 0; 
+    for(int i = a;i; i-= lowbit(i)) ans+= c[i]; 
+    return ans;
+}
+
+inline void update(int a, int b){
+    for(int i = a;i<=n;i+=lowbit(i)) c[i] += b;
+}
 
 int main(){
     srand(time(0));
@@ -99,8 +106,5 @@ int main(){
         if(k == 1) cout<< query(b) - query(a - 1)<<endl;
         if(k == 0) update(a, b);
     }
-
-
-    
     return 0;
 }
