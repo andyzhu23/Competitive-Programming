@@ -64,7 +64,7 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-DMOPC 15 Contest 2 | Personal Assistant | complete | knapsack problem | ***
+DMOPC 15 Contest 2 | Personal Assistant | complete | knapsack problem, discretization, binarySearch | ***
 DMOPC 20 Contest 5 | Home Row | complete | enumeration | *
 DMOPC 20 Contest 5 | On the Clock | complete | enumeration, double inacurrate | **
 DMOPC 20 Contest 4 | Beautiful Grid | complete | Greedy, enumeration | ***
