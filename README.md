@@ -51,6 +51,7 @@ C2 P1 | Koala Konundrum | complete | greedy | **
 C2 P2 | Koala Party | complete | case enumeration | **
 C2 P3 | Koala Balloon | complete | binary search, prefix sum | ***
 C2 P4 | Koala Gambling | complete | case enumeration, greedy | ***
+C2 P5 | Koala Carnival | complete | Segment Tree, two pointer, binary search | *****
 
 
 ### Google Kickstart
