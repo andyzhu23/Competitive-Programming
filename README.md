@@ -74,7 +74,7 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-USACO 2019 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
+USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
 USACO 2019 Dec Gold | Milk Visits | complete | Sparse Table, offline/unsynchronized calculation | ****
 USACO 2019 Dec Silver | Milk Visits | complete | Sparse Table | **
 USACO 2021 US Open Silver | Do You Know ABCs? | complete | enumeration, brute force | **
