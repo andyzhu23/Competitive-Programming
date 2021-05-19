@@ -101,7 +101,7 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-CCC 2021 | S5 | complete | Segment Tree, difference array, lcm, gcd | *****
+CCC 2021 | S5 | complete | Segment Tree, lazy, lcm, gcd | *****
 CCC 2013 | S4 | complete | turn situation into a graph | *
 CCC 2013 | S3 | compelte | enumeration | *
 CCC 2019 | J5 | complete | run dfs twice | ***
