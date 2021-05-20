@@ -26,7 +26,7 @@ P0414 | 最小瓶颈路 | incomplete | lca|
 CCC 2018 | S5 | incomplete | Graph Theory, MST algorithms | |
 NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
 COCL c7 | P5 | incomplete | Graph Theory, Dynamic Programming |
-CCC 2017 | S5 | incomplete | Segment Tree | |
+CCC 2017 | S5 | incomplete | block matrix | |
 CCC 2019/DMOJ add on | J5 | incomplete | Divide and Conquer | |
 CCC 2012 | S4 | incomplete | | |
 CCC 2019 | S4 | incomplete | Dynamic Programming, Segment Tree | |
