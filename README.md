@@ -28,7 +28,6 @@ NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
 COCL c7 | P5 | incomplete | Graph Theory, Dynamic Programming |
 CCC 2017 | S5 | incomplete | block matrix | |
 CCC 2019/DMOJ add on | J5 | incomplete | Divide and Conquer | |
-CCC 2012 | S4 | incomplete | | |
 CCC 2019 | S4 | incomplete | Dynamic Programming, Segment Tree | |
 NOIP 2017 D2T3 | 列队 | incomplete | |
 USACO 21 Feb Gold | Count the Cows | incomplete | |
@@ -101,6 +100,7 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2012 | S4 | complete | Brute Force, BFS, java is op(passing array into queue), c++ pointer | *** |
 CCC 2021 | S5 | complete | Segment Tree, lazy, lcm, gcd | *****
 CCC 2013 | S4 | complete | turn situation into a graph | *
 CCC 2013 | S3 | compelte | enumeration | *
