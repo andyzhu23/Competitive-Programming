@@ -23,7 +23,6 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 P0414 | 最小瓶颈路 | incomplete | lca|
-USACO 2016 Feb Gold | Fenced In | incomplete | MST algorithm | 
 CCC 2018 | S5 | incomplete | Graph Theory, MST algorithms | |
 NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
 COCL c7 | P5 | incomplete | Graph Theory, Dynamic Programming |
@@ -74,6 +73,7 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO 2016 Feb Gold | Fenced In | complete | MST algorithm, separate into horizontal and vertical lines | 
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
 USACO 2019 Dec Gold | Milk Visits | complete | Sparse Table, offline/unsynchronized calculation | ****
 USACO 2019 Dec Silver | Milk Visits | complete | Sparse Table | **
