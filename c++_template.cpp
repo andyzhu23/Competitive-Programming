@@ -1,35 +1,11 @@
 /*
  * Author: Andy Zhu
- * 
- * just a noob, what is coding?
- *
- * “Do we run the trails, or the trails run us? Get revenge on the trails that ran u like that” 
- * I pray the cows
- * My Dream School:
- * South Harmon Institute of Technology
- * The meaning of life is:
- * #define int long long
  */
 
-#include <iostream>
-#include <fstream>
-#include <cmath>
-#include <vector>
-#include <unordered_set>
-#include <unordered_map>
-#include <iomanip>
-#include <set>
-#include <map>
-#include <queue>
-#include <stack>
-#include <memory>
-#include <memory.h>
-#include <string>
-#include <algorithm>
-#include <bitset>
-#include <iterator>
-#include <deque>
-#include <random>
+// include
+#include <bits/stdc++.h>
+
+// define
 #define endl "\n"
 #define l_b lower_bound
 #define u_b upper_bound
@@ -43,12 +19,14 @@
 #define mp make_pair
 #define random(a, b) rand() % (b - a + 1) + a
 #define log(a, b) log(a) / log(b)
-#define UM unordered_map;
-#define US unordered_set;
-#define V vector;
+#define ALL(v) v.begin(), v.end()
+
+// using
 using ll = long long;
 using lb = long double;
 using namespace std;
+
+// typedef
 typedef pair<int, int> PI;
 typedef pair<ll, ll> PLL;
 typedef pair<string, string> PS;
@@ -71,9 +49,13 @@ typedef map<string, string> MS;
 typedef unordered_map<int, int> UMI;
 typedef unordered_map<ll, ll> UMLL;
 typedef unordered_map<string, string> UMS;
+
+// common variables
 const int INF = 1e9;
 const int MOD = 1e9 + 7;
 const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
+
+// common functions
 inline int lowbit(int x){return x & (- x);}
 inline bool CMP(int a, int b){return a > b;}
 inline void copy(int a[], int b[], int sz){for(int i = 0;i<=sz;i++) a[i] = b[i];}
@@ -82,6 +64,8 @@ inline int lcm(int a, int b){return a / gcd(a, b) * b;}
 inline int getMid(int l, int r){return (l + r) >> 1;}
 inline ll fast_pow(ll a, ll b){if(b == 1) return a;ll tmp = fast_pow(a, b / 2);if(b % 2 == 1) return tmp * tmp * a;else return tmp * tmp;}
 inline bool is_prime(ll x){for(ll i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
+
+//---------------------End of Template---------------------
 
 int main(){
     srand(time(0));
