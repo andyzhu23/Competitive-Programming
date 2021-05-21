@@ -1,5 +1,7 @@
 ### Hello, This is my Competitive-Programming Solution page, I mainly created it for myself to review all the solutions that I coded, if you enjoy my noobie codes then good for you
 
+## For those java codes, I named the main class Main for convenience when handing in the code
+
 # to do list
 task | date | time
 -----|------|-----
