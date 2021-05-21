@@ -5,7 +5,7 @@ For those java codes, I named the main class Main for convenience when handing i
 # to do list
 task | date | time
 -----|------|-----
-
+Quarantine Computing Contest | May 21th - May24th | 9pm
 
 # past events
 task | date | time | score | reflection
