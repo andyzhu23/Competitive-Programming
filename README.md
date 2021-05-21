@@ -24,6 +24,7 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | 过河问题 | incomplete | Greedy | 
 P0414 | 最小瓶颈路 | incomplete | lca|
 CCC 2018 | S5 | incomplete | Graph Theory, MST algorithms | |
 NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
