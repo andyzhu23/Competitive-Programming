@@ -103,7 +103,7 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-CCC 2018 | S5 | complete | Calculate Flights and Portals separately, link all flights except those already connected | |
+CCC 2018 | S5 | complete | Calculate Flights and Portals separately, link all portals/flights except those already connected | ***** |
 CCC 2012 | S4 | complete | Brute Force, BFS, java is op(passing array into queue), c++ pointer | *** |
 CCC 2021 | S5 | complete | Segment Tree, lazy, lcm, gcd | *****
 CCC 2013 | S4 | complete | turn situation into a graph | *
