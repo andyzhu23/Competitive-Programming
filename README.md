@@ -2,6 +2,10 @@
 
 For those java codes, I named the main class Main for convenience when submitting the code file
 
+If you see any issues, please feel free to send pull requests.
+
+Reach me on: andy.zhu23@stgeorges.bc.ca
+
 # to do list
 task | date | time
 -----|------|-----
