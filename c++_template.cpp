@@ -38,6 +38,7 @@
 #define random(a, b) rand() % (b - a + 1) + a
 #define log(a, b) log(a) / log(b)
 #define ALL(v) v.begin(), v.end()
+#define clear(x) memset(x, 0, sizeof(x));
 
 // using
 using namespace std;
@@ -52,6 +53,8 @@ using VPI = vector<PI>;
 using VLL = vector<ll>;
 using VPLL = vector<PLL>;
 using QI = queue<int>;
+using PQI = priority_queue<int>;
+using PQII = priority_queue<int, VI, greater<int>>;
 using STKI = stack<int>;
 using DQI = deque<int>;
 using SI = set<int>;
