@@ -3,7 +3,25 @@
  */
 
 // include
-#include <bits/stdc++.h>
+#include <iostream>
+#include <fstream>
+#include <cmath>
+#include <vector>
+#include <unordered_set>
+#include <unordered_map>
+#include <iomanip>
+#include <set>
+#include <map>
+#include <queue>
+#include <stack>
+#include <memory>
+#include <memory.h>
+#include <string>
+#include <algorithm>
+#include <bitset>
+#include <iterator>
+#include <deque>
+#include <random>
 
 // define
 #define endl "\n"
@@ -22,33 +40,32 @@
 #define ALL(v) v.begin(), v.end()
 
 // using
-using ll = long long;
-using lb = long double;
 using namespace std;
 
-// typedef
-typedef pair<int, int> PI;
-typedef pair<ll, ll> PLL;
-typedef pair<string, string> PS;
-typedef vector<int> VI;
-typedef vector<PI> VPI;
-typedef vector<ll> VLL;
-typedef vector<PLL> VPLL;
-typedef queue<int> QI;
-typedef stack<int> STKI;
-typedef deque<int> DQI;
-typedef set<int> SI;
-typedef set<ll> SLL;
-typedef set<string> SS;
-typedef unordered_set<int> USI;
-typedef unordered_set<ll> USLL;
-typedef unordered_set<string> USS;
-typedef map<int, int> MI;
-typedef map<ll, ll> MLL;
-typedef map<string, string> MS;
-typedef unordered_map<int, int> UMI;
-typedef unordered_map<ll, ll> UMLL;
-typedef unordered_map<string, string> UMS;
+using ll = long long;
+using lb = long double;
+using PI = pair<int, int>;
+using PLL = pair<ll, ll>;
+using PS = pair<string, string>;
+using VI = vector<int>;
+using VPI = vector<PI>;
+using VLL = vector<ll>;
+using VPLL = vector<PLL>;
+using QI = queue<int>;
+using STKI = stack<int>;
+using DQI = deque<int>;
+using SI = set<int>;
+using SLL = set<ll>;
+using SS = set<string>;
+using USI = unordered_set<int>;
+using USLL = unordered_set<ll>;
+using USS = unordered_set<string>;
+using MI = map<int, int>;
+using MLL = map<ll, ll>;
+using MS = map<string, string>;
+using UMI = unordered_map<int, int>;
+using UMLL = unordered_map<ll, ll>;
+using UMS = unordered_map<string, string>;
 
 // common variables
 const int INF = 1e9;
