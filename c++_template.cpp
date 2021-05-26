@@ -74,6 +74,7 @@ using UMS = unordered_map<string, string>;
 const int INF = 1e9;
 const int MOD = 1e9 + 7;
 const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
+struct Edge {int u, v, w};
 
 // common functions
 inline int lowbit(int x){return x & (- x);}
@@ -85,16 +86,36 @@ inline int getMid(int l, int r){return (l + r) >> 1;}
 inline ll fast_pow(ll a, ll b){if(b == 1) return a;ll tmp = fast_pow(a, b / 2);if(b % 2 == 1) return tmp * tmp * a;else return tmp * tmp;}
 inline bool is_prime(ll x){for(ll i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 
-//---------------------End of Template---------------------
+//--------------------- start of program ---------------------
+
+
+
+inline void solve(){
+    
+}
+
+
+//---------------------  end of program  ---------------------
+
+bool doCase = 0;
+bool submit = 0;
+bool kickstart = 0;
 
 int main(){
+    if(!submit){
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt", "w", stdout);
+    }
     srand(time(0));
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-
-
-
-    
+    if(doCase) {
+        int t; cin>>t;
+        for(int i = 1;i<=t;i++) {
+            if(kickstart) cout<<"Case #"<< i<<": ";
+            solve();
+        }
+    } else solve();
     return 0;
 }
