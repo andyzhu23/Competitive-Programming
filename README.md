@@ -2,7 +2,7 @@
 
 For those java codes, I named the main class Main for convenience when submitting the code file
 
-If you see any issues, please feel free to send pull requests.
+If you see any issues, please feel free to send pull requests or send me an email to let me know.
 
 Reach me on: andy.zhu23@stgeorges.bc.ca
 
