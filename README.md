@@ -9,13 +9,13 @@ Reach me on: andy.zhu23@stgeorges.bc.ca
 # to do list
 task | date | time
 -----|------|-----
-Quarantine Computing Contest | May 21th - May24th | 9pm
+DMOPC '21 May Contest | May 28 - May 30 | 9;00 am
 
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
 An Animal Contest 2 | May 7th - May 10th | 9:00 pm | 230 | should've done question 3
-DMOPC '20 April Contest | April 23 2021 - April 25 2021, 2021 | 21:00 PDT - 21:00 PDT | 200 | Should've gotten partial for question 3
+DMOPC '21 April Contest | April 23 2021 - April 25 2021, 2021 | 21:00 PDT - 21:00 PDT | 200 | Should've gotten partial for question 3
 Google Kickstart 2021 round B | April 18th | 4:00am | 41/100 | good thing I got partial for C and D
 Codeforces Round #713 | April 10th | 7:35am | 4/7 | I ran out of time
 USACO 2021 US Open | April 2nd | 9:00am | 394/1000 (Gold) | P2 and P3 are out of my skill range currently
