@@ -167,7 +167,8 @@ bool submit = 0;
 bool kickstart = 0;
 
 int main(){
-    if(!submit){
+    if(submit){
+        // configuration here
         freopen("input.txt", "r", stdin);
         freopen("output.txt", "w", stdout);
     }
