@@ -39,6 +39,7 @@
 #define log(a, b) log(a) / log(b)
 #define ALL(v) v.begin(), v.end()
 #define clear(x) memset(x, 0, sizeof(x));
+#define setINF(x) memset(x, 63, sizeof(x));
 
 // using
 using namespace std;
@@ -54,7 +55,7 @@ using VLL = vector<ll>;
 using VPLL = vector<PLL>;
 using QI = queue<int>;
 using PQI = priority_queue<int>;
-using PQII = priority_queue<int, VI, greater<int>>;
+using PQII = priority_queue<int, VI, greater<int> >;
 using STKI = stack<int>;
 using DQI = deque<int>;
 using SI = set<int>;
@@ -71,10 +72,10 @@ using UMLL = unordered_map<ll, ll>;
 using UMS = unordered_map<string, string>;
 
 // common variables
-const int INF = 1e9;
+const int INF = 0x3f3f3f3f;
 const int MOD = 1e9 + 7;
 const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
-struct Edge {int u, v, w};
+struct Edge {int u, v, w;};
 
 // common functions
 inline int lowbit(int x){return x & (- x);}
@@ -102,7 +103,8 @@ bool submit = 0;
 bool kickstart = 0;
 
 int main(){
-    if(!submit){
+    if(submit){
+        // configuration here
         freopen("input.txt", "r", stdin);
         freopen("output.txt", "w", stdout);
     }
