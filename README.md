@@ -31,7 +31,6 @@ Source | Problems | status | skills needed | rating
 NA | 过河问题 | incomplete | Greedy | 
 P0414 | 最小瓶颈路 | incomplete | lca|
 NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
-COCL c7 | P5 | incomplete | Graph Theory, Dynamic Programming |
 CCC 2017 | S5 | incomplete | block matrix | |
 CCC 2019/DMOJ add on | J5 | incomplete | Divide and Conquer | |
 CCC 2019 | S4 | incomplete | Dynamic Programming, Segment Tree | |
@@ -150,6 +149,7 @@ NA | 区间lca | complete | lca, segment tree/sparse table | ****
 NA | 次小生成树 | complete | LCA, first getMax, then update x, y | ****
 DMOJ | dynamic range minimum query | complete | Segment Tree | *
 COCL | Zapis | complete | Dynamic Programming, iomanip | ***
+COCL | Dostavljač | complete | Graph Theory, Dynamic Programming, knapsack problem |
 DMOJ | Dominos Tiling | complete | Dynamic Programming, two cases | *
 DMOJ | CamelCase | complete | Dynamic Programming, unordered_set | *
 NA | 区间异或 | complete | Segment Tree, property of xor, writing number as an array in binary | ***
