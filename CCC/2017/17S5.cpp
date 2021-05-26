@@ -163,3 +163,10 @@ int main(){
     }
     return 0;
 }
+
+/*
+
+complexity per query O(3sqrt(n))
+complexity per update O(sqrt(n))
+
+*/
