@@ -45,18 +45,18 @@ int main(){
     }
     q.push(mp(start, 0));
     while(!q.empty()){
-        PI shit = q.front(); q.pop();
-        if(vis.count(shit.f)) continue;
-        vis.ins(shit.f);
-        if(shit.f == 0) {
-            ans = shit.s;
+        PI cur = q.front(); q.pop();
+        if(vis.count(cur.f)) continue;
+        vis.ins(cur.f);
+        if(cur.f == 0) {
+            ans = cur.s;
             break;
         }
         for(int i = 0; i<k;i++){
-            if(!(shit.f & (1 << i))) {
-                int nxt = shit.f | (1 << i);
+            if(!(cur.f & (1 << i))) {
+                int nxt = cur.f | (1 << i);
                 process(nxt, i);
-                q.push(mp(nxt, shit.s + 1));
+                q.push(mp(nxt, cur.s + 1));
             }
         }
     }
