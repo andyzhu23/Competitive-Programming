@@ -29,7 +29,6 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 P3041 | TSP 问题 | incomplete | bitmasking, dynamic programming | 
-P3042 | 炮兵阵地 | incomplete | bitmasking, dynamic programming |
 P3043 | 涂抹果酱 | incomplete | bitmasking, dynamic programming |
 USACO 15 Jan Gold | Moovie Mooving | bitmasking, dynamic programming |
 NA | 过河问题 | incomplete | Greedy | 
@@ -79,7 +78,7 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-USACO 2006 Nov Gold | cowfood | bitmasking, dynamic programming | ***
+USACO 2006 Nov Gold | cowfood | complete | bitmasking, dynamic programming | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2016 Feb Gold | Fenced In | complete | MST algorithm, separate into horizontal and vertical lines | ****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
@@ -150,6 +149,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+P3042 | 炮兵阵地 | complete | bitmasking, dynamic programming | ****
 P0511 | 状态压缩DP | complete | bitmasking dynamic programming | ****
 P3036 | 树上最远点对| complete | LCA, Segment Tree, property of diameter of the tree | ***
 NA | 区间lca | complete | lca, segment tree/sparse table | ****
