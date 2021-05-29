@@ -28,6 +28,12 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+P511 | 
+P3040 | 
+P3041 | TSP 问题 | incomplete | bitmasking | 
+P3042 | 
+P3043 | 
+USACO 15 Jan Gold | 
 NA | 过河问题 | incomplete | Greedy | 
 P0414 | 最小瓶颈路 | incomplete | lca|
 NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
