@@ -28,7 +28,6 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-P3040 | 牧场安排 | incomplete | bitmasking, dynamic programming | 
 P3041 | TSP 问题 | incomplete | bitmasking, dynamic programming | 
 P3042 | 炮兵阵地 | incomplete | bitmasking, dynamic programming |
 P3043 | 涂抹果酱 | incomplete | bitmasking, dynamic programming |
@@ -80,6 +79,7 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO 2015 Nov Gold | cowfood | bitmasking, dynamic programming | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2016 Feb Gold | Fenced In | complete | MST algorithm, separate into horizontal and vertical lines | ****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
