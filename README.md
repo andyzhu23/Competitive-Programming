@@ -28,12 +28,11 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-P511 | 
-P3040 | 
-P3041 | TSP 问题 | incomplete | bitmasking | 
-P3042 | 
-P3043 | 
-USACO 15 Jan Gold | 
+P3040 | 牧场安排 | incomplete | bitmasking, dynamic programming | 
+P3041 | TSP 问题 | incomplete | bitmasking, dynamic programming | 
+P3042 | 炮兵阵地 | incomplete | bitmasking, dynamic programming |
+P3043 | 涂抹果酱 | incomplete | bitmasking, dynamic programming |
+USACO 15 Jan Gold | Moovie Mooving | bitmasking, dynamic programming |
 NA | 过河问题 | incomplete | Greedy | 
 P0414 | 最小瓶颈路 | incomplete | lca|
 NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
@@ -151,6 +150,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+P0511 | 状态压缩DP | complete | bitmasking dynamic programming | ****
 P3036 | 树上最远点对| complete | LCA, Segment Tree, property of diameter of the tree | ***
 NA | 区间lca | complete | lca, segment tree/sparse table | ****
 NA | 次小生成树 | complete | LCA, first getMax, then update x, y | ****
