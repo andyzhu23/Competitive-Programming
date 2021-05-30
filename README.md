@@ -14,7 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
-DMOPC '21 May Contest | May 28 - May 30 | 9;00 am ｜ 300 ｜ question 4 I didn't know how to calculate Fi in a tree with O(1) complexity
+DMOPC '21 May Contest | May 28 - May 30 | 9;00 am | 300 | question 4 I didn't know how to calculate Fi in a tree with O(1) complexity
 An Animal Contest 2 | May 7th - May 10th | 9:00 pm | 230 | should've done question 3
 DMOPC '21 April Contest | April 23 2021 - April 25 2021, 2021 | 21:00 PDT - 21:00 PDT | 200 | Should've gotten partial for question 3
 Google Kickstart 2021 round B | April 18th | 4:00am | 41/100 | good thing I got partial for C and D
