@@ -5,11 +5,11 @@
 using namespace std;
 const int N = 18;
 const int INF = 0x3f3f3f3f;
-int e[N][N], n, dp[N][1 << N], final;
+int e[N][N], n, dp[N][1 << N], last;
 
 inline int dfs(int u, int mask){
     if(dp[u][mask] >= INF){
-        if(mask == final) dp[u][mask] = e[u][0];
+        if(mask == last) dp[u][mask] = e[u][0];
         else {
             for(int v = 0;v<=n;v++){
                 if(mask & 1 << v) continue;
@@ -25,7 +25,7 @@ int main(){
     cin.tie(0);
     cout.tie(0);
     cin>>n;
-    final = (1 << (n + 1)) - 1;
+    last = (1 << (n + 1)) - 1;
     memset(dp, 63, sizeof(dp));
     for(int i = 0;i<=n;i++)
         for(int j = 0;j<=n;j++)
