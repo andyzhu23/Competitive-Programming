@@ -2,7 +2,6 @@
 
 # list of reminders
 
-if WA
 1. is int enough?
 2. is the size of the array big enough?
 3. for block matrix, x or block[x]?
@@ -12,13 +11,9 @@ if WA
 7. can double store values accurately?
 8. for knapsack problem, for loop which way?
 9. is the space from r to l or r to i - 1?
-
-if TLE
 10. can I use binary Search to search?
 11. can I use prefix sum or suffix sum?
 12. can I use any data structure for RMQ?
-
-if RTE
 13. did I access negative index
 14. did I divide by zero somewhere
 15. for Segment Tree, did I query/update areas outside of l and r
