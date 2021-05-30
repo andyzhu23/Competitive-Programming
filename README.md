@@ -32,7 +32,6 @@ P3041 | TSP 问题 | incomplete | bitmasking, dynamic programming |
 P3043 | 涂抹果酱 | incomplete | bitmasking, dynamic programming |
 USACO 15 Jan Gold | Moovie Mooving | bitmasking, dynamic programming |
 NA | 过河问题 | incomplete | Greedy | 
-P0414 | 最小瓶颈路 | incomplete | lca|
 NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
 CCC 2019/DMOJ add on | J5 | incomplete | Divide and Conquer | |
 NOIP 2017 D2T3 | 列队 | incomplete | |
@@ -149,6 +148,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+P0414 | 最小瓶颈路 | complete | lca | ***
 P3042 | 炮兵阵地 | complete | bitmasking, dynamic programming | ****
 P0511 | 状态压缩DP | complete | bitmasking dynamic programming | ****
 P3036 | 树上最远点对| complete | LCA, Segment Tree, property of diameter of the tree | ***
