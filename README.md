@@ -28,7 +28,7 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-P3041 | TSP 问题 | incomplete | bitmasking, dynamic programming | 
+
 P3043 | 涂抹果酱 | incomplete | bitmasking, dynamic programming |
 USACO 15 Jan Gold | Moovie Mooving | bitmasking, dynamic programming |
 NA | 过河问题 | incomplete | Greedy | 
@@ -148,6 +148,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+P3041 | TSP 问题 | complete | bitmasking, dynamic programming | ***
 P0414 | 最小瓶颈路 | complete | lca | ***
 P3042 | 炮兵阵地 | complete | bitmasking, dynamic programming | ****
 P0511 | 状态压缩DP | complete | bitmasking dynamic programming | ****
