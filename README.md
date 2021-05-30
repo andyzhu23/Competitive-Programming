@@ -4,7 +4,7 @@ For those java codes, I named the main class Main for convenience when submittin
 
 If you see any issues, please feel free to send pull requests or send me an email to let me know.
 
-Reach me on: andy.zhu23@stgeorges.bc.ca
+Reach me: andy.zhu23@stgeorges.bc.ca
 
 # to do list
 task | date | time
