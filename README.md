@@ -28,7 +28,6 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-
 P3043 | 涂抹果酱 | incomplete | bitmasking, dynamic programming |
 USACO 15 Jan Gold | Moovie Mooving | bitmasking, dynamic programming |
 NA | 过河问题 | incomplete | Greedy | 
