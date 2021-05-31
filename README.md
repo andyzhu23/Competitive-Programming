@@ -69,6 +69,9 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 21 May | P3 | complete | dfs, reverse graph, greedy | ***
+DMOPC 21 May | P2 | complete | greedy | ***
+DMOPC 21 May | P1 | complete | kind of two pointer, greedy | **
 DMOPC 15 Contest 2 | Personal Assistant | complete | knapsack problem, discretization, binarySearch | ***
 DMOPC 20 Contest 5 | Home Row | complete | enumeration | *
 DMOPC 20 Contest 5 | On the Clock | complete | enumeration, double inacurrate | **
