@@ -29,6 +29,7 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+P512 | 数位dp dfs ｜ incomplete | dp |
 DMOPC 21 May | P4 | incomplete | unsynchronized calculation, changing root dp |
 CCC 2020 | S5 | incomplete | dynamic programming | 
 P3043 | 涂抹果酱 | incomplete | bitmasking, dynamic programming |
