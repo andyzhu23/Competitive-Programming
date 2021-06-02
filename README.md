@@ -118,7 +118,7 @@ CCC 2019 | S4 | complete | Dynamic Programming, Sparse Table, Greedy | ***** |
 CCC 2017 | S5 | complete | block matrix, block[l] == block[r] not l == r | ***** |
 CCC 2018 | S5 | complete | Calculate Flights and Portals separately, link all portals/flights except those already connected | ***** |
 CCC 2012 | S4 | complete | Brute Force, BFS, java is op(passing array into queue), c++ pointer | *** |
-CCC 2021 | S5 | complete | Segment Tree, lazy, lcm, gcd | *****
+CCC 2021 | S5 | complete | Greedy, Segment Tree, lazy, lcm, gcd | *****
 CCC 2013 | S4 | complete | turn situation into a graph | *
 CCC 2013 | S3 | compelte | enumeration | *
 CCC 2019 | J5 | complete | run dfs twice | ***
