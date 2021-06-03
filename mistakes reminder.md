@@ -17,3 +17,4 @@
 13. did I access negative index
 14. did I divide by zero somewhere
 15. for Segment Tree, did I query/update areas outside of l and r
+16. When using binary search, is the array given sorted?
