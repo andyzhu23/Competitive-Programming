@@ -113,6 +113,7 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2010 | S3 | complete | binary search | **
 CCC 2011 | S5 | complete | bitwise operation, bfs | **
 CCC 2019 | S4 | complete | Dynamic Programming, Sparse Table, Greedy | ***** |
 CCC 2017 | S5 | complete | block matrix, block[l] == block[r] not l == r | ***** |
