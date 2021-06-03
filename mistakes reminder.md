@@ -18,3 +18,4 @@
 14. did I divide by zero somewhere
 15. for Segment Tree, did I query/update areas outside of l and r
 16. When using binary search, is the array given sorted?
+17. Disjoint Set, is it f[x] or Find(x)
