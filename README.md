@@ -90,7 +90,7 @@ USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
 USACO 2019 Dec Gold | Milk Visits | complete | Sparse Table, offline/unsynchronized calculation | ****
 USACO 2019 Dec Silver | Milk Visits | complete | Sparse Table | **
 USACO 2021 US Open Silver | Do You Know ABCs? | complete | enumeration, brute force | **
-USACO 2021 US Open Gold | United Cows of Farmer John | complete | enumerate r, binary search l | **
+USACO 2021 US Open Gold | United Cows of Farmer John | complete | enumerate r, binary search l, revisited with Fenwick tree | **
 USACO 2008 Nov Gold | Switching light | complete | Segment Tree, interval update | **
 USACO 2017 Jan Gold | Balanced Photo | complete | Segment Tree, discretization | **
 USACO 2021 Feb Gold | Modern Art 3 | complete | Dynamic Programming | ***
