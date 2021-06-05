@@ -29,7 +29,7 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-P512 | 数位dp dfs ｜ incomplete | dp |
+P512 | 数位dp dfs | incomplete | dp |
 DMOPC 21 May | P4 | incomplete | unsynchronized calculation, changing root dp |
 CCC 2020 | S5 | incomplete | dynamic programming | 
 P3043 | 涂抹果酱 | incomplete | bitmasking, dynamic programming |
@@ -113,6 +113,7 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2011 | S4 | complete | disjoint set, reading input correctly | ***
 CCC 2010 | S3 | complete | binary search | **
 CCC 2011 | S5 | complete | bitwise operation, bfs | **
 CCC 2019 | S4 | complete | Dynamic Programming, Sparse Table, Greedy | ***** |
