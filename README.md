@@ -41,7 +41,6 @@ NOIP 2017 D2T3 | 列队 | incomplete | |
 USACO 21 Feb Gold | Count the Cows | incomplete | |
 USACO 21 Feb Gold | Stone Game | incomplete | |
 USACO 21 Open Gold | Permutation | incomplete | |
-USACO 21 Open Gold | Portals | incomplete | |
 USACO 21 Open Silver | Academia I | incomplete | |
 USACO 21 Open Silver | Maze Tac Toe | incomplete | |
 USACO 21 Open Bronze | Academia III | incomplete | |
@@ -83,6 +82,7 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO 21 Open Gold | Portals | complete | Kruskal, turn cycles into vertices | ****
 USACO 2006 Nov Gold | cowfood | complete | bitmasking, dynamic programming | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2016 Feb Gold | Fenced In | complete | MST algorithm, separate into horizontal and vertical lines | ****
