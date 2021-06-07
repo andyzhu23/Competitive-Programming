@@ -32,7 +32,6 @@ Source | Problems | status | skills needed | rating
 P512 | 数位dp dfs | incomplete | dp |
 DMOPC 21 May | P4 | incomplete | unsynchronized calculation, changing root dp |
 CCC 2020 | S5 | incomplete | dynamic programming | 
-P3043 | 涂抹果酱 | incomplete | bitmasking, dynamic programming |
 USACO 15 Jan Gold |  Moovie Mooving | incomplete | bitmasking, dynamic programming |
 NA | 过河问题 | incomplete | Greedy | 
 NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
@@ -156,6 +155,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+P3043 | 涂抹果酱 | complete | bitmasking, dynamic programming | ****
 P3041 | TSP 问题 | complete | bitmasking, dynamic programming | ***
 P0414 | 最小瓶颈路 | complete | lca | ***
 P3042 | 炮兵阵地 | complete | bitmasking, dynamic programming | ****
