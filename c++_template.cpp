@@ -2,26 +2,8 @@
  * Author: Andy Zhu
  */
 
-// include
-#include <iostream>
-#include <fstream>
-#include <cmath>
-#include <vector>
-#include <unordered_set>
-#include <unordered_map>
-#include <iomanip>
-#include <set>
-#include <map>
-#include <queue>
-#include <stack>
-#include <memory>
-#include <memory.h>
-#include <string>
-#include <algorithm>
-#include <bitset>
-#include <iterator>
-#include <deque>
-#include <random>
+//include
+#include <bits/stdc++.h>
 
 // define
 #define endl "\n"
@@ -76,6 +58,20 @@ const int INF = 0x3f3f3f3f;
 const int MOD = 1e9 + 7;
 const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
 struct Edge {int u, v, w;};
+struct mat{
+    int a[N][N];
+    mat operator *(mat& other){
+        mat ans;
+        for(int i = 1;i<=n;i++){
+            for(int j = 1;j<=n;j++){
+                for(int k = 1;k<=n;k++){
+                    ans.a[i][j] = a[i][k] * other.a[k][j];
+                }
+            }
+        }
+        return ans;
+    }
+};
 
 // common functions
 inline int lowbit(int x){return x & (- x);}
@@ -88,7 +84,6 @@ inline ll fast_pow(ll a, ll b){if(b == 1) return a;ll tmp = fast_pow(a, b / 2);i
 inline bool is_prime(ll x){for(ll i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 
 //--------------------- start of program ---------------------
-
 
 
 inline void solve(){
