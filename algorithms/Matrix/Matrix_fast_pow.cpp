@@ -10,10 +10,11 @@ struct mat{
     int a[N][N];
     mat operator *(mat& other){
         mat ans;
+        memset(ans.a, 0, sizeof(ans.a));
         for(int i = 1;i<=n;i++){
             for(int j = 1;j<=n;j++){
                 for(int k = 1;k<=n;k++){
-                    ans.a[i][j] = a[i][k] * other.a[k][j];
+                    ans.a[i][j] += a[i][k] * other.a[k][j] % MOD;
                 }
             }
         }
@@ -38,10 +39,12 @@ int main(){
             cin>>a.a[i][j];
         }
     }
-    mat res = fast_pow(a, k);
+    mat res = a * a;
+    res = fast_pow(a, k);
     int ans = 0;
     for(int i = 1;i<=n;i++){
         ans += res.a[i][i];
+        ans %= MOD;
     }
     cout<<ans<<endl;
     return 0;
