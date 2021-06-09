@@ -1,4 +1,3 @@
-package com.company;
 
 import java.math.*;
 import java.util.*;
