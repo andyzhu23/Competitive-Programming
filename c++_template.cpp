@@ -58,20 +58,6 @@ const int INF = 0x3f3f3f3f;
 const int MOD = 1e9 + 7;
 const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
 struct Edge {int u, v, w;};
-struct mat{
-    int a[N][N];
-    mat operator *(mat& other){
-        mat ans;
-        for(int i = 1;i<=n;i++){
-            for(int j = 1;j<=n;j++){
-                for(int k = 1;k<=n;k++){
-                    ans.a[i][j] = a[i][k] * other.a[k][j];
-                }
-            }
-        }
-        return ans;
-    }
-};
 
 // common functions
 inline int lowbit(int x){return x & (- x);}
