@@ -156,6 +156,8 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | Fibonacci hard | complete | Matrices, store big numbers as string, fast_pow in base 10 to avoid dividing strings | *****
+DMOJ | Fibonacci | complete | Matrices, fast_pow | **
 P3043 | 涂抹果酱 | complete | bitmasking, dynamic programming | ****
 P3041 | TSP 问题 | complete | bitmasking, dynamic programming | ***
 P0414 | 最小瓶颈路 | complete | lca | ***
