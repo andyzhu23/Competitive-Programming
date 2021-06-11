@@ -143,6 +143,7 @@ CCC 2001 | S3 | complete | Disjoint Set | **
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 724 | D | complete | binary Search, Set | 
 CF 724 | C | complete | dynamic programming, pattern | ***
 CF 724 | B | complete | enumerating string properly | **
 CF 724 | A | complete | analyze the problem to find out pattern on the sample test case | *
