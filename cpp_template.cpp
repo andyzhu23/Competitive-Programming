@@ -79,12 +79,13 @@ inline void solve(){
 bool doCase = 0;
 bool submit = 0;
 bool kickstart = 0;
+string configName = "";
 
 int main(){
     if(submit){
         // configuration here
-        freopen("input.txt", "r", stdin);
-        freopen("output.txt", "w", stdout);
+        freopen(configName + ".in", "r", stdin);
+        freopen(configName + ".out", "w", stdout);
     }
     srand(time(0));
     ios::sync_with_stdio(0);
