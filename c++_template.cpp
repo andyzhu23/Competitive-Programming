@@ -59,7 +59,7 @@ template <typename T> inline T lowbit(T x){return x & (- x);}
 template <typename T> inline T gcd(T a, T b){if(a == 0) return b; if(b == 0) return a; return gcd(b, a % b);}
 template <typename T> inline T lcm(T a, T b){return a / gcd(a, b) * b;}
 template <typename T> inline T getMid(T l, T r){return (l + r) >> 1;}
-template <typename T1, typename T2> inline T1 fast_pow(T1 a, T2 b){if(b == 1) return a;T1 tmp = fast_pow(a, b / 2);if(b % 2 == 1) return tmp * tmp * a;else return tmp * tmp;}
+template <typename T1, typename T2> inline T1 fast_pow(T1 a, T2 b){if(b == 1) return a; T1 tmp = fast_pow(a, b / 2); if(b % 2 == 1) return tmp * tmp * a; else return tmp * tmp;}
 template <typename T> inline bool is_prime(T x){for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 
 template <typename T> inline void debugArray(T *arr,int sz){cout<<"[";for(int i=0;i<sz;i++){cout<<arr[i]<<", "; } cout<<"]\n";}
