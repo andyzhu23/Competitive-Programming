@@ -96,7 +96,13 @@ inline void solve(){
     cout<<(MIN <= k && MAX >= k ? "YES" : "NO")<<endl;
 }
 
-inline void init(){
+//---------------------  end of program  ---------------------
+
+
+//------------------- start of initialize -------------------
+
+inline void init1(){
+    // initialize for all cases
     for(int i = 2;i * i <= INF;i++){
         if(p[i]) continue;
         prime.pb(i);
@@ -106,7 +112,12 @@ inline void init(){
     }
 }
 
-//---------------------  end of program  ---------------------
+inline void init2(){
+    // initialize for the current subcase
+
+}
+
+//-------------------  end of initialize  -------------------
 
 bool doCase = 1;
 bool config = 0;
@@ -122,11 +133,12 @@ int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    init();
+    init1();
     if(doCase) {
         int t; cin>>t;
         for(int i = 1;i<=t;i++) {
             if(kickstart) cout<<"Case #"<< i<<": ";
+            init2();
             solve();
         }
     } else solve();
