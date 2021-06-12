@@ -96,6 +96,15 @@ inline void solve(){
     cout<<(MIN <= k && MAX >= k ? "YES" : "NO")<<endl;
 }
 
+inline void init(){
+    for(int i = 2;i * i <= INF;i++){
+        if(p[i]) continue;
+        prime.pb(i);
+        for(int j = i + i; j * j<=INF;j+= i){
+            p[i] = true;
+        }
+    }
+}
 
 //---------------------  end of program  ---------------------
 
@@ -104,13 +113,6 @@ bool config = 0;
 bool kickstart = 0;
 
 int main(){
-    for(int i = 2;i * i <= INF;i++){
-        if(p[i]) continue;
-        prime.pb(i);
-        for(int j = i + i; j * j<=INF;j+= i){
-            p[i] = true;
-        }
-    }
     if(config){
         // configuration here
         freopen(".in", "r", stdin);
@@ -120,6 +122,7 @@ int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
+    init();
     if(doCase) {
         int t; cin>>t;
         for(int i = 1;i<=t;i++) {
