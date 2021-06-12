@@ -120,6 +120,10 @@ inline void solve(){
     cout<<val[a].cnt<<endl;
 }
 
+inline void init(){
+    
+}
+
 //---------------------  end of program  ---------------------
 
 bool doCase = 1;
@@ -136,6 +140,7 @@ int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
+    init();
     if(doCase) {
         int t; cin>>t;
         for(int i = 1;i<=t;i++) {
