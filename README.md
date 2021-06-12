@@ -143,6 +143,7 @@ CCC 2001 | S3 | complete | Disjoint Set | **
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 725 | E | complete | implementation, STL | ***
 CF 725 | D | complete | number theory, calculate prime numbers beforehand | ***
 CF 725 | C | complete | binary Search | **
 CF 724 | D | complete | binary Search, Set | 
