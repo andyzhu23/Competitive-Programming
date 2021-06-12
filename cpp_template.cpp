@@ -23,7 +23,7 @@ using namespace std;
 #define random(a, b) rand() % (b - a + 1) + a
 #define log(a, b) log(a) / log(b)
 #define ALL(v) v.begin(), v.end()
-#define clear(x) memset(x, 0, sizeof(x));
+#define clr(x) memset(x, 0, sizeof(x));
 #define setINF(x) memset(x, 63, sizeof(x));
 
 // Data Structure Shorten
@@ -60,11 +60,25 @@ template <typename T> inline T gcd(T a, T b){if(a == 0) return b; if(b == 0) ret
 template <typename T> inline T lcm(T a, T b){return a / gcd(a, b) * b;}
 template <typename T> inline T getMid(T l, T r){return (l + r) >> 1;}
 template <typename T1, typename T2> inline T1 fast_pow(T1 a, T2 b){if(b == 1) return a; T1 tmp = fast_pow(a, b / 2); if(b % 2 == 1) return tmp * tmp * a; else return tmp * tmp;}
-template <typename T> inline bool is_prime(T x){for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
+template <typename T> inline bool is_prime(T x){if(x == 1) return false; for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 
 template <typename T> inline void debugArray(T *arr,int sz){cout<<"[";for(int i=0;i<sz;i++){cout<<arr[i]<<", "; } cout<<"]\n";}
 template <typename T> inline void printArray(T *arr,int sz){for(int i=0;i<sz;i++){cout<<arr[i]<<" "; } cout<<"\n";}
 
+
+//------------------- start of initialize -------------------
+
+inline void init1(){
+    // initialize for all cases
+
+}
+
+inline void init2(){
+    // initialize for the current subcase
+
+}
+
+//-------------------  end of initialize  -------------------
 
 //--------------------- start of program ---------------------
 
@@ -76,12 +90,13 @@ inline void solve(){
 
 //---------------------  end of program  ---------------------
 
+
 bool doCase = 0;
-bool submit = 0;
+bool config = 0;
 bool kickstart = 0;
 
 int main(){
-    if(submit){
+    if(config){
         // configuration here
         freopen(".in", "r", stdin);
         freopen(".out", "w", stdout);
@@ -90,10 +105,12 @@ int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
+    init1();
     if(doCase) {
         int t; cin>>t;
         for(int i = 1;i<=t;i++) {
             if(kickstart) cout<<"Case #"<< i<<": ";
+            init2();
             solve();
         }
     } else solve();
