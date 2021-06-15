@@ -144,6 +144,8 @@ CCC 2001 | S3 | complete | Disjoint Set | **
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_101 | C | complete | two pointer | ****
+CF Edu_101 | B | complete | sort into first even, then odd | ***
 CF LATOKEN | C | complete | Realize cycle find numbers of cycle | **
 CF LATOKEN | B | complete | decrease only when one single column is tall | **
 CF 725 | G | complete | Binary Search, inequalities | ****
