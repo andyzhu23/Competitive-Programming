@@ -171,6 +171,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+UTS Open 21 | Prime Arrays | complete | Big Brain Greedy | **
 DMOJ | Fibonacci hard | complete | Matrices, store big numbers as string, fast_pow in base 10 to avoid dividing strings | *****
 DMOJ | Fibonacci | complete | Matrices, fast_pow | **
 P3043 | 涂抹果酱 | complete | bitmasking, dynamic programming | ****
