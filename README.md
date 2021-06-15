@@ -14,7 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
-CF LATOKEN | June 13 | 8:35 am | 2366 | Too dumb to do interactive problem 
+CF LATOKEN | June 13 | 8:35 am | 2366 | Too dumb to do interactive problem. Also remember to check long long before submission
 DMOPC '21 May Contest | May 28 - May 30 | 9:00 am | 300 | question 4 USE SET I am so dumbbbbb
 An Animal Contest 2 | May 7th - May 10th | 9:00 pm | 230 | should've done question 3
 DMOPC '21 April Contest | April 23 2021 - April 25 2021, 2021 | 21:00 PDT - 21:00 PDT | 200 | Should've gotten partial for question 3
