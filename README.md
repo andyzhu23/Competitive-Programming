@@ -10,7 +10,7 @@ Reach me: andy.zhu23@stgeorges.bc.ca
 task | date | time
 -----|------|-----
 CF 727 | June 20th | 3:05 am
-DMOPC | June 18th - June20th | 
+DMOPC 21' June | June 18th - June20th | 
 
 # past events
 task | date | time | score | reflection
