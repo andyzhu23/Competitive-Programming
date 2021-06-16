@@ -31,6 +31,8 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+P3002
+P3057
 P3053 | | | matrix | 
 P512 | 数位dp dfs | incomplete | dp |
 DMOPC 21 May | P4 | incomplete | unsynchronized calculation, changing root dp |
