@@ -31,7 +31,7 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-USACO 2017 Plat | P3 
+USACO 2017 Platinum | P3 
 P3002
 P3057
 DMOPC 21 May | P4 | incomplete | unsynchronized calculation, changing root dp |
