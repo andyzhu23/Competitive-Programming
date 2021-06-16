@@ -34,8 +34,6 @@ Source | Problems | status | skills needed | rating
 USACO 2017 Plat | P3 
 P3002
 P3057
-P3053 | | | matrix | 
-P512 | 数位dp dfs | incomplete | dp |
 DMOPC 21 May | P4 | incomplete | unsynchronized calculation, changing root dp |
 CCC 2020 | S5 | incomplete | dynamic programming | 
 USACO 15 Jan Gold |  Moovie Mooving | incomplete | bitmasking, dynamic programming |
