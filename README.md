@@ -85,7 +85,8 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-USACO 21 Open Gold | Portals | complete | Kruskal, turn cycles into vertices | ****
+USACO 2008 Jan | cow race | complete | floyd algorithm | ***
+USACO 2021 Open Gold | Portals | complete | Kruskal, turn cycles into vertices | ****
 USACO 2006 Nov Gold | cowfood | complete | bitmasking, dynamic programming | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2016 Feb Gold | Fenced In | complete | MST algorithm, separate into horizontal and vertical lines | ****
