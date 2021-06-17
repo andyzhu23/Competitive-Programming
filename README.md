@@ -174,6 +174,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 ACM | 数列第n项 | complete | matrices, factoring | ***
+UTS Open 21 | Latin Class | complete | dynamic programming, prefix-sum | **
 UTS Open 21 | Prime Arrays | complete | Big Brain Greedy | **
 DMOJ | Fibonacci hard | complete | Matrices, store big numbers as string, fast_pow in base 10 to avoid dividing strings | *****
 DMOJ | Fibonacci | complete | Matrices, fast_pow | **
