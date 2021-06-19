@@ -158,7 +158,7 @@ bool doCase = 0;
 bool config = 0;
 bool kickstart = 0;
 
-signed main(){
+int main(){
     if(config){
         // configuration here
         freopen(".in", "r", stdin);
