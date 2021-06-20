@@ -9,11 +9,12 @@ Reach me: andy.zhu23@stgeorges.bc.ca
 # to do list
 task | date | time
 -----|------|-----
-CF 727 | June 20th | 3:05 am
+
 
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 727 | June 20th | 3:05 am | 2108 | Almost got the fourth question, could've finished problems quicker 
 DMOPC 21' June | June 18th - June20th | 9:00 am | 120 | For the second question I don't know how to output answers clockwise
 CF LATOKEN | June 13 | 8:35 am | 2366 | Too dumb to do interactive problem. Also remember to check long long before submission
 DMOPC '21 May Contest | May 28 - May 30 | 9:00 am | 300 | question 4 USE SET I am so dumbbbbb
@@ -147,6 +148,9 @@ CCC 2001 | S3 | complete | Disjoint Set | **
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 727 | C | complete | greedy, binary search | ***
+CF 727 | B | complete | prefix sum with alphabet | **
+CF 727 | A | complete | implementation | **
 CF Edu_101 | C | complete | two pointer | ****
 CF Edu_101 | B | complete | sort into first even, then odd | ***
 CF LATOKEN | C | complete | Realize cycle find numbers of cycle | **
