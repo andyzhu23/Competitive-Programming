@@ -10,11 +10,11 @@ Reach me: andy.zhu23@stgeorges.bc.ca
 task | date | time
 -----|------|-----
 CF 727 | June 20th | 3:05 am
-DMOPC 21' June | June 18th - June20th | 
 
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+DMOPC 21' June | June 18th - June20th | 9:00 am | 120 | For the second question I don't know how to output answers clockwise
 CF LATOKEN | June 13 | 8:35 am | 2366 | Too dumb to do interactive problem. Also remember to check long long before submission
 DMOPC '21 May Contest | May 28 - May 30 | 9:00 am | 300 | question 4 USE SET I am so dumbbbbb
 An Animal Contest 2 | May 7th - May 10th | 9:00 pm | 230 | should've done question 3
