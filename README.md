@@ -117,6 +117,7 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2020 on DMOJ | J4_hard | complete | Rolling Hash | ****
 CCC 2010 | S5 | complete | DP on a tree, trade memory for time | ***
 CCC 2011 | S4 | complete | disjoint set, reading input correctly | ***
 CCC 2010 | S3 | complete | binary search | **
