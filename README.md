@@ -85,6 +85,7 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO 2011 Open Gold | Mowing the Lawn | complete | monotone queue dynamic programming | ***
 USACO 2008 Jan | cow race | complete | floyd algorithm | ***
 USACO 2021 Open Gold | Portals | complete | Kruskal, turn cycles into vertices | ****
 USACO 2006 Nov Gold | cowfood | complete | bitmasking, dynamic programming | ***
