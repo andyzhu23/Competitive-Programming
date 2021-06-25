@@ -14,6 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 728 (Div 2) | Jne 24th | 8:35 am | 2342 | could've completed them faster
 CF 727 | June 20th | 3:05 am | 2108 | Almost got the fourth question, could've finished problems quicker 
 DMOPC 21' June | June 18th - June20th | 9:00 am | 120 | For the second question I don't know how to output answers clockwise
 CF LATOKEN | June 13 | 8:35 am | 2366 | Too dumb to do interactive problem. Also remember to check long long before submission
@@ -150,6 +151,9 @@ CCC 2001 | S3 | complete | Disjoint Set | **
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 728 Div 2 | C | complete | greedy, sorting, implementation | ***
+CF 728 Div 2 | B | complete | greedy, enumeration | **
+CF 728 Div 2 | A | complete | greedy | *
 CF 727 | C | complete | greedy, binary search | ***
 CF 727 | B | complete | prefix sum with alphabet | **
 CF 727 | A | complete | implementation | **
