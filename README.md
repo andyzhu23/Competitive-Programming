@@ -34,8 +34,8 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 CF 728 | D | incomplete | expected value dp | **
-USACO 2017 US Open Platinum | P3 
-P3002
+USACO 2017 US Open Platinum | P3 | incomplete
+P3002 | | incomplete
 DMOPC 21 May | P4 | incomplete | unsynchronized calculation, changing root dp |
 CCC 2020 | S5 | incomplete | dynamic programming | 
 USACO 15 Jan Gold |  Moovie Mooving | incomplete | bitmasking, dynamic programming |
