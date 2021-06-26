@@ -155,6 +155,7 @@ Source | Problems | status | skills needed | rating
 CF 728 Div 2 | C | complete | greedy, sorting, implementation | ***
 CF 728 Div 2 | B | complete | greedy, enumeration | **
 CF 728 Div 2 | A | complete | greedy | *
+CF 727 | D | complete | greedy, kind of discretization | ***
 CF 727 | C | complete | greedy, binary search | ***
 CF 727 | B | complete | prefix sum with alphabet | **
 CF 727 | A | complete | implementation | **
