@@ -105,13 +105,14 @@ int main(){
     cout.tie(0);
     init1();
     #if doCase
-        int t; cin>>t;
-        for(int i = 1;i<=t;i++) {
-            if(kickstart) cout<<"Case #"<< i<<": ";
-            init2();
-            solve();
-        }
-    #else solve();
+    int t; cin>>t;
+    for(int i = 1;i<=t;i++) {
+        if(kickstart) cout<<"Case #"<< i<<": ";
+        init2();
+        solve();
+    }
+    #else 
+    solve();
     #endif
     string jack = "Jack is always within you";
     return 0;
