@@ -88,10 +88,6 @@ set<pair<pii, pii> > Edge;
 
 vpii ans;
 
-inline ll getHash(ll x, ll y) {
-    return (x + y) * (x + y + 1) / 2 + x;
-}
-
 inline pair<pii, pii> make_string(int x, int y, int k, int l) {
     if(x > k) {
         swap(x, k);
