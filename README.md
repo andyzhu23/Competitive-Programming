@@ -75,6 +75,7 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 21 June | P2 | complete | store lines in a set with pair<pii, pii> | ***
 DMOPC 21 May | P3 | complete | dfs, reverse graph, greedy | ***
 DMOPC 21 May | P2 | complete | greedy | ***
 DMOPC 21 May | P1 | complete | kind of two pointer, greedy | **
