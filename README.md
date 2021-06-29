@@ -186,6 +186,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | 钓鱼 | complete | dynamic programming | **
 ACM | 数列第n项 | complete | matrices, factoring | ***
 UTS Open 21 | State Taxes | complete | block_mat, segment tree | ****
 UTS Open 21 | Latin Class | complete | dynamic programming, prefix-sum | **
