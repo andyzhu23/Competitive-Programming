@@ -33,6 +33,7 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+P3080 |
 P3081 | 
 CF 728 | D | incomplete | expected value dp | **
 USACO 2017 US Open Platinum | P3 | incomplete
