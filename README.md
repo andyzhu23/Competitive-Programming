@@ -188,6 +188,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | Subtree | complete | DP on trees, switch the root, pre-suf sum to avoid modular inverse when MOD is not prime
 NA | 钓鱼 | complete | dynamic programming | **
 ACM | 数列第n项 | complete | matrices, factoring | ***
 UTS Open 21 | State Taxes | complete | block_mat, segment tree | ****
