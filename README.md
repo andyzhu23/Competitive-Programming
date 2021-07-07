@@ -89,6 +89,7 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO Training | Riding the Fence | complete | Euler Circuit, Hierholzer's Algorithm | ***
 USACO 2005 Dec Gold | Layout | complete | Bellman-Ford, -1 for negative ring, -2 for not connected. turn Differential constraint into graphs
 USACO 2011 Open Gold | Mowing the Lawn | complete | monotone queue dynamic programming | ***
 USACO 2008 Jan | cow race | complete | floyd algorithm | ***
