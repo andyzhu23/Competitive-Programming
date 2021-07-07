@@ -34,7 +34,6 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 P3080 |
-P3081 | 
 CF 728 | D | incomplete | expected value dp | **
 USACO 2017 US Open Platinum | P3 | incomplete
 P3002 | | incomplete
@@ -90,6 +89,7 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO 2005 Dec Gold | Layout | complete | Bellman-Ford, -1 for negative ring, -2 for not connected. 
 USACO 2011 Open Gold | Mowing the Lawn | complete | monotone queue dynamic programming | ***
 USACO 2008 Jan | cow race | complete | floyd algorithm | ***
 USACO 2021 Open Gold | Portals | complete | Kruskal, turn cycles into vertices | ****
