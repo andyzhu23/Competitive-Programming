@@ -158,6 +158,7 @@ CCC 2001 | S3 | complete | Disjoint Set | **
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 732 Div 2 | B | complete | store the postion for each letter | **
 CF 728 Div 2 | C | complete | greedy, sorting, implementation | ***
 CF 728 Div 2 | B | complete | greedy, enumeration | **
 CF 728 Div 2 | A | complete | greedy | *
