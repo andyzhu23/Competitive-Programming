@@ -192,6 +192,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+Bulgarian OI 09 | P4 | complete | Monotone Stack | **
 COI | Patrik | complete | Monotone Stack | **
 NA | 树上差分 | complete | LCA, Segment Tree, lazy on tree | ****
 DMPG | Black and White | complete | two dimensional lazy | **
