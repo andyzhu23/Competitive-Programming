@@ -69,7 +69,7 @@ template <typename T> inline T __lcm(T a, T b){return a / __gcd(a, b) * b;}
 template <typename T1, typename T2> inline T1 fast_pow(T1 a, T2 b)
 {if(b == 1) return a; T1 tmp = fast_pow(a, b >> 1); if(b & 1) return tmp * tmp * a; else return tmp * tmp;}
 template <typename T1, typename T2, typename T3> inline T1 fast_pow(T1 a, T2 b, T3 m)
-{if(b == 1) return a % m; T1 tmp = fast_pow(a, b >> 1); if(b & 1) return tmp * tmp % m * a % m; else return tmp * tmp % m;}
+{if(b == 1) return a % m; T1 tmp = fast_pow(a, b >> 1, m); if(b & 1) return tmp * tmp % m * a % m; else return tmp * tmp % m;}
 template <typename T> inline bool is_prime(T x){if(x == 1) return false; for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 
 template <typename T> inline void debugArray(T *arr,int sz){cout<<"[";for(int i=0;i<sz;i++){cout<<arr[i]<<", "; } cout<<"]\n";}
