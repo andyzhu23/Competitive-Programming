@@ -214,8 +214,8 @@ P3036 | 树上最远点对| complete | LCA, Segment Tree, property of diameter o
 NA | 区间lca | complete | lca, segment tree/sparse table | ****
 NA | 次小生成树 | complete | LCA, first getMax, then update x, y | ****
 DMOJ | dynamic range minimum query | complete | Segment Tree | *
-COCL | Zapis | complete | Dynamic Programming, iomanip | ***
-COCL | Dostavljač | complete | Graph Theory, Dynamic Programming, knapsack problem |
+COCI | Zapis | complete | Dynamic Programming, iomanip | ***
+COCI | Dostavljač | complete | Graph Theory, Dynamic Programming, knapsack problem |
 DMOJ | Dominos Tiling | complete | Dynamic Programming, two cases | *
 DMOJ | CamelCase | complete | Dynamic Programming, unordered_set | *
 NA | 区间异或 | complete | Segment Tree, property of xor, writing number as an array in binary | ***
