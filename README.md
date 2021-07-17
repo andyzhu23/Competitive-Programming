@@ -33,9 +33,6 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### incomplete Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-P3097 | 
-P3102 |
-P3080 |
 CF 728 | D | incomplete | expected value dp | **
 USACO 2017 US Open Platinum | P3 | incomplete
 P3002 | | incomplete
@@ -194,6 +191,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+SCOI | 糖果 | complete | 差分约束 | ***
 ACM | The Great ATM Robbery | complete | Tarjan | ****
 Bulgarian OI 09 | P4 | complete | Monotone Stack | **
 COI | Patrik | complete | Monotone Stack | **
