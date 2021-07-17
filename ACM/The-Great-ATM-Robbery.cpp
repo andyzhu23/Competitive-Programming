@@ -13,13 +13,13 @@ int16_t a[N];
 bitset<N> p, pi, instk;
 stack<int> stk;
 
-void dfs(int& u) {
+void tarjan(int& u) {
     dfn[u] = low[u] = ++tot;
     stk.push(u);
     instk[u] = 1;
     for(int& v : e[u]) {
         if(!dfn[v]) {
-            dfs(v);
+            tarjan(v);
             low[u] = min(low[u], low[v]);
         } else if (instk[v]) low[u] = min(low[u], dfn[v]);
     }
@@ -39,10 +39,10 @@ void dfs(int& u) {
 }
 
 
-void dfs2(int& u, int fa) {
+void dfs(int& u, int fa) {
     for(int v : Map[u]) {
         if(v == fa) continue;
-        if(dp[v] == 0) dfs2(v, u);
+        if(dp[v] == 0) dfs(v, u);
         dp[u] = max(dp[u], dp[v]);
     }
     if(dp[u] || pi[u]) dp[u] += sum[u];
@@ -64,7 +64,7 @@ int main(){
         p[x] = 1;
     }
     for(int i = 1;i<=n;i++)
-        if(!dfn[i]) dfs(i);
+        if(!dfn[i]) tarjan(i);
     for(int u = 1;u<=n;u++) {
         for(int i = 0;i<e[u].size();) {
             int& v = e[u][i];
@@ -76,7 +76,7 @@ int main(){
     for(int i = 1;i<=n;i++)
         pi[color[i]] = pi[color[i]] ? 1: p[i];
 
-    dfs2(color[root], 0);
+    dfs(color[root], 0);
     cout<<dp[color[root]]<<"\n";
     return 0;
 }
