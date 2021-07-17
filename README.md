@@ -193,7 +193,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-ACM | The Great ATM Robbery | Tarjan | ****
+ACM | The Great ATM Robbery | complete | Tarjan | ****
 Bulgarian OI 09 | P4 | complete | Monotone Stack | **
 COI | Patrik | complete | Monotone Stack | **
 NA | 树上差分 | complete | LCA, Segment Tree, lazy on tree | ****
