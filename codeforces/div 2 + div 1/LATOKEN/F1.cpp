@@ -3,11 +3,11 @@
  * @date    2021-07-19 20:24:48
  * @version 1.0.0
  */
-
+ 
 //include
 #include <bits/stdc++.h>
 using namespace std;
-
+ 
 // define
 #define endl "\n"
 #define lb lower_bound
@@ -28,7 +28,7 @@ using namespace std;
 #define clr(x) memset(x, 0, sizeof(x));
 #define setINF(x) memset(x, 63, sizeof(x));
 #define setNINF(x) memset(x, -63, sizeof(x));
-
+ 
 // Data Structure Shorten
 using ll = long long;
 using ull = unsigned long long;
@@ -49,21 +49,21 @@ using vpii = vec<pii>;
 using vll = vec<ll>;
 using vpll = vec<pll>;
 using vb = vec<bool>;
-
+ 
 // loops!
 #define FOR(i, a, b) for(int i = (a); i < (b); ++i)
-
+ 
 // common variables
 const int INF = 0x3f3f3f3f;
 const ll LLINF = 0x3f3f3f3f3f3f3f3f;
 const int MOD = 1e9 + 7;
 const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
 struct Edge {int u, v, w;};
-
+ 
 // common functions
 template <typename T> inline void cmax(T& u, T v) { u = max(u, v); }
 template <typename T> inline void cmin(T& u, T v) { u = min(u, v); }
-
+ 
 template <typename T> inline T lowbit(T x){return x & (- x);}
 template <typename T> inline T gcd(T a, T b){if(a == 0) return b; if(b == 0) return a; return gcd(b, a % b);}
 template <typename T> inline T lcm(T a, T b){return a / gcd(a, b) * b;}
@@ -72,33 +72,33 @@ template <typename T1, typename T2> inline T1 fast_pow(T1 a, T2 b)
 template <typename T1, typename T2, typename T3> inline T1 fast_pow(T1 a, T2 b, T3 m)
 {if(b == 1) return a % m; T1 tmp = fast_pow(a, b >> 1, m); if(b & 1) return tmp * tmp % m * a % m; else return tmp * tmp % m;}
 template <typename T> inline bool is_prime(T x){if(x == 1) return false; for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
-
+ 
 template <typename T> inline void debugArray(T *arr,int sz){cout<<"[";for(int i=0;i<sz;i++){cout<<arr[i]<<", "; } cout<<"]\n";}
 template <typename T> inline void printArray(T *arr,int sz){for(int i=0;i<sz;i++){cout<<arr[i]<<" "; } cout<<"\n";}
-
-
+ 
+ 
 //------------------- start of initialize -------------------
 // initialize for all cases
 inline void init1(){
-
+ 
 }
-
+ 
 // initialize for the current subcase
 inline void init2(){
-
+ 
 }
-
+ 
 //-------------------  end of initialize  -------------------
-
+ 
 //--------------------- start of program ---------------------
-
+ 
 const int NM = 4e5 + 10;
 int cnt = 0, n, m, a[NM], dfn[NM], low[NM], tot, colid, color[NM], in[NM];
 pii top[NM];
 bool instk[NM];
 stack<int> stk;
 vi e[NM], Map[NM];
-
+ 
 void tarjan(int& u) {
     dfn[u] = low[u] = ++tot;
     instk[u] = 1;
@@ -121,7 +121,7 @@ void tarjan(int& u) {
         stk.pop();
     }
 }
-
+ 
 inline void solve(){
     cin>>n>>m;
     for(int i = 1;i<=n;i++) {
@@ -167,16 +167,16 @@ inline void solve(){
     }
     cout<<ans<<endl;
 }
-
-
+ 
+ 
 //---------------------  end of program  ---------------------
-
-
+ 
+ 
 #define doCase 0
 #define config 0
 #define kickstart 0
 #define unsync 1
-
+ 
 inline void setIO() {
     #if config
     // configuration here
@@ -189,7 +189,7 @@ inline void setIO() {
     cout.tie(0);
     #endif
 }
-
+ 
 int main(){
     setIO();
     init1();
