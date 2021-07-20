@@ -99,13 +99,6 @@ bool instk[NM];
 stack<int> stk;
 vi e[NM], Map[NM];
 
-struct sand {
-    int x, y, id;
-    sand(int X, int Y, int ID) {
-        x = X, y = Y, id = ID;
-    }
-};
-
 void tarjan(int& u) {
     dfn[u] = low[u] = ++tot;
     instk[u] = 1;
