@@ -192,6 +192,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | 棋盘覆盖 | complete | hungarian algorithm bipartite matching | ****
 SCOI | 糖果 | complete | 差分约束 | ***
 ACM | The Great ATM Robbery | complete | Tarjan | ****
 Bulgarian OI 09 | P4 | complete | Monotone Stack | **
