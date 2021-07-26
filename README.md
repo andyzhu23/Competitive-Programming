@@ -192,6 +192,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | 最小弹药数 | complete | bipartite matching | ***
 VM7WC | Uniting the Earth Empire | Montone stack | **
 NA | 棋盘覆盖 | complete | hungarian algorithm bipartite matching | ****
 SCOI | 糖果 | complete | 差分约束 | ***
