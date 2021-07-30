@@ -14,6 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF Edu_112 | July 30th | 7:35am | 3/6 | Getting back some skills after undergone 20 days of hell
 CF 728 (Div 2) | Jne 24th | 8:35 am | 2342 | could've completed them faster
 CF 727 | June 20th | 3:05 am | 2108 | Almost got the fourth question, could've finished problems quicker 
 DMOPC 21' June | June 18th - June20th | 9:00 am | 120 | For the second question I don't know how to output answers clockwise
@@ -156,6 +157,9 @@ CCC 2001 | S3 | complete | Disjoint Set | **
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_112 | D | complete | Prefix Sum & enumeration | **
+CF Edu_112 | C | complete | Prefix Sum & greedy | **
+CF Edu_112 | A | complete | Greedy | **
 CF 732 Div 2 | C | complete | separate position to even and odd | ***
 CF 732 Div 2 | B | complete | store the postion for each letter | **
 CF 728 Div 2 | C | complete | greedy, sorting, implementation | ***
