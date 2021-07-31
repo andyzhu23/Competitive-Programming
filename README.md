@@ -157,6 +157,7 @@ CCC 2001 | S3 | complete | Disjoint Set | **
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 734 | C | complete | sorting | **
 CF Edu_112 | D | complete | Prefix Sum & enumeration | **
 CF Edu_112 | C | complete | Prefix Sum & greedy | **
 CF Edu_112 | A | complete | Greedy | **
