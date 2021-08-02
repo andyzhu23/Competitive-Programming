@@ -94,7 +94,17 @@ inline void init2(){
 
 const int N = 2e3 + 10;
 
-int n, k, a[N], dp[N][N];
+int n, k, a[N], dp[N][N]; // dp[i][j] the maximum b[i] = i for first i elements, with j elements not deleted 
+
+/*
+
+dp[i][j]:
+delete the ith element: dp[i - 1][j]
+not deleting the ith element:
+using ith element in b: dp[i - 1][j - 1] + 1
+not using ith element in b: dp[i - 1][j - 1]
+
+*/
 
 inline void solve(){
     cin>>n>>k;
@@ -106,7 +116,7 @@ inline void solve(){
     }
     for(int i = 1;i<=n;i++) {
         for(int j = 1;j<=i;j++) {
-            dp[i][j] = max(dp[i - 1][j - 1] + (a[i] == j), dp[i - 1][j]);
+            dp[i][j] = max(dp[i - 1][j - 1] + (a[i] == j), dp[i - 1][j]); 
             if(dp[i][j] >= k) ans = min(ans, n - j);
         }
     }
