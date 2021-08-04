@@ -200,6 +200,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | 合唱团 | complete | dp, 1 for place at beginning, n for placing at the end | ****
 CPC | P4 | complete | reverse graph I am so dumbbbb | **
 CPC | P1 | complete | turn B into 2<sup>a</sup> * 5<sup>b</sup> | **
 NA | 最小弹药数 | complete | bipartite matching | ***
