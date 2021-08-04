@@ -59,6 +59,10 @@ CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 ### An Animal Contest
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+C3 | P4 | complete | greedy, a bit of math | ***
+C3 | P3 | complete | sorting, greedy | **
+C3 | P2 | complete | greedy | *
+C3 | P1 | complete | implementation | *
 C2 P1 | Koala Konundrum | complete | greedy | **
 C2 P2 | Koala Party | complete | case enumeration | **
 C2 P3 | Koala Balloon | complete | binary search, prefix sum | ***
