@@ -14,6 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+An Animal Contest 3 | Aug 3rd | 9:00pm | 400/800 | do questions faster, at least got back to cand master
 CF Edu_112 | July 30th | 7:35am | 3/6 | Getting back some skills after undergone 20 days of hell
 CF 728 (Div 2) | Jne 24th | 8:35 am | 2342 | could've completed them faster
 CF 727 | June 20th | 3:05 am | 2108 | Almost got the fourth question, could've finished problems quicker 
