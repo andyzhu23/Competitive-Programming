@@ -161,7 +161,7 @@ Source | Problems | status | skills needed | rating
 CF 736 | C | complete | greedy | ***
 CF 734 | E | complete | big brain dp | ****
 CF 734 | C | complete | sorting | **
-CF Edu_112 | E | complete | Segment Tree, two pointer | ****
+CF Edu_112 | E | complete | Segment Tree using minimum to check segments, two pointer | ****
 CF Edu_112 | D | complete | Prefix Sum & enumeration | **
 CF Edu_112 | C | complete | Prefix Sum & greedy | **
 CF Edu_112 | B | complete | too dumb, consider cases and enumeration | **
