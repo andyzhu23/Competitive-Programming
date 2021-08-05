@@ -207,6 +207,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+TJOI | 攻击装置 | complete | bipartite matching, tile coloring | ****
 NA | 合唱团 | complete | dp, 1 for place at beginning, n for placing at the end | ****
 CPC | P4 | complete | reverse graph I am so dumbbbb | **
 CPC | P1 | complete | turn B into 2<sup>a</sup> * 5<sup>b</sup> | **
