@@ -94,6 +94,8 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
+USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
 USACO 2003 Fall Gold | Puck Just Me | complete | Tarjan | ****
 USACO Training | Riding the Fence | complete | Euler Circuit, Hierholzer's Algorithm | ***
 USACO 2005 Dec Gold | Layout | complete | Bellman-Ford, -1 for negative ring, -2 for not connected. turn Differential constraint into graphs | ****
@@ -101,16 +103,15 @@ USACO 2011 Open Gold | Mowing the Lawn | complete | monotone queue dynamic progr
 USACO 2008 Jan | cow race | complete | floyd algorithm | ***
 USACO 2021 Open Gold | Portals | complete | Kruskal, turn cycles into vertices | ****
 USACO 2006 Nov Gold | cowfood | complete | bitmasking, dynamic programming | ***
-USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2016 Feb Gold | Fenced In | complete | MST algorithm, separate into horizontal and vertical lines | ****
-USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
 USACO 2019 Dec Gold | Milk Visits | complete | Sparse Table, offline/unsynchronized calculation | ****
-USACO 2019 Dec Silver | Milk Visits | complete | Sparse Table | **
-USACO 2021 US Open Silver | Do You Know ABCs? | complete | enumeration, brute force | **
 USACO 2021 US Open Gold | United Cows of Farmer John | complete | enumerate r, binary search l, revisited with Fenwick tree | **
 USACO 2008 Nov Gold | Switching light | complete | Segment Tree, interval update | **
 USACO 2017 Jan Gold | Balanced Photo | complete | Segment Tree, discretization | **
 USACO 2021 Feb Gold | Modern Art 3 | complete | Dynamic Programming | ***
+USACO 2020 Jan Silver | Berry Picking | complete | greedy + enumerate berries in Elsie's buckets | ***
+USACO 2019 Dec Silver | Milk Visits | complete | Sparse Table | **
+USACO 2021 US Open Silver | Do You Know ABCs? | complete | enumeration, brute force | **
 USACO 2021 Feb Silver | Comfortable Cows | complete | implementation | *
 USACO 2021 Feb Silver | Year of the Cows | complete | Greedy | *
 USACO 2021 Feb Silver | Just Green Enough | complete | Monotone Stack | ****
