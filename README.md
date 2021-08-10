@@ -14,6 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 737 | Aug 9th | 7:35am | 1330 | My brain too slow, do those questions faster
 An Animal Contest 3 | Aug 3rd | 9:00pm | 400/800 | do questions faster, at least got back to purple
 CF Edu_112 | July 30th | 7:35am | 3/6 | Getting back some skills after undergone 20 days of hell
 CF 728 (Div 2) | Jne 24th | 8:35 am | 2342 | could've completed them faster
@@ -207,6 +208,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+LOJ | 家庭作业 | complete | heap, greedy, segment tree or disjoint set union | ****
 TJOI | 攻击装置 | complete | bipartite matching, tile coloring | ****
 NA | 合唱团 | complete | dp, 1 for place at beginning, n for placing at the end | ****
 CPC | P4 | complete | reverse graph I am so dumbbbb | **
