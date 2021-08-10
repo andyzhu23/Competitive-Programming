@@ -164,6 +164,8 @@ CCC 2001 | S3 | complete | Disjoint Set | **
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 737 | B | complete | greedy, sorting, binary search | ***
+CF 737 | A | complete | greedy, setprecision | **
 CF 736 | C | complete | greedy | ***
 CF 734 | E | complete | big brain dp | ****
 CF 734 | C | complete | sorting | **
