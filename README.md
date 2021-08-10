@@ -210,6 +210,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOj | K-th Minimum Number | complete | merge sort segment tree | *****
 CSP-S | 能量项链 | complete | interval dynamic programming | ***
 LOJ | 家庭作业 | complete | heap, greedy, segment tree or disjoint set union | ****
 TJOI | 攻击装置 | complete | bipartite matching, tile coloring | ****
