@@ -17,6 +17,7 @@ struct hw{
     }
 }pos[N];
 
+// somehow vector made error
 hw a[N];
 
 template <typename T> struct segtree {
