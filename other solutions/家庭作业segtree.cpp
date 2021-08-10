@@ -12,12 +12,15 @@ int n;
 struct hw{
     int a, b, id;
     bool operator<(const hw& other) const {
+        if(a != other.a) return a < other.a;
+        return b > other.a;
+    }
+    bool operator>(const hw& other) const {
         if(a != other.a) return a > other.a;
         return b < other.a;
     }
 }pos[N];
 
-// somehow vector made error
 hw a[N];
 
 template <typename T> struct segtree {
@@ -60,12 +63,7 @@ template <typename T> struct segtree {
 
 segtree<hw> st;
 
-priority_queue<hw> heap;
-
-
-bool cmp(hw a, hw b) {
-    return a.a == b.a ? a.b > b.b : a.a < b.a;
-}
+priority_queue<hw, vector<hw>, greater<hw> > heap;
 
 int main(){
     ios::sync_with_stdio(0);
@@ -77,7 +75,7 @@ int main(){
         a[i - 1] = b;
     }
 
-    sort(a, a + n, cmp);
+    sort(a, a + n);
 
     int cnt = 1;
 
