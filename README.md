@@ -161,6 +161,11 @@ CCC 2015 | S4 | complete | SPFA, add a dimension | **
 CCC 2002 | S4 | complete | Doing dp in an interval | ***
 CCC 2001 | S3 | complete | Disjoint Set | **
 
+### IOI Problems
+Source | Problems | Status | Skills needed | rating 
+-------|----------|--------|---------------|-------
+IOI 1996 | Network of Schools | complete | Tarjan scc | ***
+
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
