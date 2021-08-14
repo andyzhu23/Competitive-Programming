@@ -135,8 +135,7 @@ int main(){
             bst.succ(bst.root, x);
             cout<<bst.succans<<'\n';
         }
-        
     }
-
     return 0;
 }
+
