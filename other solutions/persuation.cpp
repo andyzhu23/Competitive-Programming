@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+// 0x3f3f3f3f was not big enough
 const int INF = 0x7f7f7f7f;
 int dp[1 << 21], a[21], b[21], n;
 
