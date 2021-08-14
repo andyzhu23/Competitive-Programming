@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int INF = 0x7f7f7f7f;
-// dp[i][state] i means how many already chosen
 int dp[1 << 21], a[21], b[21], n;
 
 int dfs(int x, int mask) {
