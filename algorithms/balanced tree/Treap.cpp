@@ -81,7 +81,7 @@ template <typename T> struct BST{
             if(cnt[rt] - 1 == 0) {
                 if(lc[rt] * rc[rt] == 0) rt = lc[rt] + rc[rt];
                 else {
-					if(rnd[lc[rt]] > rnd[rc[rt]]) rturn(rt);
+                    if(rnd[lc[rt]] > rnd[rc[rt]]) rturn(rt);
                     else lturn(rt);
                     erase(rt, x);
                 }
@@ -105,7 +105,7 @@ template <typename T> struct BST{
         else if(size[lc[rt]] + cnt[rt] >= x) return val[rt];
         else return id(rc[rt], x - size[lc[rt]] - cnt[rt]);
     }
-    void print(int rt){
+    void print(int rt) {
     	if(rt == 0) return;
     	printf("id: %d, rt:%d, lc:%d, rc:%d, sz:%d, cnt:%d\n", rt, val[rt], lc[rt], rc[rt], size[rt], cnt[rt]);
     	print(lc[rt]);
