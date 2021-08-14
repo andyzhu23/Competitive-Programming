@@ -215,7 +215,8 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-DMOJ | BST test | complete | treap | ***
+DMOJ | Persuation | complete | bitmask, 0x3f3f3f3f was not big enough | ***
+DMOJ | BST test | complete | treap | ****
 DMOJ | dynamic sum | complete | binary search, segment tree/block matrix too slow | ***
 DMOj | K-th Minimum Number | complete | merge sort segment tree | *****
 CSP-S | 能量项链 | complete | interval dynamic programming | ***
