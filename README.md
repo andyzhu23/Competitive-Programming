@@ -14,6 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 738 | Aug 15th | 7:35am | 3254 | Should do questions faster and made one false submission 
 CF 737 | Aug 9th | 7:35am | 1330 | My brain too slow, do those questions faster
 An Animal Contest 3 | Aug 3rd | 9:00pm | 400/800 | do questions faster, at least got back to purple
 CF Edu_112 | July 30th | 7:35am | 3/6 | Getting back some skills after undergone 20 days of hell
@@ -169,6 +170,10 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 738 | D1 | complete | disjoint set union on two forests | **
+CF 738 | C | complete | just try to insert the n + 1 node into any interval | *
+CF 738 | B | complete | greedy, just ulternate B and R | *
+CF 738 | A | complete | minimum of all is to &(and) all numbers | *
 CF 737 | B | complete | greedy, sorting, binary search | ***
 CF 737 | A | complete | greedy, setprecision | **
 CF 736 | C | complete | greedy | ***
