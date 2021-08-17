@@ -94,6 +94,7 @@ template <typename T> struct BST {
             succ(lc[rt], x);
         } else succ(rc[rt], x);
     }
+    
     T preans;
     void pre(int& rt, T x) {
         if(rt == 0) return;
