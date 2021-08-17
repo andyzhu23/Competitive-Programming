@@ -110,7 +110,7 @@ template <typename T> struct BST {
     	printf("id: %d, lc:%d, rc:%d, sz:%d, cnt:%d, val:\n", rt, lc[rt], rc[rt], sz[rt], cnt[rt]);
     	debug(lc[rt]);
     	debug(rc[rt]);
-	}
+    }
 
     void print(int& rt, int x) {
         if(rt == 0) return;
