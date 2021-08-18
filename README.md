@@ -14,6 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 739 | Aug 18th | 7:35am | 4/7 | Try to check answer before submission next time
 CF 738 | Aug 15th | 7:35am | 3254 | Should do questions faster and made one false submission 
 CF 737 | Aug 9th | 7:35am | 1330 | My brain too slow, do those questions faster
 An Animal Contest 3 | Aug 3rd | 9:00pm | 400/800 | do questions faster, at least got back to purple
@@ -170,6 +171,11 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 739 | E | complete | first get second answer, then compute first, then check | ***
+CF 739 | D | complete | bit by bit | **
+CF 739 | C | complete | math, logics | *
+CF 739 | B | complete | math | *
+CF 739 | A | complete | implementation | *
 CF 738 | D1 | complete | disjoint set union on two forests | **
 CF 738 | C | complete | just try to insert the n + 1 node into any interval | *
 CF 738 | B | complete | greedy, just ulternate B and R | *
