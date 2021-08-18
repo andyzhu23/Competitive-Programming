@@ -220,6 +220,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CTSC 2000 | 邱比特的烦恼 | complete | KM algorithm, math | ****
 DMOJ | Persuation | complete | bitmask, 0x3f3f3f3f was not big enough | ***
 DMOJ | BST test | complete | treap | ****
 DMOJ | dynamic sum | complete | binary search, segment tree/block matrix too slow | ***
