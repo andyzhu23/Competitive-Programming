@@ -171,6 +171,7 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 739 | F1 | complete | precomplete, binary search | ***
 CF 739 | E | complete | first get second answer, then compute first, then check | ***
 CF 739 | D | complete | bit by bit | **
 CF 739 | C | complete | math, logics | *
