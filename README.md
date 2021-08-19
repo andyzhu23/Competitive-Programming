@@ -200,8 +200,8 @@ CF 727 | D | complete | greedy, kind of discretization | ***
 CF 727 | C | complete | greedy, binary search | ***
 CF 727 | B | complete | prefix sum with alphabet | **
 CF 727 | A | complete | implementation | **
-CF Edu_101 | C | complete | two pointer | ****
-CF Edu_101 | B | complete | sort into first even, then odd | ***
+CF Edu_110 | C | complete | two pointer | ****
+CF Edu_110 | B | complete | sort into first even, then odd | ***
 CF LATOKEN | F1 | complete | Tarjan, find all with in degree 0 | ****
 CF LATOKEN | C | complete | Realize cycle find numbers of cycle | **
 CF LATOKEN | B | complete | decrease only when one single column is tall | **
