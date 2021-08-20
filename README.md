@@ -181,6 +181,7 @@ CF 738 | D1 | complete | disjoint set union on two forests | **
 CF 738 | C | complete | just try to insert the n + 1 node into any interval | *
 CF 738 | B | complete | greedy, just ulternate B and R | *
 CF 738 | A | complete | minimum of all is to &(and) all numbers | *
+CF 737 | C | complete | Fermat's Little Theorem, fast_pow, careful of integer overflow, case by case, working with bit | ****
 CF 737 | B | complete | greedy, sorting, binary search | ***
 CF 737 | A | complete | greedy, setprecision | **
 CF 736 | C | complete | greedy | ***
