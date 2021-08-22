@@ -14,6 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+Kickstart round E | Aug 21st | 8:30 - 11:30 | 1062th place | this one is hard
 CF 739 | Aug 18th | 7:35am | 4/7 | Try to check answer before submission next time
 CF 738 | Aug 15th | 7:35am | 3254 | Should do questions faster and made one false submission 
 CF 737 | Aug 9th | 7:35am | 1330 | My brain too slow, do those questions faster
