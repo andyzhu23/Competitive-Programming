@@ -77,6 +77,7 @@ C2 P5 | Koala Carnival | complete | Segment Tree, two pointer, binary search | *
 ### Google Kickstart
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+21 Round E | Problem C | complete | Disjoint Set Union, merge palindrom elements | ***
 21 Round E | Problem A | complete | shuffle string by swaping | *
 21 Round B | Problem D | complete | Segment Tree, offline/unsynchronized calculation, dfs | ****
 21 Round B | Problem C | complete | Maximum interval between primes | **
