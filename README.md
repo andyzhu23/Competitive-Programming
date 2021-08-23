@@ -181,6 +181,7 @@ CF 739 | D | complete | bit by bit | **
 CF 739 | C | complete | math, logics | *
 CF 739 | B | complete | math | *
 CF 739 | A | complete | implementation | *
+CF 738 | D2 | complete | DSU, try random nodes from random components from the two forests until we have enough edges | *****
 CF 738 | D1 | complete | disjoint set union on two forests | **
 CF 738 | C | complete | just try to insert the n + 1 node into any interval | *
 CF 738 | B | complete | greedy, just ulternate B and R | *
