@@ -16,7 +16,7 @@ task | date | time | score | reflection
 -----|------|------|-------|-----------
 Kickstart round E | Aug 21st | 8:30 - 11:30 | 1062th place | this one is hard
 CF 739 | Aug 18th | 7:35am | 4/7 | Try to check answer before submission next time
-CF 738 | Aug 15th | 7:35am | 3254 | Should do questions faster and made one false submission 
+CF 738 | Aug 15th | 7:35am | 3254/best so far(798th) | Should do questions faster and made one false submission 
 CF 737 | Aug 9th | 7:35am | 1330 | My brain too slow, do those questions faster
 An Animal Contest 3 | Aug 3rd | 9:00pm | 400/800 | do questions faster, at least got back to purple
 CF Edu_112 | July 30th | 7:35am | 3/6 | Getting back some skills after undergone 20 days of hell
