@@ -1,7 +1,7 @@
 /*
  * Author: Andy Zhu
- * @date    ${date}
- * @version ${6:1.0.0}
+ * @date    2021-08-23 21:36:22
+ * @version 1.0.0
  */
 
 //include
@@ -73,7 +73,6 @@ const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, 
 struct Edge {int u, v, w;};
 
 // common functions
-
 namespace comfun {
     template <typename T> inline void cmax(T& u, T v) { u = max(u, v); }
     template <typename T> inline void cmin(T& u, T v) { u = min(u, v); }
@@ -86,10 +85,14 @@ namespace comfun {
     {if(b == 1) return a % m; if(b == 0) return 1; T1 tmp = fast_pow(a, b >> 1, m); if(b & 1) return tmp * tmp % m * a % m; else return tmp * tmp % m;}
     template <typename T> inline bool is_prime(T x){if(x == 1) return false; for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 }
+
+// debug arrays
 namespace debug {
     template <typename T> inline void debugArray(T *arr,int sz){cout<<"[";for(int i=0;i<sz;i++){cout<<arr[i]<<", "; } cout<<"]\n";}
     template <typename T> inline void printArray(T *arr,int sz){for(int i=0;i<sz;i++){cout<<arr[i]<<" "; } cout<<"\n";}
 }
+
+// reading numbers
 namespace fast_io {
     void read(int &number) {
         bool negative = false; int c; number = 0; c = getchar();
@@ -166,9 +169,9 @@ int main(){
 
  
 /* stuff you should look for
-	* int overflow, array bounds
-	* special cases (n=1?)
-	* do smth instead of nothing and stay organized
-	* WRITE STUFF DOWN
-	* DON'T GET STUCK ON ONE APPROACH
+    * int overflow, array bounds
+    * special cases (n=1?)
+    * do smth instead of nothing and stay organized
+    * WRITE STUFF DOWN
+    * DON'T GET STUCK ON ONE APPROACH
 */
