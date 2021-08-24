@@ -92,18 +92,18 @@ namespace debug {
 }
 namespace fast_io {
     void read(int &number) {
-    bool negative = false;
-    int c;
-    number = 0;
-    c = getchar();
-    if (c == '-') {
-        negative = true;
+        bool negative = false;
+        int c;
+        number = 0;
         c = getchar();
-    }
-    for (; (c > 47 && c < 58); c = getchar())
-        number = number *10 + c - 48;
-    if (negative)
-        number *= -1;
+        if (c == '-') {
+            negative = true;
+            c = getchar();
+        }
+        for (; (c > 47 && c < 58); c = getchar())
+            number = number *10 + c - 48;
+        if (negative)
+            number *= -1;
     }
 }
 
