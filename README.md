@@ -14,6 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 740(div 2) | Aug 24th | 7:35 - 10:05 | 3678(598th/best so far) | don't get stuck on using segment when you can use prefix sum 
 Kickstart round E | Aug 21st | 8:30 - 11:30 | 1062th place | this one is hard
 CF 739 | Aug 18th | 7:35am | 4/7 | Try to check answer before submission next time
 CF 738 | Aug 15th | 7:35am | 3254/best so far(798th) | Should do questions faster and made one false submission 
@@ -175,6 +176,11 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 740(div 2) | D2 | complete | suffix-sum, dp, two cases | ****
+CF 740(div 2) | D1 | complete | any range data structure, dp, two cases | ****
+CF 740(div 2) | C | complete | turn each cave into a node, sorting | ***
+CF 740(div 2) | B | complete | brute force, math | **
+CF 740(div 2) | A | complete | implementation | **
 CF 739 | F2 | complete | greedy, enumerate digits, using multiset and pointers to make it easier | ****
 CF 739 | F1 | complete | precomplete, binary search | ***
 CF 739 | E | complete | first get second answer, then compute first, then check | ***
