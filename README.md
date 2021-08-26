@@ -177,7 +177,7 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-
+CF 741 | D1 | complete | separate into odd even, prefix sum | ****
 CF 741 | C | complete | case by case | ****
 CF 741 | B | complete | case by case | ***
 CF 741 | A | complete | pick r / 2 + 1, or l | **
