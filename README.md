@@ -14,6 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 741 | Aug 26th | 7:35 - 9:35 | 1276 | Think case by case, and be patient when doing rough works 
 CF 740(div 2) | Aug 24th | 7:35 - 10:05 | 3678(598th/best so far) | don't get stuck on using segment when you can use prefix sum 
 Kickstart round E | Aug 21st | 8:30 - 11:30 | 1062th place | this one is hard
 CF 739 | Aug 18th | 7:35am | 4/7 | Try to check answer before submission next time
