@@ -176,6 +176,10 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+
+CF 741 | C | complete | case by case | ****
+CF 741 | B | complete | case by case | ***
+CF 741 | A | complete | pick r / 2 + 1, or l | **
 CF 740(div 2) | D2 | complete | suffix-sum, dp, two cases | ****
 CF 740(div 2) | D1 | complete | any range data structure, dp, two cases | ****
 CF 740(div 2) | C | complete | turn each cave into a node, sorting | ***
