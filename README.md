@@ -104,6 +104,7 @@ Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
+USACO 2007 Nov Gold | Cow Relays | complete | binary rate multiply, floyd algorithm | ****
 USACO 2003 Fall Gold | Puck Just Me | complete | Tarjan | ****
 USACO Training | Riding the Fence | complete | Euler Circuit, Hierholzer's Algorithm | ***
 USACO 2005 Dec Gold | Layout | complete | Bellman-Ford, -1 for negative ring, -2 for not connected. turn Differential constraint into graphs | ****
