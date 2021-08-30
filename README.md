@@ -181,6 +181,7 @@ Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 CF Deltix21 | B | complete | odd even, moving numbers | ***
 CF Deltix21 | A | complete | straight forward | *
+CF 741 | D2 | complete | map, binary search for position, prefix sum | ****
 CF 741 | D1 | complete | separate into odd even, prefix sum | ****
 CF 741 | C | complete | case by case | ****
 CF 741 | B | complete | case by case | ***
