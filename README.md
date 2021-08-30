@@ -14,6 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF Deltix21 | Aug 29th | 7:35 - 10:35 | 1298 | Need more practices!
 CF 741 | Aug 26th | 7:35 - 9:35 | 1276 | Think case by case, and be patient when doing rough works 
 CF 740(div 2) | Aug 24th | 7:35 - 10:05 | 3678(598th/best so far) | don't get stuck on using segment when you can use prefix sum 
 Kickstart round E | Aug 21st | 8:30 - 11:30 | 1062th place | this one is hard
@@ -178,6 +179,8 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Deltix21 | B | complete | odd even, moving numbers | ***
+CF Deltix21 | A | complete | straight forward | *
 CF 741 | D1 | complete | separate into odd even, prefix sum | ****
 CF 741 | C | complete | case by case | ****
 CF 741 | B | complete | case by case | ***
