@@ -250,6 +250,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | 网络分析 | complete | dsu, dp | **
 NOI 2009 | Modified Treap | complete | interval dp, let w be best answer with root weight >= w, discretization, sorting | ****
 NA | 部落战争 | complete | bipartite matching | ***
 CTSC 2000 | 邱比特的烦恼 | complete | KM algorithm, math | ****
