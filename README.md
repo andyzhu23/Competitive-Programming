@@ -179,6 +179,7 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Deltix21 | C | complete | implementation, details very important | ***
 CF Deltix21 | B | complete | odd even, moving numbers | ***
 CF Deltix21 | A | complete | straight forward | *
 CF 741 | D2 | complete | map, binary search for position, prefix sum | ****
