@@ -125,7 +125,7 @@ int n, m, last[N], a[N];
 bool special[N], need[N], cancel[N], sand[N], vis[N];
 vi e[N], e2[N], e3[N];
 vec<string> board;
-vi hit[N], top, bonny;
+vi hit[N], top, bunny;
 vpii path;
 pii dp[N];
 int dfn[N], low[N], tot, color, colid[N], in[N], val[N];
@@ -265,16 +265,16 @@ inline void solve(){
     sort(all(top), cmp2);
     int cnt = 0;
     for(int i : top) Map[i] = ++cnt;
-    
+
     // calculate interval
     for(int i = 1;i<=color;i++) {
-        if(need[i] && !cancel[i]) bonny.pb(i);
+        if(need[i] && !cancel[i]) bunny.pb(i);
         dfs2(i);
     }
     
-    for(int i : bonny) path.pb(dp[i]);
+    for(int i : bunny) path.pb(dp[i]);
 
-    // gassing bonny
+    // gassing bunny
     sort(all(path), cmp);
     int ans = 0, lastkill = 0;
     for(pii i : path) {
