@@ -265,7 +265,8 @@ inline void solve(){
     sort(all(top), cmp2);
     int cnt = 0;
     for(int i : top) Map[i] = ++cnt;
-
+    
+    // calculate interval
     for(int i = 1;i<=color;i++) {
         if(need[i] && !cancel[i]) bonny.pb(i);
         dfs2(i);
