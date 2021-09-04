@@ -7,7 +7,7 @@ using ll = long long;
 template<typename T>
 struct fenwick {
     T c[N] = {0};
-    #define lowbit(x) (x & (-x))
+    int lowbit(int x) {return x & (-x);}
     void update(int a, T b) {
         for(int i = a;i<=n;i+=lowbit(i)) c[i] += b;
     }
