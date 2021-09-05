@@ -259,6 +259,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+Another Contest 8 | P5 | complete | fenwick to find number of sequences | ***
 Another Contest 8 | P3 | complete | find a cycle | ***
 NA | 网络分析 | complete | dsu, dp | **
 NOI 2009 | Modified Treap | complete | interval dp, let w be best answer with root weight >= w, discretization, sorting | ****
