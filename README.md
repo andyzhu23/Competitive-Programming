@@ -183,6 +183,7 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 CF 742 | E | complete | interval merging segment tree | ****
+CF 742 | C | complete | big brain observation | ****
 CF 742 | B | complete | working with xor, xor properties | **
 CF 742 | A | complete | switching U with D and vice versa | *
 CF Deltix21 | C | complete | implementation, details very important | ***
