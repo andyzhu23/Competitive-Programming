@@ -118,13 +118,11 @@ inline void init2(){
 //-------------------  end of initialize  -------------------
 
 //--------------------- start of program ---------------------
-#define int long long
 int n, q;
 const int N = 2e5 + 10;
-int a[N];
 struct seg {
     struct node {
-        int cnt, l, r;
+        ll cnt, l, r;
         int lval, rval;
     } st[N << 2];
 
@@ -132,16 +130,10 @@ struct seg {
         st[rt].cnt = st[lc].cnt + st[rc].cnt;
         if(st[lc].rval <= st[rc].lval) {
             st[rt].cnt += st[lc].r * st[rc].l;
-            if(st[rc].l == r - mid) {
-                st[rt].r = st[rc].l + st[lc].r;
-            } else {
-                st[rt].r = st[rc].r;
-            }
-            if(st[lc].r == mid - l + 1) {
-                st[rt].l = st[lc].r + st[rc].l;
-            } else {
-                st[rt].l = st[lc].l;
-            }
+            if(st[rc].l == r - mid) st[rt].r = st[rc].l + st[lc].r;
+            else st[rt].r = st[rc].r;
+            if(st[lc].r == mid - l + 1) st[rt].l = st[lc].r + st[rc].l;
+            else st[rt].l = st[lc].l;
         } else {
             st[rt].r = st[rc].r;
             st[rt].l = st[lc].l;
@@ -151,7 +143,8 @@ struct seg {
     }
     void build(int rt, int l, int r) {
         if(l == r) {
-            st[rt].lval = st[rt].rval = a[l];
+            int x; cin>>x;
+            st[rt].lval = st[rt].rval = x;
             st[rt].cnt = st[rt].l = st[rt].r = 1;
             return;
         }
@@ -186,16 +179,10 @@ struct seg {
             ans.cnt = a.cnt + b.cnt;
             if(a.rval <= b.lval) {
                 ans.cnt += a.r * b.l;
-                if(b.l == r - mid) {
-                    ans.r = b.l + a.r;
-                } else {
-                    ans.r = b.r;
-                }
-                if(a.r == mid - l + 1) {
-                    ans.l = a.r + b.l;
-                } else {
-                    ans.l = a.l;
-                }
+                if(b.l == r - mid) ans.r = b.l + a.r;
+                else ans.r = b.r;
+                if(a.r == mid - l + 1) ans.l = a.r + b.l;
+                else ans.l = a.l;
             } else {
                 ans.r = b.r;
                 ans.l = a.l;
@@ -210,16 +197,12 @@ struct seg {
 
 inline void solve(){
     cin>>n>>q;
-    for(int i = 1;i<=n;i++) cin>>a[i];
     st.build(1, 1, n);
     while(q--) {
         int opt, x, y;
         cin>>opt>>x>>y;
-        if(opt == 1) {
-            st.update(1, 1, n, x, y);
-        } else {
-            cout<<st.query(1, 1, n, x, y).cnt<<'\n';
-        }
+        if(opt == 1) st.update(1, 1, n, x, y);
+        else cout<<st.query(1, 1, n, x, y).cnt<<'\n';
     }
 }
 
