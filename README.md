@@ -14,7 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
-CF 742 | Sept 5th | 7:35 - 9:35 | 2921 | Good thing I solved E 
+CF 742 | Sept 5th | 7:35 - 9:35 | 2921(first time solve 2250) | Good thing I solved E 
 DMOPC September | Sept 4th | 9:00 - 9:00 | 200 | I need to learn interactive problems!
 CF Deltix21 | Aug 29th | 7:35 - 10:35 | 1298 | Need more practices!
 CF 741 | Aug 26th | 7:35 - 9:35 | 1276 | Think case by case, and be patient when doing rough works 
