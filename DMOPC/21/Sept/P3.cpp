@@ -119,7 +119,6 @@ inline void init2(){
 
 //--------------------- start of program ---------------------
 
-vec<Edge> e(1);
 int n, m;
 
 struct DSU {
