@@ -92,6 +92,8 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 21 Sept | P2 | complete | remove as "consecutive" as possible | **
+DMOPC 21 Sept | P1 | complete | greedy, go by two each time | *
 DMOPC 21 June | P2 | complete | store lines in a set with pair<pii, pii> | ***
 DMOPC 21 May | P3 | complete | dfs, reverse graph, greedy | ***
 DMOPC 21 May | P2 | complete | greedy | ***
@@ -183,6 +185,7 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 CF 742 | E | complete | interval merging segment tree | ****
+CF 742 | D | complete | greedy, go from highest digit to the lowest digit | ****
 CF 742 | C | complete | big brain observation | ****
 CF 742 | B | complete | working with xor, xor properties | **
 CF 742 | A | complete | switching U with D and vice versa | *
