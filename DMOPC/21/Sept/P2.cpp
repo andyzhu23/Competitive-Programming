@@ -142,27 +142,6 @@ inline void solve(){
         } else cnt = 0;
     }
     n -= cnt;
-    // int tot = 0;
-    // for(int i = 1;i<=n;i++) {
-    //     for(int j = 1;j<n;j++) {
-    //         if(a[i] == b[j]) {
-    //             int cnt = 0;
-    //             while(a[i] == b[j] && i <= n && j <= n) {
-    //                 ++i;
-    //                 ++j;
-    //                 ++cnt;
-    //             }
-    //             --i, --j;
-    //             c[i] = mp(++tot, cnt);
-    //             d[j] = mp(tot, cnt);
-    //         }
-    //     }
-    // }
-    // for(int i = 1;i<=n;i++) {
-    //     if(c[i] != mp(0, 0)) e.pb(c[i]);
-    //     if(d[i] != mp(0, 0)) f.pb(d[i]);
-    // }
-    // stack<pii> stk;
     int last = n;
     vi ans;
     while(n > 0) {
