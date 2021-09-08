@@ -263,6 +263,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | Interval Reversal | complete | splay tree | *****
 Another Contest 8 | P5 | complete | fenwick to find number of sequences | ***
 Another Contest 8 | P3 | complete | find a cycle | ***
 NA | 网络分析 | complete | dsu, dp | **
