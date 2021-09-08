@@ -53,7 +53,6 @@ USACO 15 Jan Gold |  Moovie Mooving | incomplete | bitmasking, dynamic programmi
 NA | 过河问题 | incomplete | Greedy | 
 NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
 CCC 2019/DMOJ add on | J5 | incomplete | Divide and Conquer | |
-NOIP 2017 D2T3 | 列队 | incomplete | |
 USACO 21 Feb Gold | Count the Cows | incomplete | |
 USACO 21 Feb Gold | Stone Game | incomplete | |
 USACO 21 Open Gold | Permutation | incomplete | |
@@ -263,6 +262,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NOIP 2017 | D2T3 | 列队 | complete | splay tree | ******
 NA | Interval Reversal | complete | splay tree | *****
 Another Contest 8 | P5 | complete | fenwick to find number of sequences | ***
 Another Contest 8 | P3 | complete | find a cycle | ***
