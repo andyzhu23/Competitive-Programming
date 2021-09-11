@@ -22,8 +22,8 @@ struct fenwick {
 int n, a[N], b[N];
 
 int main() {
-    // freopen("haircut.in", "r", stdin);
-    // freopen("haircut.out", "w", stdout);
+    freopen("haircut.in", "r", stdin);
+    freopen("haircut.out", "w", stdout);
     ios::sync_with_stdio(0);
     cin.tie(0);
     cin>>n;
