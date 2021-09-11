@@ -187,6 +187,7 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_113 | C | complete | case by case, for all permutations, k out of k + 1 of them work | ****
 CF 742 | E | complete | interval merging segment tree | ****
 CF 742 | D | complete | greedy, go from highest digit to the lowest digit | ****
 CF 742 | C | complete | big brain observation | ****
