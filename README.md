@@ -112,6 +112,7 @@ USACO 2017 Jan Platinum | Promotion Counting | complete | Persistent tree, dfs o
 USACO 2017 Feb Platinum | Why did the Cow Cross the Road I | complete | Fenwick, shift both a and b | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
+USACO 2020 US Open Gold | Hair Cut | complete | fenwick, each time add inverse pair end with j | ***
 USACO 2007 Nov Gold | Cow Relays | complete | binary rate multiply, floyd algorithm | ****
 USACO 2003 Fall Gold | Puck Just Me | complete | Tarjan | ****
 USACO Training | Riding the Fence | complete | Euler Circuit, Hierholzer's Algorithm | ***
