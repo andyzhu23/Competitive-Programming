@@ -116,6 +116,7 @@ USACO 2020 US Open Gold | Favorite Color | complete | disjoint set union, merge 
 USACO 2020 US Open Gold | Hair Cut | complete | fenwick, each time add inverse pair end with j | ***
 USACO 2007 Nov Gold | Cow Relays | complete | binary rate multiply, floyd algorithm | ****
 USACO 2003 Fall Gold | Puck Just Me | complete | Tarjan | ****
+USACO Training | Bessie come Home | complete | dijkstra, reverse graph | **
 USACO Training | Riding the Fence | complete | Euler Circuit, Hierholzer's Algorithm | ***
 USACO 2005 Dec Gold | Layout | complete | Bellman-Ford, -1 for negative ring, -2 for not connected. turn Differential constraint into graphs | ****
 USACO 2011 Open Gold | Mowing the Lawn | complete | monotone queue dynamic programming | ***
