@@ -113,40 +113,41 @@ inline void init1(){
 const int N = 1e5 + 10;
 const int M = 310;
 
-template <typename T> 
 struct fen {
-    T st[M];
+    int st[M];
     int lowbit(int x) {return x & (-x);}
-    void update(int a, T b) {
+    void update(int a, int b) {
         for(int i = a; i < M; i += lowbit(i)) st[i] += b;
     }
-    T query(int a) {
-        T ans = 0;
+    int query(int a) {
+        int ans = 0;
         for(int i = a;i; i -= lowbit(i)) ans += st[i];
         return ans;
     }
     void clear() {
         memset(st, 0, sizeof(st));
     }
+//    void init(int n) {
+//        st = vi(n + 10);
+//    }
 };
 
-fen<int> st[M];
-os<int> vis;
-om<int, int> Map;
-vi pos[N];
 int n, m;
 bool cmp(int a, int b) {
     if(a / m != b / m) return a / m > b / m;
     return a % m < b % m;
 }
-
+os<int> vis;
+om<int, int> Map;
+vec<vi> pos(N);
+vec<fen> st(M);
 
 // initialize for the current subcase
 inline void init2(){
     vis.clear();
     Map.clear();
     for(vi& i : pos) i.clear();
-    for(fen<int>& i : st) i.clear();
+    for(fen& i : st) i.clear();
 }
 
 //-------------------  end of initialize  -------------------
@@ -173,14 +174,17 @@ inline void solve(){
     for(int i = 0;i<n * m;++i) pos[b[i]].pb(i);
     for(int i = 0;i<n * m;++i) sort(all(pos[i]), cmp);
     // simulation
+//    for(fen& i : st) i.init(m);
     int ans = 0;
     for(int i = 0;i<n * m;i++) {
         int p = pos[a[i]].back();
         int row = p / m;
         int col = p % m;
+        // cout<<a[i]<<' '<<row + 1<<' '<<col + 1<<'\n';
         ans += st[row + 1].query(col + 1);
+        // cout<<st[row + 1].query(col + 1)<<'\n';
         st[row + 1].update(col + 1, 1);
-        pos[a[i]].erase(pos[a[i]].begin() + int(pos[a[i]].size()) - 1);
+        pos[a[i]].pop_back();
     }
     cout<<ans<<'\n';
 }
