@@ -190,6 +190,10 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+Global 16 | D | complete | greedy, fenwick | ***
+Global 16 | C | complete | greedy | **
+Global 16 | B | complete | greedy | *
+Global 16 | A | complete | greedy | *
 CF Edu_113 | C | complete | case by case, for all permutations, k out of k + 1 of them work | ****
 CF 742 | E | complete | interval merging segment tree | ****
 CF 742 | D | complete | greedy, go from highest digit to the lowest digit | ****
