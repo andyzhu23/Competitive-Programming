@@ -190,6 +190,7 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+Global 16 | E | complete | separate all component, merge them, order don't matter | ****
 Global 16 | D | complete | greedy, fenwick | ***
 Global 16 | C | complete | greedy | **
 Global 16 | B | complete | greedy | *
