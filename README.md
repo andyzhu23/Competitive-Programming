@@ -195,6 +195,7 @@ Global 16 | D | complete | greedy, fenwick | ***
 Global 16 | C | complete | greedy | **
 Global 16 | B | complete | greedy | *
 Global 16 | A | complete | greedy | *
+CF Edu_113 | D | complete | only both on x or y, binary search, enumerate people add to time not multiply | ***
 CF Edu_113 | C | complete | case by case, for all permutations, k out of k + 1 of them work | ****
 CF 742 | E | complete | interval merging segment tree | ****
 CF 742 | D | complete | greedy, go from highest digit to the lowest digit | ****
