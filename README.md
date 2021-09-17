@@ -202,7 +202,7 @@ CF 742 | D | complete | greedy, go from highest digit to the lowest digit | ****
 CF 742 | C | complete | big brain observation | ****
 CF 742 | B | complete | working with xor, xor properties | **
 CF 742 | A | complete | switching U with D and vice versa | *
-CF Deltix21 | D | complete | interactive, get numbers three a time, (a & b) + (a | b) == a + b | ****
+CF Deltix21 | D | complete | interactive, get numbers three a time, (a & b) + (a ｜ b) == a + b | ****
 CF Deltix21 | C | complete | implementation, details very important | ***
 CF Deltix21 | B | complete | odd even, moving numbers | ***
 CF Deltix21 | A | complete | straight forward | *
