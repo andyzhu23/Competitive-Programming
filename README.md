@@ -81,6 +81,7 @@ C2 P5 | Koala Carnival | complete | Segment Tree, two pointer, binary search | *
 ### Google Kickstart
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+21 Round F | Problem A | complete | binary search | *
 21 Round E | Problem C | complete | Disjoint Set Union, merge palindrom elements | ***
 21 Round E | Problem A | complete | shuffle string by swaping | *
 21 Round B | Problem D | complete | Segment Tree, offline/unsynchronized calculation, dfs | ****
@@ -190,6 +191,9 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 743(div 2) | C | complete | cycle detection, see if it is DAG, then do dp | ****
+CF 743(div 2) | B | complete | make A or B monotone, then Binary Search | **
+CF 743(div 2) | A | complete | move all numbers to the right and then subtract, greedy | *
 Global 16 | E | complete | separate all component, merge them, order don't matter, no global variable | ****
 Global 16 | D | complete | greedy, fenwick | ***
 Global 16 | C | complete | greedy | **
