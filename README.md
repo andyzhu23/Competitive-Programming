@@ -211,6 +211,7 @@ CF Deltix21 | D | complete | interactive, get numbers three a time, (a & b) + (a
 CF Deltix21 | C | complete | implementation, details very important | ***
 CF Deltix21 | B | complete | odd even, moving numbers | ***
 CF Deltix21 | A | complete | straight forward | *
+CF 741 | E | complete | dp, longest prefix substring, only if the first different character is different | *****
 CF 741 | D2 | complete | map, binary search for position, prefix sum | ****
 CF 741 | D1 | complete | separate into odd even, prefix sum | ****
 CF 741 | C | complete | case by case | ****
