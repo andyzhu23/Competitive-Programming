@@ -282,6 +282,8 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | JM挑数 | complete | multiset | **
+NA | dynamic median | complete | priority queue, one for small one for big | ***
 NOIP 2017 | D2T3 | 列队 | complete | splay tree | ******
 NA | Interval Reversal | complete | splay tree | *****
 Another Contest 8 | P5 | complete | fenwick to find number of sequences | ***
