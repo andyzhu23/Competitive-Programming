@@ -191,6 +191,9 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu 114 | C | complete | binary search for hero to send | ***
+CF Edu 114 | B | complete | annoying math | **
+CF Edu 114 | A | complete | dfs | *
 CF 743(div 2) | C | complete | cycle detection, see if it is DAG, then do dp | ****
 CF 743(div 2) | B | complete | make A or B monotone, then Binary Search | **
 CF 743(div 2) | A | complete | move all numbers to the right and then subtract, greedy | *
