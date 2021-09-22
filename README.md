@@ -285,6 +285,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | redstone | if a node you can visit is incycle add one to amount of cycles | **
 NA | JM挑数 | complete | multiset | **
 NA | dynamic median | complete | priority queue, one for small one for big | ***
 NOIP 2017 | D2T3 | 列队 | complete | splay tree | ******
