@@ -193,6 +193,7 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu 114 | D | complete | priority queue to search max, hash banned, make sure add vis | ****
 CF Edu 114 | C | complete | binary search for hero to send | ***
 CF Edu 114 | B | complete | annoying math | **
 CF Edu 114 | A | complete | dfs | *
