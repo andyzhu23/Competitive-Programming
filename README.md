@@ -264,6 +264,7 @@ CF Edu_110 | C | complete | two pointer | ****
 CF Edu_110 | B | complete | sort into first even, then odd | ***
 CF LATOKEN | F2 | complete | Tarjan, Greedy(Gassing Bonny), dp on DAG | *****
 CF LATOKEN | F1 | complete | Tarjan, find all with in degree 0 | ****
+CF LATOKEN | D | complete | bipartite characteristics of trees | ***
 CF LATOKEN | C | complete | Realize cycle find numbers of cycle | **
 CF LATOKEN | B | complete | decrease only when one single column is tall | **
 CF 725 | G | complete | Binary Search, inequalities | ****
@@ -288,6 +289,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | 2spooky4me | complete | discretization, lazy | ***
 DMOJ | redstone | if a node you can visit is incycle add one to amount of cycles | **
 NA | JM挑数 | complete | multiset | **
 NA | dynamic median | complete | priority queue, one for small one for big | ***
