@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-template <typename T> using vec = vector<T>;
 int n, m;
 
 template <typename T> 
 struct fenwick {
+    template <typename T> using vec = vector<T>;
     vec<vec<T> > d;
 
     int n, m;
