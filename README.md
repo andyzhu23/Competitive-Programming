@@ -113,6 +113,7 @@ USACO 2017 Jan Platinum | Promotion Counting | complete | Persistent tree, dfs o
 USACO 2017 Feb Platinum | Why did the Cow Cross the Road I | complete | Fenwick, shift both a and b | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
+USACO 2020 Feb Gold | Exercise | complete | knapsack problem, add to n, sum of LCM | ****
 USACO 2020 Feb Gold | Help Yourself | complete | lazy, each segment contribute 1 when no other segment cover its beginning | ****
 USACO 2020 Feb Gold | TimeLine | complete | SPFA, remember to include the property less than m | ****
 USACO 2020 US Open Gold | Favorite Color | complete | disjoint set union, merge edges | ***
@@ -289,6 +290,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+SCOI | 游戏 | complete | knapsack dp, sum to n, find number of unique LCM | ****
 DMOJ | 2spooky4me | complete | discretization, lazy | ***
 DMOJ | redstone | if a node you can visit is incycle add one to amount of cycles | **
 NA | JM挑数 | complete | multiset | **
