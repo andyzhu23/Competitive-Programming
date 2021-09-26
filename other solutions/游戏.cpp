@@ -26,8 +26,7 @@ int main() {
     cin.tie(0);
     cin>>n;
     seive();
-    // for(int i = 0;i<=n;++i) dp[i][0] = 1;
-    dp[0][0] = 1;
+    for(int i = 0;i<=n;++i) dp[i][0] = 1;
     for(int j = 0;j<p.size();++j) {
         for(int i = 0;i<=n;++i) {
             dp[i][j + 1] = dp[i][j];
