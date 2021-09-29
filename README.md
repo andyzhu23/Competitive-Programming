@@ -295,6 +295,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | 最大生成森林 | complete | dsu, binary search | ***
 SCOI | 游戏 | complete | knapsack dp, sum to n, find number of unique LCM | ****
 DMOJ | 2spooky4me | complete | discretization, lazy | ***
 DMOJ | redstone | if a node you can visit is incycle add one to amount of cycles | **
