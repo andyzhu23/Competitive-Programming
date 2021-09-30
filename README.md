@@ -194,6 +194,12 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 744 | F | complete | dfs on zeros, build graph | ***
+CF 744 | E2 | complete | fenwick tree or balanced data structure, greedy | ***
+CF 744 | E1 | complete | simulate | *
+CF 744 | D | complete | do meeting one by one greedy, don't just subtract | **
+CF 744 | C | complete | brute force | *
+CF 744 | A | complete | count A, B, C | *
 CF Edu 114 | D | complete | priority queue to search max, hash banned, make sure add vis | ****
 CF Edu 114 | C | complete | binary search for hero to send | ***
 CF Edu 114 | B | complete | annoying math | **
