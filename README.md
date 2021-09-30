@@ -194,6 +194,7 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 744 | G | complete | use relative position to the l endpoint to avoid negative index | ****
 CF 744 | F | complete | dfs on zeros, build graph | ***
 CF 744 | E2 | complete | fenwick tree or balanced data structure, greedy | ***
 CF 744 | E1 | complete | simulate | *
