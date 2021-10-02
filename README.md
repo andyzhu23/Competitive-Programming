@@ -304,6 +304,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | 最小生成树? | complete | shrink LCA(not yet implemented) | ***
 DMOJ | Maria and Maze | complete | don't binary search | **
 NA | 最大生成森林 | complete | dsu, binary search | ***
 SCOI | 游戏 | complete | knapsack dp, sum to n, find number of unique LCM | ****
