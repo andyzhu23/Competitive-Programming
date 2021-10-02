@@ -168,7 +168,6 @@ inline void solve(){
     for(int i = 1;i<=n;++i) {
         st.update(1, 1, n, i, x[i] - y[i]);
         st.update(1, 1, n, i, st.query(1, 1, n, Map[*dis.ub(y[i])], Map[x[i]]));
-        // cout<<i<<' '<<st2.querySum(1, 1, n, Map[x[i]], Map[x[i]])<<'\n';
     }
     for(int i = 1;i<=n;++i) {
         ans += x[i] - x[i - 1];
@@ -176,8 +175,6 @@ inline void solve(){
         if(!s[i]) continue;
         ans += st.query(1, 1, n, Map[x[i]], Map[x[i]]);
         ans %= MOD;
-        // cout<<i<<' '<<st2.querySum(1, 1, n, Map[x[i]], Map[x[i]])<<'\n';
-        // cout<<"hello: "<<ans<<' '<<x[i]<<'\n';
     }
     ++ans;
     ans %= MOD;
