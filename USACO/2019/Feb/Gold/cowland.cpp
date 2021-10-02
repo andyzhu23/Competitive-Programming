@@ -3,6 +3,7 @@ using namespace std;
 const int N = 1e5 + 10;
 #define pb push_back
 int n, w[N]; 
+vector<int> e[N];
 
 struct segtree {
     #define lc (rt << 1)
@@ -28,48 +29,50 @@ struct segtree {
 
 } st;
 
-int dep[N], fa[N], hson[N], siz[N], dfn[N], rnk[N], top[N], tot;
-vector<int> e[N];
+struct HLD {
+    int dep[N], fa[N], hson[N], siz[N], dfn[N], rnk[N], top[N], tot;
 
-void dfs1(int u, int f) {
-    fa[u] = f;
-    dep[u] = dep[f] + 1;
-    siz[u] = 1;
-    for(int v : e[u]) {
-        if(v == f) continue;
-        dfs1(v, u);
-        if(siz[hson[u]] <= siz[v]) hson[u] = v;
-        siz[u] += siz[v];
+    void dfs1(int u, int f) {
+        fa[u] = f;
+        dep[u] = dep[f] + 1;
+        siz[u] = 1;
+        for(int v : e[u]) {
+            if(v == f) continue;
+            dfs1(v, u);
+            if(siz[hson[u]] <= siz[v]) hson[u] = v;
+            siz[u] += siz[v];
+        }
     }
-}
 
-void dfs2(int u, int f, int tp) {
-    top[u] = tp;
-    dfn[u] = ++tot;
-    rnk[tot] = u;
-    st.update(1, 1, n, tot, w[u]);
-    if(hson[u] == 0) return;
-    dfs2(hson[u], u, tp);
-    for(int v : e[u]) {
-        if(f == v || v == hson[u]) continue;
-        dfs2(v, u, v);
+    void dfs2(int u, int f, int tp) {
+        top[u] = tp;
+        dfn[u] = ++tot;
+        rnk[tot] = u;
+        st.update(1, 1, n, tot, w[u]);
+        if(hson[u] == 0) return;
+        dfs2(hson[u], u, tp);
+        for(int v : e[u]) {
+            if(f == v || v == hson[u]) continue;
+            dfs2(v, u, v);
+        }
     }
-}
 
-int query(int u, int v) {
-    int ans = 0;
-    while(top[u] != top[v]) {
-        if(dep[top[u]] < dep[top[v]]) swap(u, v);
-        ans ^= st.query(1, 1, n, dfn[top[u]], dfn[u]);
-        u = fa[top[u]];
+    int query(int u, int v) {
+        int ans = 0;
+        while(top[u] != top[v]) {
+            if(dep[top[u]] < dep[top[v]]) swap(u, v);
+            ans ^= st.query(1, 1, n, dfn[top[u]], dfn[u]);
+            u = fa[top[u]];
+        }
+        return ans ^ st.query(1, 1, n, min(dfn[u], dfn[v]), max(dfn[u], dfn[v]));
     }
-    return ans ^ st.query(1, 1, n, min(dfn[u], dfn[v]), max(dfn[u], dfn[v]));
-}
 
-void update(int u, int val) {
-    w[u] = val;
-    st.update(1, 1, n, dfn[u], val);
-}
+    void update(int u, int val) {
+        w[u] = val;
+        st.update(1, 1, n, dfn[u], val);
+    }
+
+} hld;
 
 int main() {
     ios::sync_with_stdio(0);
@@ -85,13 +88,13 @@ int main() {
         e[u].pb(v);
         e[v].pb(u);
     }
-    dfs1(1, 0);
-    dfs2(1, 0, 1);
+    hld.dfs1(1, 0);
+    hld.dfs2(1, 0, 1);
     while(q--) {
         int opt, i, j;
         cin>>opt>>i>>j;
-        if(opt == 1) update(i, j);
-        else cout<<query(i, j)<<'\n';
+        if(opt == 1) hld.update(i, j);
+        else cout<<hld.query(i, j)<<'\n';
     }
     return 0;
 }
