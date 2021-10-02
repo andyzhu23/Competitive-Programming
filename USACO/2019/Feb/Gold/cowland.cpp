@@ -27,10 +27,11 @@ struct segtree {
         else return query(lc, l, mid, x, mid) ^ query(rc, mid + 1, r, mid + 1, y);
     }
 
-} st;
+};
 
 struct HLD {
     int dep[N], fa[N], hson[N], siz[N], dfn[N], rnk[N], top[N], tot;
+    segtree st;
 
     void dfs1(int u, int f) {
         fa[u] = f;
