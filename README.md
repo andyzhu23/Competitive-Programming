@@ -196,6 +196,7 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 746 | D | complete | binary search, answer is maximum edge, euler tour | ***
 CF 746 | C | complete | Separate into case odd and even, only really need 1 or 2 edges deleted | ***
 CF 746 | B | complete | if one is not at the prooper position and it is stuck, answer is NO | **
 CF 746 | A | complete | don't use loop, just use math | *
