@@ -14,6 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 746 | Oct 3rd | 7:35 - 9:35 | 1210 | very sad that I missed on condition in the if statement for C 
 CF 742 | Sept 5th | 7:35 - 9:35 | 2921(first time solve 2250) | Good thing I solved E 
 DMOPC September | Sept 4th | 9:00 - 9:00 | 200 | I need to learn interactive problems!
 CF Deltix21 | Aug 29th | 7:35 - 10:35 | 1298 | Need more practices!
