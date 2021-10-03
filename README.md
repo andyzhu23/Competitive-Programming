@@ -195,6 +195,9 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 746 | C | complete | Separate into case odd and even, only really need 1 or 2 edges deleted | ***
+CF 746 | B | complete | if one is not at the prooper position and it is stuck, answer is NO | **
+CF 746 | A | complete | don't use loop, just use math | *
 CF global 15 | F | complete | all portals after current must be on, fenwick tree | ***
 CF 744 | G | complete | use relative position to the l endpoint to avoid negative index | ****
 CF 744 | F | complete | dfs on zeros, build graph | ***
