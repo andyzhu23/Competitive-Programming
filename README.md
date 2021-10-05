@@ -310,6 +310,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | figurine | complete | lazy propagation, keep max for A and B, {maxA, k}, {k, maxB} | ****
 NA | 树上操作 | complete | heavy light decomposition | ***
 NA | 最小生成树? | complete | shrink LCA(not yet implemented) | ***
 DMOJ | Maria and Maze | complete | don't binary search | **
