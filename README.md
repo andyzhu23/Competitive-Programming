@@ -97,6 +97,7 @@ DMOPC 16 c4 | P5 | complete | dsu, dfs | ***
 DMOPC 21 Sept | P3 | complete | interactive, merge two disjoint sets and redirect all edges in each query | ***
 DMOPC 21 Sept | P2 | complete | remove as "consecutive" as possible | **
 DMOPC 21 Sept | P1 | complete | greedy, go by two each time | *
+DMOPC 21 June | P4 | complete | heavy light decomposition, store how many son nodes are safe | ***
 DMOPC 21 June | P2 | complete | store lines in a set with pair<pii, pii> | ***
 DMOPC 21 May | P3 | complete | dfs, reverse graph, greedy | ***
 DMOPC 21 May | P2 | complete | greedy | ***
