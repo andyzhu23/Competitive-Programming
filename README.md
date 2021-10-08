@@ -14,6 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 747 | Oct 8th | 7:35 - 9:35 | 2764 | too dumb, too slow
 CF 746 | Oct 3rd | 7:35 - 9:35 | 1210 | very sad that I missed on condition in the if statement for C 
 CF 742 | Sept 5th | 7:35 - 9:35 | 2921(first time solve 2250) | Good thing I solved E 
 DMOPC September | Sept 4th | 9:00 - 9:00 | 200 | I need to learn interactive problems!
@@ -197,6 +198,10 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 747 | D | complete | dsu, mark all subsets, get the sum of the maximum possible subsets | ***
+CF 747 | C | complete | mark all factors, answer can only be 0 1 or 2 | ***
+CF 747 | B | complete | bitmask, fast_pow | **
+CF 747 | A | complete | two numbers always work are n and -(n - 1) | *
 CF 746 | D | complete | binary search, answer is maximum edge, euler tour | ***
 CF 746 | C | complete | Separate into case odd and even, only really need 1 or 2 edges deleted | ***
 CF 746 | B | complete | if one is not at the prooper position and it is stuck, answer is NO | **
