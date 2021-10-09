@@ -198,6 +198,7 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 747 | E1 | complete | combinatorics | *
 CF 747 | D | complete | dsu, mark all subsets, get the sum of the maximum possible subsets | ***
 CF 747 | C | complete | mark all factors, answer can only be 0 1 or 2 | ***
 CF 747 | B | complete | bitmask, fast_pow | **
