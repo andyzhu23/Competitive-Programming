@@ -317,6 +317,8 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NOI 21 | P1 | complete | heavy light decomposition, set heavy edges as that two of the nodes have the same value, update different value every time | ******
+SDOI | 染色 | complete | combining intervals, heavy light decomposition | ****
 DMOJ | figurine | complete | lazy propagation, keep max for A and B, {maxA, k}, {k, maxB} | ****
 NA | 树上操作 | complete | heavy light decomposition | ***
 NA | 最小生成树? | complete | shrink LCA(not yet implemented) | ***
