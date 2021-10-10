@@ -198,6 +198,11 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu 115 | E | complete | dp[i][j][0/1] means ith row, jth column, coming from above or left | ***
+CF Edu 115 | D | complete | find the number of cases that don't work, subtract from total | ****
+CF Edu 115 | C | complete | um TLEed, should use map | ***
+CF Edu 115 | B | complete | simple implementation | **
+CF Edu 115 | A | complete | simple observation | *
 CF 747 | E1 | complete | combinatorics | *
 CF 747 | D | complete | dsu, mark all subsets, get the sum of the maximum possible subsets | ***
 CF 747 | C | complete | mark all factors, answer can only be 0 1 or 2 | ***
