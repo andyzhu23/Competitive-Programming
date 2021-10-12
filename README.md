@@ -94,6 +94,8 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 21 Oct | P2 | complete | two arrays, keep track of index and value | **
+DMOPC 21 Oct | P1 | complete | binary search, prefix sum | ***
 DMOPC 16 c4 | P5 | complete | dsu, dfs | ***
 DMOPC 21 Sept | P3 | complete | interactive, merge two disjoint sets and redirect all edges in each query | ***
 DMOPC 21 Sept | P2 | complete | remove as "consecutive" as possible | **
