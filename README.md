@@ -202,6 +202,11 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 748 | E | complete | bfs, priority queue, use multiset to lower time complexity | ***
+CF 748 | D1 | complete | get difference, and get gcd | ***
+CF 748 | C | complete | binary search | **
+CF 748 | B | complete | only consider two digits | *
+CF 748 | A | complete | implmentation | *
 CF Edu 115 | E | complete | dp[i][j][0/1] means ith row, jth column, coming from above or left | ***
 CF Edu 115 | D | complete | find the number of cases that don't work, subtract from total | ****
 CF Edu 115 | C | complete | um TLEed, should use map | ***
