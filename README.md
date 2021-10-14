@@ -94,6 +94,8 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 21 Oct | P4 | complete | monotone queue dp, calculate l and r in O(n) | ***
+DMOPC 21 Oct | P3 | complete | randomize all the unknown number | ***
 DMOPC 21 Oct | P2 | complete | two arrays, keep track of index and value | **
 DMOPC 21 Oct | P1 | complete | binary search, prefix sum | ***
 DMOPC 16 c4 | P5 | complete | dsu, dfs | ***
