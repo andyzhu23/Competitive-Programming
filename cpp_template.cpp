@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2021-08-23 21:36:22
+ * @date    2021-10-14 20:25:01
  * @version 1.0.0
  */
 
@@ -11,6 +11,7 @@ using namespace std;
 // define
 #define OJ ONLINE_JUDGE
 #define endl "\n"
+#define rint registered int
 
 // pairs
 #define fir first
@@ -38,7 +39,8 @@ using namespace std;
 #define mset(x, y) memset(x, y, sizeof(x))
 
 // random
-#define random(a, b) rand() % (b - a + 1) + a
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+#define random(a, b) rng() % (b - a + 1) + a
 
 // Data Structure Shorten
 using ll = long long;
@@ -71,8 +73,16 @@ const ll LLINF = 0x3f3f3f3f3f3f3f3f;
 const int MOD = 1e9 + 7;
 const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
 struct Edge {int u, v, w;};
+struct pair_hash
+{
+    template <class T1, class T2>
+    std::size_t operator() (const std::pair<T1, T2> &pair) const {
+        return std::hash<T1>()(pair.first) ^ std::hash<T2>()(pair.second);
+    }
+};
 
 // common functions
+
 namespace comfun {
     template <typename T> inline void cmax(T& u, T v) { u = max(u, v); }
     template <typename T> inline void cmin(T& u, T v) { u = min(u, v); }
@@ -85,20 +95,25 @@ namespace comfun {
     {if(b == 1) return a % m; if(b == 0) return 1; T1 tmp = fast_pow(a, b >> 1, m); if(b & 1) return tmp * tmp % m * a % m; else return tmp * tmp % m;}
     template <typename T> inline bool is_prime(T x){if(x == 1) return false; for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 }
-
-// debug arrays
 namespace debug {
     template <typename T> inline void debugArray(T *arr,int sz){cout<<"[";for(int i=0;i<sz;i++){cout<<arr[i]<<", "; } cout<<"]\n";}
     template <typename T> inline void printArray(T *arr,int sz){for(int i=0;i<sz;i++){cout<<arr[i]<<" "; } cout<<"\n";}
 }
-
-// reading numbers
 namespace fast_io {
-    void read(int &number) {
-        bool negative = false; int c; number = 0; c = getchar();
-        if (c == '-') {negative = true;c = getchar();}
-        for (; (c > 47 && c < 58); c = getchar())number = number *10 + c - 48;
-        if (negative) number *= -1;
+    int read() {
+        int x = 0, f = 0; char ch = getchar();
+        while (!isdigit(ch)) f |= ch == '-', ch = getchar();
+        while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();
+            return f ? -x : x;
+    }
+    void read(int& x) {x = read();}
+    template<typename T> void print(T x) {
+        if (x < 0) putchar('-'), x = -x;
+        if (x >= 10) print(x / 10);
+            putchar(x % 10 + '0');
+    }
+    template<typename T> void print(T x, char let) {
+        print(x), putchar(let);
     }
 }
 
@@ -154,7 +169,7 @@ int main(){
     init1();
     srand(time(0));
     #if doCase
-    int t; read(t);
+    int t; t = read();
     for(int i = 1;i<=t;i++) {
         if(kickstart) cout<<"Case #"<< i<<": ";
         init2();
