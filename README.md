@@ -333,6 +333,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | Holy Grail War | complete | interval merging segment tree | ***
 DMOJ | Strict Evaluation | complete | basic lazy propagation | ***
 DMOJ | Subway_Routes | complete | locate the middle of the perimeter, and then dfs there | **** 
 NOI 21 | P1 | complete | heavy light decomposition, set heavy edges as that two of the nodes have the same value, update different value every time | ******
