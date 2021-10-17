@@ -202,6 +202,7 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_2 | E | complete | safe the result of heavy node, brute force light nodes | ****
 CF Edu_65 | F | complete | when merging l and r, it is l[i] * (n - i + 1) + r[i] * i | ****
 CF 748 | E | complete | bfs, priority queue, use multiset to lower time complexity | ***
 CF 748 | D1 | complete | get difference, and get gcd | ***
