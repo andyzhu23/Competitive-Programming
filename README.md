@@ -333,6 +333,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | Joey and Biology | complete | shortest editing distance | **
 DMOJ | Holy Grail War | complete | interval merging segment tree | ***
 DMOJ | Strict Evaluation | complete | basic lazy propagation | ***
 DMOJ | Subway_Routes | complete | locate the middle of the perimeter, and then dfs there | **** 
