@@ -183,7 +183,7 @@ inline void solve(){
             if(color[i] != color[v.fir]) 
                 e2[color[i]].pb(color[v.fir]);
     dfs2(1, 0, 0ll);
-    cout<<ans<<'\n';
+    print(ans, '\n');
 }
 
 
