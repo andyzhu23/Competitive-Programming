@@ -98,7 +98,6 @@ int main() {
             if(th[i].tot != th[j].tot) continue;
             for(auto x : th[i].ans) {
                 for(auto y : th[j].ans) {
-                    // cout<<i<<' '<<j<<'\n';
                     if(x == y) {
                         print(j, '\n');
                         flag = 1;
