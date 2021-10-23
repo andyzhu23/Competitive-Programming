@@ -163,6 +163,7 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 1996 | S5 | complete | easy minimum segtree | ***
 CCC 2003 | S5 | complete | mst, dfs | ***
 CCC 2019 | S5 | complete | divide and conquer, best solution for sub triangle is when it crosses the centroid (2/3) n | *****
 CCC 2020 on DMOJ | J4_hard | complete | Rolling Hash | ****
