@@ -336,6 +336,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | GGG | complete | change the index of the first array, LIS | **
 DMOJ | Bruce's Little Bridge | complete | merge nodes together that don't have edge length 1 | ***
 DMOJ | Joey and Biology | complete | shortest editing distance | **
 DMOJ | Holy Grail War | complete | interval merging segment tree | ***
