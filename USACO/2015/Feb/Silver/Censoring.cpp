@@ -43,9 +43,7 @@ int main() {
         if(out >= 0 && h[i] - h[out] * p[b.size()] == key) {
             last = out;
             for(int i = 1;i<=b.size();++i) {
-                if(i > 1) {
-                    lst.pop_back();
-                }
+                if(i > 1) lst.pop_back();
                 dq.pop_back();
             }
             out = lst.back();
