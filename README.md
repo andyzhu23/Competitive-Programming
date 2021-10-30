@@ -205,6 +205,9 @@ IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 752 | C | complete | check the prefix | **
+CF 752 | B | complete | greedy, separate all into n, or n - 1 subsets | *
+CF 752 | A | complete | implementation | *
 CF Edu_44 | F | complete | hash all character | ***
 CF Edu_2 | E | complete | save the result of heavy node, brute force light nodes | ****
 CF Edu_65 | F | complete | when merging l and r, it is l[i] * (n - i + 1) + r[i] * i | ****
