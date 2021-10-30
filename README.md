@@ -120,6 +120,7 @@ USACO 2017 Jan Platinum | Promotion Counting | complete | Persistent tree, dfs o
 USACO 2017 Feb Platinum | Why did the Cow Cross the Road I | complete | Fenwick, shift both a and b | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
+USACO 2015 Feb Gold | Censoring | complete | Hashing | ****
 USACO 2019 Feb Gold | Cow Land | complete | easy heavy light decomposition | ***
 USACO 2020 Feb Gold | Exercise | complete | knapsack problem, add to n, sum of LCM | ****
 USACO 2020 Feb Gold | Help Yourself | complete | lazy, each segment contribute 1 when no other segment cover its beginning | ****
