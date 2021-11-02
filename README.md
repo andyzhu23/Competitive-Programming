@@ -341,6 +341,9 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | School Traversal | complete | very easy and standard lca | *
+DMOJ SAC | That Problem | complete | dp, memory optimization | **
+DMOJ SAC | That Wall | complete | binary search, dp | ***
 DMOJ | Poutine | complete | lca, mantain max and second max | **
 DMOJ | GGG | complete | change the index of the first array, LIS | **
 DMOJ | Bruce's Little Bridge | complete | merge nodes together that don't have edge length 1 | ***
