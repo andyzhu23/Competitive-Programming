@@ -342,6 +342,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | 最小逆序对数 | complete | very standard fenwick tree | **
 DMOJ | School Traversal | complete | very easy and standard lca | *
 DMOJ SAC | That Problem | complete | dp, memory optimization | **
 DMOJ SAC | That Wall | complete | binary search, dp | ***
