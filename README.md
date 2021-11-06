@@ -342,6 +342,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+JSOI 2012 | 玄武密码 | complete | AC automaton | ****
 DMOJ | Victor Makes Banks | complete | matrices power, consider case when n = 1 | ***
 DMOJ | 最小逆序对数 | complete | very standard fenwick tree | **
 DMOJ | School Traversal | complete | very easy and standard lca | *
