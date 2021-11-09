@@ -342,6 +342,9 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CSP S 21 | 回文 | complete | big brain observation | ***
+APIO 14 | Split the Sequence | complete | Convex Hull Trick | ****
+NA | 最长异或路径 | complete | Trie | ***
 JSOI 2012 | 玄武密码 | complete | AC automaton | ****
 DMOJ | Victor Makes Banks | complete | matrices power, consider case when n = 1 | ***
 DMOJ | 最小逆序对数 | complete | very standard fenwick tree | **
