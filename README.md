@@ -342,6 +342,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+COCI 16 c4 | kas | complete | dp stores difference between two numbers | ***
 DMOJ | Cheapest Operation Ever | complete | Convex Hull Trick dp | ****
 CSP S 21 | 回文 | complete | big brain observation | ***
 APIO 14 | Split the Sequence | complete | Convex Hull Trick dp | ****
