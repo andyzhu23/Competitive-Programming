@@ -342,6 +342,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | Frog 3 | complete | Convex Hull Trick | ****
 UCC | WoodCutting Game | complete | game theory dp | ***
 DMOJ | pick up | complete | dp | **
 COCI 16 c4 | kas | complete | dp stores difference between two numbers | ***
