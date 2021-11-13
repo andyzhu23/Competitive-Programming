@@ -162,6 +162,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO 2013 | P3 | complete | find half of perimeter | ****
 CCO 2015 | P2 | complete | Bitmasking | ****
 
 ### CCC Problems
