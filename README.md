@@ -83,6 +83,8 @@ C2 P5 | Koala Carnival | complete | Segment Tree, two pointer, binary search | *
 ### Google Kickstart
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+21 Round H | Problem B | complete | fake dp | *
+21 Round H | Problem A | complete | Greedy | *
 21 Round F | Problem A | complete | binary search | *
 21 Round E | Problem C | complete | Disjoint Set Union, merge palindrom elements | ***
 21 Round E | Problem A | complete | shuffle string by swaping | *
