@@ -98,6 +98,8 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 21 Nov | P2 | complete | only consider separate into two | ***
+DMOPC 21 Nov | P1 | complete | interactive big brain | **
 DMOPC 21 Oct | P4 | complete | monotone queue dp, calculate l and r in O(n) | ***
 DMOPC 21 Oct | P3 | complete | randomize all the unknown number | ***
 DMOPC 21 Oct | P2 | complete | two arrays, keep track of index and value | **
