@@ -350,6 +350,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | knapsack 3 | complete | knapsack binary packaging | ***
 NOIP 18 | Paving Road | complete | very standard dp | *
 DMOJ | Mimi and Division | complete | partition algorithm & brute force | ***
 DMOJ | Frog 3 | complete | Convex Hull Trick | ****
