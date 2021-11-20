@@ -119,6 +119,13 @@ DMOPC 20 Contest 5 | On the Clock | complete | enumeration, double inacurrate | 
 DMOPC 20 Contest 4 | Beautiful Grid | complete | Greedy, enumeration | ***
 DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | ****
 
+
+### Mock USACO
+Source | Problems | status | skills needed | rating
+-------|----------|--------|---------------|-------
+wlxsq | calc | complete | binary lifting | ****
+wlxsq | travel | complete | dfs | *
+
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
