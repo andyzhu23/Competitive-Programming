@@ -223,6 +223,8 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 105 | D | complete | probability dp | ***
+CF 399 | D | complete | probability dp | ***
 CF 752 | C | complete | check the prefix | **
 CF 752 | B | complete | greedy, separate all into n, or n - 1 subsets | *
 CF 752 | A | complete | implementation | *
