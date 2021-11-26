@@ -14,6 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 756 | Nov 25th | 6:35 - 8:50 | 4/8 | Got hacked for E1, F considered an extra step that is wrong 
 DMOJ November | November 12th - 15th | 9:00 | 210 | Should've finished first problem quicker 
 DMOJ October | October 8th -11th | 9:00 | 230 | should've attempted interactive, for problem 4 should've known how to do it
 CF 747 | Oct 8th | 7:35 - 9:35 | 2764 | too dumb, too slow
@@ -98,6 +99,7 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 21 Nov | P4 | complete | use DSU to merge groups, use segtree that store sizes for each value | ****
 DMOPC 21 Nov | P2 | complete | only consider separate into two | ***
 DMOPC 21 Nov | P1 | complete | interactive big brain | **
 DMOPC 21 Oct | P4 | complete | monotone queue dp, calculate l and r in O(n) | ***
@@ -224,6 +226,11 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 756 | F | complete | two pointer | ***
+CF 756 | D | complete | basic tree dp | **
+CF 756 | C | complete | big scam, biggest value forces you to always choose other side | ***
+CF 756 | B | complete | get better at math | *
+CF 756 | A | complete | answer can only be -1, 1, 2 | *
 CF 105 | D | complete | probability dp | ***
 CF 399 | D | complete | probability dp | ***
 CF 752 | C | complete | check the prefix | **
