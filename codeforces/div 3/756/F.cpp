@@ -169,7 +169,6 @@ inline void solve(){
         }
         if(l != 0 && r - l > 0 && r - l > ans.sec - ans.fir) ans = {l, r};
         Min -= a[l], tot -= a[l], ++l;
-        while(Min - a[l] < 0 && l <= r && l <= n) Min -= a[l], tot -= a[l], ++l;
     }
     if(ans.sec - ans.fir <= 0) print(-1, '\n');
     else cout<<ans.fir<<' '<<ans.sec - 1<<'\n';
