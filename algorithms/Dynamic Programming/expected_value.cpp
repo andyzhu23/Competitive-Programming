@@ -25,6 +25,6 @@ int main() {
     vis[1] = 1;
     dp[1] = 1;
     cin>>n>>m;
-    cout<<setprecision(7)<<dfs(m)<<'\n';
+    printf("%.6lf\n", dfs(m));
     return 0;
 }
