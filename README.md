@@ -227,6 +227,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 CF 756 | F | complete | two pointer | ***
+CF 756 | E2 | complete | dp, think of how one branch can protect the other | ***
 CF 756 | E1 | complete | use BFS not DFS | **
 CF 756 | D | complete | basic tree dp | **
 CF 756 | C | complete | big scam, biggest value forces you to always choose other side | ***
