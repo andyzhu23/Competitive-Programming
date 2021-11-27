@@ -149,6 +149,7 @@ vector<int> e[N];
 
 void dfs(int u, int fa = 0) {
     dist[u] = dist[fa] + 1;
+
     for(int v : e[u]) {
         if(v == fa) continue;
         dfs(v, u);
