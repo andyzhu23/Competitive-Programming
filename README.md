@@ -178,6 +178,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO 2010 | P6 | complete | binary lifting | ***
 CCO Prep | packing up | complete | convex hull trick, use __int128 | ****
 CCO 2018 | P1 | complete | LCS | **
 CCO 2013 | P3 | complete | find half of perimeter | ****
