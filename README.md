@@ -228,7 +228,8 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-CF Deltix Autumn21 | D | complete | brute force to store the state before arranging any non necessary moves | *
+CF Deltix Autumn21 | E | complete | obtain states, and costs to go to other states, maintain states with segtree | ****
+CF Deltix Autumn21 | D | complete | brute force to store the state before arranging any non necessary moves | **
 CF Deltix Autumn21 | C | complete | dsu, merge consecutive 1s | *
 CF Deltix Autumn21 | B | complete | just count how many abc are there | *
 CF Deltix Autumn21 | A | complete | very simple greedy | *
