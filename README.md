@@ -14,7 +14,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
-CF Deltix Autumn | Nov 28th | 6:35 - 8:05 | 3680 ｜ For D, I thought too much, should've just read data size more carefully
+CF Deltix Autumn | Nov 28th | 6:35 - 8:05 | 3680 | For D, I thought too much, should've just read data size more carefully
 CF 756 | Nov 25th | 6:35 - 8:50 | 4/8 | Got hacked for E1, F considered an extra step that is wrong 
 DMOJ November | November 12th - 15th | 9:00 | 210 | Should've finished first problem quicker 
 DMOJ October | October 8th -11th | 9:00 | 230 | should've attempted interactive, for problem 4 should've known how to do it
