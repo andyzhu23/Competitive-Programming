@@ -1,8 +1,11 @@
 /*
  * Author: Andy Zhu
- * @date    2021-10-14 20:25:01
- * @version 1.0.0
+ * @date    ${date}
+ * @version ${6:1.0.0}
  */
+
+// optimize
+#pragma GCC optimize(2)
 
 //include
 #include <bits/stdc++.h>
@@ -106,7 +109,14 @@ namespace fast_io {
         while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();
             return f ? -x : x;
     }
+    ll readLL() {
+        ll x = 0, f = 0; char ch = getchar();
+        while (!isdigit(ch)) f |= ch == '-', ch = getchar();
+        while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();
+            return f ? -x : x;
+    }
     void read(int& x) {x = read();}
+    void read(ll& x) {x = readLL();}
     template<typename T> void print(T x) {
         if (x < 0) putchar('-'), x = -x;
         if (x >= 10) print(x / 10);
@@ -149,44 +159,44 @@ inline void solve(){
 #define doCase 0
 #define config 0
 #define kickstart 0
-#define unsync 1
+#define unsync 0
 
 inline void setIO() {
-    #if config
+#if config
     // configuration here
-    freopen(".in", "r", stdin);
-    freopen(".out", "w", stdout);
-    #endif
-    #if unsync
+    freopen("in.txt", "r", stdin);
+    freopen("out.txt", "w", stdout);
+#endif
+#if unsync
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    #endif
+#endif
 }
 
 int main(){
     setIO();
     init1();
     srand(time(0));
-    #if doCase
+#if doCase
     int t; t = read();
     for(int i = 1;i<=t;i++) {
         if(kickstart) cout<<"Case #"<< i<<": ";
         init2();
         solve();
     }
-    #else 
+#else 
     solve();
-    #endif
+#endif
     string jack = "Jack is always within you";
     return 0;
 }
 
  
 /* stuff you should look for
-    * int overflow, array bounds
-    * special cases (n=1?)
-    * do smth instead of nothing and stay organized
-    * WRITE STUFF DOWN
-    * DON'T GET STUCK ON ONE APPROACH
+	* int overflow, array bounds
+	* special cases (n=1?)
+	* do smth instead of nothing and stay organized
+	* WRITE STUFF DOWN
+	* DON'T GET STUCK ON ONE APPROACH
 */
