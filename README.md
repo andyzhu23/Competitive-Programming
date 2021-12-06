@@ -381,6 +381,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | check number | complete | binary search | **
 DMOJ | Arithmetic Snowman | complete | dp, be careful of memory | **
 DMOJ | nightmare-a-thon | complete | segment tree | **
 DMOJ | knapsack 3 | complete | knapsack binary packaging | ***
