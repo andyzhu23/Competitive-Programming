@@ -136,6 +136,7 @@ USACO 2017 Jan Platinum | Promotion Counting | complete | Persistent tree, dfs o
 USACO 2017 Feb Platinum | Why did the Cow Cross the Road I | complete | Fenwick, shift both a and b | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
+USACO 2021 Feb Gold | Stone Game | complete | game theory, mirror moves, find odd occurrence | ****
 USACO 2019 Dec Gold | moortal cowmbat | complete | dp, floyd algorithm, prefix sum | ***
 USACO 2019 Dec Gold | milk_pumping | complete | dijkstra's algorithm, another dimension for flow rate | ***
 USACO 2021 Jan Gold | telephone | complete | only connect the closest breeds, connecting to further cows will only produce same result | ***
