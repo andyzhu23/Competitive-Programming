@@ -227,6 +227,7 @@ CCC 2021 | S4 | complete | Reversed graph, Dijkstra, priority_queue | ***
 CCC 2015 | S4 | complete | SPFA, add a dimension | **
 CCC 2002 | S4 | complete | Doing dp in an interval | ***
 CCC 2001 | S3 | complete | Disjoint Set | **
+CCC 2009 | S3 | complete | toxic | *
 
 ### IOI Problems
 Source | Problems | Status | Skills needed | rating 
