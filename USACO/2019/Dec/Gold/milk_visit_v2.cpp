@@ -92,7 +92,7 @@ int main() {
     }
     dfs2();
     for(auto& x : q) {
-        putchar((bool)(ans[x.a][x.c] + ans[x.b][x.c] - 2 * ans[x.lca][x.c] + (t[x.lca] == x.c)) ? '1' : '0');
+        putchar((bool)(ans[x.a][x.c] + ans[x.b][x.c] - (ans[x.lca][x.c] << 1) + (t[x.lca] == x.c)) ? '1' : '0');
     }
     putchar('\n');
     return 0;
