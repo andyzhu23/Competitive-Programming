@@ -1,8 +1,6 @@
-### Hello, This is my Competitive-Programming Solution page, I mainly created it for myself to review all the solutions that I coded, if you enjoy my noobie code then good for you
+### Hello, This is a Competitive-Programming Solution page
 
-For those java solutions, I named the main class Main for convenience when submitting the code file
-
-If you see any issues, please feel free to send pull requests or send me an email to let me know.
+If you see any issues, please feel free to send pull requests or send me an email.
 
 Reach me: andy.zhu23@stgeorges.bc.ca
 
