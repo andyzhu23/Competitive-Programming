@@ -134,6 +134,8 @@ USACO 2017 Jan Platinum | Promotion Counting | complete | Persistent tree, dfs o
 USACO 2017 Feb Platinum | Why did the Cow Cross the Road I | complete | Fenwick, shift both a and b | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
+USACO 2019 US Open Gold | P1 | complete | dp, sparse table | **
+USACO 2019 US Open Gold | P2 | complete | minimum spanning tree, the kth biggest edge, prim O(n^2) | ***
 USACO 2020 Jan Gold | threesum | complete | interval dp, consider two end points to update, use array instead of unordered_map, delete only the added | ***
 USACO 2020 Jan Gold | boards | complete | segment tree, remember to sort by y as well, write transition out | ***
 USACO 2020 Jan Gold | Time is Mooney | complete | dp add dimension, reverse graph, remember to initialize | **
