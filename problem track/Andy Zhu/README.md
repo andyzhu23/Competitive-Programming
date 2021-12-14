@@ -4,7 +4,7 @@ task | date | time
 -----|------|-----
 
 
-# Andy Zhu past events
+past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
 CF Deltix Autumn | Nov 28th | 6:35 - 8:05 | 3680 | For D, I thought too much, should've just read data size more carefully
