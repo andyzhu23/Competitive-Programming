@@ -1,8 +1,3 @@
-### Hello, This is a Competitive-Programming Solution page
-
-If you see any issues, please feel free to send pull requests or send me an email.
-
-Reach me: andy.zhu23@stgeorges.bc.ca
 
 # to do list
 task | date | time
