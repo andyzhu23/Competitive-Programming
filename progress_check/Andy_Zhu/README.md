@@ -130,6 +130,7 @@ USACO 2017 Jan Platinum | Promotion Counting | complete | Persistent tree, dfs o
 USACO 2017 Feb Platinum | Why did the Cow Cross the Road I | complete | Fenwick, shift both a and b | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
+USACO 2020 Feb Gold | delegation | complete | dp, only one path can lead up the tree, all rest need to be matched | ***
 USACO 2020 Dec Gold | P3 | complete | two pointers, flip the coordinates for easier implementation | ****
 USACO 2019 US Open Gold | P1 | complete | dp, sparse table | **
 USACO 2019 US Open Gold | P2 | complete | minimum spanning tree, the kth biggest edge, prim O(n^2) | ***
