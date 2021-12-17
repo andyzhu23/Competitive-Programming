@@ -125,7 +125,8 @@ wlxsq | travel | complete | dfs | *
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-USACO 2020 Feb Platinum | No time to cry | complete | answer equal to length minus pairs of same color such that they can be drawn with one bruh stroke | ***
+USACO 2021 US Open Platinum | P1 | complete | segment tree to calculate number of sets for all l as r is enumerated | ****
+USACO 2021 Feb Platinum | No time to cry | complete | answer equal to length minus pairs of same color such that they can be drawn with one bruh stroke | ***
 USACO 2020 Dec Platinum | Sleeping cows | complete | dp, add dimensions | *****
 USACO 2017 Jan Platinum | Promotion Counting | complete | Persistent tree, dfs order | *****
 USACO 2017 Feb Platinum | Why did the Cow Cross the Road I | complete | Fenwick, shift both a and b | ***
