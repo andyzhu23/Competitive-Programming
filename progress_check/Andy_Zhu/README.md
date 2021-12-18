@@ -132,6 +132,7 @@ USACO 2017 Jan Platinum | Promotion Counting | complete | Persistent tree, dfs o
 USACO 2017 Feb Platinum | Why did the Cow Cross the Road I | complete | Fenwick, shift both a and b | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
+USACO 2019 Jan Gold | shortcut | dijkstra, build the tree last, very important, otherwise order is messed up | ***
 USACO 2019 Feb Gold | barn painting | complete | 2d lazy, enumerate 2 column and use prefix sum, two rectangle most have one axis to separate | ****
 USACO 2019 Feb Gold | dishes | complete | binary searching, simulation | ***
 USACO 2020 Feb Gold | delegation | complete | dp, only one path can lead up the tree, all rest need to be matched | ***
