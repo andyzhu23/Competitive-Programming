@@ -7,10 +7,11 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+DMOPC December | December 17th - December 20th | 9:00 | 205 | left the last hour, should've been able to solve P3
 CF Deltix Autumn | Nov 28th | 6:35 - 8:05 | 3680 | For D, I thought too much, should've just read data size more carefully
 CF 756 | Nov 25th | 6:35 - 8:50 | 4/8 | Got hacked for E1, F considered an extra step that is wrong 
-DMOJ November | November 12th - 15th | 9:00 | 210 | Should've finished first problem quicker 
-DMOJ October | October 8th -11th | 9:00 | 230 | should've attempted interactive, for problem 4 should've known how to do it
+DMOPC November | November 12th - 15th | 9:00 | 210 | Should've finished first problem quicker 
+DMOPC October | October 8th -11th | 9:00 | 230 | should've attempted interactive, for problem 4 should've known how to do it
 CF 747 | Oct 8th | 7:35 - 9:35 | 2764 | too dumb, too slow
 CF 746 | Oct 3rd | 7:35 - 9:35 | 1210 | very sad that I missed on condition in the if statement for C 
 CF 742 | Sept 5th | 7:35 - 9:35 | 2921(first time solve 2250) | Good thing I solved E 
