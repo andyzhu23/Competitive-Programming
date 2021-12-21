@@ -93,6 +93,9 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 21 Dec | P3 | complete | nothing to do with coding, pure math | **
+DMOPC 21 Dec | P2 | complete | prime sieving | *
+DMOPC 21 Dec | P1 | complete | geometry and slopes | *
 DMOPC 21 Nov | P4 | complete | use DSU to merge groups, use segtree that store sizes for each value | ****
 DMOPC 21 Nov | P2 | complete | only consider separate into two | ***
 DMOPC 21 Nov | P1 | complete | interactive big brain | **
