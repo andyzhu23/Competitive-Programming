@@ -129,6 +129,7 @@ wlxsq | travel | complete | dfs | *
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO 2019 Dec Platinum | P1 | complete | interval dp | ****
 USACO 2021 US Open Platinum | P1 | complete | segment tree to calculate number of sets for all l as r is enumerated | ****
 USACO 2021 Feb Platinum | No time to cry | complete | answer equal to length minus pairs of same color such that they can be drawn with one bruh stroke | ***
 USACO 2020 Dec Platinum | Sleeping cows | complete | dp, add dimensions | *****
