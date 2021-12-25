@@ -403,6 +403,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NOI | Travel | complete | dp on DAG | **
 CSP S | 廊桥分配 | complete | greedy | ***
 DMOJ | check number | complete | binary search | **
 DMOJ | Arithmetic Snowman | complete | dp, be careful of memory | **
