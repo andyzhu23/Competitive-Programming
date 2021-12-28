@@ -178,12 +178,9 @@ inline void solve(){
             ll y = (slope * (MOD - a[i].fir) + a[i].sec) * 10000000ll;
             mp[y]++;
         }
-        // cout<<"fuck "<<k<<' '<<d<<'\n';
         for(auto x : mp) {
-            // cout<<x.fir<<' '<<x.sec<<'\n';
             ans += x.sec * (x.sec - 1) / 2;
         }
-        // cout<<'\n';
     }
     
     print(ans, '\n');
