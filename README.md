@@ -68,6 +68,10 @@ CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 ### An Animal Contest
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF | P4 | complete | throw l bananas, throw randomly doesn't matter, but last throw go to f | **
+C4 | P3 | complete | choose a reference coordinate, if two points with the same slope shoot to the same reference, then they form a pair | **
+C4 | P2 | complete | maintain a prefix lcm, and binary search | ***
+C4 | P1 | complete | super easy implementation | *
 C3 | P4 | complete | greedy, a bit of math | ***
 C3 | P3 | complete | sorting, greedy | **
 C3 | P2 | complete | greedy | *
