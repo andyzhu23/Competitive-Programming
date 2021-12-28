@@ -7,6 +7,7 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+An Animal Contest 4 | December 23rd - December 27th | 9:00 | 340 | should've got full for problem 4
 DMOPC December | December 17th - December 20th | 9:00 | 205 | left the last hour, should've been able to solve P3
 CF Deltix Autumn | Nov 28th | 6:35 - 8:05 | 3680 | For D, I thought too much, should've just read data size more carefully
 CF 756 | Nov 25th | 6:35 - 8:50 | 4/8 | Got hacked for E1, F considered an extra step that is wrong 
