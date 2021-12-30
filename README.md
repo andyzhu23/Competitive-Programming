@@ -410,6 +410,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | 温度测量 | complete | segment tree, maintain lowest temperature possible starting from some point before | ***
 NOI | Travel | complete | dp on DAG | **
 CSP S | 廊桥分配 | complete | greedy | ***
 DMOJ | check number | complete | binary search | **
