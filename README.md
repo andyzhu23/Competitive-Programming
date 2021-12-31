@@ -411,6 +411,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | Good Debugging | complete | segment tree, lazy propagation | **
 NA | 逆序对 | complete | Mo's Algorithm, fenwick tree | ***
 NA | 温度测量 | complete | segment tree, maintain lowest temperature possible starting from some point before | ***
 NOI | Travel | complete | dp on DAG | **
