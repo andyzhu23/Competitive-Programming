@@ -144,6 +144,7 @@ USACO 2017 Jan Platinum | Promotion Counting | complete | Persistent tree, dfs o
 USACO 2017 Feb Platinum | Why did the Cow Cross the Road I | complete | Fenwick, shift both a and b | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
+USACO 2018 Dec Gold | fine dining | complete | dijkstra, spfa, create a super node | ***
 USACO 2021 Dec Gold | pair up | complete | dp, binary search | ****
 USACO 2021 Dec Gold | HILO | complete | monotonic stack, enumerate rank, and then store position | ****
 USACO 2019 Jan Gold | sleepy | complete | shortest length is the total length subtract longest decreasing suffix | ***
