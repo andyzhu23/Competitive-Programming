@@ -411,6 +411,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | Fax's Christmas Bash | complete | fenwick tree to store coefficients, binary search for convex, use ceiling or floor | ****
 DMOJ | Good Debugging | complete | segment tree, lazy propagation | **
 NA | 逆序对 | complete | Mo's Algorithm, fenwick tree | ***
 NA | 温度测量 | complete | segment tree, maintain lowest temperature possible starting from some point before | ***
