@@ -411,6 +411,8 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+COCI | Index | complete | Mo's Algorithm, segment tree | ***
+DMOJ | Serial Killer | complete | segment tree, dp | **
 DMOJ | A Rage Tree Problem | complete | segment tree, lazy propagation | ***
 DMOJ | Fax's Christmas Bash | complete | fenwick tree to store coefficients, binary search for convex, use ceiling or floor | ****
 DMOJ | Good Debugging | complete | segment tree, lazy propagation | **
