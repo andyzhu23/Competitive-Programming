@@ -220,6 +220,7 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2020 | S5 | complete | dp, only last position of a burger matters, if need to randomly choose, the subset is always the same | ****
 CCC 1996 | S5 | complete | easy minimum segtree | ***
 CCC 2003 | S5 | complete | mst, dfs | ***
 CCC 2019 | S5 | complete | divide and conquer, best solution for sub triangle is when it crosses the centroid (2/3) n | *****
