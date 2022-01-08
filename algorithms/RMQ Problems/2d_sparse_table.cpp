@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-struct 2d_sparse_table {
+struct sparse_table {
 
     int st[10][10][1001][1001], p[1001];
 
