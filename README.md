@@ -7,6 +7,7 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+Hello 2022 | Jan 3rd | 6:35am | 2140 | I should just start from D next time
 BSSPC 21 Senior | December 26th - December 29th | 9:00 | 330 (15th place best so far) | think of out of bound earlier when debugging
 An Animal Contest 4 | December 23rd - December 27th | 9:00 | 340 | should've got full for problem 4
 DMOPC December | December 17th - December 20th | 9:00 | 205 | left the last hour, should've been able to solve P3
@@ -265,6 +266,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+Hello 2022 | C | complete | interactive, dfs | **
+Hello 2022 | B | complete | greedy, farthest segment | *
+Hello 2022 | A | complete | greedy | *
 CF Deltix Autumn21 | E | complete | obtain states, and costs to go to other states, maintain states with segtree | ****
 CF Deltix Autumn21 | D | complete | brute force to store the state before arranging any non necessary moves | **
 CF Deltix Autumn21 | C | complete | dsu, merge consecutive 1s | *
