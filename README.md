@@ -51,13 +51,10 @@ CF 728 | D | incomplete | expected value dp | **
 USACO 2017 US Open Platinum | P3 | incomplete
 P3002 | | incomplete
 DMOPC 21 May | P4 | incomplete | unsynchronized calculation, changing root dp |
-CCC 2020 | S5 | incomplete | dynamic programming | 
 USACO 15 Jan Gold |  Moovie Mooving | incomplete | bitmasking, dynamic programming |
 NA | 过河问题 | incomplete | Greedy | 
-NOI 09 | Modified Treap | incomplete | Dynmaic Programming | |
 CCC 2019/DMOJ add on | J5 | incomplete | Divide and Conquer | |
 USACO 21 Feb Gold | Count the Cows | incomplete | |
-USACO 21 Feb Gold | Stone Game | incomplete | |
 USACO 21 Open Gold | Permutation | incomplete | |
 USACO 21 Open Silver | Academia I | incomplete | |
 USACO 21 Open Silver | Maze Tac Toe | incomplete | |
