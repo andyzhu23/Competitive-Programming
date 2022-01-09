@@ -419,6 +419,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | City Game | complete | monotonic stack, find top and bottom bounds for a maximum length at a position | ***
 COCI | Index | complete | Mo's Algorithm, segment tree | ***
 DMOJ | Serial Killer | complete | segment tree, dp | **
 DMOJ | A Rage Tree Problem | complete | segment tree, lazy propagation | ***
