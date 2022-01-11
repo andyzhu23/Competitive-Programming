@@ -257,6 +257,7 @@ CCC 2009 | S3 | complete | toxic | *
 ### IOI Problems
 Source | Problems | Status | Skills needed | rating 
 -------|----------|--------|---------------|-------
+IOI 2004 | Empodia | complete | montonic stack to store min and max, two nodes is okay if value - index is the same | ***
 IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 IOI 1994 | The Triangle | complete | standard dp | *
 
