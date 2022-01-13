@@ -220,6 +220,7 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2002 | S4 hard | complete | segment tree, change result from i to the rightmost element greater than one | ***
 CCC 2020 | S5 | complete | dp, only last position of a burger matters, if need to randomly choose, the subset is always the same | ****
 CCC 1996 | S5 | complete | easy minimum segtree | ***
 CCC 2003 | S5 | complete | mst, dfs | ***
