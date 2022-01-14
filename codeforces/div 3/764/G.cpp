@@ -195,8 +195,6 @@ inline void solve(){
             if((x.w >> i | ans) == ans) {
                 dsu.merge(x.u, x.v);
             }
-            // cout<<x.w<<' '<<i<<' '<<ans<<'\n';
-            // cout<<(x.w >> i | ans)<<' '<<ans<<'\n';
         }
         unordered_set<int> vis;
         for(int i = 1;i<=n;++i) {
