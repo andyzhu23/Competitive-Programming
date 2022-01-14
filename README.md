@@ -266,6 +266,8 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 764 | G | complete | bitmask, go from high bit, dsu, mst | ***
+CF 764 | F | complete | interactive | ***
 CF 764 | E | complete | dp | **
 Hello 2022 | C | complete | interactive, dfs | **
 Hello 2022 | B | complete | greedy, farthest segment | *
