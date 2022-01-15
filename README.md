@@ -227,6 +227,7 @@ CCC 2003 | S5 | complete | mst, dfs | ***
 CCC 2019 | S5 | complete | divide and conquer, best solution for sub triangle is when it crosses the centroid (2/3) n | *****
 CCC 2020 on DMOJ | J4_hard | complete | Rolling Hash | ****
 CCC 2010 | S5 | complete | DP on a tree, trade memory for time | ***
+CCC 2003 | S4 | complete | if all substrings of length X are distinct, then all substring of X+1 should also be distinct | ***
 CCC 2009 | S4 | complete | dijkstra | **
 CCC 2011 | S4 | complete | disjoint set, reading input correctly | ***
 CCC 2010 | S3 | complete | binary search | **
