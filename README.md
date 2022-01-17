@@ -423,6 +423,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NA | 绝对价值 | complete | DSU | **
 Atcoder | Knapsack 2 | complete | reverse weight and value | **
 DMOJ | A Subarray Problem | complete | dsu or keep upper and lower bound | **
 DMOJ | City Game | complete | monotonic stack, find top and bottom bounds for a maximum length at a position | ***
