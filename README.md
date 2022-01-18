@@ -7,6 +7,7 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+DMOPC Jan | Jan 13th - Jan 17th | 9:00 | 220 | should've done P3, instead of focusing on P5 
 Mock CCC Senior 2 | Jan 2 - Jan 16th | 9:00 | 45 | could've done P3, overcomplicated it 
 Hello 2022 | Jan 3rd | 6:35am | 2140 | I should just start from D next time
 BSSPC 21 Senior | December 26th - December 29th | 9:00 | 330 (15th place best so far) | think of out of bound earlier when debugging
@@ -99,6 +100,9 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 21 Jan | P2 | complete | game theory dp, only three possible cases | ***
+DMOPC 21 Jan | P1 | complete | odd number first, then even number | **
+DMOPC 21 Jan | P1 | complete | number theory | *
 DMOPC 21 Dec | P3 | complete | nothing to do with coding, pure math | **
 DMOPC 21 Dec | P2 | complete | prime sieving | *
 DMOPC 21 Dec | P1 | complete | geometry and slopes | *
