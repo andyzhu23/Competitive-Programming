@@ -7,6 +7,7 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+An Animal Contest 5 | Jan 21th - Jan 24th | 9:00 | 410 (8th best so far) | keep it up, should've looked at P5 more 
 DMOPC Jan | Jan 13th - Jan 17th | 9:00 | 220 | should've done P3, instead of focusing on P5 
 Mock CCC Senior 2 | Jan 2 - Jan 16th | 9:00 | 45 | could've done P3, overcomplicated it 
 Hello 2022 | Jan 3rd | 6:35am | 2140 | I should just start from D next time
@@ -69,7 +70,11 @@ CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 ### An Animal Contest
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-CF | P4 | complete | throw l bananas, throw randomly doesn't matter, but last throw go to f | **
+C5 | P4 | complete | binary search, move big number first | ***
+C5 | P3 | complete | dfs with range | **
+C5 | P2 | complete | query 1 with all other numbers | *
+C5 | P1 | complete | super easy implementation | *
+C4 | P4 | complete | throw l bananas, throw randomly doesn't matter, but last throw go to f | **
 C4 | P3 | complete | choose a reference coordinate, if two points with the same slope shoot to the same reference, then they form a pair | **
 C4 | P2 | complete | maintain a prefix lcm, and binary search | ***
 C4 | P1 | complete | super easy implementation | *
