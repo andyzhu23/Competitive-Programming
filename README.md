@@ -263,6 +263,7 @@ CCC 2015 | S4 | complete | SPFA, add a dimension | **
 CCC 2002 | S4 | complete | Doing dp in an interval | ***
 CCC 2001 | S3 | complete | Disjoint Set | **
 CCC 2009 | S3 | complete | toxic | *
+CCC 2005 | S5 | complete | fenwick | **
 
 ### IOI Problems
 Source | Problems | Status | Skills needed | rating 
