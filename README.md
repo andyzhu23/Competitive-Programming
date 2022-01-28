@@ -246,6 +246,7 @@ CCC 2011 | S4 | complete | disjoint set, reading input correctly | ***
 CCC 2010 | S3 | complete | binary search | **
 CCC 2011 | S5 | complete | bitwise operation, bfs | **
 CCC 2019 | S4 | complete | Dynamic Programming, Sparse Table, Greedy | ***** |
+CCC 2019 | S4v2 | complete | segment tree, subtract by infinity, no worry about days | ****
 CCC 2017 | S5 | complete | block matrix, block[l] == block[r] not l == r | ***** |
 CCC 2018 | S5 | complete | Calculate Flights and Portals separately, link all portals/flights except those already connected | ***** |
 CCC 2012 | S4 | complete | Brute Force, BFS, java is op(passing array into queue), c++ pointer | *** |
