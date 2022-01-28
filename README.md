@@ -70,6 +70,7 @@ CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 ### An Animal Contest
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+C5 | P5 | complete | fenwick, two pointer | ****
 C5 | P4 | complete | binary search, move big number first | ***
 C5 | P3 | complete | dfs with range | **
 C5 | P2 | complete | query 1 with all other numbers | *
