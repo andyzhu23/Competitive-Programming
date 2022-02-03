@@ -7,6 +7,7 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+USACO 2022 Jan | Jan 28th - Jan 31st | 9:00 | 438 | so clooooose to plaaaat
 An Animal Contest 5 | Jan 21th - Jan 24th | 9:00 | 410 (8th best so far) | keep it up, should've looked at P5 more 
 DMOPC Jan | Jan 13th - Jan 17th | 9:00 | 220 | should've done P3, instead of focusing on P5 
 Mock CCC Senior 2 | Jan 2 - Jan 16th | 9:00 | 45 | could've done P3, overcomplicated it 
