@@ -221,6 +221,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO Mock 19 | P1 | complete | reverse merge | ***
 CCO 2014 | P3 | complete | dp on trees, knapsack | ***
 CCO 2014 | P1 | complete | dp | **
 CCO 2010 | P6 | complete | binary lifting | ***
