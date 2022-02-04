@@ -165,6 +165,15 @@ inline void init1(){
 
 // initialize for the current subcase
 inline void init2(){
+    
+}
+
+//-------------------  end of initialize  -------------------
+
+//--------------------- start of program ---------------------
+
+
+inline void solve(){
     int n = read(), k = read();
     ckmin(k, 20 * n);
     vector<int> a(n + 1), dp(k + 1);
@@ -176,15 +185,6 @@ inline void init2(){
         }
     }
     print(dp[k], '\n');
-}
-
-//-------------------  end of initialize  -------------------
-
-//--------------------- start of program ---------------------
-
-
-inline void solve(){
-    
 }
 
 
