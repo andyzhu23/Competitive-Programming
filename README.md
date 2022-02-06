@@ -287,6 +287,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 770 | D | complete | interactive | **
+CF 700 | C | complete | greedy | **
+CF 770 | A | complete | check if palindrome | *
 CF 769 | D | complete | segtree, binary search | ***
 CF 764 | G | complete | bitmask, go from high bit, dsu, mst | ***
 CF 764 | F | complete | interactive | ***
