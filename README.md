@@ -90,6 +90,7 @@ C2 P2 | Koala Party | complete | case enumeration | **
 C2 P3 | Koala Balloon | complete | binary search, prefix sum | ***
 C2 P4 | Koala Gambling | complete | case enumeration, greedy | ***
 C2 P5 | Koala Carnival | complete | Segment Tree, two pointer, binary search | *****
+C2 P6 | Koala Transport System | complete | heavy light decomposition | ***
 
 
 ### Google Kickstart
