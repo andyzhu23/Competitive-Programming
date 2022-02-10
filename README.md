@@ -141,6 +141,7 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### Mock USACO
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+wlxsq | 小说 | complete | two dimensional dijkstra | **
 wlxsq | DNA | complete | easy hashing | **
 wlxsq | 种树 | complete | dp | ***
 wlxsq | 旅游景点 ｜ complete | graph don't have to be connected, lca, connect edges not connected to node 1 ~ k first | **
