@@ -33,7 +33,7 @@ ll dist[N];
 
 struct cmp {
     inline bool operator() (const int& a, const int& b) {
-        return dist[a] < dist[b];
+        return dist[a] > dist[b];
     }
 };
 priority_queue<int, vector<int>, cmp> heap;
