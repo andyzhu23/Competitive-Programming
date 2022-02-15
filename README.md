@@ -110,6 +110,10 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 21 Feb | P4 | complete | A to B cover up C or D | ***
+DMOPC 21 Feb | P3 | complete | bfs with pq | **
+DMOPC 21 Feb | P2 | complete | greedy, just consecutive 0s are important | **
+DMOPC 21 Feb | P1 | complete | greedy | *
 DMOPC 21 Jan | P2 | complete | game theory dp, only three possible cases | ***
 DMOPC 21 Jan | P1 | complete | odd number first, then even number | **
 DMOPC 21 Jan | P1 | complete | number theory | *
