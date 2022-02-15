@@ -17,7 +17,6 @@ int main() {
     };
     while(l <= r) {
         double mid = (l + r) / 2;
-        // cout<<mid<<' '<<get(mid)<<' '<<m<<'\n';
         if(get(mid) <= m) ans = mid, l = mid + 0.0000001;
         else r = mid - 0.0000001; 
     }
