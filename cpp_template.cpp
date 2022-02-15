@@ -1,7 +1,8 @@
+
 /*
  * Author: Andy Zhu
- * @date    ${date}
- * @version ${6:1.0.0}
+ * @date    2022-02-15 11:14:15
+ * @version 1.0.0
  */
 
 // optimize
@@ -10,6 +11,13 @@
 //include
 #include <bits/stdc++.h>
 using namespace std;
+
+// #include <ext/pb_ds/assoc_container.hpp>
+// #include <ext/pb_ds/tree_policy.hpp>
+// using namespace __gnu_pbds;
+
+// template <typename T>
+// using ordered_set = tree<T, null_type,less<T>, rb_tree_tag,tree_order_statistics_node_update>;
 
 // define
 #define OJ ONLINE_JUDGE
@@ -49,8 +57,9 @@ mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 using ll = long long;
 using ull = unsigned long long;
 using ld = long double;
+using db = double;
 using pii = pair<int, int>;
-using pll = pair<ll, ll>;
+using pll = pair<long long, long long>;
 using qi = queue<int>;
 using stki = stack<int>;
 template <typename T> using vec = vector<T>;
@@ -60,24 +69,23 @@ template <typename T> using ms = multiset<T>;
 template <typename T1, typename T2> using um = unordered_map<T1, T2>;
 template <typename T1, typename T2> using om = map<T1, T2>;
 template <typename T> using pq = priority_queue<T>; 
-template <typename T> using pqg = priority_queue<T, vec<T>, greater<T> >;
-using vi = vec<int>;
-using vpii = vec<pii>;
-using vll = vec<ll>;
-using vpll = vec<pll>;
-using vb = vec<bool>;
+template <typename T> using pqg = priority_queue<T, vector<T>, greater<T> >;
+using vi = vector<int>;
+using vpii = vector<pair<int, int> >;
+using vll = vector<long long>;
+using vpll = vector<pair<long long, long long> >;
+using vb = vector<bool>;
 
 // loops!
 #define FOR(i, a, b) for(int i = (a); i < (b); ++i)
 
 // common variables
 const int INF = 0x3f3f3f3f;
-const ll LLINF = 0x3f3f3f3f3f3f3f3f;
+const long long LLINF = 0x3f3f3f3f3f3f3f3f;
 const int MOD = 1e9 + 7;
 const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
 struct Edge {int u, v, w;};
-struct pair_hash
-{
+struct pair_hash {
     template <class T1, class T2>
     std::size_t operator() (const std::pair<T1, T2> &pair) const {
         return std::hash<T1>()(pair.first) ^ std::hash<T2>()(pair.second);
@@ -87,15 +95,14 @@ struct pair_hash
 // common functions
 
 namespace comfun {
-    template <typename T> inline void cmax(T& u, T v) { u = max(u, v); }
-    template <typename T> inline void cmin(T& u, T v) { u = min(u, v); }
+    template <typename T> inline void ckmax(T& u, T v) { u = max(u, v); }
+    template <typename T> inline void ckmin(T& u, T v) { u = min(u, v); }
     template <typename T> inline T lowbit(T x){return x & (- x);}
     template <typename T> inline T gcd(T a, T b){if(a == 0) return b; if(b == 0) return a; return gcd(b, a % b);}
     template <typename T> inline T lcm(T a, T b){return a / gcd(a, b) * b;}
-    template <typename T1, typename T2> inline T1 fast_pow(T1 a, T2 b)
-    {if(b == 1) return a; if(b == 0) return 1; T1 tmp = fast_pow(a, b >> 1); if(b & 1) return tmp * tmp * a; else return tmp * tmp;}
-    template <typename T1, typename T2, typename T3> inline T1 fast_pow(T1 a, T2 b, T3 m)
-    {if(b == 1) return a % m; if(b == 0) return 1; T1 tmp = fast_pow(a, b >> 1, m); if(b & 1) return tmp * tmp % m * a % m; else return tmp * tmp % m;}
+    template <typename T1, typename T2> inline T1 fp(T1 a, T2 b) {T1 c = 1;while(b) {if(b & 1) c *= a;b >>= 1;a = a * a;}return c;}
+    template <typename T1, typename T2, typename T3> inline T1 fp(T1 a, T2 b, T3 mod) 
+    {T1 c = 1;while(b) {if(b & 1) c = c * a % mod;b >>= 1;a = a * a % mod;}return c;}
     template <typename T> inline bool is_prime(T x){if(x == 1) return false; for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 }
 namespace debug {
@@ -109,14 +116,14 @@ namespace fast_io {
         while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();
             return f ? -x : x;
     }
-    ll readLL() {
-        ll x = 0, f = 0; char ch = getchar();
+    long long readLL() {
+        long long x = 0, f = 0; char ch = getchar();
         while (!isdigit(ch)) f |= ch == '-', ch = getchar();
         while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();
             return f ? -x : x;
     }
     void read(int& x) {x = read();}
-    void read(ll& x) {x = readLL();}
+    void read(long long& x) {x = readLL();}
     template<typename T> void print(T x) {
         if (x < 0) putchar('-'), x = -x;
         if (x >= 10) print(x / 10);
@@ -194,9 +201,9 @@ int main(){
 
  
 /* stuff you should look for
-	* int overflow, array bounds
-	* special cases (n=1?)
-	* do smth instead of nothing and stay organized
-	* WRITE STUFF DOWN
-	* DON'T GET STUCK ON ONE APPROACH
+    * int overflow, array bounds
+    * special cases (n=1?)
+    * do smth instead of nothing and stay organized
+    * WRITE STUFF DOWN
+    * DON'T GET STUCK ON ONE APPROACH
 */
