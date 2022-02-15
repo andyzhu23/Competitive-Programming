@@ -449,6 +449,15 @@ CF 702 | Advertising Agency | complete | Math, Fermat's little theorem | **
 CF 697 | Accidental Victory | complete | Binary Search, sorting | ***
 CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 
+### SAC Code Challenge
+Source | Problems | status | skills needed | rating
+-------|----------|--------|---------------|-------
+c3 | P5 | complete | string hashing | **
+c3 | P4 | complete | do in reverse order, dsu, lca | ***
+c3 | P3 | complete | customized sorting | **
+c3 | P2 | complete | binary search | **
+c3 | P1 | complete | don't be stupid | *
+
 ### LeetCode
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
