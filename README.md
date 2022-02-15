@@ -1,3 +1,9 @@
+# Welcome!
+Hello, my name is Andy Zhu, I am a high schooler interested in Competitive Programming.
+
+andy_zhu23 on DMOJ(currently master, I would say decent)
+Andy.zhu23 on codeforces(currently specialist, I would say I am just bad)
+
 
 # to do list
 task | date | time
