@@ -1,7 +1,8 @@
 # Welcome!
-Hello, my name is Andy Zhu, I am a high schooler interested in Competitive Programming.
+Hello, my name is Andy Zhu, I am a high schooler interested in Competitive Programming. This repo is just for me to review my own solutions
 
 andy_zhu23 on DMOJ(currently master, I would say decent)
+
 Andy.zhu23 on codeforces(currently specialist, I would say I am just bad)
 
 
