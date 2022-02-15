@@ -59,9 +59,9 @@ int main() {
     while(!q.empty()) {
         int u = q.front(); q.pop();
         for(int v : e[u]) if(dist[v] > dist[u] + 1) {
-                dist[v] = dist[u] + 1;
-                q.push(v);
-            }
+            dist[v] = dist[u] + 1;
+            q.push(v);
+        }
     }
     for(int i = 1;i<=n;++i) {
         int x; cin>>x;
