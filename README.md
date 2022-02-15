@@ -457,6 +457,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | Inaho IX | complete | matrices multiplication | ****
 DMOJ | Training Regimen | complete | dsu | ***
 DMOJ | Multiplication Madness | Fermat's little theorem | *
 NA | 绝对价值 | complete | DSU | **
