@@ -154,6 +154,8 @@ DMOPC 20 Contest 4 | Roving Roombas | complete | Block Matrix, binarySearch | **
 ### Mock USACO
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+wlxsq | 华盛顿的斧子 | complete | DSU, kruskal | ***
+wlxsq | 绝地求生 | complete | segtree | ***
 wlxsq | 红叶配绿花 | complete | binary search, subtract red by a value | ****
 wlxsq | 招待 | complete | ternary | **
 wlxsq | 小说 | complete | two dimensional dijkstra | **
