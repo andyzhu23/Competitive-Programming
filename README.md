@@ -14,6 +14,7 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CCC Senior | Feb 16th | 8:00 | 43 | I shouldn't have focused on S5, I am actually bad
 DMOPC 21 Feb | Feb 10th - Feb 14th | 9:00 | 52 | P4 use bfs instead of dfs, go from the point not on path  
 CF 770 | Feb 6th | 6:35am | 2844 | look at parity
 USACO 2022 Jan | Jan 28th - Jan 31st | 9:00 | 438 | so clooooose to plaaaat
