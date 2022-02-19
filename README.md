@@ -162,7 +162,7 @@ wlxsq | 招待 | complete | ternary | **
 wlxsq | 小说 | complete | two dimensional dijkstra | **
 wlxsq | DNA | complete | easy hashing | **
 wlxsq | 种树 | complete | dp | ***
-wlxsq | 旅游景点 ｜ complete | graph don't have to be connected, lca, connect edges not connected to node 1 ~ k first | **
+wlxsq | 旅游景点 | complete | graph don't have to be connected, lca, connect edges not connected to node 1 ~ k first | **
 wlxsq | calc | complete | binary lifting | ****
 wlxsq | travel | complete | dfs | *
 
