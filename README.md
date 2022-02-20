@@ -3,7 +3,7 @@ Hello, my name is Andy Zhu, I am a high schooler interested in Competitive Progr
 
 andy_zhu23 on DMOJ(currently master, I would say decent)
 
-Andy.zhu23 on codeforces(currently specialist, I would say I am just bad)
+Andy.zhu23 on codeforces(currently expert, I would say I am just bad)
 
 
 # to do list
@@ -311,6 +311,14 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 772 | D | complete | dp, bitmask | ***
+CF 772 | C | complete | greedy | **
+CF 772 | B | complete | greedy | **
+CF 772 | A | complete | bitmask | **
+CF 771 | D | complete | bfs | ***
+CF 771 | C | complete | dsu, greedy, heap | **
+CF 771 | B | complete | sort parody | *
+CF 771 | A | complete | greedy | *
 CF 770 | D | complete | interactive | **
 CF 700 | C | complete | greedy | **
 CF 770 | B | complete | since guaranteed possible, focus on parity | ***
