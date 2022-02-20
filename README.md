@@ -14,6 +14,7 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 772 | Feb 20th | 6:35 | 4076 | very good in terms of accuracy, but need improvement on time
 CCC Senior | Feb 16th | 8:00 | 43 | I shouldn't have focused on S5, I am actually bad
 DMOPC 21 Feb | Feb 10th - Feb 14th | 9:00 | 52 | P4 use bfs instead of dfs, go from the point not on path  
 CF 770 | Feb 6th | 6:35am | 2844 | look at parity
