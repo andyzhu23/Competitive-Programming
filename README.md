@@ -312,6 +312,8 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 772 | F | complete | big brain proof, fenwick tree, sort according to r | ****
+CF 772 | E | complete | topological sort, dfs | ****
 CF 772 | D | complete | dp, bitmask | ***
 CF 772 | C | complete | greedy | **
 CF 772 | B | complete | greedy | **
