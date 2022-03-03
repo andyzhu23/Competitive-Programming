@@ -29,7 +29,6 @@ int main() {
         dp[i] = min(dp[i], dp[i - 1] + p[i].second + p[i].first - p[i - 1].first);
         for(int j = i + 1;j<=n;++j) {
             mx[j] = max(mx[j - 1] + p[j].first - p[j - 1].first, p[j].second + p[j].first - p[i].first);
-//            cout<<i<<' '<<j<<' '<<mx[j]<<'\n';
             dp[j] = min(dp[j], dp[i - 1] + dist(i, j) + p[i].first - p[i - 1].first);
         }
     }
