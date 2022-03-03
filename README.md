@@ -492,6 +492,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | Farming Simulator | complete | dp | ***
 wlxsq | 星球大战 | complete | compute in reverse order | ***
 COCI | Bicikli | complete | tarjan scc, dp | ***
 DMOJ | Inaho IX | complete | matrices multiplication | ****
