@@ -494,6 +494,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+wlxsq | 可达性统计 | complete | bitset | ***
 DMOJ | Fox Girls | complete | every connected component is tree plus an edge, run tree dp | ****
 DMOJ | Boxling | complete | fenwick, linesweep | ***
 DMOJ | Farming Simulator | complete | dp | ***
