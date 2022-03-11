@@ -14,6 +14,7 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 777 | Mar 11 | 6:35 | 2707 | fail to consider some cases for D
 CF 772 | Feb 20th | 6:35 | 4076(best so far 558th) | very good in terms of accuracy, but need improvement on time
 CCC Senior | Feb 16th | 8:00 | 43 | I shouldn't have focused on S5, I am actually bad
 DMOPC 21 Feb | Feb 10th - Feb 14th | 9:00 | 52 | P4 use bfs instead of dfs, go from the point not on path  
@@ -314,6 +315,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 777 | D | complete | multiple cases | ***
+CF 777 | C | complete | greedy | **
+CF 777 | B | complete | check for whole rectangle | **
+CF 777 | A | complete | only 2 1 are possible | *
 CF 772 | F | complete | big brain proof, fenwick tree, sort according to r | ****
 CF 772 | E | complete | topological sort, dfs | ****
 CF 772 | D | complete | dp, bitmask | ***
