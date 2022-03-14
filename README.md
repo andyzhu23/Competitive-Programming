@@ -14,6 +14,7 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+SAC Code Challenge 4 | Mar 13th | 9:00 | 500 | too slow debugging
 CF 777 | Mar 11 | 6:35 | 2707 | fail to consider some cases for D
 CF 772 | Feb 20th | 6:35 | 4076(best so far 558th) | very good in terms of accuracy, but need improvement on time
 CCC Senior | Feb 16th | 8:00 | 43 | I shouldn't have focused on S5, I am actually bad
@@ -485,6 +486,11 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### SAC Code Challenge
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+c4 | P5 | complete | do all q2, then binary search q1, and then sort | ***
+c4 | P4 | complete | sparse table, binary search | **
+c4 | P3 | complete | ternary search | *
+c4 | P2 | complete | dfs | *
+c4 | P1 | complete | implementation | *
 c3 | P5 | complete | string hashing | **
 c3 | P4 | complete | do in reverse order, dsu, lca | ***
 c3 | P3 | complete | customized sorting | **
