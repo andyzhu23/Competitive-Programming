@@ -316,6 +316,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 777 | E | complete | binary lifting, greedy | ****
 CF 777 | D | complete | multiple cases | ***
 CF 777 | C | complete | greedy | **
 CF 777 | B | complete | check for whole rectangle | **
