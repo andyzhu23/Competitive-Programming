@@ -486,6 +486,7 @@ CF 697 | Cleaning the Phone | complete | Sorting, Binary Search | ***
 ### SAC Code Challenge
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+c4 | J4 | complete | binary lifting | **
 c4 | P5 | complete | do all q2, then binary search q1, and then sort | ***
 c4 | P4 | complete | sparse table, binary search | **
 c4 | P3 | complete | ternary search | *
