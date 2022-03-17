@@ -249,6 +249,8 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+Mock CCO 18 | P3 | complete | second shortest path | ***
+CCO 12 | P2 | complete | second shortest path | ***
 CCO 98 | P1 | complete | big number | *
 CCO Mock 18 | P4 | complete | check negative cycle with bellman ford | **
 CCO 2010 | P2 | complete | dp on trees, knapsack | ***
