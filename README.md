@@ -309,6 +309,7 @@ CCC 2008 | S5 | complete | game theory dp | **
 ### IOI Problems
 Source | Problems | Status | Skills needed | rating 
 -------|----------|--------|---------------|-------
+IOI 2010 | P3 | complete | binary search, prefix sum | ***
 IOI 2004 | Empodia | complete | montonic stack to store min and max, two nodes is okay if value - index is the same | ***
 IOI 1996 | Network of Schools | complete | Tarjan scc | ***
 IOI 1994 | The Triangle | complete | standard dp | *
