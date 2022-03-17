@@ -163,7 +163,6 @@ inline void solve(){
     for(int i = 1;i<=m;++i) {
         int u = read(), v = read(), w = read();
         e[u].pb({v, w});
-        e[v].pb({u, w});
     }
     memset(dist1, 0x3f, sizeof(dist1));
     memset(dist2, 0x3f, sizeof(dist2));
@@ -183,7 +182,7 @@ inline void solve(){
             }
         }
     }
-    print(dist2[n], '\n');
+    print(dist2[n] == INF ? -1 : dist2[n], '\n');
 }
 
 
