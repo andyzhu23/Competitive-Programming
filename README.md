@@ -14,7 +14,7 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
-SAC Code Challenge 4 | Mar 13th | 9:00 | 500 | too slow debugging
+SAC Code Challenge 4 | Mar 13th | 9:00 | 500(AK) | too slow debugging
 CF 777 | Mar 11 | 6:35 | 2707 | fail to consider some cases for D
 CF 772 | Feb 20th | 6:35 | 4076(best so far 558th) | very good in terms of accuracy, but need improvement on time
 CCC Senior | Feb 16th | 8:00 | 43 | I shouldn't have focused on S5, I am actually bad
