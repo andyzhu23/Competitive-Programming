@@ -109,6 +109,9 @@ C2 P6 | Koala Transport System | complete | heavy light decomposition | ***
 ### Google Kickstart
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+22 Round A | Problem C | complete | bitmask dp | ***
+22 Round A | Problem B | complete | math | *
+22 Round A | Problem A | complete | super easy implementation | *
 21 Round H | Problem B | complete | fake dp | *
 21 Round H | Problem A | complete | Greedy | *
 21 Round F | Problem A | complete | binary search | *
