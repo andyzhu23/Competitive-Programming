@@ -513,6 +513,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+wlxsq | 方格取数 | complete | max flow, bipartite graph | ***
 TLE 16 c8 | P5 | complete | max flow/bipartite | ***
 ICPC | knapsack 4 | complete | dp store difference, random shuffle | ***
 DMOJ | Kth-Rank Student | complete | pbds ordered set, merge light into heavy | ***
