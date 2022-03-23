@@ -14,6 +14,7 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF Edu 125 | Mar 22nd | 7:35am | 3 problems | need improvement
 SAC Code Challenge 4 | Mar 13th | 9:00 | 500(AK) | too slow debugging
 CF 777 | Mar 11 | 6:35 | 2707 | fail to consider some cases for D
 CF 772 | Feb 20th | 6:35 | 4076(best so far 558th) | very good in terms of accuracy, but need improvement on time
