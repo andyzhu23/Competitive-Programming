@@ -325,6 +325,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_125 | D | complete | dp, combine D and H | ***
+CF Edu_125 | C | complete | regular can only be length 2, rest are all palindrome | **
+CF Edu_125 | B | complete | implementation | *
+CF Edu_125 | A | complete | "Cause first move x second move y"(Leo Liu) | *
 CF 777 | E | complete | binary lifting, greedy | ****
 CF 777 | D | complete | multiple cases | ***
 CF 777 | C | complete | greedy | **
