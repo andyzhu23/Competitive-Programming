@@ -1,9 +1,11 @@
 # Welcome!
 Hello, my name is Andy Zhu, I am a high schooler interested in Competitive Programming. This repo is just for me to review my own solutions
 
-andy_zhu23 on DMOJ(currently master, I would say decent)
+[andy_zhu23](https://dmoj.ca/user) on DMOJ(currently master, I would say decent)
 
-Andy.zhu23 on codeforces(currently expert, I would say I am just bad)
+[Andy.zhu23](https://codeforces.com/profile/Andy.zhu23) on codeforces(currently expert, I would say I am just bad)
+
+[ACSL Team](https://www.scores.acsl.org/roster/783/) Orz Henry Yi
 
 
 # to do list
