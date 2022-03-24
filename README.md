@@ -5,7 +5,7 @@ Hello, my name is Andy Zhu, I am a high schooler interested in Competitive Progr
 
 [Andy.zhu23](https://codeforces.com/profile/Andy.zhu23) on codeforces(currently expert, I would say I am just bad)
 
-[ACSL Team](https://www.scores.acsl.org/roster/783/) Orz Henry Yi
+[ACSL Team](https://www.scores.acsl.org/roster/783/) Henry Orz
 
 
 # to do list
