@@ -17,7 +17,7 @@ past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
 CF Edu 125 | Mar 22nd | 7:35am | 3 problems | need improvement
-Google Kickstart | Mar 19th | 9:00pm | 58 | throw less template 
+Google Kickstart | Mar 19th | 9:00pm | 58 | throw less template, wrong manacher alg
 SAC Code Challenge 4 | Mar 13th | 9:00 | 500(AK) | too slow debugging
 CF 777 | Mar 11 | 6:35 | 2707 | fail to consider some cases for D
 USACO 2022 Feb | Feb 25th-28th | 9:00 | 531 | get better at expected dp 
