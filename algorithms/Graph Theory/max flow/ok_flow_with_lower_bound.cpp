@@ -26,9 +26,9 @@ bool bfs() {
     while(!q.empty()) {
         int u = q.front(); q.pop();
         for(int i = head[u];i;i = e[i].nxt) if(!vis[e[i].v] && e[i].f > 0) {
-                vis[e[i].v] = vis[u] + 1;
-                q.push(e[i].v);
-            }
+            vis[e[i].v] = vis[u] + 1;
+            q.push(e[i].v);
+        }
     }
     mark.reset();
     return vis[T];
@@ -39,15 +39,14 @@ int dfs(int u = S, int f = inf) {
     if(u == T) return f;
     int ret = 0;
     mark[u] = 1;
-    for(int& i = cur[u];i;i = e[i].nxt)
-        if(vis[e[i].v] == vis[u] + 1 && e[i].f > 0 && !mark[e[i].v]) {
-            int tmp = dfs(e[i].v, min(f, e[i].f));
-            e[i].f -= tmp;
-            e[i ^ 1].f += tmp;
-            ret += tmp;
-            f -= tmp;
-            if(f == 0) break;
-        }
+    for(int& i = cur[u];i;i = e[i].nxt) if(vis[e[i].v] == vis[u] + 1 && e[i].f > 0 && !mark[e[i].v]) {
+        int tmp = dfs(e[i].v, min(f, e[i].f));
+        e[i].f -= tmp;
+        e[i ^ 1].f += tmp;
+        ret += tmp;
+        f -= tmp;
+        if(f == 0) break;
+    }
     mark[u] = 0;
     if(ret == 0) vis[u] = 0;
     return ret;
