@@ -29,7 +29,6 @@ int main() {
         vector<int> b;
         b.pb(0);
         b.pb(n + 1);
-        int mx = 0;
         for(int j = i + 1;j<a.size();++j) {
             int mx = 0;
             sort(b.begin(), b.end());
