@@ -274,6 +274,7 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2022 | J5 | complete | sorted based on x axis | ***
 Mock CCC 2022 1 | S4 | complete | Mo algorithm, reset left point, only expanding, don't use vectors or hashing structure, just array | ****
 Mock CCC 2022 2 | S3 | complete | hashing | ***
 CCC 2002 | S4 hard | complete | segment tree, change result from i to the rightmost element greater than one | ***
