@@ -23,7 +23,6 @@ void solve() {
         else if(c == '1');
         else t += c;
     }
-    // cout<<s<<' '<<t<<'\n';
     int ns = s.size() - 1;
     int nt = t.size() - 1;
     dp[0][0] = 1;
@@ -35,20 +34,12 @@ void solve() {
             if(s[i] == '+' && t[j] == '+') {
                 dp[i][j] = (dp[i][j - 1] + dp[i - 1][j] - dp[i - 1][j - 1] + mod) % mod;
             } else if(s[i] != '+' && t[j] != '+') {
-                // cout<<i<<' '<<j<<'\n';
-                // cout<<dp[i][j - 1]<<' '<<dp[i - 1][j]<<'\n';
                 dp[i][j] = (dp[i][j - 1] + dp[i - 1][j] - dp[i - 1][j - 1] + mod) % mod;
             } else {
                 dp[i][j] = (dp[i][j - 1] + dp[i - 1][j]) % mod;
             }
         }
     }
-    // for(int i = 1;i<=n;++i) {
-    //     for(int j = 1;j<=n;++j) {
-    //         cout<<dp[i][j]<<' ';
-    //     }
-    //     cout<<'\n';
-    // }
     cout<<dp[ns][nt]<<'\n';
 }
 
@@ -61,19 +52,3 @@ int main() {
     while(t--) solve();
     return 0;
 }
-
-/*
-4
-1
-0
-1
-3
-12+
-+02
-3
-0++
-++9
-4
-5+++
-+6+1
-*/
