@@ -16,7 +16,7 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
-USACO US Open 2022 | Mar 27th | 1:00 | 1000 | I love Bessie
+USACO US Open 2022 | Mar 27th | 1:00 | 1000 | I love Bessie!!! Orz Orz Orz
 CF Edu 125 | Mar 22nd | 7:35am | 3 problems | need improvement
 Google Kickstart | Mar 19th | 9:00pm | 58 | throw less template, wrong manacher alg
 SAC Code Challenge 4 | Mar 13th | 9:00 | 500(AK) | too slow debugging
