@@ -16,6 +16,7 @@ task | date | time
 past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+USACO US Open 2022 | Mar 27th | 1:00 | 1000 | I love Bessie
 CF Edu 125 | Mar 22nd | 7:35am | 3 problems | need improvement
 Google Kickstart | Mar 19th | 9:00pm | 58 | throw less template, wrong manacher alg
 SAC Code Challenge 4 | Mar 13th | 9:00 | 500(AK) | too slow debugging
@@ -190,6 +191,10 @@ USACO 2017 Jan Platinum | Promotion Counting | complete | Persistent tree, dfs o
 USACO 2017 Feb Platinum | Why did the Cow Cross the Road I | complete | Fenwick, shift both a and b | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
+USACO 2022 Open Gold | P3 | complete | maintain max l and min r for all subtrees | ****
+USACO 2022 Open Gold | P2 | complete | standard dp, 0 and 1 are special cases | ***
+USACO 2022 Open Gold | P1 | complete | realise two inequalities and use map | ****
+USACO 2022 Feb Gold | P3 | complete | only connect nodes from the same row once | **
 USACO 2022 Jan Gold | P1 | complete | dynamic programming, prefix sum | ***
 USACO 2018 Dec Gold | fine dining | complete | dijkstra, spfa, create a super node | ***
 USACO 2021 Dec Gold | pair up | complete | dp, binary search | ****
