@@ -334,6 +334,8 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 780 | F2 | complete | pigeonhole ignore adjacent, fenwick tree | *** 
+CF 780 | F1 | complete | easy enumeration | **
 CF Edu_125 | D | complete | dp, combine D and H | ***
 CF Edu_125 | C | complete | regular can only be length 2, rest are all palindrome | **
 CF Edu_125 | B | complete | implementation | *
