@@ -197,6 +197,7 @@ USACO 2022 Open Gold | P3 | complete | maintain max l and min r for all subtrees
 USACO 2022 Open Gold | P2 | complete | standard dp, 0 and 1 are special cases | ***
 USACO 2022 Open Gold | P1 | complete | realise two inequalities and use map | ****
 USACO 2022 Feb Gold | P3 | complete | only connect nodes from the same row once | **
+USACO 2022 Jan Gold | P2 | complete | do operations in reverse | ***
 USACO 2022 Jan Gold | P1 | complete | dynamic programming, prefix sum | ***
 USACO 2018 Dec Gold | fine dining | complete | dijkstra, spfa, create a super node | ***
 USACO 2021 Dec Gold | pair up | complete | dp, binary search | ****
