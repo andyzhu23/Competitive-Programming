@@ -91,6 +91,7 @@ CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 ### An Animal Contest
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+C6 | P3 | complete | math, frequency array | ***
 C5 | P6 | complete | centroid decomposition, LCA, dijkstra | *****
 C5 | P5 | complete | fenwick, two pointer | ****
 C5 | P4 | complete | binary search, move big number first | ***
