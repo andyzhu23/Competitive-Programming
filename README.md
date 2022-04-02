@@ -13,7 +13,7 @@ task | date | time
 -----|------|-----
 
 
-### past events
+# past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
 USACO US Open 2022 Plainum | Mar 28th | 6:00 | 0 | Orz Orz Orz
