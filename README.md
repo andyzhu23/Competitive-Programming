@@ -534,6 +534,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+wlxsq | 运输问题 | complete | max flow minimum cost, dinic, EK | **
 wlxsq | 分配问题 | complete | max flow minimum cost, dinic, EK | **
 wlxsq | 方格取数 | complete | max flow, bipartite graph | ***
 TLE 16 c8 | P5 | complete | max flow/bipartite | ***
