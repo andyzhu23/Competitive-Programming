@@ -155,32 +155,28 @@ inline void init2(){
 //--------------------- start of program ---------------------
 
 const int N = 5e5 + 5;
-int n, q, a[N], b[N], stk[N], tot = 0;
+int n, q, a[N], b[N], c[N], stk[N], ans[N], tot = 0;
 
-vi st[N << 2];
-bitset<(N << 2)> vis;
+struct query {
+    int l, r, id;
+};
+vector<query> v;
 
-inline void update(int rt, int l, int r, int pos, int val) {
-    if(l == r) {
-        st[rt].pb(val);
-        return;
+struct fenwick {
+    int c[N], tot;
+    void update(int a, int b) {
+        if(a == 0) {
+            ++tot;
+            return;
+        }
+        for(int i = a;i<N;i+=i&(-i)) c[i] += b;
     }
-    int mid = l + r >> 1;
-    if(pos <= mid) update(lc, l, mid, pos, val);
-    else update(rc, mid + 1, r, pos, val);
-    st[rt].pb(val);
-}
-
-inline int query(int rt, int l, int r, int x, int y, int val) {
-    if(l == x && y == r) {
-        if(!vis[rt]) vis[rt] = 1, sort(all(st[rt]));
-        return ub(all(st[rt]), val) - st[rt].begin();
+    int query(int a) {
+        int ans = 0;
+        for(int i = a;i;i-=i&(-i)) ans += c[i];
+        return ans + tot;
     }
-    int mid = l + r >> 1;
-    if(y <= mid) return query(lc, l, mid, x, y, val);
-    else if(x > mid) return query(rc, mid + 1, r, x, y, val);
-    else return query(lc, l, mid, x, mid, val) + query(rc, mid + 1, r, mid + 1, y, val);
-}
+} fen;
 
 inline void solve(){
     read(n), read(q);
@@ -188,13 +184,22 @@ inline void solve(){
     for(int i = 1;i<=n;++i) read(b[i]);
     for(int i = 1;i<=n;++i) {
         while(tot && (a[i] == a[stk[tot]] || b[i] >= b[stk[tot]])) --tot;
-        update(1, 1, n, i, stk[tot]);
+        c[i] = stk[tot];
         stk[++tot] = i;
     }
     for(int i = 1;i<=q;++i) {
         int a = read(), b = read();
-        print(query(1, 1, n, a, b, a - 1), '\n');
+        v.pb({a, b, i});
     }
+    sort(all(v), [&](query& a, query& b) {
+        return a.r < b.r;
+    });
+    int j = 0;
+    for(int i = 0;i<q;++i) {
+        while(j < v[i].r) fen.update(c[++j], 1);
+        ans[v[i].id] = fen.query(v[i].l - 1) - v[i].l + 1;
+    }
+    for(int i = 1;i<=q;++i) cout<<ans[i]<<'\n';
 }
 
 
