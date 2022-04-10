@@ -337,6 +337,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_126 | D | complete | fenwick store difference, increase by the largest first | ***
+CF Edu_126 | B | complete | precompute answers | **
+CF Edu_126 | A | complete | put all small number to one | *
 CF 780 | F2 | complete | pigeonhole ignore adjacent, fenwick tree | *** 
 CF 780 | F1 | complete | easy enumeration | **
 CF Edu_125 | D | complete | dp, combine D and H | ***
