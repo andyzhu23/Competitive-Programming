@@ -88,6 +88,12 @@ USACO 21 Open Bronze | Academia I | incomplete | |
 CCF Online | 重力球 | incomplete | | 
 CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 
+### Yet Another Contest 
+Source | Problems | status | skills needed | rating
+-------|----------|--------|---------------|-------
+C2 | P6 | complete | li chao tree, convex hull trick | ****
+C2 | P4 | complete | prim | **
+
 ### An Animal Contest
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
