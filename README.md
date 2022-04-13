@@ -544,6 +544,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+wlxsq | 士兵占领 | complete | dinic | ***
 JSOI | blue mary | complete | li chao tree | ***
 NOI Online | 丹钓战 | complete | fenwick tree, monotonic stack | ***
 wlxsq | 运输问题 | complete | max flow minimum cost, dinic, EK | **
