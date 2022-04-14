@@ -544,6 +544,8 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+COCI 14c5 | P4 | complete | implementation | **
+dmoj | String Finding | complete | string hashing | *
 wlxsq | 士兵占领 | complete | dinic | ***
 JSOI | blue mary | complete | li chao tree | ***
 NOI Online | 丹钓战 | complete | fenwick tree, monotonic stack | ***
