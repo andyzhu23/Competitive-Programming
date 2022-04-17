@@ -546,6 +546,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+dmoj | 2 Primes | complete | prime sieving | ***
 dmoj | Dog Girls | complete | kmp, string hashing | ***
 HDU | Gorgeous Sequence | complete | segment tree, update to min | ***
 COCI 14c5 | P4 | complete | implementation | **
