@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 782 | Apr 17th | 7:35 | 3197(497th best so far) | too slow, made so many WA on B
 USACO US Open 2022 Platinum | Mar 28th | 6:00 | 0 | Orz Orz Orz
 USACO US Open 2022 Gold | Mar 27th | 1:00 | 1000 | I love Bessie!!! 
 CF Edu 125 | Mar 22nd | 7:35am | 3 problems | need improvement
