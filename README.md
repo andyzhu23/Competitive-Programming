@@ -3,7 +3,7 @@ Hello, my name is Andy Zhu, I am a high schooler interested in Competitive Progr
 
 [andy_zhu23](https://dmoj.ca/user) on DMOJ(currently master, I would say decent)
 
-[Andy.zhu23](https://codeforces.com/profile/Andy.zhu23) on codeforces(currently specialist, I would say I am just really trash)
+[Andy.zhu23](https://codeforces.com/profile/Andy.zhu23) on codeforces(currently expert, I would say I am just really trash)
 
 [ACSL Team](https://www.scores.acsl.org/roster/783/) Henry Orz
 
