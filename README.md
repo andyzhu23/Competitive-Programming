@@ -347,6 +347,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 782 | E | complete | dsu, if answer 0 -> common bit, if answer 1 -> common bit other than 1 before even edge, else answer 2 | ***
 CF 782 | D | complete | calculate number of 1s, fenwick | ***
 CF 782 | C | complete | math, prefix sum, greedy | **
 CF 782 | B | complete | if odd, make a move to first 1, otherwise turn first 2 0s to 1s | **
