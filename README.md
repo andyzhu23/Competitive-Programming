@@ -553,6 +553,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | balancing act | complete | easy dfs | *
 atcoder | deque | complete | game theory dp | *
 dmoj | Levves Loves Segment Tree | complete | dynamic segment tree | ** 
 dmoj | 2 Primes | complete | prime sieving | ***
