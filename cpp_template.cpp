@@ -1,7 +1,6 @@
-
 /*
  * Author: Andy Zhu
- * @date    2022-02-15 11:14:15
+ * @date    2022-04-21 17:50:20
  * @version 1.0.0
  */
 
@@ -21,8 +20,6 @@ using namespace std;
 
 // define
 #define OJ ONLINE_JUDGE
-#define endl "\n"
-#define rint registered int
 
 // pairs
 #define fir first
@@ -34,6 +31,7 @@ using namespace std;
 #define rc (rt << 1 | 1)
 
 // STL Data Structures
+#define mt make_tuple
 #define eb emplace_back
 #define ef emplace_front
 #define pb push_back
@@ -95,8 +93,8 @@ struct pair_hash {
 // common functions
 
 namespace comfun {
-    template <typename T> inline void ckmax(T& u, T v) { u = max(u, v); }
-    template <typename T> inline void ckmin(T& u, T v) { u = min(u, v); }
+    template <typename T1, typename T2> inline void ckmax(T1& u, T2 v) { u = max(u, v); }
+    template <typename T1, typename T2> inline void ckmin(T1& u, T2 v) { u = min(u, v); }
     template <typename T> inline T lowbit(T x){return x & (- x);}
     template <typename T> inline T gcd(T a, T b){if(a == 0) return b; if(b == 0) return a; return gcd(b, a % b);}
     template <typename T> inline T lcm(T a, T b){return a / gcd(a, b) * b;}
@@ -109,6 +107,16 @@ namespace debug {
     template <typename T> inline void debugArray(T *arr,int sz){cout<<"[";for(int i=0;i<sz;i++){cout<<arr[i]<<", "; } cout<<"]\n";}
     template <typename T> inline void printArray(T *arr,int sz){for(int i=0;i<sz;i++){cout<<arr[i]<<" "; } cout<<"\n";}
 }
+
+#define error(args...) { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); err(_it, args); }
+
+void err(istream_iterator<string> it) {}
+template<typename T, typename... Args>
+void err(istream_iterator<string> it, T a, Args... args) {
+    cerr << *it << " = " << a << endl;
+    err(++it, args...);
+}
+
 namespace fast_io {
     int read() {
         int x = 0, f = 0; char ch = getchar();
@@ -164,7 +172,7 @@ inline void solve(){
 
 
 #define doCase 0
-#define config 0
+#define config LOCAL
 #define kickstart 0
 #define unsync 0
 
@@ -181,7 +189,7 @@ inline void setIO() {
 #endif
 }
 
-int main(){
+signed main(){
     setIO();
     init1();
     srand(time(0));
