@@ -125,6 +125,9 @@ C2 P6 | Koala Transport System | complete | heavy light decomposition | ***
 ### Google Kickstart
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+22 Round B | Problem C | complete | interval dp, a dimension to maintain right or left it was transitioned | ***
+22 Round B | Problem B | complete | brute force | *
+22 Round B | Problem A | complete | math | *
 22 Round A | Problem C | complete | bitmask dp | ***
 22 Round A | Problem B | complete | math | *
 22 Round A | Problem A | complete | super easy implementation | *
