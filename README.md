@@ -145,6 +145,8 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 21 Apr | P2 | complete | odd even have same sum | **
+DMOPC 21 Apr | P1 | complete | easy multiset | **
 DMOPC 21 Mar | P2 | complete | linked list | **
 DMOPC 21 Feb | P4 | complete | A to B cover up C or D | ***
 DMOPC 21 Feb | P3 | complete | bfs with pq | **
