@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-04-21 17:50:34
+ * @date    2022-04-21 17:50:31
  * @version 1.0.0
  */
 
@@ -66,7 +66,7 @@ template <typename T> using os = set<T>;
 template <typename T> using ms = multiset<T>;
 template <typename T1, typename T2> using um = unordered_map<T1, T2>;
 template <typename T1, typename T2> using om = map<T1, T2>;
-template <typename T> using pq = priority_queue<T>; 
+template <typename T> using pq = priority_queue<T>;
 template <typename T> using pqg = priority_queue<T, vector<T>, greater<T> >;
 using vi = vector<int>;
 using vpii = vector<pair<int, int> >;
@@ -99,7 +99,7 @@ namespace comfun {
     template <typename T> inline T gcd(T a, T b){if(a == 0) return b; if(b == 0) return a; return gcd(b, a % b);}
     template <typename T> inline T lcm(T a, T b){return a / gcd(a, b) * b;}
     template <typename T1, typename T2> inline T1 fp(T1 a, T2 b) {T1 c = 1;while(b) {if(b & 1) c *= a;b >>= 1;a = a * a;}return c;}
-    template <typename T1, typename T2, typename T3> inline T1 fp(T1 a, T2 b, T3 mod) 
+    template <typename T1, typename T2, typename T3> inline T1 fp(T1 a, T2 b, T3 mod)
     {T1 c = 1;while(b) {if(b & 1) c = c * a % mod;b >>= 1;a = a * a % mod;}return c;}
     template <typename T> inline bool is_prime(T x){if(x == 1) return false; for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 }
@@ -122,20 +122,20 @@ namespace fast_io {
         int x = 0, f = 0; char ch = getchar();
         while (!isdigit(ch)) f |= ch == '-', ch = getchar();
         while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();
-            return f ? -x : x;
+        return f ? -x : x;
     }
     long long readLL() {
         long long x = 0, f = 0; char ch = getchar();
         while (!isdigit(ch)) f |= ch == '-', ch = getchar();
         while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();
-            return f ? -x : x;
+        return f ? -x : x;
     }
     void read(int& x) {x = read();}
     void read(long long& x) {x = readLL();}
     template<typename T> void print(T x) {
         if (x < 0) putchar('-'), x = -x;
         if (x >= 10) print(x / 10);
-            putchar(x % 10 + '0');
+        putchar(x % 10 + '0');
     }
     template<typename T> void print(T x, char let) {
         print(x), putchar(let);
@@ -161,28 +161,99 @@ inline void init2(){
 //-------------------  end of initialize  -------------------
 
 //--------------------- start of program ---------------------
-
 #define int long long
+const int N = 1e6 + 5;
+int a[N], b[N], f[N << 1];
 
 inline void solve(){
     int n = read(), m = read();
-    multiset<int> a;
-    vi b;
-    for(int i = 0;i<n;++i) a.ins(read());
-    b.pb(*a.begin());
-    a.erase(a.begin());
-    while(a.size()) {
-        auto x = a.lb(m - b.back());
-        if(x == a.end()) {
-            print(-1, '\n');
-            return;
+    for(int i = 1;i<=n;++i) a[i] = read();
+    for(int i = 1;i<=n;++i) b[i] = read();
+    ll ans = 1;
+    for(int i = 2;i<=2 * m;++i) {
+        if(i - m > 0) f[i] = abs(2 * m - i) + 1;
+        else f[i] = i - 1;
+    }
+    // odd
+    {
+        ll val = 0;
+        for(int i = 1;i<=n;i+=2) {
+            if(a[i] && b[i] && val && val != a[i] + b[i]) {
+                print(0, '\n');
+                return;
+            }
+            if(a[i] && b[i]) val = a[i] + b[i];
         }
-        a.erase(x);
-        b.pb(*x);
+        if(val) {
+            for(int i = 1;i<=n;i+=2) {
+                if(a[i] == 0 && b[i] == 0) {
+                    ans = ans * f[val] % MOD;
+                } else if(a[i] == 0 || b[i] == 0) {
+                    if(val - (a[i] + b[i]) > m || val - (a[i] + b[i]) <= 0) {
+                        print(0, '\n');
+                        return;
+                    }
+                }
+            }
+        } else {
+            ans = 0;
+            int cnt = 0, mn = INF, mx = 0;
+            for(int i = 1;i<=n;i+=2) {
+                if(a[i] == 0 && b[i] == 0) ++cnt;
+                if(a[i] == 0 ^ b[i] == 0) ckmin(mn, a[i] + b[i]), ckmax(mx, a[i] + b[i]);
+            }
+            if(mn == INF) {
+                for(int i = 2;i<=m * 2;++i) {
+                    ans = (ans + fp((ll)f[i], cnt, MOD)) % MOD;
+                }
+            } else {
+                for(int i = mx + 1;i<=mn + m;++i) {
+                    ans = (ans + fp((ll)f[i], cnt, MOD)) % MOD;
+                }
+            }
+        }
     }
-    for(int i = 0;i<b.size();++i) {
-        print(b[i], i == b.size() - 1 ? '\n' : ' ');
+    //even
+    ll ans2 = 1;
+    {
+        ll val = 0;
+        for(int i = 2;i<=n;i+=2) {
+            if(a[i] && b[i] && val && val != a[i] + b[i]) {
+                print(0, '\n');
+                return;
+            }
+            if(a[i] && b[i]) val = a[i] + b[i];
+        }
+        if(val) {
+            for(int i = 2;i<=n;i+=2) {
+                if(a[i] == 0 && b[i] == 0) {
+                    ans2 = ans2 * f[val] % MOD;
+                } else if(a[i] == 0 || b[i] == 0) {
+                    if(val - (a[i] + b[i]) > m || val - (a[i] + b[i]) <= 0) {
+                        print(0, '\n');
+                        return;
+                    }
+                }
+            }
+        } else {
+            ans2 = 0;
+            int cnt = 0, mn = INF, mx = 0;
+            for(int i = 2;i<=n;i+=2) {
+                if(a[i] == 0 && b[i] == 0) ++cnt;
+                if(a[i] == 0 ^ b[i] == 0) ckmin(mn, a[i] + b[i]), ckmax(mx, a[i] + b[i]);
+            }
+            if(mn == INF) {
+                for(int i = 2;i<=m * 2;++i) {
+                    ans2 = (ans2 + fp((ll)f[i], cnt, MOD)) % MOD;
+                }
+            } else {
+                for(int i = mx + 1;i<=mn + m;++i) {
+                    ans2 = (ans2 + fp((ll)f[i], cnt, MOD)) % MOD;
+                }
+            }
+        }
     }
+    print(ans * ans2 % MOD, '\n');
 }
 
 
@@ -218,14 +289,14 @@ signed main(){
         init2();
         solve();
     }
-#else 
+#else
     solve();
 #endif
     string jack = "Jack is always within you";
     return 0;
 }
 
- 
+
 /* stuff you should look for
     * int overflow, array bounds
     * special cases (n=1?)
