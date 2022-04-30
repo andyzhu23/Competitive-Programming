@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 785 | Apr 30th | 7:35 | 2457 | really close to solve D
 DMOPC Apr | Apr 24th | 9:00 | 210 | too slow debugging for P2
 CF 782 | Apr 17th | 7:35 | 3197(482nd best so far) | too slow, made so many WA on B
 MALD 1 | Apr 16th | 9:00 | 310 | actually failed C Orz
@@ -353,6 +354,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 785 | C | complete | easy knapsack | *
+CF 785 | B | complete | find last occurance of the letter, see if any letter not in the interval | **
+CF 785 | A | complete | type faster | *
 CF 783 | D | complete | max fenwick, dp, only good making positive segment long, other segment can stay as size 1 | ***
 CF 783 | C | complete | enumerate 0 position, brute force | **
 CF 783 | B | complete | sorting, implementation | *
