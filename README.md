@@ -354,6 +354,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 785 | D | complete | check 0, -1, as long as ends don't touch, and gcd(d, q) == r | ***
 CF 785 | C | complete | easy knapsack | *
 CF 785 | B | complete | find last occurance of the letter, see if any letter not in the interval | **
 CF 785 | A | complete | type faster | *
