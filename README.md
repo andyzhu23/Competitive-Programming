@@ -92,6 +92,13 @@ USACO 21 Open Bronze | Academia I | incomplete | |
 CCF Online | 重力球 | incomplete | | 
 CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 
+### NOIP 
+Source | Problems | status | skills needed | rating
+-------|----------|--------|---------------|-------
+NOIP 2016 | toy | complete | easy implementation | **
+NOIP 2016 | classroom | complete | expected value dp | ***
+NOIP 2016 | earthworm | complete | maintain three values, get max every time | ***
+
 ### Yet Another Contest 
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
