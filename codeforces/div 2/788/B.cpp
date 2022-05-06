@@ -164,17 +164,25 @@ inline void init2(){
 
 
 inline void solve(){
-    int n = read();
-    int cnt = 0;
-    vi a(n + 5);
-    for(int i = 1;i<=n;++i) a[i] = read();
-    for(int i = 1;i<=n;++i) cnt += a[i] < 0, a[i] = abs(a[i]);
-    for(int i = 1;i<=cnt;++i) a[i] = -a[i];
-    bool flag = 1;
-    // for(int i = 1;i<=n;++i) cout<<a[i]<<' ';
-    // cout<<'\n';
-    for(int i = 2;i<=n;++i) flag &= a[i] >= a[i - 1];
-    puts(flag ? "YES" : "NO");
+    int n; cin>>n;
+    string s;
+    cin>>s;
+    int k; cin>>k;
+    bitset<30> vis;
+    vis.reset();
+    while(k--) {
+        char c; cin>>c;
+        vis[c - 'a'] = 1;
+    }
+    int last = 0, ans = 0;
+    s = '@' + s;
+    for(int i = 1;i<=n;++i) {
+        if(vis[s[i] - 'a']) {
+            ckmax(ans, i - last - 1);
+            last = i - 1;
+        }
+    }
+    cout<<ans<<'\n';
 }
 
 

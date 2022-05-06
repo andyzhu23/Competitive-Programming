@@ -149,8 +149,17 @@ using namespace fast_io;
 
 //------------------- start of initialize -------------------
 // initialize for all cases
+ll a, b, c;
+vec<ll> ans;
 inline void init1(){
-
+    ans.pb(0);
+    while(ans.back() < 1e9) {
+        ll nxt = max({a + b, b + c, a + c});
+        if(nxt == a + b) ++c;
+        if(nxt == b + c) ++a;
+        if(nxt == a + c) ++b;
+        ans.pb(ans.back() + nxt * 2);
+    }
 }
 
 // initialize for the current subcase
@@ -164,17 +173,7 @@ inline void init2(){
 
 
 inline void solve(){
-    int n = read();
-    int cnt = 0;
-    vi a(n + 5);
-    for(int i = 1;i<=n;++i) a[i] = read();
-    for(int i = 1;i<=n;++i) cnt += a[i] < 0, a[i] = abs(a[i]);
-    for(int i = 1;i<=cnt;++i) a[i] = -a[i];
-    bool flag = 1;
-    // for(int i = 1;i<=n;++i) cout<<a[i]<<' ';
-    // cout<<'\n';
-    for(int i = 2;i<=n;++i) flag &= a[i] >= a[i - 1];
-    puts(flag ? "YES" : "NO");
+    print(lb(all(ans), readLL()) - ans.begin(), '\n');
 }
 
 

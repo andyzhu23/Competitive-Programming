@@ -99,8 +99,7 @@ namespace comfun {
     template <typename T> inline T gcd(T a, T b){if(a == 0) return b; if(b == 0) return a; return gcd(b, a % b);}
     template <typename T> inline T lcm(T a, T b){return a / gcd(a, b) * b;}
     template <typename T1, typename T2> inline T1 fp(T1 a, T2 b) {T1 c = 1;while(b) {if(b & 1) c *= a;b >>= 1;a = a * a;}return c;}
-    template <typename T1, typename T2, typename T3> inline T1 fp(T1 a, T2 b, T3 mod) 
-    {T1 c = 1;while(b) {if(b & 1) c = c * a % mod;b >>= 1;a = a * a % mod;}return c;}
+    
     template <typename T> inline bool is_prime(T x){if(x == 1) return false; for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 }
 namespace debug {
@@ -161,20 +160,53 @@ inline void init2(){
 //-------------------  end of initialize  -------------------
 
 //--------------------- start of program ---------------------
+const int N = 1e5 + 5;
+int f[N];
+int Find(int x) {return f[x] == x ? x : f[x] = Find(f[x]);}
+void merge(int u, int v) {
+    int fu = Find(u);
+    int fv = Find(v);
+    f[fu] = fv;
+}
 
+template <typename T1, typename T2, typename T3> inline T1 fp(T1 a, T2 b, T3 mod) {
+    T1 c = 1;
+    while(b) {
+        if(b & 1) c = c * a % mod;
+        b >>= 1;
+        a = a * a % mod;
+        cout<<a<<'\n';
+    }
+    return c;
+}
 
 inline void solve(){
     int n = read();
-    int cnt = 0;
-    vi a(n + 5);
-    for(int i = 1;i<=n;++i) a[i] = read();
-    for(int i = 1;i<=n;++i) cnt += a[i] < 0, a[i] = abs(a[i]);
-    for(int i = 1;i<=cnt;++i) a[i] = -a[i];
-    bool flag = 1;
-    // for(int i = 1;i<=n;++i) cout<<a[i]<<' ';
+    iota(f, f + n + 1, 0);
+    vi a(n + 5), b(n + 5), d(n + 5);
+    vec<bool> vis(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    for(int i = 1;i<=n;++i) read(b[i]);
+    for(int i = 1;i<=n;++i) {
+        read(d[i]);
+        vis[d[i]] = 1;
+    }
+    for(int i = 1;i<=n;++i) {
+        if(a[i] == b[i]) {
+            d[i] = a[i];
+            vis[d[i]] = 1;
+        }
+    }
+    for(int i = 1;i<=n;++i) if(a[i] != b[i]) {
+        merge(a[i], b[i]);
+    }
+    set<int> x, y;
+    for(int i = 1;i<=n;++i) if(a[i] != b[i]) {
+        x.ins(Find(a[i]));
+        if(vis[a[i]] || vis[b[i]]) y.ins(Find(a[i]));
+    }
     // cout<<'\n';
-    for(int i = 2;i<=n;++i) flag &= a[i] >= a[i - 1];
-    puts(flag ? "YES" : "NO");
+    print(fp(2, x.size() - y.size(), MOD), '\n');
 }
 
 
