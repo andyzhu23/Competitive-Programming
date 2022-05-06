@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 788 | May 6th | 7:35 | 4021 | actually failed A cause didn't put equal sign
 CF 785 | Apr 30th | 7:35 | 2457 | really close to solve D
 DMOPC Apr | Apr 24th | 9:00 | 210 | too slow debugging for P2
 CF 782 | Apr 17th | 7:35 | 3197(482nd best so far) | too slow, made so many WA on B
@@ -362,6 +363,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 788 | D | complete | precompute, answer add by 2 each time a new line cross an old line | ***
+CF 788 | C | complete | do cycle with dsu, remove cycle that are locked by d | ***
+CF 788 | B | complete | largest interval without special characters | **
+CF 788 | A | complete | make all negative signs be the first consecutive numbers | *
 CF 785 | D | complete | check 0, -1, as long as ends don't touch, and lcm(d, q) == r | ***
 CF 785 | C | complete | easy knapsack | *
 CF 785 | B | complete | find last occurance of the letter, see if any letter not in the interval | **
