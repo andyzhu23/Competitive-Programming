@@ -364,6 +364,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 789 | D | complete | build row answer on the mth last row | ***
 CF 789 | C | complete | prefix sum | **
 CF 789 | B2 | complete | greedy | **
 CF 789 | B1 | complete | implementation | *
