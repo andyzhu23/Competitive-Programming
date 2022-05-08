@@ -364,6 +364,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 789 | C | complete | prefix sum | **
+CF 789 | B2 | complete | greedy | **
+CF 789 | B1 | complete | implementation | *
+CF 789 | A | complete | implementation | *
 CF 788 | D | complete | precompute, answer add by 2 each time a new line cross an old line | ***
 CF 788 | C | complete | do cycle with dsu, remove cycle that are locked by d | ***
 CF 788 | B | complete | largest interval without special characters | **
