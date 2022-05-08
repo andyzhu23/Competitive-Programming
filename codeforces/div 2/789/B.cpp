@@ -165,19 +165,55 @@ inline void init2(){
 
 inline void solve(){
     int n = read();
-    vi a(n + 5);
-    bool flag = 0;
-    map<int, int> vis;
-    int cnt = 0;
+    string s; cin>>s;
+    s = '@' + s;
+    string t = s;
+    string ss = t;
+    int cnt = 0, ans = 0;
     for(int i = 1;i<=n;++i) {
-        a[i] = read();
-        flag |= a[i] == 0;
-        flag |= vis[a[i]];
-        vis[a[i]] = 1;
-        cnt += a[i] != 0;
+        if(s[i] == s[i - 1]) {
+            ++cnt;
+        } else if(cnt % 2 != 0) {
+            ++ans;
+            ++cnt;
+            s[i] = s[i - 1];
+        } else cnt = 1;
     }
-    if(flag) print(cnt, '\n');
-    else print(cnt + 1, '\n');
+    int last = 0;
+    for(int i = 1;i<=n;++i) {
+        if(t[i] == t[i - 1]) {
+            ++cnt;
+        } else if(cnt % 2 != 0) {
+            if(cnt == 1) {
+                cnt = last + 2;
+                t[i - 1] = t[i];
+            } else {
+                ++cnt;
+                t[i] = t[i - 1];
+            }
+        } else last = cnt, cnt = 1;
+    }
+    last = 0;
+    for(int i = 1;i<=n;++i) {
+        if(ss[i] == ss[i - 1]) {
+            ++cnt;
+        } else if(cnt % 2 != 0) {
+            if(cnt == 1 && i != 2) {
+                cnt = last + 2;
+                ss[i - 1] = ss[i];
+            } else {
+                ++cnt;
+                ss[i] = ss[i - 1];
+            }
+        } else last = cnt, cnt = 1;
+    }
+    int x = 0;
+    for(int i = 1;i<=n;++i) x += t[i] != t[i - 1];
+    int y = 0;
+    for(int i = 1;i<=n;++i) y += ss[i] != ss[i - 1];
+    // cout<<ss<<'\n';
+    print(ans, ' ');
+    print(min(x, y), '\n');
 }
 
 

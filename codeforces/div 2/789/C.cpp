@@ -165,19 +165,21 @@ inline void init2(){
 
 inline void solve(){
     int n = read();
-    vi a(n + 5);
-    bool flag = 0;
-    map<int, int> vis;
-    int cnt = 0;
+    vi a(n + 5), vis(n + 5), psa(n + 5);
     for(int i = 1;i<=n;++i) {
         a[i] = read();
-        flag |= a[i] == 0;
-        flag |= vis[a[i]];
-        vis[a[i]] = 1;
-        cnt += a[i] != 0;
     }
-    if(flag) print(cnt, '\n');
-    else print(cnt + 1, '\n');
+    ll ans = 0;
+    for(int i = 1;i<=n;++i) {
+        for(int i = 1;i<=n;++i) psa[i] = psa[i - 1] + vis[i];
+        int cnt = 0;
+        for(int j = n;j > i;--j) {
+            ans += psa[a[j] - 1] * cnt;
+            cnt += a[i] > a[j];
+        }
+        ++vis[a[i]];
+    }
+    print(ans, '\n');
 }
 
 
