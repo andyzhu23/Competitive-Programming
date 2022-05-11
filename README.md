@@ -97,6 +97,7 @@ CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 ### NOIP 
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NOIP 2015 | Substring | complete | dp, rolling array | ***
 NOIP 2016 | toy | complete | easy implementation | **
 NOIP 2016 | classroom | complete | expected value dp | ***
 NOIP 2016 | earthworm | complete | maintain three values, get max every time | ***
