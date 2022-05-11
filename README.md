@@ -16,7 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
-CF 789 | May 8th | 7:35 | 3081(271st best so far) | didn't solve D :(
+CF 789 | May 8th | 7:35 | 3081(266th best so far) | didn't solve D :(
 CF 788 | May 6th | 7:35 | 4021 | actually failed A cause didn't put equal sign
 CF 785 | Apr 30th | 7:35 | 2457 | really close to solve D
 DMOPC Apr | Apr 24th | 9:00 | 210 | too slow debugging for P2
