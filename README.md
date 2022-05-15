@@ -588,6 +588,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | N-Kat | complete | the minimum two sets where not completely contained which have best answer is the answer | ***
 DMOJ | balancing act | complete | easy dfs | *
 atcoder | deque | complete | game theory dp | *
 dmoj | Levves Loves Segment Tree | complete | dynamic segment tree | ** 
