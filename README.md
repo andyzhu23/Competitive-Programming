@@ -365,6 +365,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 791 | D | complete | binary search, tarjan find cycle | ***
 CF 789 | D | complete | build row answer on the mth last row | ***
 CF 789 | C | complete | prefix sum | **
 CF 789 | B2 | complete | greedy | **
