@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-05-19 13:19:05
+ * @date    2022-05-19 13:43:02
  * @version 1.0.0
  */
 
@@ -164,16 +164,19 @@ inline void init2(){
 
 
 inline void solve(){
-    string s; cin>>s;
-    if(s.size() == 2) {
-        putchar(s[1]);
-        putchar('\n');
-        return;
+    int n = read();
+    ll k = read();
+    vll a(n + 5), b;
+    ll ans = 0;
+    for(int i = 1;i<=n;++i) {
+        read(a[i]);
+        b.pb(n - i - a[i]);
+        ans += a[i];
     }
-    set<char> st;
-    for(auto x : s) st.ins(x);
-    putchar(*st.begin());
-    putchar('\n');
+    sort(all(b));
+    for(int i = 0;i<k;++i) ans += b[i];
+    ans -= k * (k - 1) >> 1;
+    print(ans, '\n');
 }
 
 

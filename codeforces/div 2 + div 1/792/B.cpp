@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-05-19 13:19:05
+ * @date    2022-05-19 13:23:35
  * @version 1.0.0
  */
 
@@ -164,16 +164,11 @@ inline void init2(){
 
 
 inline void solve(){
-    string s; cin>>s;
-    if(s.size() == 2) {
-        putchar(s[1]);
-        putchar('\n');
-        return;
-    }
-    set<char> st;
-    for(auto x : s) st.ins(x);
-    putchar(*st.begin());
-    putchar('\n');
+    ll a = readLL(), b = readLL(), c = readLL();
+    ll x = a + b + c, y = b + c, z = c;
+    print(x, ' ');
+    print(y, ' ');
+    print(z, '\n');
 }
 
 
