@@ -590,6 +590,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | Chirstmas Cards | complete | knapsack | **
 TJOI | 猜数字 | complete | chinese remainder theorem, fast multiply | ***
 DMOJ | N-Kat | complete | the minimum two sets where not completely contained which have best answer is the answer | ***
 DMOJ | balancing act | complete | easy dfs | *
