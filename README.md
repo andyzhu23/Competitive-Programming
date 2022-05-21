@@ -365,6 +365,8 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 792 | E | complete | greedy | ***
+CF 792 | D | complete | the k(k-1)/2 is the same for all cases and don't matter when comparing | ***
 CF 791 | C | complete | fenwick, rook not bishop I am terrible at chess | *
 CF 791 | D | complete | binary search, tarjan find cycle | ***
 CF 789 | D | complete | build row answer on the mth last row | ***
