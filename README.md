@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 793 | May 22nd | 7:35 | 4151(211st best so far) | I shouldn've made 3 wrong sub for C
 CF 789 | May 8th | 7:35 | 3081(266th best so far) | didn't solve D :(
 CF 788 | May 6th | 7:35 | 4021 | actually failed A cause didn't put equal sign
 CF 785 | Apr 30th | 7:35 | 2457 | really close to solve D
@@ -365,6 +366,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 793 | D | complete | find a root so that next one is 1, connect with previous or root | ***
+CF 793 | C | complete | largest number with only one occurance can be made into two occurances | ***
+CF 793 | B | complete | find all not equal position, & all of them | **
+CF 793 | A | complete | check same character in the middle | *
 CF Edu_128 | E | complete | dp | ***
 CF 792 | E | complete | greedy | ***
 CF 792 | D | complete | the k(k-1)/2 is the same for all cases and don't matter when comparing | ***
