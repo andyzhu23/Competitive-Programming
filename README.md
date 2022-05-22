@@ -96,6 +96,13 @@ USACO 21 Open Bronze | Academia I | incomplete | |
 CCF Online | 重力球 | incomplete | | 
 CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 
+
+### mBit
+Source | Problems | status | skills needed | rating
+-------|----------|--------|---------------|-------
+2022 Spring | P7 | complete | knapsack | **
+2022 Spring | P9 | complete | get result with first time, check with all other times | ***
+
 ### NOIP 
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
