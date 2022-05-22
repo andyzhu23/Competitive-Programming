@@ -165,14 +165,14 @@ inline void init2(){
 
 inline void solve(){
     int n = read();
-    string s; cin>>s;
-    s = '@' + s;
-    int x = (n - 1) / 2 + 1;
-    int l = x - 1, r = x + 1;
-    while(l > 0 && s[l] == s[x]) --l;
-    while(r <= n && s[r] == s[x]) ++r;
-    ++l, --r;
-    print(r - l + 1, '\n');
+    vi a(n + 5), b(n + 5);
+    for(int i = 1;i<=n;++i) a[i] = read(), b[i] = a[i];
+    sort(a.begin() + 1, a.begin() + n + 1);
+    int ans = -1;
+    for(int i = 1;i<=n;++i) if(a[i] != b[i]) {
+        ans &= a[i] & b[i];
+    }
+    print(ans, '\n');
 }
 
 

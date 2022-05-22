@@ -24,7 +24,6 @@ using namespace std;
 // pairs
 #define fir first
 #define sec second
-#define mp make_pair
 
 // segment tree
 #define lc (rt << 1)
@@ -165,14 +164,35 @@ inline void init2(){
 
 inline void solve(){
     int n = read();
-    string s; cin>>s;
-    s = '@' + s;
-    int x = (n - 1) / 2 + 1;
-    int l = x - 1, r = x + 1;
-    while(l > 0 && s[l] == s[x]) --l;
-    while(r <= n && s[r] == s[x]) ++r;
-    ++l, --r;
-    print(r - l + 1, '\n');
+    map<int, int> mp;
+    for(int i = 1;i<=n;++i) {
+        ++mp[read()];
+    }
+    auto it = prev(mp.end());
+    bool flag = 0;
+    while(it != mp.begin()) {
+        if((*it).sec == 1) {
+            ++(*it).sec;
+            flag = 1;
+            break;
+        }
+        --it;
+    }
+    if(!flag) {
+        if((*it).sec == 1) {
+            ++(*it).sec;
+        }
+    }
+    int x = 0, y = 0;
+    for(auto[u, v] : mp) {
+        if(v > 1) ++x, ++y;
+        if(v == 1) {
+            if(x > y) ++y;
+            else ++x;
+        }
+    }
+    // cout<<x<<' '<<y<<'\n';
+    print(min(x, y), '\n');
 }
 
 

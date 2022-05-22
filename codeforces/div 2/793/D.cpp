@@ -162,17 +162,64 @@ inline void init2(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+int f[N], n;
+int Find(int x) {return f[x] == x ? x : f[x] = Find(f[x]);}
+void merge(int u, int v) {
+    int fu = Find(u);
+    int fv = Find(v);
+    f[fu] = fv;
+}
+
+struct node {
+    int l, r, x;
+};
+
+int nxt(int i) {
+    ++i;
+    if(i > n) i = 1;
+    return i;
+}
+
+int prv(int i) {
+    --i;
+    if(i == 0) i = n;
+    return i;
+}
 
 inline void solve(){
-    int n = read();
+    n = read();
     string s; cin>>s;
     s = '@' + s;
-    int x = (n - 1) / 2 + 1;
-    int l = x - 1, r = x + 1;
-    while(l > 0 && s[l] == s[x]) --l;
-    while(r <= n && s[r] == s[x]) ++r;
-    ++l, --r;
-    print(r - l + 1, '\n');
+    int root = 0;
+    for(int i = 1;i<=n;++i) {
+        if(s[nxt(i)] == '1') {
+            root = i;
+            break;
+        }
+    }
+    if(root == 0) {
+        puts("NO");
+        return;
+    }
+    multiset<pii> ans;
+    for(int i = nxt(root);i!=root;i=nxt(i)) {
+        if(s[i] == '1') ans.ins({root, i});
+        else {
+            ans.erase({root, prv(i)});
+            ans.ins({prv(i), i});
+            ans.ins({root, i});
+        }
+    }
+    int cnt = 0;
+    for(auto[u, v] : ans) if(u == root) ++cnt;
+    if((cnt % 2 && s[root] == '1') || (cnt % 2 == 0 && s[root] == '0')) {
+        puts("YES");
+        for(auto[u, v] : ans) {
+            print(u, ' ');
+            print(v, '\n');
+        }
+    } else puts("NO");
 }
 
 
