@@ -161,32 +161,54 @@ inline void init2(){
 //-------------------  end of initialize  -------------------
 
 //--------------------- start of program ---------------------
-
-const int N = 1e3 + 5;
-int n, m, dp[N];
-
-struct node {
-    int t, e, c;
-};
-vector<node> a;
-
+#define int long long
+const int N = 2e5 + 5;
+int n, k, a[N], b[N], ans[N];
+multiset<int> vis,vv;
+map<int, int> p;
 inline void solve(){
-    read(n), read(m);
-    memset(dp, 0x3f, sizeof(dp));
-    dp[0] = 0;
+    read(n), read(k);
+    for(int i = 1;i<=n;++i) read(a[i]), p[a[i]] = i;
+    int t; read(t);
+    int j = 1;
     for(int i = 1;i<=n;++i) {
-        int t = read(), e = read(), c = read();
-        a.pb({t, e, c});
+        read(b[i]);
+        vv.ins(b[i]);
     }
-    sort(all(a), [&](node a, node b) {
-        return a.e < b.e;
-    });
-    for(auto[t, e, c] : a) {
-        for(int j = e;~j;--j) {
-            ckmin(dp[j], dp[max(0, j - t)] + c);
+    for(int i = 1;i<=n;++i) {
+        if(ans[i]) continue;
+        if(b[j] + t == a[i]) ans[i] = -1, ++j;
+        else {
+            if(!vv.count(a[i] + t)) {
+                print(0, '\n');
+                return;
+            }
+            ans[i] = 1, vis.ins(a[i] + t);
+        }
+        while(vis.count(b[j])) vis.erase(vis.find(b[j++]));
+    }
+    multiset<int> sss;
+    for(int i = 1;i<=n;++i) sss.ins(b[i]);
+    for(int i = 1;i<=n;++i) {
+        if(!sss.count(a[i] + ans[i] * t)) {
+            print(0, '\n');
+            return;
+        }
+        sss.erase(sss.find(a[i] + ans[i] * t));
+    }
+    for(int i = 1;i<k;++i) {
+        int t = read();
+        multiset<int> vis;
+        for(int i = 1;i<=n;++i) vis.ins(read());
+        for(int i = 1;i<=n;++i) {
+            if(!vis.count(a[i] + ans[i] * t)) {
+                print(0, '\n');
+                return;
+            }
+            vis.erase(vis.find(a[i] + ans[i] * t));
         }
     }
-    print(dp[m] == INF ? -1 : dp[m], '\n');
+    for(int i = 1;i<=n;++i) print(ans[i], " \n"[i==n]);
 }
 
 
