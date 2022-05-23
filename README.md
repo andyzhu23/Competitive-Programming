@@ -374,6 +374,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 260 | A | complete | dp | **
 CF 793 | D | complete | find a root so that next one is 1, connect with previous or root | ***
 CF 793 | C | complete | largest number with only one occurance can be made into two occurances | ***
 CF 793 | B | complete | find all not equal position, & all of them | **
