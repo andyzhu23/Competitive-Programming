@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF Edu 129 | May 23rd | 7:35am | 3 | you win some, you lose some 
 mBit | May 22nd | 10am | 2/10 | should've looked at the leaderboard to do easier problems
 CF 793 | May 22nd | 7:35 | 4151(211st best so far) | I shouldn've made 3 wrong sub for C
 CF 789 | May 8th | 7:35 | 3081(266th best so far) | didn't solve D :(
@@ -374,6 +375,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_129 | C | complete | sort two first, do swap sort to generate swap | **
+CF Edu_129 | B | complete | just +b and mod | *
+CF Edu_129 | A | complete | don't be stupid | *
 CF 260 | A | complete | dp | **
 CF 793 | D | complete | find a root so that next one is 1, connect with previous or root | ***
 CF 793 | C | complete | largest number with only one occurance can be made into two occurances | ***
