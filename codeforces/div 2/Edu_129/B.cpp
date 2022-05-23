@@ -164,24 +164,15 @@ inline void init2(){
 
 inline void solve(){
     int n = read();
-    vi a;
-    for(int i = 1;i<=n;++i) a.pb(read());
+    vi a(n + 5);
+    for(int i = 0;i<n;++i) read(a[i]);
     int m = read();
-    vi b;
-    for(int i = 1;i<=m;++i) b.pb(read());
-    sort(all(a));
-    sort(all(b));
-    if(a.back() > b.back()) {
-        puts("Alice");
-        puts("Alice");
-
-    } else if(b.back() > a.back()) {
-        puts("Bob");
-        puts("Bob");
-    } else {
-        puts("Alice");
-        puts("Bob");
+    int ans = 0;
+    for(int i = 1;i<=m;++i) {
+        int b = read();
+        ans = (ans + b) % n;
     }
+    print(a[ans], '\n');
 }
 
 

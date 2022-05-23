@@ -161,26 +161,50 @@ inline void init2(){
 
 //--------------------- start of program ---------------------
 
+struct triple {
+    int first, second, id;
+    bool operator<(const triple& other) const {
+        if(first != other.first) return first < other.first;
+        else return second < other.second;
+    }
+};
 
 inline void solve(){
     int n = read();
-    vi a;
-    for(int i = 1;i<=n;++i) a.pb(read());
-    int m = read();
-    vi b;
-    for(int i = 1;i<=m;++i) b.pb(read());
+    vec<triple> a(n);
+    vi c(n);
+    for(int i = 0;i<n;++i) {
+        a[i].fir = read();
+    }
+    for(int i = 0;i<n;++i) {
+        a[i].sec = read();
+        a[i].id = i;
+    }
     sort(all(a));
-    sort(all(b));
-    if(a.back() > b.back()) {
-        puts("Alice");
-        puts("Alice");
-
-    } else if(b.back() > a.back()) {
-        puts("Bob");
-        puts("Bob");
-    } else {
-        puts("Alice");
-        puts("Bob");
+    bool flag = 1;
+    for(int i = 1;i<n;++i) {
+        flag &= a[i].sec >= a[i - 1].sec;
+    }
+    if(!flag) {
+        puts("-1");
+        return;
+    }
+    for(int i = 0;i<n;++i) c[i] = a[i].id;
+    vi f(n);
+    for(int i = 0;i<n;++i) f[i] = i;
+    vpii ans;
+    for(int i = 0;i<n;++i) {
+        for(int j = i + 1;j<n;++j) {
+            if(f[j] == c[i]) {
+                ans.pb({i + 1, j + 1});
+                swap(f[i], f[j]);
+            }
+        }
+    }
+    print(ans.size(), '\n');
+    for(auto[u, v] : ans) {
+        print(u, ' ');
+        print(v, '\n');
     }
 }
 
