@@ -13,6 +13,10 @@ bool cross(node o, node a, node b) {
     return (a.y - o.y) * (b.x - o.x) <= (b.y - o.y) * (a.x - o.x);
 }
 
+bool cross2(node o, node a, node b) {
+    return (a.y - o.y) * (b.x - o.x) == (b.y - o.y) * (a.x - o.x);
+}
+
 double len(node a, node b) {
     return sqrt((b.y - a.y) * (b.y - a.y) + (b.x - a.x) * (b.x - a.x));
 }
@@ -35,6 +39,7 @@ int main() {
     }
     swap(a[1], a[o]);
     sort(a + 2, a + n + 1, [&](node& u, node& v) {
+        if(cross2(a[1], u, v)) return u.x < v.x;
         return cross(a[1], u, v);
     });
     double ans = 0;
