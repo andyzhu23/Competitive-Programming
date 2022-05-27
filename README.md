@@ -376,7 +376,8 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-CF 13 | C | complete | slope trick | ****
+CF 713 | C | complete | slope trick, minus i to compute non strictly increasing | ***
+CF 13 | C | complete | slope trick | ***
 CF Edu_129 | C | complete | sort two first, do swap sort to generate swap | **
 CF Edu_129 | B | complete | just +b and mod | *
 CF Edu_129 | A | complete | don't be stupid | *
