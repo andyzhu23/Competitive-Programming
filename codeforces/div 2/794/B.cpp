@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-05-27 13:14:16
+ * @date    2022-05-27 13:18:12
  * @version 1.0.0
  */
 
@@ -164,14 +164,16 @@ inline void init2(){
 
 inline void solve(){
     int n = read();
-    vi a(n + 5);
-    int sum = 0;
-    for(int i = 1;i<=n;++i) read(a[i]), sum += a[i];
-    bool flag = 0;
+    int mx = 0;
+    int ans = 0;
     for(int i = 1;i<=n;++i) {
-        flag |= sum - a[i] == a[i] * (n - 1);
+        int x = read();
+        if(mx > x) {
+            mx = 0;
+            ++ans;
+        } else ckmax(mx, x);
     }
-    puts(flag ? "YES" : "NO");
+    print(ans, '\n');
 }
 
 

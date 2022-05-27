@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-05-27 13:14:16
+ * @date    2022-05-27 11:23:40
  * @version 1.0.0
  */
 
@@ -164,14 +164,37 @@ inline void init2(){
 
 inline void solve(){
     int n = read();
-    vi a(n + 5);
-    int sum = 0;
-    for(int i = 1;i<=n;++i) read(a[i]), sum += a[i];
-    bool flag = 0;
+    queue<int> a, b;
+    vi ans, in;
+    for(int i = 1;i<=n;++i) in.pb(read());
+    sort(all(in));
     for(int i = 1;i<=n;++i) {
-        flag |= sum - a[i] == a[i] * (n - 1);
+        if(i <= (n - 1) / 2 + 1) a.push(in[i - 1]);
+        else b.push(in[i - 1]);
     }
-    puts(flag ? "YES" : "NO");
+    while(!a.empty() && !b.empty()) {
+        ans.pb(a.front());
+        ans.pb(b.front());
+        a.pop(), b.pop();
+    }
+    if(!a.empty()) ans.pb(a.front());
+    if(!b.empty()) ans.pb(b.front());
+    ans.pb(ans[0]);
+    for(int i = 1;i<ans.size() - 1;++i) {
+        bool x = ans[i - 1] > ans[i];
+        bool y = ans[i + 1] > ans[i];
+        if(ans[i - 1] == ans[i] || ans[i + 1] == ans[i]) {
+            puts("NO");
+            return;
+        }
+        if(x ^ y) {
+            puts("NO");
+            return;
+        }
+    }
+    puts("YES");
+    for(int i = 0;i<ans.size() - 1;++i) print(ans[i], ' ');
+    putchar('\n');
 }
 
 
