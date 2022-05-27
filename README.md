@@ -376,6 +376,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 13 | C | complete | slope trick | ****
 CF Edu_129 | C | complete | sort two first, do swap sort to generate swap | **
 CF Edu_129 | B | complete | just +b and mod | *
 CF Edu_129 | A | complete | don't be stupid | *
@@ -612,6 +613,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | hydration | complete | ** | bs for answer
 DMOJ | Chirstmas Cards | complete | knapsack | **
 TJOI | 猜数字 | complete | chinese remainder theorem, fast multiply | ***
 DMOJ | N-Kat | complete | the minimum two sets where not completely contained which have best answer is the answer | ***
