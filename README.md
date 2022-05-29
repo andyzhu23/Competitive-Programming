@@ -16,7 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
-ACSL Final | May 28th | Silver Medal | problem so cancer
+ACSL Final | May 28th | whole day | Silver Medal | problem so cancer
 CF Edu 129 | May 23rd | 7:35am | 3 | you win some, you lose some 
 mBit | May 22nd | 10am | 2/10 | should've looked at the leaderboard to do easier problems
 CF 793 | May 22nd | 7:35 | 4151(211st best so far) | I shouldnt've made 3 wrong sub for C
