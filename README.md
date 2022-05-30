@@ -303,6 +303,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO 22 | P1 | complete | binary search, find cycle | **
 CCO 15 | P4 | complete | topological order | **
 Mock CCO 18 | P2 | complete | greedy, break into x + t, x - t | ***
 Mock CCO 18 | P3 | complete | second shortest path | ***
