@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-05-31 07:08:21
+ * @date    2022-05-31 07:08:15
  * @version 1.0.0
  */
 
@@ -161,17 +161,59 @@ inline void init2(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+
+struct segtree {
+    ll st[N << 2];
+    void build(int rt, int l, int r, vll& x) {
+        if(l == r) {
+            st[rt] = x[l];
+            return;
+        }
+        int mid = l + r >> 1;
+        build(lc, l, mid, x);
+        build(rc, mid + 1, r, x);
+        st[rt] = max(st[lc], st[rc]);
+    }
+    ll query(int rt, int l, int r, int x, int y) {
+        if(l == x && y == r) return st[rt];
+        int mid = l + r >> 1;
+        if(y <= mid) return query(lc, l, mid, x, y);
+        else if(x > mid) return query(rc, mid + 1, r, x, y);
+        else return max(query(lc, l, mid, x, mid), query(rc, mid + 1, r, mid + 1, y));
+    }
+} st, st2;
 
 inline void solve(){
     int n = read();
-    vi a(n + 4);
-    int b = 0, d = 0;
+    vi a(n + 5), l(n + 5), r(n + 5);
+    vll psa(n + 5), psa2(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    vi stk;
     for(int i = 1;i<=n;++i) {
-        read(a[i]);
-        b += a[i] % 2;
-        d += a[i] % 2 == 0;
+        while(!stk.empty() && a[stk.back()] <= a[i]) stk.pop_back();
+        l[i] = stk.empty() ? 1 : stk.back() + 1;
+        stk.pb(i);
+        psa[i] = psa[i - 1] + a[i];
     }
-    print(min(b, d), '\n');
+    stk.clear();
+    for(int i = n;i;--i) {
+        while(!stk.empty() && a[stk.back()] <= a[i]) stk.pop_back();
+        r[i] = stk.empty() ? n : stk.back() - 1;
+        stk.pb(i);
+        psa2[i] = psa2[i + 1] + a[i];
+    }
+    st.build(1, 1, n, psa);
+    st2.build(1, 1, n, psa2);
+    for(int i = 1;i<=n;++i) {
+        ll x = st.query(1, 1, n, i, r[i]) - psa[i];
+        ll y = st2.query(1, 1, n, l[i], i) - psa2[i];
+        if(x + y > 0) {
+            puts("NO");
+            return;
+        }
+    }
+    puts("YES");
 }
 
 

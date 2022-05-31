@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-05-31 07:08:21
+ * @date    2022-05-31 07:08:17
  * @version 1.0.0
  */
 
@@ -163,15 +163,32 @@ inline void init2(){
 
 
 inline void solve(){
-    int n = read();
-    vi a(n + 4);
-    int b = 0, d = 0;
-    for(int i = 1;i<=n;++i) {
-        read(a[i]);
-        b += a[i] % 2;
-        d += a[i] % 2 == 0;
+    int n = read(), k = read();
+    string s; cin>>s;
+    s = '@' + s;
+    int ans = 0, r = -1, l = -1, cnt = 0;
+    for(int i = 1;i<=n;++i) if(s[i] == '1') ans += 11, r = i, ++cnt;
+    for(int i = n;i;--i) if(s[i] == '1') l = i;
+    if(r == -1 || l == -1) {
+        print(0, '\n');
+        return;
     }
-    print(min(b, d), '\n');
+    if(l - 1 + n - r <= k && cnt > 1) {
+        ans -= 11;
+        print(ans, '\n');
+        return;
+    }
+    if(n - r <= k) {
+        ans -= 10;
+        print(ans, '\n');
+        return;
+    }
+    if(l - 1 <= k) {
+        ans--;
+        print(ans, '\n');
+        return;
+    }
+    print(ans, '\n');
 }
 
 

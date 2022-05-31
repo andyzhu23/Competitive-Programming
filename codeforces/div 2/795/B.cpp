@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-05-31 07:08:21
+ * @date    2022-05-31 07:08:19
  * @version 1.0.0
  */
 
@@ -164,14 +164,30 @@ inline void init2(){
 
 inline void solve(){
     int n = read();
-    vi a(n + 4);
-    int b = 0, d = 0;
+    um<int, int> mp;
+    vi a(n + 4), ans(n + 4);
     for(int i = 1;i<=n;++i) {
-        read(a[i]);
-        b += a[i] % 2;
-        d += a[i] % 2 == 0;
+        a[i] = read();
+        mp[a[i]]++;
     }
-    print(min(b, d), '\n');
+    for(auto[u, v] : mp) {
+        if(v == 1) {
+            puts("-1");
+            return;
+        }
+    }
+    int r = 1;
+    for(int i = 1;i<=n;++i) {
+        r = max(i, r);
+        while(a[r] == a[i]) ++r;
+        --r;
+        ans[i] = r;
+        for(int j = i + 1;j<=r;++j) {
+            ans[j] = j - 1;
+        }
+        i = r;
+    }
+    for(int i = 1;i<=n;++i) print(ans[i], " \n"[i==n]);
 }
 
 
