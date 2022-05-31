@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 795 | May 31st | 7:35am | 3592 | should've checked C before submitting
 ACSL Final | May 28th | whole day | 35(Silver Medal) | problem so cancer
 CF Edu 129 | May 23rd | 7:35am | 3 | you win some, you lose some 
 mBit | May 22nd | 10am | 2/10 | should've looked at the leaderboard to do easier problems
