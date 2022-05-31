@@ -380,6 +380,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 795 | D | complete | monotonic stack, prefix sum, segtree | ***
+CF 795 | C | complete | decrease by either 1 or 10, make sure check causes with one 1, or no 1 | **
+CF 795 | B | complete | no single element | *
+CF 795 | A | complete | odd even | *
 CF 713 | C | complete | slope trick, minus i to compute non strictly increasing | ***
 CF 13 | C | complete | slope trick | ***
 CF Edu_129 | C | complete | sort two first, do swap sort to generate swap | **
