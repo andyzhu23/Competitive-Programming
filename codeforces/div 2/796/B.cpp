@@ -163,26 +163,22 @@ inline void init2(){
 
 
 inline void solve(){
-    int x = read();
-    int ans = 0;
-    for(int i = 0;i<31;++i) {
-        if(x & (1 << i)) {
-            ans |= 1 << i;
-            break;
+    int n = read();
+    vi a(n + 5), b(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    int ans = INF;
+    int x = 0;
+    for(int i = 1;i<=n;++i) {
+        while(a[i] % 2 == 0) {
+            ++b[i];
+            a[i] /= 2;
         }
+        if(b[i] < ans) x = i;
+        ckmin(ans, b[i]);
     }
-    int cnt = 0;
-    for(int i = 0;i<31;++i) {
-        if(x & (1 << i)) ++cnt;
-    }
-    if(cnt > 1) {
-        print(ans, '\n');
-        return;
-    }
-    for(int i = 0;i<31;++i) {
-        if(ans & (1 << i)) continue;
-        ans |= 1 << i;
-        break;
+    for(int i = 1;i<=n;++i) {
+        if(i == x) continue;
+        if(b[i]) ++ans;
     }
     print(ans, '\n');
 }

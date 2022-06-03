@@ -163,26 +163,22 @@ inline void init2(){
 
 
 inline void solve(){
-    int x = read();
-    int ans = 0;
-    for(int i = 0;i<31;++i) {
-        if(x & (1 << i)) {
-            ans |= 1 << i;
-            break;
+    ll n = read(), k = read();
+    vll a(n + 5), psa(n + 5), t(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]), psa[i] = psa[i - 1] + a[i];
+    if(k <= n) {
+        ll ans = 0;
+        for(int i = 1;i + k - 1<=n;++i) {
+            ckmax(ans, psa[i + k - 1] - psa[i - 1]);
         }
-    }
-    int cnt = 0;
-    for(int i = 0;i<31;++i) {
-        if(x & (1 << i)) ++cnt;
-    }
-    if(cnt > 1) {
+        ans += k * (k - 1) / 2;
         print(ans, '\n');
         return;
     }
-    for(int i = 0;i<31;++i) {
-        if(ans & (1 << i)) continue;
-        ans |= 1 << i;
-        break;
+    ll ans = psa[n];
+    for(int i = 1;i<=n;++i) {
+        t[i] = k - i;
+        ans += t[i];
     }
     print(ans, '\n');
 }

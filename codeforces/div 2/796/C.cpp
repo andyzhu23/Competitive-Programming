@@ -162,29 +162,22 @@ inline void init2(){
 //--------------------- start of program ---------------------
 
 
-inline void solve(){
-    int x = read();
-    int ans = 0;
-    for(int i = 0;i<31;++i) {
-        if(x & (1 << i)) {
-            ans |= 1 << i;
-            break;
+inline void solve() {
+    int n = read();
+    vi cnt(200);
+    for(int i = 1;i<=2 * n;++i) {
+        string s; cin>>s;
+        for(auto x : s) ++cnt[x];
+    }
+    string s; cin>>s;
+    for(auto x : s) --cnt[x];
+    for(int i = 'a';i<='z';++i) {
+        if(cnt[i] & 1) {
+            putchar(i);
+            putchar('\n');
+            return;
         }
     }
-    int cnt = 0;
-    for(int i = 0;i<31;++i) {
-        if(x & (1 << i)) ++cnt;
-    }
-    if(cnt > 1) {
-        print(ans, '\n');
-        return;
-    }
-    for(int i = 0;i<31;++i) {
-        if(ans & (1 << i)) continue;
-        ans |= 1 << i;
-        break;
-    }
-    print(ans, '\n');
 }
 
 
