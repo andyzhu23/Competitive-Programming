@@ -380,6 +380,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 795 | E | complete | dsu merge blue with blue, red with red, remove blue red cross over | ***
 CF 795 | D | complete | monotonic stack, prefix sum, segtree | ***
 CF 795 | C | complete | decrease by either 1 or 10, make sure check causes with one 1, or no 1 | **
 CF 795 | B | complete | no single element | *
