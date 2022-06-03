@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 796 | Jun 3rd | 7:35am | Got trolled by C 
 CF 795 | May 31st | 7:35am | 3592 | should've checked C before submitting
 ACSL Final | May 28th | whole day | 35(Silver Medal) | problem so cancer
 CF Edu 129 | May 23rd | 7:35am | 3 | you win some, you lose some 
@@ -380,6 +381,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 796 | D | complete | initial has nothing to do with added | **
+CF 796 | B | complete | easy parity | *
+CF 796 | A | complete | easy bitmask | *
 CF 795 | E | complete | dsu merge blue with blue, red with red, remove blue red cross over | ***
 CF 795 | D | complete | monotonic stack, prefix sum, segtree | ***
 CF 795 | C | complete | decrease by either 1 or 10, make sure check causes with one 1, or no 1 | **
