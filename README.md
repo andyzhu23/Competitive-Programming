@@ -382,6 +382,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 CF 796 | D | complete | initial has nothing to do with added | **
+CF 796 | C | complete | check parity | **
 CF 796 | B | complete | easy parity | *
 CF 796 | A | complete | easy bitmask | *
 CF 795 | E | complete | dsu merge blue with blue, red with red, remove blue red cross over | ***
