@@ -381,6 +381,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+Grakn Forces | D | complete | suffix maximum, get minimum y based on x | ***
 CF 796 | D | complete | initial has nothing to do with added | **
 CF 796 | C | complete | check parity | **
 CF 796 | B | complete | easy parity | *
