@@ -381,6 +381,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 797 | G | complete | segment tree, interval merging | **
 CF 776 | E | complete | disgusting implementation | **
 CF 672 | C | complete | always optimal to choose local min and max | ***
 CF 558 | C | complete | when simplifying lines, consider horizontal and vertical lines | **
