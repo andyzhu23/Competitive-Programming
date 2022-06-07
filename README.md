@@ -384,6 +384,10 @@ Source | Problems | status | skills needed | rating
 CF 797 | G | complete | segment tree, interval merging | **
 CF 797 | F | complete | simple cycle finding, lcm | **
 CF 797 | E | complete | mod, two pointer | **
+CF 797 | D | complete | prefix sum | *
+CF 797 | C | complete | don't be dumb | *
+CF 797 | B | complete | don't be dumb | *
+CF 797 | A | complete | don't be dumb | *
 CF 776 | E | complete | disgusting implementation | **
 CF 672 | C | complete | always optimal to choose local min and max | ***
 CF 558 | C | complete | when simplifying lines, consider horizontal and vertical lines | **
