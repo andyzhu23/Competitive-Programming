@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-06-07 10:35:05
+ * @date    2022-06-07 14:56:38
  * @version 1.0.0
  */
 
@@ -161,86 +161,14 @@ inline void init2(){
 
 //--------------------- start of program ---------------------
 
-const int N = 1e5 + 5;
-int a[N], b[N];
-
-struct node {
-    int l, r, cnt, mn, mx;
-    node operator+(const node& other) const {
-        node ans;
-        ans.l = l;
-        ans.r = other.r;
-        ans.mn = min(mn, other.mn);
-        ans.mx = max(mx, other.mx);
-        ans.cnt = cnt + other.cnt;
-        if(r == other.l) --ans.cnt;
-        return ans;
-    }
-};
-
-struct segtree {
-    node st[N << 2];
-    int lazy[N << 2];
-    void push_down(int rt) {
-        if(~lazy[rt]) {
-            st[lc] = st[rc] = {lazy[rt], lazy[rt], 1, lazy[rt], lazy[rt]};
-            lazy[lc] = lazy[rc] = lazy[rt];
-            lazy[rt] = -1;
-        }
-    }
-    void build(int rt, int l, int r) {
-        lazy[rt] = -1;
-        if(l == r) {
-            st[rt] = {a[l], a[l], 1, a[l], a[l]};
-            return;
-        }
-        int mid = l + r >> 1;
-        push_down(rt);
-        build(lc, l, mid);
-        build(rc, mid + 1, r);
-        st[rt] = st[lc] + st[rc];
-    }
-    int rb(int rt, int l, int r, int val) {
-        if(l == r) return l;
-        int mid = l + r >> 1;
-        push_down(rt);
-        if(st[rc].mx >= val) return rb(rc, mid + 1, r, val);
-        else return rb(lc, l, mid, val);
-    }
-    void update(int rt, int l, int r, int x, int y, int val) {
-        if(l == x && y == r) {
-            st[rt] = {val, val, 1, val, val};
-            lazy[rt] = val;
-            return;
-        }
-        int mid = l + r >> 1;
-        push_down(rt);
-        if(y <= mid) update(lc, l, mid, x, y, val);
-        else if(x > mid) update(rc, mid + 1, r, x, y, val);
-        else update(lc, l, mid, x, mid, val), update(rc, mid + 1, r, mid + 1, y, val);
-        st[rt] = st[lc] + st[rc];
-    }
-    int query(int rt, int l, int r, int x) {
-        if(l == r) return st[rt].mx;
-        int mid = l + r >> 1;
-        push_down(rt);
-        if(x <= mid) return query(lc, l, mid, x);
-        else return query(rc, mid + 1, r, x);
-    }
-} st;
 
 inline void solve(){
-    int n = read(), m = read();
-    for(int i = 1;i<=n;++i) read(b[i]), a[i] = b[i];
-    for(int i = 2;i<=n;++i) ckmin(a[i], a[i - 1]);
-    st.build(1, 1, n);
-    while(m--) {
-        int u = read(), v = read();
-        b[u] -= v;
-        int r = st.rb(1, 1, n, b[u]);
-        if(u <= r) st.update(1, 1, n, u, r, b[u]);
-        print(st.st[1].cnt, " \n"[m==0]);
-    }
+    int n = read();
+    vi s(n + 5), f(n + 5), d(n + 5);
+    for(int i = 1;i<=n;++i) read(s[i]);
+    for(int i = 1;i<=n;++i) read(f[i]);
+    for(int i = 1;i<=n;++i) 
+        print(f[i] - max(f[i - 1], s[i]), " \n"[i==n]);
 }
 
 
