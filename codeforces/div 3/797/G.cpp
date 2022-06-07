@@ -200,13 +200,6 @@ struct segtree {
         build(rc, mid + 1, r);
         st[rt] = st[lc] + st[rc];
     }
-    int lb(int rt, int l, int r, int val) {
-        if(l == r) return l;
-        int mid = l + r >> 1;
-        push_down(rt);
-        if(st[lc].mn <= val) return lb(lc, l, mid, val);
-        else return lb(rc, mid + 1, r, val);
-    }
     int rb(int rt, int l, int r, int val) {
         if(l == r) return l;
         int mid = l + r >> 1;
@@ -245,7 +238,6 @@ inline void solve(){
         int u = read(), v = read();
         b[u] -= v;
         int r = st.rb(1, 1, n, b[u]);
-        // cout<<u<<' '<<r<<' '<<b[u]<<'\n';
         if(u <= r) st.update(1, 1, n, u, r, b[u]);
         print(st.st[1].cnt, " \n"[m==0]);
     }
