@@ -393,6 +393,7 @@ CF 672 | C | complete | always optimal to choose local min and max | ***
 CF 558 | C | complete | when simplifying lines, consider horizontal and vertical lines | **
 CF 550 | E | complete | big number addition, division | **
 Grakn Forces | D | complete | suffix maximum, get minimum y based on x | ***
+CF 796 | E | complete | get l for all path, sort l, if l is added to answer, keep path, otherwise leave it | ***
 CF 796 | D | complete | initial has nothing to do with added | **
 CF 796 | C | complete | check parity | **
 CF 796 | B | complete | easy parity | *
