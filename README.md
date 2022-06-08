@@ -381,6 +381,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_67 | E | complete | dp change root | ***
 CF 797 | G | complete | segment tree, interval merging | **
 CF 797 | F | complete | simple cycle finding, lcm | **
 CF 797 | E | complete | mod, two pointer | **
