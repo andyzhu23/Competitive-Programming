@@ -430,6 +430,7 @@ CF 788 | C | complete | do cycle with dsu, remove cycle that are locked by d | *
 CF 788 | B | complete | largest interval without special characters | **
 CF 788 | A | complete | move all negative to the front | *
 CF 787 | F | complete | find path from x to y, brute force subtrees | **
+CF 787 | E | complete | dsu the letters | *
 CF 786 | F | complete | maintain last point | **
 CF 785 | D | complete | check 0, -1, as long as ends don't touch, and lcm(d, q) == r | ***
 CF 785 | C | complete | easy knapsack | *
