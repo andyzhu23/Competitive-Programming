@@ -428,6 +428,7 @@ CF 788 | D | complete | precompute, answer add by 2 each time a new line cross a
 CF 788 | C | complete | do cycle with dsu, remove cycle that are locked by d | ***
 CF 788 | B | complete | largest interval without special characters | **
 CF 788 | A | complete | move all negative to the front | *
+CF 787 | F | complete | find path from x to y, brute force subtrees | **
 CF 785 | D | complete | check 0, -1, as long as ends don't touch, and lcm(d, q) == r | ***
 CF 785 | C | complete | easy knapsack | *
 CF 785 | B | complete | find last occurance of the letter, see if any letter not in the interval | **
