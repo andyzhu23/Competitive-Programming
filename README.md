@@ -305,6 +305,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO 22 | P2 | complete | first check YES/NO, stack to buy umbrella, difference array | ***
 CCO 05 | P5 | complete | dp | **
 CCO 22 | P1 | complete | two pointer/binary search, find cycle | **
 CCO 15 | P4 | complete | topological order | **
