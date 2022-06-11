@@ -383,6 +383,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 798 | D | complete | not lots of useful squares, answer to right minus one, left add one | **
+CF 798 | B | complete | swaping only adjacent | *
+CF 798 | A | complete | sort and choose min | *
 CF Edu_67 | E | complete | dp change root | ***
 CF 797 | G | complete | segment tree, interval merging | **
 CF 797 | F | complete | simple cycle finding, lcm | **
