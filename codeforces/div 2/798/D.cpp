@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-06-10 14:49:45
+ * @date    2022-06-11 08:46:46
  * @version 1.0.0
  */
 
@@ -65,7 +65,7 @@ template <typename T> using os = set<T>;
 template <typename T> using ms = multiset<T>;
 template <typename T1, typename T2> using um = unordered_map<T1, T2>;
 template <typename T1, typename T2> using om = map<T1, T2>;
-template <typename T> using pq = priority_queue<T>; 
+template <typename T> using pq = priority_queue<T>;
 template <typename T> using pqg = priority_queue<T, vector<T>, greater<T> >;
 using vi = vector<int>;
 using vpii = vector<pair<int, int> >;
@@ -98,7 +98,7 @@ namespace comfun {
     template <typename T> inline T gcd(T a, T b){if(a == 0) return b; if(b == 0) return a; return gcd(b, a % b);}
     template <typename T> inline T lcm(T a, T b){return a / gcd(a, b) * b;}
     template <typename T1, typename T2> inline T1 fp(T1 a, T2 b) {T1 c = 1;while(b) {if(b & 1) c *= a;b >>= 1;a = a * a;}return c;}
-    template <typename T1, typename T2, typename T3> inline T1 fp(T1 a, T2 b, T3 mod) 
+    template <typename T1, typename T2, typename T3> inline T1 fp(T1 a, T2 b, T3 mod)
     {T1 c = 1;while(b) {if(b & 1) c = c * a % mod;b >>= 1;a = a * a % mod;}return c;}
     template <typename T> inline bool is_prime(T x){if(x == 1) return false; for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 }
@@ -121,20 +121,20 @@ namespace fast_io {
         int x = 0, f = 0; char ch = getchar();
         while (!isdigit(ch)) f |= ch == '-', ch = getchar();
         while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();
-            return f ? -x : x;
+        return f ? -x : x;
     }
     long long readLL() {
         long long x = 0, f = 0; char ch = getchar();
         while (!isdigit(ch)) f |= ch == '-', ch = getchar();
         while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();
-            return f ? -x : x;
+        return f ? -x : x;
     }
     void read(int& x) {x = read();}
     void read(long long& x) {x = readLL();}
     template<typename T> void print(T x) {
         if (x < 0) putchar('-'), x = -x;
         if (x >= 10) print(x / 10);
-            putchar(x % 10 + '0');
+        putchar(x % 10 + '0');
     }
     template<typename T> void print(T x, char let) {
         print(x), putchar(let);
@@ -161,36 +161,54 @@ inline void init2(){
 
 //--------------------- start of program ---------------------
 
-const int N = 105;
-char s[N], t[N];
-int n, m, k;
+const int N = 1005;
+char s[N][N];
+int n, m, mx, u[N], d[N];
 
 inline void solve(){
-    read(n), read(m), read(k);
-    scanf("%s", s + 1);
-    scanf("%s", t + 1);
-    sort(s + 1, s + n + 1);
-    sort(t + 1, t + m + 1);
-    int i = 1, j = 1, cnt = 0;
-    while(i <= n && j <= m) {
-        while(s[i] <= t[j] && cnt < k) {
-            if(i > n) break;
-            putchar(s[i++]);
-            ++cnt;
+    read(n), read(m);
+    mx = 0;
+    for(int i = 1;i<=m;++i) u[i] = INF, d[i] = -INF;
+    for(int i = 1;i<=n;++i) {
+        scanf("%s", s[i] + 1);
+        for(int j = 1;j<=m;++j) {
+            if(s[i][j] == 'B') {
+                ckmax(mx, i - 1 + j - 1);
+            }
         }
-        if(i > n) break;
-        if(cnt == k && j <= m) putchar(t[j++]), cnt = 1;
-        else cnt = 0;
-        while(s[i] >= t[j] && cnt < k) {
-            if(j > m) break;
-            putchar(t[j++]);
-            ++cnt;
-        }
-        if(j > m) break;
-        if(cnt == k && i <= n) putchar(s[i++]), cnt = 1;
-        else cnt = 0;
     }
-    putchar('\n');
+    for(int j = 1;j<=m;++j) {
+        for(int i = 1;i<=n;++i) {
+            if(s[i][j] == 'B') d[j] = i;
+        }
+        for(int i = 1;i<=n;++i) {
+            if(s[i][j] == 'B') {
+                u[j] = i;
+                break;
+            }
+        }
+    }
+    int prv = -INF;
+    int ans = INF;
+    int x, y;
+    for(int i = 1;i<=n;++i) {
+        int l = -INF;
+        for(int j = 1;j<=m;++j) if(s[i][j] == 'B') l = j - 1;
+        ckmax(++prv, l);
+        int tmp = max(mx--, prv);
+        int last = -INF;
+        for(int j = 1;j<=m;++j) {
+            last = max({++last, i - u[j], d[j] - i});
+            if(max(last, tmp) < ans) {
+                ans = max(last, tmp);
+                x = i;
+                y = j;
+            }
+            --tmp;
+        }
+    }
+    print(x, ' ');
+    print(y, '\n');
 }
 
 
@@ -226,14 +244,14 @@ signed main(){
         init2();
         solve();
     }
-#else 
+#else
     solve();
 #endif
     string jack = "Jack is always within you";
     return 0;
 }
 
- 
+
 /* stuff you should look for
     * int overflow, array bounds
     * special cases (n=1?)

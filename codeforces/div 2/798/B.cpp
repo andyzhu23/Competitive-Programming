@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-06-10 14:49:45
+ * @date    2022-06-10 20:00:50
  * @version 1.0.0
  */
 
@@ -161,36 +161,19 @@ inline void init2(){
 
 //--------------------- start of program ---------------------
 
-const int N = 105;
-char s[N], t[N];
-int n, m, k;
-
 inline void solve(){
-    read(n), read(m), read(k);
-    scanf("%s", s + 1);
-    scanf("%s", t + 1);
-    sort(s + 1, s + n + 1);
-    sort(t + 1, t + m + 1);
-    int i = 1, j = 1, cnt = 0;
-    while(i <= n && j <= m) {
-        while(s[i] <= t[j] && cnt < k) {
-            if(i > n) break;
-            putchar(s[i++]);
-            ++cnt;
-        }
-        if(i > n) break;
-        if(cnt == k && j <= m) putchar(t[j++]), cnt = 1;
-        else cnt = 0;
-        while(s[i] >= t[j] && cnt < k) {
-            if(j > m) break;
-            putchar(t[j++]);
-            ++cnt;
-        }
-        if(j > m) break;
-        if(cnt == k && i <= n) putchar(s[i++]), cnt = 1;
-        else cnt = 0;
+    int n = read();
+    vi a(n + 5), b(n + 5);
+    for(int i = 1;i<=n;++i) a[i] = read(), b[i] = i;
+    if(n == 1) {
+        print(-1, '\n');
+        return;
     }
-    putchar('\n');
+    for(int i = 1;i<n;++i) if(a[i] == i && b[i] == i) {
+        swap(b[i], b[i + 1]);
+    }
+    if(a[n] == n && b[n] == n) swap(b[n], b[n - 1]);
+    for(int i = 1;i<=n;++i) print(b[i], " \n"[i==n]);
 }
 
 
