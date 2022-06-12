@@ -161,20 +161,72 @@ inline void init2(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1005;
+int n, cnt[N][200];
+string ans;
+using pci = pair<char, int>;
+deque<pci> pos;
+
+char q1(int n) {
+    cout<<"? 1 "<<n<<'\n'<<flush;
+    char c; cin>>c;
+    return c;
+}
+
+int q2(int l, int r) {
+    cout<<"? 2 "<<l<<' '<<r<<'\n'<<flush;
+    int x; cin>>x;
+    return x;
+}
 
 inline void solve(){
-    int n = read(), m = read();
-    int ans = 0;
-    for(int i = 1;i<=n;++i) ans += read();
-    print(max(0, ans - m), '\n');
+    cin>>n;
+    for(int i = 1;i<=n;++i) ans += '@';
+    pos.pb({q1(1), 1});
+    ans[0] = pos[0].fir;
+    cnt[1][ans[0]] = 1;
+    for(int i = 2;i<=n;++i) {
+        bool flag = 0;
+        int l = 0, r = pos.size() - 1, ret = -1;
+        while(l <= r) {
+            int mid = l + r >> 1;
+            auto[a, b] = pos[mid];
+            int tmp = 0;
+            for(int j = 0;j<200;++j) {
+                tmp += (bool)(cnt[i - 1][j] - cnt[b - 1][j]);
+            }
+            int x = q2(b, i);
+            if(tmp == x) {
+                l = mid + 1, ret = mid;
+                flag = 1;
+                ans[i - 1] = pos[ret].fir;
+            } else r = mid - 1;
+        }
+        for(int j = 0;j<200;++j) cnt[i][j] = cnt[i - 1][j];
+        if(flag) {
+            ++cnt[i][ans[i - 1]];
+            pos[ret].sec = i;
+        }
+        sort(all(pos), [&](pci& a, pci& b) {
+            return a.sec < b.sec;
+        });
+        if(flag) continue;
+        ans[i - 1] = q1(i);
+        pos.push_back({ans[i - 1], i});
+        cnt[i][ans[i - 1]] = 1;
+        sort(all(pos), [&](pci& a, pci& b) {
+            return a.sec < b.sec;
+        });
+    }
+    cout<<"! "<<ans<<'\n';
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
-#define config LOCAL
+#define doCase 0
+#define config 0
 #define kickstart 0
 #define unsync 0
 

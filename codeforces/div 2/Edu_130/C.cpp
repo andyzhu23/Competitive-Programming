@@ -65,7 +65,7 @@ template <typename T> using os = set<T>;
 template <typename T> using ms = multiset<T>;
 template <typename T1, typename T2> using um = unordered_map<T1, T2>;
 template <typename T1, typename T2> using om = map<T1, T2>;
-template <typename T> using pq = priority_queue<T>; 
+template <typename T> using pq = priority_queue<T>;
 template <typename T> using pqg = priority_queue<T, vector<T>, greater<T> >;
 using vi = vector<int>;
 using vpii = vector<pair<int, int> >;
@@ -98,7 +98,7 @@ namespace comfun {
     template <typename T> inline T gcd(T a, T b){if(a == 0) return b; if(b == 0) return a; return gcd(b, a % b);}
     template <typename T> inline T lcm(T a, T b){return a / gcd(a, b) * b;}
     template <typename T1, typename T2> inline T1 fp(T1 a, T2 b) {T1 c = 1;while(b) {if(b & 1) c *= a;b >>= 1;a = a * a;}return c;}
-    template <typename T1, typename T2, typename T3> inline T1 fp(T1 a, T2 b, T3 mod) 
+    template <typename T1, typename T2, typename T3> inline T1 fp(T1 a, T2 b, T3 mod)
     {T1 c = 1;while(b) {if(b & 1) c = c * a % mod;b >>= 1;a = a * a % mod;}return c;}
     template <typename T> inline bool is_prime(T x){if(x == 1) return false; for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 }
@@ -121,20 +121,20 @@ namespace fast_io {
         int x = 0, f = 0; char ch = getchar();
         while (!isdigit(ch)) f |= ch == '-', ch = getchar();
         while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();
-            return f ? -x : x;
+        return f ? -x : x;
     }
     long long readLL() {
         long long x = 0, f = 0; char ch = getchar();
         while (!isdigit(ch)) f |= ch == '-', ch = getchar();
         while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();
-            return f ? -x : x;
+        return f ? -x : x;
     }
     void read(int& x) {x = read();}
     void read(long long& x) {x = readLL();}
     template<typename T> void print(T x) {
         if (x < 0) putchar('-'), x = -x;
         if (x >= 10) print(x / 10);
-            putchar(x % 10 + '0');
+        putchar(x % 10 + '0');
     }
     template<typename T> void print(T x, char let) {
         print(x), putchar(let);
@@ -161,12 +161,46 @@ inline void init2(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e5 + 5;
+char s[N], t[N];
 
 inline void solve(){
-    int n = read(), m = read();
-    int ans = 0;
-    for(int i = 1;i<=n;++i) ans += read();
-    print(max(0, ans - m), '\n');
+    int n = read();
+    scanf("%s", s + 1);
+    scanf("%s", t + 1);
+    string a, b;
+    for(int i = 1;i<=n;++i) {
+        if(s[i] != 'b') a += s[i];
+        if(t[i] != 'b') b += t[i];
+    }
+    if(a != b) {
+        puts("NO");
+        return;
+    }
+    vi u, v;
+    for(int i = 1;i<=n;++i) {
+        if(s[i] == 'a') u.pb(i);
+        if(t[i] == 'a') v.pb(i);
+    }
+    for(int i = 0;i<u.size();++i) {
+        if(u[i] > v[i]) {
+            puts("NO");
+            return;
+        }
+    }
+    u.clear(), v.clear();
+    for(int i = 1;i<=n;++i) {
+        if(s[i] == 'c') u.pb(i);
+        if(t[i] == 'c') v.pb(i);
+    }
+    for(int i = 0;i<u.size();++i) {
+        if(u[i] < v[i]) {
+            puts("NO");
+            return;
+        }
+    }
+    puts("YES");
+    return;
 }
 
 
@@ -202,14 +236,14 @@ signed main(){
         init2();
         solve();
     }
-#else 
+#else
     solve();
 #endif
     string jack = "Jack is always within you";
     return 0;
 }
 
- 
+
 /* stuff you should look for
     * int overflow, array bounds
     * special cases (n=1?)

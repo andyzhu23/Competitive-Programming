@@ -163,17 +163,24 @@ inline void init2(){
 
 
 inline void solve(){
-    int n = read(), m = read();
-    int ans = 0;
-    for(int i = 1;i<=n;++i) ans += read();
-    print(max(0, ans - m), '\n');
+    int n = read(), q = read();
+    vll psa(n + 5), a(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    sort(a.begin() + 1, a.begin() + n + 1);
+    for(int i = 1;i<=n;++i) {
+        psa[i] = psa[i - 1] + a[i];
+    }
+    while(q--) {
+        int x = read(), y = read();
+        print(psa[n - x + y] - psa[n - x], '\n');
+    }
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 #define kickstart 0
 #define unsync 0
