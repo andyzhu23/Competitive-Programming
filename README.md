@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF Edu_130 | Jun 12th | 7:35am | 4/6 | Too many wrong subs!!!
 CF 796 | Jun 3rd | 7:35am | 2455 | Got trolled by C, should've looked at E
 CF 795 | May 31st | 7:35am | 3592 | should've checked C before submitting
 ACSL Final | May 28th | whole day | 35(Silver Medal) | problem so cancer
@@ -383,6 +384,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 130 | D | complete | binary search for first position repeated, if no repeat, query 1 | ***
+CF 130 | C | complete | delete b first, check all relative position of a and c | **
+CF 130 | B | complete | prefix sum | *
+CF 130 | A | complete | don't be dumb | *
 CF Edu_86 | D | complete | binary search, sorting | **
 CF Edu_82 | D | complete | bitmask, greedily combine small bags | **
 CF 798 | D | complete | not lots of useful squares, answer to right minus one, left add one | **
