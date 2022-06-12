@@ -383,6 +383,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_86 | D | complete | binary search, sorting | **
 CF Edu_82 | D | complete | bitmask, greedily combine small bags | **
 CF 798 | D | complete | not lots of useful squares, answer to right minus one, left add one | **
 CF 798 | B | complete | swaping only adjacent | *
