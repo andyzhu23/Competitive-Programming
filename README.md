@@ -384,6 +384,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 786 | G | complete | find longest path after deleting edges must be deleted | ***
 CF Edu_127 | E | complete | dp on tree, find lexicongraphically smallest possible string and compare | ***
 CF 130 | D | complete | binary search for first position repeated, if no repeat, query 1 | ***
 CF 130 | C | complete | delete b first, check all relative position of a and c | **
