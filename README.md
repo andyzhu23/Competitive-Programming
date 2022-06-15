@@ -466,6 +466,7 @@ CF Edu_126 | B | complete | precompute answers | **
 CF Edu_126 | A | complete | put all small number to one | *
 CF 780 | F2 | complete | pigeonhole ignore adjacent, fenwick tree | *** 
 CF 780 | F1 | complete | easy enumeration | **
+CF 780 | D | complete | each separate by 0, delete left and right most negative is count is odd | *
 CF Edu_125 | D | complete | dp, combine D and H | ***
 CF Edu_125 | C | complete | regular can only be length 2, rest are all palindrome | **
 CF Edu_125 | B | complete | implementation | *
