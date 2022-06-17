@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-06-16 09:09:49
+ * @date    2022-06-16 09:17:57
  * @version 1.0.0
  */
 
@@ -163,22 +163,14 @@ inline void init2(){
 
 
 inline void solve(){
-    int a = read(), b = read();
-    int mn = min(a, b);
-    for(int i = 1;i<=mn;++i) {
-        putchar('1');
-        putchar('0');
+    int n = read();
+    string s; cin>>s;
+    s = '@' + s;
+    ll ans = 1ll * n * (n + 1) / 2;
+    for(int i = 1;i<=n;++i) {
+        if(s[i] == s[i - 1]) ans -= i - 1;
     }
-    if(a > b) {
-        for(int i = 1;i<=a - b;++i) {
-            putchar('0');
-        }
-    } else {
-        for(int i = 1;i<=b - a;++i) {
-            putchar('1');
-        }
-    }
-    putchar('\n');
+    print(ans, '\n');
 }
 
 

@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-06-16 09:09:49
+ * @date    2022-06-17 09:01:11
  * @version 1.0.0
  */
 
@@ -163,22 +163,23 @@ inline void init2(){
 
 
 inline void solve(){
-    int a = read(), b = read();
-    int mn = min(a, b);
-    for(int i = 1;i<=mn;++i) {
-        putchar('1');
-        putchar('0');
+    int n = read();
+    vi a(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    ll x = 0;
+    while(n && a[n] == 0) --n;
+    if(n == -1) {
+        puts("YES");
+        return;
     }
-    if(a > b) {
-        for(int i = 1;i<=a - b;++i) {
-            putchar('0');
-        }
-    } else {
-        for(int i = 1;i<=b - a;++i) {
-            putchar('1');
+    for(int i = n;i;--i) {
+        x = -(a[i] - x);
+        if(i != 1 && x <= 0) {
+            puts("NO");
+            return;
         }
     }
-    putchar('\n');
+    puts(x == 0 ? "YES" : "NO");
 }
 
 

@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-06-16 09:09:49
+ * @date    2022-06-17 09:11:13
  * @version 1.0.0
  */
 
@@ -160,25 +160,32 @@ inline void init2(){
 //-------------------  end of initialize  -------------------
 
 //--------------------- start of program ---------------------
+const int N = 2e5 + 5;
+vi e[N];
+int n;
+ll l[N], r[N], ans, dp[N];
 
+void dfs(int u = 1, int fa = 0) {
+    for(int v : e[u]) if(v != fa) {
+        dfs(v, u);
+        dp[u] += dp[v];
+    }
+    if(dp[u] >= l[u]) ckmin(dp[u], r[u]);
+    else ++ans, dp[u] = r[u];
+}
 
 inline void solve(){
-    int a = read(), b = read();
-    int mn = min(a, b);
-    for(int i = 1;i<=mn;++i) {
-        putchar('1');
-        putchar('0');
+    read(n);
+    ans = 0;
+    for(int i = 1;i<=n;++i) e[i].clear(), dp[i] = 0;
+    for(int i = 2;i<=n;++i) {
+        int x = read();
+        e[i].pb(x);
+        e[x].pb(i);
     }
-    if(a > b) {
-        for(int i = 1;i<=a - b;++i) {
-            putchar('0');
-        }
-    } else {
-        for(int i = 1;i<=b - a;++i) {
-            putchar('1');
-        }
-    }
-    putchar('\n');
+    for(int i = 1;i<=n;++i) read(l[i]), read(r[i]);
+    dfs();
+    print(ans, '\n');
 }
 
 
