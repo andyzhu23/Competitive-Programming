@@ -108,9 +108,10 @@ Source | Problems | status | skills needed | rating
 2022 Spring | P7 | complete | knapsack | **
 2022 Spring | P9 | complete | get result with first time, check with all other times | ***
 
-### NOIP 
+### NOIP && NOI
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NOI 2006 | P4 | complete | minimum cut, flow means profit lost | ****
 NOIP 2015 | Substring | complete | dp, rolling array | ***
 NOIP 2016 | toy | complete | easy implementation | **
 NOIP 2016 | classroom | complete | expected value dp | ***
