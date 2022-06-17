@@ -386,6 +386,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 800 | D | complete | simple tree dp | ***
+CF 800 | C | complete | some logics | **
+CF 800 | B | complete | no consecutive 0 or 1 in the end | *
+CF 800 | A | complete | alternate 1 and 0 | *
 CF 799 | H | complete | maintain minimum prefix sum | **
 CF 786 | G | complete | find longest path after deleting edges must be deleted | ***
 CF Edu_127 | E | complete | dp on tree, find lexicongraphically smallest possible string and compare | ***
