@@ -171,6 +171,7 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 20 c7 | P5 | complete | literally samething as NOI06p4, just gotta do ll | ****
 DMOPC 21 Apr | P2 | complete | odd even have same sum | **
 DMOPC 21 Apr | P1 | complete | easy multiset | **
 DMOPC 21 Mar | P2 | complete | linked list | **
