@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 801 | Jun 18th | 7:35am | 	2071 | picked the wrong root
 CF Edu_130 | Jun 12th | 7:35am | 4/6 | Too many wrong subs!!!
 CF 796 | Jun 3rd | 7:35am | 2455 | Got trolled by C, should've looked at E
 CF 795 | May 31st | 7:35am | 3592 | should've checked C before submitting
@@ -386,6 +387,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 801 | D | complete | gotta pick any root degree >= 3, and no need query root | ***
+CF 801 | C | complete | yes if 0 between minimum and maximum | **
+CF 801 | B | complete | game theory | **
+CF 801 | A | complete | easy brute force | *
 CF 800 | D | complete | simple tree dp | ***
 CF 800 | C | complete | some logics | **
 CF 800 | B | complete | no consecutive 0 or 1 in the end | *
