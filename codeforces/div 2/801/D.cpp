@@ -160,44 +160,49 @@ inline void init2(){
 //-------------------  end of initialize  -------------------
 
 //--------------------- start of program ---------------------
+#define int long long
+const int N = 2e5 + 5;
+vi e[N];
+int n, root, dep[N], ans;
 
-const int N = 50;
-ll a[N][N];
-ll mx[N][N];
-ll cnt[N][N];
+void dfs(int u = root, int fa = 0) {
+    for(int v : e[u]) if(v != fa) {
+        dfs(v, u);
+        dep[u] += (bool) dep[v];
+    }
+    if(e[u].size() == 1) return;
+    ans += max((int)e[u].size() - 2 - dep[u], 0ll);
+    dep[u] = max(dep[u], (int)e[u].size() - 2);
+}
 
 inline void solve(){
-    int n = read(), m = read();
+    read(n);
+    root = 1;
     for(int i = 1;i<=n;++i) {
-        for(int j = 1;j<=m;++j) {
-            read(a[i][j]);
-        }
+        e[i].clear();
+        dep[i] = 0;
     }
-    memset(cnt, -1, sizeof(cnt));
-    for(int i = 1;i<=n;++i) {
-        for(int j = 1;j<=m;++j) {
-            memset(mx, -LLINF, sizeof(mx));
-            mx[i][j] = a[i][j];
-            bool flag = 1;
-            for(int h = 1;h + i - 1<=n;++h) {
-                for(int w = 1;w + j - 1<=m;++w) {
-                    mx[i + h - 1][j + w - 1] = max({a[i + h - 1][j + w - 1],
-                        mx[i + h - 1][j + w - 2],
-                        mx[i + h - 2][j + w - 1],
-                    });
-                    if(cnt[h][w] != -1 && mx[h + i - 1][w + j - 1] != cnt[h][w]) {
-                        cnt[h][w] = -INF;
-                    } else cnt[h][w] = mx[h + i - 1][w + j - 1];
-                }
-            }
-        }
+    for(int i = 1;i<n;++i) {
+        int u = read(), v = read();
+        e[u].pb(v);
+        e[v].pb(u);
     }
-    int ans = INF;
-    for(int i = 1;i<=n;++i) {
-        for(int j = 1;j<=m;++j) {
-            if(cnt[i][j] != -1 && cnt[i][j] != -INF) ckmin(ans, i * j);
-        }
+    if(n == 1) {
+        print(0, '\n');
+        return;
     }
+    root = 0;
+    for(int i = 1;i<=n;++i) if(e[root].size() < e[i].size()) root = i;
+    if(e[root].size() == 0) {
+        puts("0");
+        return;
+    } else if(e[root].size() == 1) {
+        puts("1");
+        return;
+    }
+    e[root].pb(0);
+    ans = 0;
+    dfs();
     print(ans, '\n');
 }
 

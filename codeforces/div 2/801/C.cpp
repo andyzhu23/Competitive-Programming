@@ -161,10 +161,8 @@ inline void init2(){
 
 //--------------------- start of program ---------------------
 
-const int N = 50;
-ll a[N][N];
-ll mx[N][N];
-ll cnt[N][N];
+const int N = 1005;
+int a[N][N], mx[N][N], mn[N][N];
 
 inline void solve(){
     int n = read(), m = read();
@@ -173,32 +171,25 @@ inline void solve(){
             read(a[i][j]);
         }
     }
-    memset(cnt, -1, sizeof(cnt));
-    for(int i = 1;i<=n;++i) {
-        for(int j = 1;j<=m;++j) {
-            memset(mx, -LLINF, sizeof(mx));
-            mx[i][j] = a[i][j];
-            bool flag = 1;
-            for(int h = 1;h + i - 1<=n;++h) {
-                for(int w = 1;w + j - 1<=m;++w) {
-                    mx[i + h - 1][j + w - 1] = max({a[i + h - 1][j + w - 1],
-                        mx[i + h - 1][j + w - 2],
-                        mx[i + h - 2][j + w - 1],
-                    });
-                    if(cnt[h][w] != -1 && mx[h + i - 1][w + j - 1] != cnt[h][w]) {
-                        cnt[h][w] = -INF;
-                    } else cnt[h][w] = mx[h + i - 1][w + j - 1];
-                }
-            }
+    for(int i = 0;i<=n;++i) {
+        for(int j = 0;j<=m;++j) {
+            mx[i][j] = -INF;
+            mn[i][j] = INF;
         }
     }
-    int ans = INF;
+    mx[0][1] = mx[1][0] = mn[0][1] = mn[1][0] = 0;
+    if(n + m - 1 & 1) {
+        puts("NO");
+        return;
+    }
     for(int i = 1;i<=n;++i) {
         for(int j = 1;j<=m;++j) {
-            if(cnt[i][j] != -1 && cnt[i][j] != -INF) ckmin(ans, i * j);
+            mx[i][j] = max(mx[i - 1][j], mx[i][j - 1]) + a[i][j];
+            mn[i][j] = min(mn[i - 1][j], mn[i][j - 1]) + a[i][j];
         }
     }
-    print(ans, '\n');
+    // cout<<mn[n][m]<<' '<<mx[n][m]<<'\n';
+    puts(mn[n][m] <= 0 && mx[n][m] >= 0 ? "YES" : "NO");
 }
 
 

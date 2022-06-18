@@ -1,3 +1,4 @@
+
 /*
  * Author: Andy Zhu
  * @date    2022-06-18 07:15:48
@@ -161,44 +162,34 @@ inline void init2(){
 
 //--------------------- start of program ---------------------
 
-const int N = 50;
-ll a[N][N];
-ll mx[N][N];
-ll cnt[N][N];
 
 inline void solve(){
-    int n = read(), m = read();
+    int n = read();
+    vll a(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    if(n & 1) {
+        puts("Mike");
+        return;
+    }
+    int x = 0, y = 0;
+    a[0] = INF;
     for(int i = 1;i<=n;++i) {
-        for(int j = 1;j<=m;++j) {
-            read(a[i][j]);
+        if(i & 1) {
+            if(a[x] > a[i]) x = i;
+        }
+        else {
+            if(a[y] > a[i]) y = i;
         }
     }
-    memset(cnt, -1, sizeof(cnt));
-    for(int i = 1;i<=n;++i) {
-        for(int j = 1;j<=m;++j) {
-            memset(mx, -LLINF, sizeof(mx));
-            mx[i][j] = a[i][j];
-            bool flag = 1;
-            for(int h = 1;h + i - 1<=n;++h) {
-                for(int w = 1;w + j - 1<=m;++w) {
-                    mx[i + h - 1][j + w - 1] = max({a[i + h - 1][j + w - 1],
-                        mx[i + h - 1][j + w - 2],
-                        mx[i + h - 2][j + w - 1],
-                    });
-                    if(cnt[h][w] != -1 && mx[h + i - 1][w + j - 1] != cnt[h][w]) {
-                        cnt[h][w] = -INF;
-                    } else cnt[h][w] = mx[h + i - 1][w + j - 1];
-                }
-            }
+    if(a[y] > a[x]) {
+        puts("Joe");
+    } else {
+        if(a[y] == a[x]) {
+            puts(y > x ? "Joe" : "Mike");
+            return;
         }
+        puts("Mike");
     }
-    int ans = INF;
-    for(int i = 1;i<=n;++i) {
-        for(int j = 1;j<=m;++j) {
-            if(cnt[i][j] != -1 && cnt[i][j] != -INF) ckmin(ans, i * j);
-        }
-    }
-    print(ans, '\n');
 }
 
 
