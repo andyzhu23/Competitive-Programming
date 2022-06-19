@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-06-19 07:07:08
+ * @date    2022-06-19 11:08:54
  * @version 1.0.0
  */
 
@@ -163,10 +163,23 @@ inline void init2(){
 
 
 inline void solve(){
-    ll n = read(), m = read();
-    ll x = m * (m + 1) / 2;
-    ll y = n * (n + 1) / 2;
-    print(y * m - m + x, '\n');
+    int n = read();
+    vll a(n + 5), d(n + 5);
+    ll ans = 0;
+    for(int i = 1;i<=n;++i) read(a[i]);
+    for(int i = 2;i<=n;++i) {
+        d[i] += d[i - 1];
+        a[i] += d[i];
+        if(a[i - 1] > a[i]) {
+            ans += a[i - 1] - a[i];
+        } else {
+            ans += a[i] - a[i - 1];
+            d[i] -= a[i] - a[i - 1];
+            a[i] = a[i - 1];
+        }
+    }
+    ans += abs(a[n]);
+    print(ans, '\n');
 }
 
 

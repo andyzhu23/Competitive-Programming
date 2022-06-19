@@ -161,12 +161,25 @@ inline void init2(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e5 + 5;
+char c[N];
+int n, a[N];
 
 inline void solve(){
-    ll n = read(), m = read();
-    ll x = m * (m + 1) / 2;
-    ll y = n * (n + 1) / 2;
-    print(y * m - m + x, '\n');
+    read(n);
+    scanf("%s", c + 1);
+    for(int i = 0;i<=n;++i) c[i] -= '0', a[i] = 0;
+    a[0] = 1;
+    a[n] = 1;
+    if(c[1] == 9) for(int i = 1;i<=n;++i) a[i] = 1;
+    int tmp = 0;
+    for(int i = n;~i;--i) {
+        a[i] -= c[i] + tmp;
+        tmp = 0;
+        if(a[i] < 0) a[i] += 10, ++tmp;
+    }
+    for(int i = 1;i<=n;++i) putchar(a[i] + '0');
+    putchar('\n');
 }
 
 
