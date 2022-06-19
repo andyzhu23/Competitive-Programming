@@ -387,6 +387,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 802 | C | complete | difference array, greedy | **
+CF 802 | B | complete | math | *
+CF 802 | A | complete | math | *
 CF 801 | D | complete | gotta pick any root degree >= 3, and no need query root | ***
 CF 801 | C | complete | yes if 0 between minimum and maximum | **
 CF 801 | B | complete | game theory | **
