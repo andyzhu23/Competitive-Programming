@@ -387,6 +387,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 802 | D | complete | dp, find how long it first i pipes to fill first i first | ***
 CF 802 | C | complete | difference array, greedy | **
 CF 802 | B | complete | math | *
 CF 802 | A | complete | math | *
