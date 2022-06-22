@@ -236,6 +236,7 @@ USACO 2017 Jan Platinum | Promotion Counting | complete | Persistent tree, dfs o
 USACO 2017 Feb Platinum | Why did the Cow Cross the Road I | complete | Fenwick, shift both a and b | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
+USACO 2006 October Gold | Building the Moat | complete | convex hull | **
 USACO 2007 Open Gold | Dining | complete | dinic, make each cow an edge | ***
 USACO 2022 Open Gold | P3 | complete | maintain max l and min r for all subtrees | ****
 USACO 2022 Open Gold | P2 | complete | standard dp, 0 and 1 are special cases | ***
