@@ -678,6 +678,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | Tenri | complete | bitmask dp | **
 wlxsq | 相遇 | complete | LCA | ***
 wlxsq | 包裹传递 | complete | bs, same three decimal places | **
 DMOJ | Lemon Game | complete | game theory, euclidean alg | **
