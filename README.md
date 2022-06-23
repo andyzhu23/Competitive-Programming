@@ -678,6 +678,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+wlxsq | 包裹传递 | complete | bs, same three decimal places | **
 DMOJ | Lemon Game | complete | game theory, euclidean alg | **
 DMOJ | comparing arrays | complete | hash on segtree | **
 DMOJ | hydration | complete | bs for answer | **
