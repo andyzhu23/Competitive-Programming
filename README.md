@@ -438,6 +438,7 @@ CF 795 | B | complete | no single element | *
 CF 795 | A | complete | odd even | *
 CF 713 | C | complete | slope trick, minus i to compute non strictly increasing | ***
 CF 13 | C | complete | slope trick | ***
+CF Edu_129 | F | complete | dfs order, interval update, for all colors get size of separate components | ***
 CF Edu_129 | C | complete | sort two first, do swap sort to generate swap | **
 CF Edu_129 | B | complete | just +b and mod | *
 CF Edu_129 | A | complete | don't be stupid | *
