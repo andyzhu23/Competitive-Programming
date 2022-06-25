@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF Global 21 | Jun 25th | 7:35am | 5148(first time solve 5 problems!!!) | made such a stupid mistake for E
 CF 801 | Jun 18th | 7:35am | 	2071 | picked the wrong root
 CF Edu_130 | Jun 12th | 7:35am | 4/6 | Too many wrong subs!!!
 CF 796 | Jun 3rd | 7:35am | 2455 | Got trolled by C, should've looked at E
@@ -388,6 +389,11 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Global 21 | E | complete | realize pattern is same as number of paths in a matrix, Fermat's little theorem | ***
+CF Global 21 | D | complete | monotonic stack | ***
+CF Global 21 | C | complete | divide all element by m as many times as possible and check whether simplified versions are equal | **
+CF Global 21 | B | complete | answer is 0, 1 or 2, remove 0s on the side check whether center have 0 | *
+CF Global 21 | A | complete | or all value in a with z | *
 CF 802 | D | complete | dp, find how long it first i pipes to fill first i first | ***
 CF 802 | C | complete | difference array, greedy | **
 CF 802 | B | complete | math | *
