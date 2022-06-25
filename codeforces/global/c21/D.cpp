@@ -164,7 +164,6 @@ inline void init2(){
 const int N = 25e4 + 5;
 int n;
 int a[N], dist[N];
-// int mx[N], mn[N];
 bitset<N> vis;
 vi e[N];
 vi stkn, stkx;
@@ -187,10 +186,6 @@ inline void solve(){
         dist[i] = 0;
         vis[i] = 0;
     }
-    // mx[n + 1] = n + 2; 
-    // mn[n + 1] = n + 1;
-    // a[n + 2] = 0;
-    // a[n + 1] = INF;
     stkn.clear(), stkx.clear();
     for(int i = n;i;--i) {
         while(!stkn.empty() && a[stkn.back()] > a[i]) stkn.pop_back();
@@ -214,25 +209,6 @@ inline void solve(){
         } 
         stkn.pb(i);
         stkx.pb(i);
-        // for(auto v : e[i]) {
-        //     cout<<i<<' '<<v<<'\n';
-        // }
-        // if(a[i] > a[mx[i + 1]]) {
-        //     mx[i] = i;
-        // } else mx[i] = mx[i + 1];
-        // if(a[i] < a[mn[i + 1]]) {
-        //     mn[i] = i;
-        // } else mn[i] = mn[i + 1];
-        // if(mn[i] == i) {
-        //     e[i].pb(mx[i]);
-        //     e[mx[i]].pb(i);
-        // } else if(mx[i] == i) {
-        //     e[i].pb(mn[i]);
-        //     e[mn[i]].pb(i);
-        // } else {
-        //     e[i].pb(min(mn[i], mx[i]));
-        //     e[min(mx[i], mn[i])].pb(i);
-        // }
     }
     queue<int> q;
     q.push(1);
