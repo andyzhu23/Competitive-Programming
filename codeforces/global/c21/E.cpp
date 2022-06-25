@@ -97,7 +97,9 @@ namespace comfun {
     template <typename T> inline T lowbit(T x){return x & (- x);}
     template <typename T> inline T gcd(T a, T b){if(a == 0) return b; if(b == 0) return a; return gcd(b, a % b);}
     template <typename T> inline T lcm(T a, T b){return a / gcd(a, b) * b;}
-    template <typename T1, typename T2> inline T1 fp(T1 a, T2 b) {T1 c = 1;while(b) {if(b & 1) c *= a;b >>= 1;a = a * a;}return c;}
+    template <typename T1, typename T2> inline T1 fp(T1 a, T2 b) {T1 c = 1;while(b) {if(b & 1) c *= a;b >>= 1;a = a * a;}return c;} 
+    template <typename T1, typename T2, typename T3> inline T1 fp(T1 a, T2 b, T3 mod) 
+        {T1 c = 1;while(b) {if(b & 1) c = c * a % mod;b >>= 1;a = a * a % mod;}return c;}
     template <typename T> inline bool is_prime(T x){if(x == 1) return false; for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 }
 namespace debug {
@@ -163,18 +165,6 @@ const int mod = 1e9 + 7;
 int a[N], n;
 ll ans, fac[N << 2];
 
-template <typename T1, typename T2, typename T3> inline T1 fp(T1 a, T2 b, T3 mod) 
-{
-    T1 c = 1;
-    while(b) {
-        if(b & 1) c = c * a % mod;
-        b >>= 1;
-        a = a * a % mod;
-    }
-    return c;
-}
-    
-
 ll get(int m, int n) {
     m = m - 1;
     n = n - 1;
@@ -184,12 +174,10 @@ ll get(int m, int n) {
 inline void solve(){
     n = read();
     fac[0] = 1;
-    // cout<<(n + 3) * 2 + 5<<'\n';
     for(int i = 1;i<=(N + 3) * 2 + 5;++i) fac[i] = fac[i - 1] * i % mod;
     for(int i = 0;i<=n;++i) {
         a[i] = read();
         if(a[i] == 0) continue;
-        // print(get(a[i], i + 2), '\n');
         ans = (ans + get(a[i], i + 2)) % mod;
     }
     print(ans, '\n');
