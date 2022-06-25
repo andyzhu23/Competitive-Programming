@@ -163,13 +163,21 @@ inline void init2(){
 
 
 inline void solve(){
-    int n = read(), z = read();
-    int ans = 0;
+    int n = read();
+    deque<int> a;
     for(int i = 1;i<=n;++i) {
-        int x = read();
-        ckmax(ans, x | z);
+        a.pb(read());
     }
-    print(ans, '\n');
+    while(!a.empty() && a.front() == 0) a.pop_front();
+    while(!a.empty() && a.back() == 0) a.pop_back();
+    for(auto x : a) {
+        if(x == 0) {
+            print(2, '\n');
+            return;
+        }
+    }
+    if(a.empty()) print(0, '\n');
+    else print(1, '\n');
 }
 
 

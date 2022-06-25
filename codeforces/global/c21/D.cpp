@@ -161,15 +161,92 @@ inline void init2(){
 
 //--------------------- start of program ---------------------
 
+const int N = 25e4 + 5;
+int n;
+int a[N], dist[N];
+// int mx[N], mn[N];
+bitset<N> vis;
+vi e[N];
+vi stkn, stkx;
+
+int bs(vi& a, int x) {
+    int lo = 0, hi = a.size() - 1, ans = -1;
+    while(lo <= hi) {
+        int mid = lo + hi >> 1;
+        if(a[mid] > x) lo = mid + 1;
+        else hi = mid - 1, ans = mid;
+    }
+    return ans;
+}
 
 inline void solve(){
-    int n = read(), z = read();
-    int ans = 0;
+    read(n);
     for(int i = 1;i<=n;++i) {
-        int x = read();
-        ckmax(ans, x | z);
+        read(a[i]);
+        e[i].clear();
+        dist[i] = 0;
+        vis[i] = 0;
     }
-    print(ans, '\n');
+    // mx[n + 1] = n + 2; 
+    // mn[n + 1] = n + 1;
+    // a[n + 2] = 0;
+    // a[n + 1] = INF;
+    stkn.clear(), stkx.clear();
+    for(int i = n;i;--i) {
+        while(!stkn.empty() && a[stkn.back()] > a[i]) stkn.pop_back();
+        while(!stkx.empty() && a[stkx.back()] < a[i]) stkx.pop_back(); 
+        if(stkn.empty() && stkx.empty()) {
+            stkn.pb(i);
+            stkx.pb(i);
+            continue;
+        }
+        if(stkn.empty()) {
+            e[i].pb(stkx[0]);
+        } else if(stkx.empty()) {
+            e[i].pb(stkn[0]);
+        } else {
+            int x = stkn.back();
+            int y = bs(stkx, x);
+            int u = stkx.back();
+            int v = bs(stkn, u);
+            if(y == -1) e[i].pb(stkn[v]);
+            else e[i].pb(stkx[y]);
+        } 
+        stkn.pb(i);
+        stkx.pb(i);
+        // for(auto v : e[i]) {
+        //     cout<<i<<' '<<v<<'\n';
+        // }
+        // if(a[i] > a[mx[i + 1]]) {
+        //     mx[i] = i;
+        // } else mx[i] = mx[i + 1];
+        // if(a[i] < a[mn[i + 1]]) {
+        //     mn[i] = i;
+        // } else mn[i] = mn[i + 1];
+        // if(mn[i] == i) {
+        //     e[i].pb(mx[i]);
+        //     e[mx[i]].pb(i);
+        // } else if(mx[i] == i) {
+        //     e[i].pb(mn[i]);
+        //     e[mn[i]].pb(i);
+        // } else {
+        //     e[i].pb(min(mn[i], mx[i]));
+        //     e[min(mx[i], mn[i])].pb(i);
+        // }
+    }
+    queue<int> q;
+    q.push(1);
+    dist[1] = 0;
+    vis[1] = 1;
+    while(!q.empty()) {
+        int u = q.front(); q.pop();
+        for(int v : e[u]) if(!vis[v]) {
+            dist[v] = dist[u] + 1;
+            vis[v] = 1;
+            q.push(v);
+        }
+    }
+    print(dist[n], '\n');
 }
 
 

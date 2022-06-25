@@ -163,13 +163,41 @@ inline void init2(){
 
 
 inline void solve(){
-    int n = read(), z = read();
-    int ans = 0;
+    int n = read(), m = read();
+    vpll a, b;
     for(int i = 1;i<=n;++i) {
         int x = read();
-        ckmax(ans, x | z);
+        ll cnt = 1;
+        while(x % m == 0) {
+            x /= m;
+            cnt *= m;
+        }
+        if(!a.empty() && a.back().fir == x) {
+            a.back().sec += cnt;
+        } else a.pb({x, cnt});
     }
-    print(ans, '\n');
+    int k = read();
+    for(int i = 1;i<=k;++i) {
+        int x = read();
+        ll cnt = 1;
+        while(x % m == 0) {
+            x /= m;
+            cnt *= m;
+        }
+        if(!b.empty() && b.back().fir == x) {
+            b.back().sec += cnt;
+        } else b.pb({x, cnt});
+    }
+    if(a.size() != b.size()) {
+        puts("No");
+        return;
+    }
+    bool flag = 1;
+    for(int i = 0;i<a.size();++i) {
+        // cout<<a[i].fir<<' '<<a[i].sec<<' '<<b[i].fir<<' '<<b[i].sec<<'\n';
+        flag &= a[i] == b[i];
+    }
+    puts(flag ? "Yes" : "No");
 }
 
 
