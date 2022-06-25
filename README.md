@@ -396,6 +396,7 @@ CF 801 | D | complete | gotta pick any root degree >= 3, and no need query root 
 CF 801 | C | complete | yes if 0 between minimum and maximum | **
 CF 801 | B | complete | game theory | **
 CF 801 | A | complete | easy brute force | *
+CF 800 | E | complete | dijkstra | ***
 CF 800 | D | complete | simple tree dp | ***
 CF 800 | C | complete | some logics | **
 CF 800 | B | complete | no consecutive 0 or 1 in the end | *
