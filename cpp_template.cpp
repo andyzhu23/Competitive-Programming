@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-04-21 17:50:20
+ * @date    2022-06-25 21:28:16
  * @version 1.0.0
  */
 
@@ -18,20 +18,15 @@ using namespace std;
 // template <typename T>
 // using ordered_set = tree<T, null_type,less<T>, rb_tree_tag,tree_order_statistics_node_update>;
 
-// define
-#define OJ ONLINE_JUDGE
-
 // pairs
 #define fir first
 #define sec second
-#define mp make_pair
 
 // segment tree
 #define lc (rt << 1)
 #define rc (rt << 1 | 1)
 
 // STL Data Structures
-#define mt make_tuple
 #define eb emplace_back
 #define ef emplace_front
 #define pb push_back
@@ -41,12 +36,6 @@ using namespace std;
 #define lb lower_bound
 #define ub upper_bound
 
-// math
-#define log(a, b) log(a) / log(b)
-
-// memset
-#define mset(x, y) memset(x, y, sizeof(x))
-
 // random
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 #define random(a, b) rng() % (b - a + 1) + a
@@ -55,11 +44,8 @@ mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 using ll = long long;
 using ull = unsigned long long;
 using ld = long double;
-using db = double;
 using pii = pair<int, int>;
 using pll = pair<long long, long long>;
-using qi = queue<int>;
-using stki = stack<int>;
 template <typename T> using vec = vector<T>;
 template <typename T> using us = unordered_set<T>;
 template <typename T> using os = set<T>;
@@ -74,22 +60,6 @@ using vll = vector<long long>;
 using vpll = vector<pair<long long, long long> >;
 using vb = vector<bool>;
 
-// loops!
-#define FOR(i, a, b) for(int i = (a); i < (b); ++i)
-
-// common variables
-const int INF = 0x3f3f3f3f;
-const long long LLINF = 0x3f3f3f3f3f3f3f3f;
-const int MOD = 1e9 + 7;
-const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
-struct Edge {int u, v, w;};
-struct pair_hash {
-    template <class T1, class T2>
-    std::size_t operator() (const std::pair<T1, T2> &pair) const {
-        return std::hash<T1>()(pair.first) ^ std::hash<T2>()(pair.second);
-    }
-};
-
 // common functions
 
 namespace comfun {
@@ -103,62 +73,34 @@ namespace comfun {
     {T1 c = 1;while(b) {if(b & 1) c = c * a % mod;b >>= 1;a = a * a % mod;}return c;}
     template <typename T> inline bool is_prime(T x){if(x == 1) return false; for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
 }
-namespace debug {
-    template <typename T> inline void debugArray(T *arr,int sz){cout<<"[";for(int i=0;i<sz;i++){cout<<arr[i]<<", "; } cout<<"]\n";}
-    template <typename T> inline void printArray(T *arr,int sz){for(int i=0;i<sz;i++){cout<<arr[i]<<" "; } cout<<"\n";}
-}
 
 #define error(args...) { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); err(_it, args); }
 
-void err(istream_iterator<string> it) {}
-template<typename T, typename... Args>
-void err(istream_iterator<string> it, T a, Args... args) {
-    cerr << *it << " = " << a << endl;
-    err(++it, args...);
-}
-
 namespace fast_io {
-    int read() {
-        int x = 0, f = 0; char ch = getchar();
-        while (!isdigit(ch)) f |= ch == '-', ch = getchar();
-        while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();
-            return f ? -x : x;
-    }
-    long long readLL() {
-        long long x = 0, f = 0; char ch = getchar();
-        while (!isdigit(ch)) f |= ch == '-', ch = getchar();
-        while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();
-            return f ? -x : x;
-    }
-    void read(int& x) {x = read();}
-    void read(long long& x) {x = readLL();}
-    template<typename T> void print(T x) {
-        if (x < 0) putchar('-'), x = -x;
-        if (x >= 10) print(x / 10);
-            putchar(x % 10 + '0');
-    }
-    template<typename T> void print(T x, char let) {
-        print(x), putchar(let);
-    }
+    int read() {int x = 0, f = 0; char ch = getchar();while (!isdigit(ch)) f |= ch == '-', ch = getchar();while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();return f ? -x : x;}
+    long long readLL() {long long x = 0, f = 0; char ch = getchar();while (!isdigit(ch)) f |= ch == '-', ch = getchar();while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();return f ? -x : x;}
+    void read(int& x) {x = read();} void read(long long& x) {x = readLL();}
+    template<typename T> void print(T x) {if (x < 0) putchar('-'), x = -x;if (x >= 10) print(x / 10);putchar(x % 10 + '0');}
+    template<typename T> void print(T x, char let) {print(x), putchar(let);}
 }
 
 // using namespaces
 using namespace comfun;
-using namespace debug;
 using namespace fast_io;
 
-//------------------- start of initialize -------------------
+// common variables
+const int inf = 0x3f3f3f3f;
+const long long llinf = 0x3f3f3f3f3f3f3f3f;
+const int mod = 1e9 + 7;
+const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
+
+//------------------- start of initialize --------------------
 // initialize for all cases
 inline void init1(){
 
 }
 
-// initialize for the current subcase
-inline void init2(){
-
-}
-
-//-------------------  end of initialize  -------------------
+//-------------------  end of initialize  --------------------
 
 //--------------------- start of program ---------------------
 
@@ -196,8 +138,9 @@ signed main(){
 #if doCase
     int t; t = read();
     for(int i = 1;i<=t;i++) {
-        if(kickstart) cout<<"Case #"<< i<<": ";
-        init2();
+#ifdef kickstart 
+        printf("Case #%d: ", i);
+#endif
         solve();
     }
 #else 
