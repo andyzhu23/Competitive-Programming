@@ -686,6 +686,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+Facebook Hacker Cup '15 Round 1 | Homework | complete | seive and add 1 to cnt every time seiving | **
 第k小值 | complete | bs, two pointer | ***
 DMOJ | Tenri | complete | bitmask dp | **
 wlxsq | 相遇 | complete | LCA | ***
