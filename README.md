@@ -113,6 +113,7 @@ Source | Problems | status | skills needed | rating
 ### NOIP && NOI
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NOI 2008 | P3 | complete | max flow, assume hire inf employers and build graph | ***
 NOI 2006 | P4 | complete | minimum cut, flow means profit lost | ****
 NOIP 2015 | Substring | complete | dp, rolling array | ***
 NOIP 2016 | toy | complete | easy implementation | **
