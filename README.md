@@ -392,6 +392,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 803 | D | complete | cut into two segments and delete swaps outside of current segment | **
+CF 803 | B | complete | add will only make it worse unless k = 1 | **
+CF 803 | A | complete | xor properties | *
 CF Global 21 | E | complete | realize pattern is same as number of paths in a matrix, Fermat's little theorem | ***
 CF Global 21 | D | complete | monotonic stack | ***
 CF Global 21 | C | complete | divide all element by m as many times as possible and check whether simplified versions are equal | **
