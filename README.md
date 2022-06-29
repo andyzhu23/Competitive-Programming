@@ -16,6 +16,8 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 803 | June 28th | 7:35 | 1857 | got hacked :(
+DMOPC | June 27th | 9:00 | 235 | failed to solve P2, actually took 2 hour to think, brain is so slow
 CF Global 21 | Jun 25th | 7:35am | 5148(first time solve 5 problems!!!) | made such a stupid mistake for E
 CF 801 | Jun 18th | 7:35am | 	2071 | picked the wrong root
 CF Edu_130 | Jun 12th | 7:35am | 4/6 | Too many wrong subs!!!
