@@ -105,6 +105,7 @@ bitset<NN> np;
 
 inline void init1(){
     int tot = 0;
+    np[0] = np[1] = 1;
     for(int i = 2;i<=NN;++i) if(!np[i]) {
         for(int j = i + i;j<=NN;j+=i) np[j] = 1;
     }
