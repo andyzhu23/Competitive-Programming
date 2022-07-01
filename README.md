@@ -176,6 +176,7 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 19 c2 | P3 | complete | 20 fenwicks | **
 DMOPC 21 c10 | P2 | complete | either not move 1, not move 2, or move 1 and 2 | **
 DMOPC 21 c10 | P1 | complete | basic stack | *
 DMOPC 20 c7 | P5 | complete | literally samething as NOI06p4, just gotta do ll | ****
