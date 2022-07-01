@@ -695,6 +695,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CTU Open 2018 | Escalator | complete | bit by bit, dsu | **
 apio 2007 | Mobiles | complete | tree dp, read problem carefully | **
 wlxsq | 合并果树 | complete | sort using frequency array, coordinate compression | ***
 Facebook Hacker Cup '15 Round 1 | Homework | complete | seive and add 1 to cnt every time seiving | **
