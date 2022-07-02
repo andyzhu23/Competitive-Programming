@@ -1,6 +1,16 @@
+#pragma GCC optimize(2)
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
+namespace fast_io {
+    int read() {int x = 0, f = 0; char ch = getchar();while (!isdigit(ch)) f |= ch == '-', ch = getchar();while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();return f ? -x : x;}
+    long long readLL() {long long x = 0, f = 0; char ch = getchar();while (!isdigit(ch)) f |= ch == '-', ch = getchar();while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();return f ? -x : x;}
+    void read(int& x) {x = read();}
+    void read(long long& x) {x = readLL();}
+    template<typename T> void print(T x) {if (x < 0) putchar('-'), x = -x;if (x >= 10) print(x / 10);putchar(x % 10 + '0');}
+    template<typename T> void print(T x, char let) {print(x), putchar(let);}
+}
+using namespace fast_io;
 const int N = 5e6 + 5;
 #define chk(rt) (rc[fa[rt]] != rt)
 int n, v[N], cnt[N];
@@ -78,39 +88,20 @@ int id(int rt, int x) {
     }
 }
 
-void update(int& rt, int x) {
-    if(rt == 0) {
-        rt = ++tot;
-        val[rt] = x;
-        cnt[rt] = 1;
-    } else if(x == val[rt] - 1) {
-        --val[rt];
-        ++cnt[rt];
-    } else update(lc[rt], x);
-    push_up(rt);
-}
-
-void print(int rt) {
-    if(lc[rt]) print(lc[rt]);
-    printf("val: %lld, sum: %lld, cnt: %d\n", val[rt], sum[rt], cnt[rt]);
-    if(rc[rt]) print(rc[rt]);
-}
-
 int mov = 0;
 
 int main() {
-    cin.tie(0)->ios::sync_with_stdio(0);
 #ifdef LOCAL
     freopen("in.txt", "r", stdin);
     freopen("out.txt", "w", stdout);
 #endif
-    cin>>n>>k;
+    read(n), read(k);
     for(int i = 1;i<=n;++i) {
         ll j = i + mov;
-        cin>>v[i];
+        read(v[i]);
         if(v[i] == 1) {
             root = 0;
-            cout<<k<<'\n';
+            print(k, '\n');
             insert(k - j, 1);
             if(i > 1) insert(-j, i - 1);
         } else {
@@ -122,13 +113,13 @@ int main() {
             cnt[x] = lft;
             push_up(x);
             if(k - (sum[x] + j * sz[x]) >= 0) {
-                cout<<k - (sum[x] + j * sz[x])<<'\n';
+                print(k - (sum[x] + j * sz[x]), '\n');
                 int tmp = sz[x];
                 ll tmp2 = sum[x];
                 insert(-j, i - 1 - tmp);
                 insert(k - (tmp2 + j * tmp) - j, 1);
             } else {
-                cout<<-1<<'\n';
+                print(-1, '\n');
                 rc[x] = tmp;
                 cnt[x] = tmp2;
                 push_up(x);
@@ -136,7 +127,7 @@ int main() {
                 --mov;
             }
         }
-//        print(root);
     }
     return 0;
 }
+
