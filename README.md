@@ -317,6 +317,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO 16 | P6 | complete | splay | ****
 CCO 05 | P4 | complete | use bitset, prime seiving | **
 CCO 15 | P6 | complete | 5 dimension dp, super cancer | ***
 CCO 22 | P2 | complete | first check YES/NO, stack to buy umbrella, difference array | ***
