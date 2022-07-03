@@ -697,6 +697,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | A plus B hard | complete | high precision | **
 SAC 22 c5 | P4 | complete | merge interval with two pointer | **
 DMOJ | Lexicographically Least Substring | complete | skip already matched, brute force check last position | **
 CTU Open 2018 | Escalator | complete | bit by bit, dsu | **
