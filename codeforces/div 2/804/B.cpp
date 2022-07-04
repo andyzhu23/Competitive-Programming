@@ -105,14 +105,27 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 60;
+int a[N][N], n, m;
 
 inline void solve(){
-    int n = read();
-    if(n & 1) {
-        puts("-1");
-        return;
+    read(n), read(m);
+    for(int i = 1;i<=n;i+=2) {
+        for(int j = 1;j<=m;j+=2) {
+            if((i / 2 + j / 2) % 2) {
+                a[i][j] = a[i + 1][j + 1] = 0;
+                a[i][j + 1] = a[i + 1][j] = 1;
+            } else {
+                a[i][j] = a[i + 1][j + 1] = 1;
+                a[i][j + 1] = a[i + 1][j] = 0;
+            }
+        }
     }
-    printf("%d %d %d\n", n / 2, 0, 0);
+    for(int i = 1;i<=n;++i) {
+        for(int j = 1;j<=m;++j) {
+            print(a[i][j], " \n"[j==m]);
+        }
+    }
 }
 
 

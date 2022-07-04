@@ -108,11 +108,23 @@ inline void init1(){
 
 inline void solve(){
     int n = read();
-    if(n & 1) {
-        puts("-1");
-        return;
+    vi a(n + 5), p(n + 5);
+    for(int i = 0;i<n;++i) {
+        read(a[i]);
+        p[a[i]] = i;
     }
-    printf("%d %d %d\n", n / 2, 0, 0);
+    int l = n, r = -1;
+    ll ans = 1;
+    for(int i = 0;i<n;++i) {
+        if(p[i] < l || p[i] > r) {
+
+        } else {
+            ans = ans * (r - l + 1 - i) % mod;
+        }
+        ckmin(l, p[i]);
+        ckmax(r, p[i]);
+    }
+    print(ans, '\n');
 }
 
 
