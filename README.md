@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 804 | July 4th | 7:35 | 2732 | Didn't solve D :( 
 CF 803 | June 28th | 7:35 | 1857 | got hacked :(
 DMOPC | June 27th | 9:00 | 235 | failed to solve P2, actually took 2 hour to think, brain is so slow
 CF Global 21 | Jun 25th | 7:35am | 5148(first time solve 5 problems!!!) | made such a stupid mistake for E
@@ -399,6 +400,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 804 | C | complete | maintain l, r, two cases inside outside interval | **
+CF 804 | B | complete | repeat a pattern | **
+CF 804 | A | complete | if odd not possible, else two 0s and n/2 | *
 CF 803 | D | complete | cut into two segments and delete swaps outside of current segment | **
 CF 803 | B | complete | add will only make it worse unless k = 1 | **
 CF 803 | A | complete | xor properties | *
