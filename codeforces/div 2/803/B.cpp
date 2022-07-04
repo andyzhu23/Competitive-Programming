@@ -107,19 +107,19 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read();
+    int n = read(), k = read();
     vi a(n + 5);
-    for(int i = 1;i<=n;++i) a[i] = read();
-    for(int i = 1;i<=n;++i) {
-        int x = 0;
-        for(int j = 1;j<=n;++j) if(i != j) {
-            x ^= a[j];
-        }
-        if(x == a[i]) {
-            print(a[i], '\n');
-            return;
-        }
+    for(int i = 1;i<=n;++i) read(a[i]);
+    int ans = 0;
+    if(k == 1) {
+        for(int i = 2;i<n;i += 2) ++ans;
+        print(ans, '\n');
+        return;
     }
+    for(int i = 2;i<n;++i) {
+        if(a[i] > a[i + 1] + a[i - 1]) ++ans;
+    }
+    print(ans, '\n');
 }
 
 

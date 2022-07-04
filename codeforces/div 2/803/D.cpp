@@ -105,21 +105,27 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+vi query(int l, int r) {
+    cout<<"? "<<l<<' '<<r<<'\n'<<flush;
+    vi a;
+    for(int i = l;i<=r;++i) a.pb(read());
+    return a;
+}
 
 inline void solve(){
     int n = read();
-    vi a(n + 5);
-    for(int i = 1;i<=n;++i) a[i] = read();
-    for(int i = 1;i<=n;++i) {
-        int x = 0;
-        for(int j = 1;j<=n;++j) if(i != j) {
-            x ^= a[j];
+    int lo = 1, hi = n;
+    while(lo < hi) {
+        int mid = lo + hi >> 1;
+        auto y = query(lo, mid);
+        int cnt = 0;
+        for(auto x : y) {
+            if(x > mid || x < lo) ++cnt;
         }
-        if(x == a[i]) {
-            print(a[i], '\n');
-            return;
-        }
+        if(mid - lo + 1 - cnt & 1) hi = mid;
+        else lo = mid + 1;
     }
+    cout<<"! "<<lo<<'\n'<<flush;
 }
 
 
@@ -127,7 +133,7 @@ inline void solve(){
 
 
 #define doCase 1
-#define config LOCAL
+#define config 0
 // #define kickstart
 #define unsync 0
 
