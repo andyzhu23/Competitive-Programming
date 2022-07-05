@@ -703,6 +703,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | btoi09p2 | complete | same as victor rain | ***
 DMOJ | higgs | complete | easy segtree | *
 DMOJ | A plus B hard | complete | high precision | **
 SAC 22 c5 | P4 | complete | merge interval with two pointer | **
