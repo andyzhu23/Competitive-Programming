@@ -704,6 +704,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | Monkey Motel | complete | segtree, dfs order | ***
 Atcoder | coins | complete | probability dp | **
 DMOJ | btoi09p2 | complete | same as victor rain | ***
 DMOJ | higgs | complete | easy segtree | *
