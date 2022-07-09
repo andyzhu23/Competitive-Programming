@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-08 12:58:13
+ * @date    2022-07-08 14:24:13
  * @version 1.0.0
  */
 
@@ -107,9 +107,24 @@ inline void init1(){
 
 
 inline void solve(){
-    int a = read(), b = read(), c = read(), d = read();
-    if(a | b | c | d) puts(a & b & c & d ? "2" : "1");
-    else puts("0");
+    int n = read(), m = read();
+    vi a(m + 5), cnt(n + 5);
+    for(int i = 1;i<=m;++i) read(a[i]);
+    int lo = 0, hi = 1e9, ans = -1;
+    while(lo <= hi) {
+        int mid = lo + hi >> 1;
+        for(int i = 1;i<=m;++i) ++cnt[a[i]];
+        ll tot = 0, tot2 = 0;
+        for(int i = 1;i<=n;++i) {
+            tot2 += max(0, mid - cnt[i]) / 2;
+            cnt[i] -= min(cnt[i], mid);
+            tot += cnt[i];
+        }
+        if(tot <= tot2) hi = mid - 1, ans = mid;
+        else lo = mid + 1;
+        fill(all(cnt), 0);
+    }
+    print(ans, '\n');
 }
 
 

@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-08 12:58:13
+ * @date    2022-07-08 14:38:58
  * @version 1.0.0
  */
 
@@ -107,9 +107,21 @@ inline void init1(){
 
 
 inline void solve(){
-    int a = read(), b = read(), c = read(), d = read();
-    if(a | b | c | d) puts(a & b & c & d ? "2" : "1");
-    else puts("0");
+    int n = read();
+    vpii a;
+    vi ans(n + 5);
+    set<int> bst;
+    for(int i = 1;i<=n;++i) a.pb({read(), i}), bst.ins(i);
+    int tot = 0;
+    sort(all(a), [&](pii a, pii b) {
+        return (a.fir ? a.sec / a.fir : n) < (b.fir ? b.sec / b.fir : n);
+    });
+    for(auto[val, i] : a) {
+        int x = *bst.ub(i / (val + 1));
+        bst.erase(x);
+        ans[i] = x;
+    }
+    for(int i = 1;i<=n;++i) print(ans[i], " \n"[i==n]);
 }
 
 

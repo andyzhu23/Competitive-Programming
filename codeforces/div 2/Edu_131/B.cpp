@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-08 12:58:13
+ * @date    2022-07-08 13:05:33
  * @version 1.0.0
  */
 
@@ -107,9 +107,23 @@ inline void init1(){
 
 
 inline void solve(){
-    int a = read(), b = read(), c = read(), d = read();
-    if(a | b | c | d) puts(a & b & c & d ? "2" : "1");
-    else puts("0");
+    int n = read();
+    print(2, '\n');
+    set<int> vis;
+    for(int i = 2;i<=n;++i) vis.ins(i);
+    vi ans;
+    ans.pb(1);
+    while(ans.size() < n) {
+        int x = ans.back();
+        if(x * 2 <= n && vis.count(x * 2)) {
+            ans.pb(x * 2);
+            vis.erase(x * 2);
+        } else {
+            ans.pb(*vis.begin());
+            vis.erase(vis.begin());
+        }
+    }
+    for(int i = 0;i<n;++i) print(ans[i], " \n"[i==n-1]);
 }
 
 
