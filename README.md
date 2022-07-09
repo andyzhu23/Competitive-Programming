@@ -402,6 +402,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_131 | D | complete | turn into intervals, sort based on right hand side | ***
+CF Edu_131 | C | complete | binary search | **
+CF Edu_131 | B | complete | greedy | *
+CF Edu_131 | A | complete | easy | *
 CF 804 | C | complete | maintain l, r, two cases inside outside interval | **
 CF 804 | B | complete | repeat a pattern | **
 CF 804 | A | complete | if odd not possible, else two 0s and n/2 | *
