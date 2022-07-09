@@ -345,6 +345,7 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2011 | S4 | complete | maximum flow | **
 CCC 2022 | S3 | complete | put numbers in increasing order | ***
 CCC 2022 | J5 | complete | sorted based on x axis | ***
 Mock CCC 2022 1 | S4 | complete | Mo algorithm, reset left point, only expanding, don't use vectors or hashing structure, just array | ****
