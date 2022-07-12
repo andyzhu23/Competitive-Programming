@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-12 09:00:38
+ * @date    2022-07-12 09:44:23
  * @version 1.0.0
  */
 
@@ -106,13 +106,26 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+int n, k;
+om<int, vi> e;
 
 inline void solve(){
-    string s; cin>>s;
-    --s[0];
-    while(s[0] == '0') s = s.substr(1);
-    if(s.size() == 0) s = "0";
-    cout<<s<<'\n';
+    read(n), read(k);
+    e.clear();
+    for(int i = 1;i<=n;++i) {
+        int x = read();
+        e[x].pb(i);
+    }
+    while(k--) {
+        int u = read(), v = read();
+        if(!e.count(u) || !e.count(v)) {
+            puts("NO");
+            continue;
+        }
+        int l = e[u][0];
+        int r = e[v].back();
+        puts(l <= r ? "YES" : "NO");
+    }
 }
 
 

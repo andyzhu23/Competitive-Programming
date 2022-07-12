@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-12 09:00:38
+ * @date    2022-07-12 09:48:34
  * @version 1.0.0
  */
 
@@ -109,10 +109,23 @@ inline void init1(){
 
 inline void solve(){
     string s; cin>>s;
-    --s[0];
-    while(s[0] == '0') s = s.substr(1);
-    if(s.size() == 0) s = "0";
-    cout<<s<<'\n';
+    int p = read(), tot = 0;
+    vpii a;
+    os<int> st;
+    for(int i = 0;i<s.size();++i) {
+        a.pb({s[i], i});
+        tot += s[i] - 'a' + 1;
+    }
+    sort(all(a));
+    while(tot > p) {
+        tot -= a.back().fir - 'a' + 1;
+        st.ins(a.back().sec);
+        a.pop_back();
+    }
+    for(int i = 0;i<s.size();++i) {
+        if(!st.count(i)) putchar(s[i]);
+    }
+    putchar('\n');
 }
 
 

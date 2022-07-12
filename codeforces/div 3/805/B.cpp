@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-12 09:00:38
+ * @date    2022-07-12 09:04:46
  * @version 1.0.0
  */
 
@@ -109,10 +109,18 @@ inline void init1(){
 
 inline void solve(){
     string s; cin>>s;
-    --s[0];
-    while(s[0] == '0') s = s.substr(1);
-    if(s.size() == 0) s = "0";
-    cout<<s<<'\n';
+    us<int> vis;
+    int ans = 0;
+    for(auto c : s) {
+        vis.ins(c);
+        if(vis.size() > 3) {
+            vis.clear();
+            vis.ins(c);
+            ++ans;
+        }
+    }
+    ++ans;
+    print(ans, '\n');
 }
 
 

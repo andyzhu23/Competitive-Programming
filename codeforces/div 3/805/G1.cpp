@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-12 09:00:38
+ * @date    2022-07-11 09:51:01
  * @version 1.0.0
  */
 
@@ -106,20 +106,57 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+int n, mark[N], b[N], sz[N], ans;
+vi e[N];
+
+void dfs(int u, int fa = 0) {
+    if(b[u]) mark[u] = 1;
+    for(int v : e[u]) if(v != fa) {
+        dfs(v, u);
+        mark[u] |= mark[v];
+        sz[u] += mark[v];
+    }
+}
+
+void check(int u, int fa = 0) {
+    sz[u] = 0;
+    for(int v : e[u]) if(mark[v]) {
+        ++sz[u];
+    }
+    if(sz[u] > 2) ans = 0;
+    for(int v : e[u]) if(v != fa) {
+        check(v, u);
+    }
+}
 
 inline void solve(){
-    string s; cin>>s;
-    --s[0];
-    while(s[0] == '0') s = s.substr(1);
-    if(s.size() == 0) s = "0";
-    cout<<s<<'\n';
+    read(n);
+    for(int i = 1;i<n;++i) {
+        int u = read(), v = read();
+        e[u].pb(v);
+        e[v].pb(u);
+    }
+    int q = read();
+    while(q--) {
+        int k = read();
+        ans = 1;
+        memset(mark, 0, sizeof mark);
+        memset(b, 0, sizeof b);
+        memset(sz, 0, sizeof sz);
+        vi a;
+        for(int i = 1;i<=k;++i) a.pb(read()), b[a.back()] = 1;
+        dfs(a[0]);
+        check(a[0]);
+        puts(ans ? "YES" : "NO");
+    }
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0

@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-12 09:00:38
+ * @date    2022-07-10 11:31:39
  * @version 1.0.0
  */
 
@@ -108,11 +108,22 @@ inline void init1(){
 
 
 inline void solve(){
-    string s; cin>>s;
-    --s[0];
-    while(s[0] == '0') s = s.substr(1);
-    if(s.size() == 0) s = "0";
-    cout<<s<<'\n';
+    int n = read();
+    multiset<int> a;
+    for(int i = 1;i<=n;++i) {
+        int x = read();
+        while(x % 2 == 0) x /= 2;
+        a.ins(x);
+    }
+    bool flag = 1;
+    for(int i = 1;i<=n;++i) {
+        int x = read();
+        while(x % 2 == 0) x /= 2;
+        while(!a.count(x) && x > 0) x /= 2;
+        if(x == 0) flag = 0;
+        if(a.count(x)) a.erase(a.find(x));
+    }
+    puts(flag ? "YES" : "NO");
 }
 
 
