@@ -709,6 +709,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+Atcoder DP | M | complete | prefix sum, dp | **
 DMOJ | revdig | complete | easy application of max flow | **
 utso15 | utso15p5 | complete | kruskal, LCA | **
 DMOJ | seed5 | complete | minimum cut | ***
