@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-15 13:00:30
+ * @date    2022-07-15 13:10:35
  * @version 1.0.0
  */
 
@@ -108,15 +108,39 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read(), x = read();
-    vi a;
-    for(int i = 1;i<=n * 2;++i) a.pb(read());
-    sort(all(a));
-    bool flag = 1;
-    for(int i = 0;i<n;++i) {
-        flag &= a[i] + x <= a[i + n];
+    int n = read();
+    vi a(n + 5);
+    int mn = inf;
+    for(int i = 1;i<=n;++i) {
+        read(a[i]);
+        if(i != n) ckmin(mn, a[i]);
     }
-    puts(flag ? "YES" : "NO");
+    if(mn > 0) {
+        ll ans = 0;
+        for(int i = 1;i<n;++i) ans += a[i];
+        print(ans, '\n');
+        return;
+    }
+    int x = -1;
+    for(int i = 1;i<=n;++i) if(a[i] != 0) {
+        x = i;
+        break;
+    }
+    if(x == -1 || x == n) {
+        print(0, '\n');
+        return;
+    }
+    ll r = 0, ans = 0;
+    for(int i = x;i<n;++i) {
+        if(a[i] == 0 && a[r]) {
+            ++ans;
+            --a[r];
+            ++a[i];
+        }
+        while(a[r] == 0) ++r;
+    }
+    for(int i = 1;i<n;++i) ans += a[i];
+    print(ans, '\n');
 }
 
 

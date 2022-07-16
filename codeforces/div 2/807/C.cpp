@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-15 13:00:30
+ * @date    2022-07-15 13:45:12
  * @version 1.0.0
  */
 
@@ -106,17 +106,30 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+char s[N];
+ll n, c, q;
+map<ll, ll> pos;
 
 inline void solve(){
-    int n = read(), x = read();
-    vi a;
-    for(int i = 1;i<=n * 2;++i) a.pb(read());
-    sort(all(a));
-    bool flag = 1;
-    for(int i = 0;i<n;++i) {
-        flag &= a[i] + x <= a[i + n];
+    pos.clear();
+    read(n), read(c), read(q);
+    scanf("%s", s + 1);
+    ll nn = n;
+    for(int i = 1;i<=c;++i) {
+        ll l = readLL(), r = readLL();
+        pos[nn + 1] = l;
+        nn += r - l + 1;
     }
-    puts(flag ? "YES" : "NO");
+    while(q--) {
+        ll k = readLL();
+        while(k > n) {
+            auto[u, v] = *prev(pos.ub(k));
+            k = v + k - u;
+        }
+        putchar(s[k]);
+        putchar('\n');
+    }
 }
 
 

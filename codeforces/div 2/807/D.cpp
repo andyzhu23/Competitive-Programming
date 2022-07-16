@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-15 13:00:30
+ * @date    2022-07-15 17:06:22
  * @version 1.0.0
  */
 
@@ -106,17 +106,39 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+int n;
+char s[N], t[N];
 
 inline void solve(){
-    int n = read(), x = read();
-    vi a;
-    for(int i = 1;i<=n * 2;++i) a.pb(read());
-    sort(all(a));
-    bool flag = 1;
-    for(int i = 0;i<n;++i) {
-        flag &= a[i] + x <= a[i + n];
+    read(n);
+    scanf("%s", s + 1);
+    scanf("%s", t + 1);
+    vi a, b;
+    vpii u, v;
+    for(int i = 1;i<=n;++i) {
+        if(s[i] != s[i - 1]) a.pb(s[i]);
+        if(t[i] != t[i - 1]) b.pb(t[i]);
     }
-    puts(flag ? "YES" : "NO");
+    if(a != b) {
+        puts("-1");
+        return;
+    }
+    for(int i = 1;i<=n;++i) {
+        int o = i;
+        while(s[i] == s[i + 1]) ++i;
+        u.pb({o, i});
+    }
+    for(int i = 1;i<=n;++i) {
+        int o = i;
+        while(t[i] == t[i + 1]) ++i;
+        v.pb({o, i});
+    }
+    ll ans = 0;
+    for(int i = 0;i<v.size();++i) {
+        ans += abs(u[i].sec - v[i].sec);
+    }
+    print(ans, '\n');
 }
 
 
