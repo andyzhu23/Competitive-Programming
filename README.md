@@ -402,6 +402,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 807 | D | complete | remove duplicates to check, then store starting and ending position and subtract | ***
+CF 807 | C | complete | record copying position, transition to the original string | ***
+CF 807 | B | complete | always use the most front | *
+CF 807 | A | complete | easy sorting | *
 CF Edu_131 | D | complete | turn into intervals, sort based on right hand side | ***
 CF Edu_131 | C | complete | binary search | **
 CF Edu_131 | B | complete | greedy | *
