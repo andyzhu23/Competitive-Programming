@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-16 12:41:35
+ * @date    2022-07-16 12:59:10
  * @version 1.0.0
  */
 
@@ -106,14 +106,25 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e5 + 5;
+int n, q, cnt, a[N], ans[N];
+vi e[N];
 
 inline void solve(){
-    int n = read();
-    vi a(n + 5);
-    for(int i = 1;i<=n;++i) read(a[i]);
-    int x = a[1];
-    for(int i = 1;i<=n;++i) x = gcd(x, a[i]);
-    puts(x == a[1] ? "YES" : "NO");
+    read(n), read(q);
+    for(int i = 1;i<=n;++i) {
+        read(a[i]);
+        ans[i] = 1;
+    }
+    int Q = 0;
+    for(int i = n;i;--i) {
+        if(a[i] > Q && Q < q) {
+            ++Q;
+            ans[i] = 1;
+        } else if(a[i] > Q) ans[i] = 0;
+    }
+    for(int i = 1;i<=n;++i) print(ans[i]);
+    putchar('\n');
 }
 
 

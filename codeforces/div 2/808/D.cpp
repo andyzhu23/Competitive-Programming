@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-16 12:41:35
+ * @date    2022-07-16 16:53:49
  * @version 1.0.0
  */
 
@@ -106,14 +106,36 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-
 inline void solve(){
     int n = read();
-    vi a(n + 5);
-    for(int i = 1;i<=n;++i) read(a[i]);
-    int x = a[1];
-    for(int i = 1;i<=n;++i) x = gcd(x, a[i]);
-    puts(x == a[1] ? "YES" : "NO");
+    vi a;
+    for(int i = 1;i<=n;++i) a.pb(read());
+    int l = 1;
+    vi b;
+    int flag = 0;
+    for(auto x : a) {
+        if(x) b.pb(x); 
+        else ++flag;
+    }
+    a.clear();
+    for(auto x : b) a.pb(x);
+    while(a.size() > 1) {
+        b.clear();
+        if(flag) for(int i = 0;i<a.size();++i) if(a[i]) {
+            b.pb(a[i]);
+            break;
+        }
+        flag = max(flag - 1, 0);
+        for(int i = 1;i<a.size();++i) {
+            if(a[i] - a[i - 1]) b.pb(a[i] - a[i - 1]);
+            else ++flag;
+        }
+        a.clear();
+        for(auto x : b) a.pb(x);
+        sort(all(a));
+    }
+    if(a.size() == 0) a[0] = 0;
+    print(a[0], '\n');
 }
 
 

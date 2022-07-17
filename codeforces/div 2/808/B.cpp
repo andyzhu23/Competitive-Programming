@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-16 12:41:35
+ * @date    2022-07-16 12:48:23
  * @version 1.0.0
  */
 
@@ -106,14 +106,21 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+int n, l, r;
 
 inline void solve(){
-    int n = read();
-    vi a(n + 5);
-    for(int i = 1;i<=n;++i) read(a[i]);
-    int x = a[1];
-    for(int i = 1;i<=n;++i) x = gcd(x, a[i]);
-    puts(x == a[1] ? "YES" : "NO");
+    read(n), read(l), read(r);
+    vll a(n + 5);
+    for(int i = 1;i<=n;++i) {
+        ll x = (l - 1) / i * i + i;
+        if(x > r) {
+            puts("NO");
+            return;
+        }
+        a[i] = x;
+    }
+    puts("YES");
+    for(int i = 1;i<=n;++i) print(a[i], " \n"[i==n]);
 }
 
 
