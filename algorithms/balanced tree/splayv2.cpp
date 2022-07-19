@@ -7,13 +7,6 @@ struct SPLAY {
     int size[N], fa[N], lc[N], rc[N], val[N], cnt[N], root, tot;
 #define chk(rt) (rc[fa[rt]] != rt)
 
-    void print(int rt){
-        if(rt == 0) return;
-        printf("rt: %d, val:%d, lc:%d, rc:%d, sz:%d, cnt:%d, father:%d\n", rt, val[rt], lc[rt], rc[rt], size[rt], cnt[rt], fa[rt]);
-        print(lc[rt]);
-        print(rc[rt]);
-    }
-
     void update(int rt) {
         size[rt] = size[lc[rt]] + size[rc[rt]] + cnt[rt];
         fa[lc[rt]] = fa[rc[rt]] = rt;
@@ -134,6 +127,13 @@ struct SPLAY {
         fa[root] = 0;
     }
 
+    
+    void print(int rt){
+        if(rt == 0) return;
+        printf("rt: %d, val:%d, lc:%d, rc:%d, sz:%d, cnt:%d, father:%d\n", rt, val[rt], lc[rt], rc[rt], size[rt], cnt[rt], fa[rt]);
+        print(lc[rt]);
+        print(rc[rt]);
+    }
 
 } spl;
 
