@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-18 17:04:21
+ * @date    2022-07-18 17:12:02
  * @version 1.0.0
  */
 
@@ -106,19 +106,28 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e5 + 5;
+vi e[N];
 
 inline void solve(){
-    int n, m;
-    read(n), read(m);
-    string s;
-    for(int i = 1;i<=m;++i) s += 'B';
+    int n = read();
+    for(int i = 1;i<=n;++i) e[i].clear();
     for(int i = 1;i<=n;++i) {
-        int x = read() - 1;
-        ckmin(x, m - 1 - x);
-        if(s[x] == 'B') s[x] = 'A';
-        else s[m - 1 - x] = 'A';
+        int x = read();
+        e[x].pb(i);
     }
-    cout<<s<<'\n';
+    for(int i = 1;i<=n;++i) {
+        if(e[i].empty()) {
+            print(0, " \n"[i==n]);
+            continue;
+        }
+        int cnt1 = 0, cnt2 = 0;
+        for(int j = 0;j<e[i].size();++j) {
+            if(e[i][j] & 1) ckmax(cnt1, cnt2 + 1);
+            else ckmax(cnt2, cnt1 + 1);
+        }
+        print(max(cnt1, cnt2), " \n"[i==n]);
+    }
 }
 
 

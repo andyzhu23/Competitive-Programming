@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-18 17:04:21
+ * @date    2022-07-18 17:25:00
  * @version 1.0.0
  */
 
@@ -108,17 +108,25 @@ inline void init1(){
 
 
 inline void solve(){
-    int n, m;
-    read(n), read(m);
-    string s;
-    for(int i = 1;i<=m;++i) s += 'B';
-    for(int i = 1;i<=n;++i) {
-        int x = read() - 1;
-        ckmin(x, m - 1 - x);
-        if(s[x] == 'B') s[x] = 'A';
-        else s[m - 1 - x] = 'A';
+    int n = read();
+    vll a(n + 5), b(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    if(n & 1) {
+        ll ans = 0;
+        for(int i = 2;i<=n;i+=2) ans += max(0ll, max(a[i - 1], a[i + 1]) - a[i] + 1);
+        print(ans, '\n');
+    } else {
+        for(int i = 2;i<n;i+=2) {
+            b[i] = b[i - 2] + max(0ll, max(a[i - 1], a[i + 1]) - a[i] + 1);
+        }
+        ll ans = b[n - 2];
+        ll mx = 0;
+        for(int i = n - 1;i > 1;i-=2) {
+            mx += max(0ll, max(a[i - 1], a[i + 1]) - a[i] + 1);
+            ckmin(ans, mx + b[i - 3]);
+        }
+        print(min(mx, ans), '\n');
     }
-    cout<<s<<'\n';
 }
 
 

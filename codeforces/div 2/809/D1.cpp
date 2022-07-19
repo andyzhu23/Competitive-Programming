@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-18 17:04:21
+ * @date    2022-07-18 17:36:12
  * @version 1.0.0
  */
 
@@ -106,19 +106,32 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 3005;
+deque<int> e[N];
 
 inline void solve(){
-    int n, m;
-    read(n), read(m);
-    string s;
-    for(int i = 1;i<=m;++i) s += 'B';
+    int n = read(), k = read();
+    vi a(n + 5), b(n + 5);
     for(int i = 1;i<=n;++i) {
-        int x = read() - 1;
-        ckmin(x, m - 1 - x);
-        if(s[x] == 'B') s[x] = 'A';
-        else s[m - 1 - x] = 'A';
+        read(a[i]);
+        for(int j = k;j;--j) {
+            e[i].pb(a[i] / j);
+        }
+        b[i] = 0;
     }
-    cout<<s<<'\n';
+    multiset<pii> bst;
+    for(int i = 1;i<=n;++i) bst.ins({e[i][0], i});
+    int ans = (*bst.rbegin()).fir - (*bst.begin()).fir;
+    while(1) {
+        auto[val, i] = *bst.begin();
+        bst.erase(bst.begin());
+        e[i].pop_front();
+        if(e[i].empty()) break;
+        bst.ins({e[i].front(), i});
+        ckmin(ans, (*bst.rbegin()).fir - (*bst.begin()).fir);
+    }
+    print(ans, '\n');
+    for(int i = 1;i<=n;++i) e[i].clear();
 }
 
 
