@@ -402,6 +402,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 809 | D1 | complete | get all numbers, go from small to big | **
+CF 809 | C | complete | odd even property | *
+CF 809 | B | complete | odd even property | **
+CF 809 | A | complete | very easy implementation | *
 CF 808 | D | complete | just simulate | ***
 CF 808 | C | complete | compute backwards | ***
 CF 808 | B | complete | number don't have to be distinct, ith gcd be i | **
