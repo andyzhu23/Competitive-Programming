@@ -402,6 +402,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 809 | E | complete | LCA, segtree, dsu | ****
 CF 809 | D1 | complete | get all numbers, go from small to big | **
 CF 809 | C | complete | odd even property | *
 CF 809 | B | complete | odd even property | **
