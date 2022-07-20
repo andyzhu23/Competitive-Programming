@@ -47,7 +47,7 @@ private:
     }
 
     int Find(int& rt, T x) {
-    		if(rt == 0) return 0;
+    	if(rt == 0) return 0;
         if(val[rt] == x) return rt;
         else if(val[rt] > x) return Find(lc[rt], x);
         else return Find(rc[rt], x);
