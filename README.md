@@ -411,6 +411,7 @@ CF 808 | D | complete | just simulate | ***
 CF 808 | C | complete | compute backwards | ***
 CF 808 | B | complete | number don't have to be distinct, ith gcd be i | **
 CF 808 | A | complete | gcd | **
+CF 807 | E | complete | turn into binary number add and sub 1s | ***
 CF 807 | D | complete | remove duplicates to check, then store starting and ending position and subtract | ***
 CF 807 | C | complete | record copying position, transition to the original string | ***
 CF 807 | B | complete | always use the most front | *
