@@ -402,6 +402,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 810 | C | complete | just at least two columns for every color | **
+CF 810 | B | complete | basic thinking | *
+CF 810 | A | complete | big brain observation | *
 CF 809 | E | complete | LCA, segtree, dsu | ****
 CF 809 | D1 | complete | get all numbers, go from small to big | **
 CF 809 | C | complete | odd even property | *
