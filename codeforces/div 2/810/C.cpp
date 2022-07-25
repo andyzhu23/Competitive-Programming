@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-24 14:49:41
+ * @date    2022-07-24 22:04:19
  * @version 1.0.0
  */
 
@@ -106,11 +106,25 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+bool get(int n, int m, int k, vi& a) {
+    for(int i = 1;i<=k;++i) {
+        a[i] /= n;
+        if(a[i] == 1) a[i] = 0;
+    }
+    sort(a.begin() + 1, a.begin() + k + 1, greater<int>());
+    int tot = 0;
+    for(int i = 1;i<=k && i * 2 <= m && a[i];++i) {
+        tot += a[i] - 2;
+        if(1ll * i * 2 + tot >= m) return 1;
+    }
+    return 0;
+}
 
 inline void solve(){
-    int n = read();
-    for(int i = 2;i<=n;++i) print(i, ' ');
-    print(1, '\n');
+    int n = read(), m = read(), k = read();
+    vi a(k + 4), b(k + 4);
+    for(int i = 1;i<=k;++i) read(a[i]), b[i] = a[i];
+    puts(get(n, m, k, b) || get(m, n, k, a) ? "YES" : "NO");
 }
 
 

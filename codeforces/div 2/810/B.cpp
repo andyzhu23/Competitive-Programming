@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-24 14:49:41
+ * @date    2022-07-24 14:55:20
  * @version 1.0.0
  */
 
@@ -108,9 +108,26 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read();
-    for(int i = 2;i<=n;++i) print(i, ' ');
-    print(1, '\n');
+    int n = read(), q = read();
+    vi a(n + 5), cnt(n + 5);
+    vpii b;
+    for(int i = 1;i<=n;++i) read(a[i]);
+    for(int i = 1;i<=q;++i) {
+        int u = read(), v = read();
+        b.pb({u, v});
+        ++cnt[u];
+        ++cnt[v];
+    }
+    if(q & 1 ^ 1) {
+        print(0, '\n');
+        return;
+    }
+    int ans = inf;
+    for(int i = 1;i<=n;++i) if(cnt[i] & 1) ckmin(ans, a[i]);
+    for(auto[u, v] : b) {
+        if((cnt[u] & 1) == (cnt[v] & 1)) ckmin(ans, a[u] + a[v]);
+    }
+    print(ans, '\n');
 }
 
 
