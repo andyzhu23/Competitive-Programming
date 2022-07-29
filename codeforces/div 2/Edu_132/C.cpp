@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-21 14:14:49
+ * @date    2022-07-21 14:28:43
  * @version 1.0.0
  */
 
@@ -108,15 +108,54 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read();
-    vi a(5);
-    a[1] = read(), a[2] = read(), a[3] = read();
-    vi x;
-    x.pb(n);
-    while(x.back() != 0) {
-        x.pb(a[x.back()]);
+    string s; cin>>s;
+    int n = s.size();
+    s = '@' + s;
+    string t = s;
+    int cnt = 0;
+    for(int i = 1;i<=n;++i) cnt += s[i] == '(';
+    cnt = n / 2 - cnt;
+    for(int i = 1;i<=n;++i) {
+        if(s[i] == '?' && cnt) {
+            t[i] = '(';
+            --cnt;
+        } else if(s[i] == '?') t[i] = ')';
     }
-    puts(x.size() == 4 ? "YES" : "NO");
+    bool flag = 0;
+    int x = 0;
+    for(int i = n;i;--i) {
+        if(s[i] == '?' && t[i] == '(') {
+            t[i] = ')';
+            flag = 1;
+            x = i;
+            break;
+        }
+    }
+    if(!flag) {
+        puts("YES");
+        return;
+    }
+    flag = 0;
+    for(int i = x + 1;i<=n;++i) {
+        if(s[i] == '?' && t[i] == ')') {
+            t[i] = '(';
+            flag = 1;
+            break;
+        }
+    }
+    if(!flag) {
+        puts("YES");
+        return;
+    }
+    int ret = 0;
+    for(int i = 1;i<=n;++i) {
+        ret += t[i] == '(' ? 1 : -1;
+        if(ret < 0) {
+            puts("YES");
+            return;
+        }
+    }
+    puts("NO");
 }
 
 

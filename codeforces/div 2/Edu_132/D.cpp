@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-21 14:14:49
+ * @date    2022-07-21 14:35:13
  * @version 1.0.0
  */
 
@@ -106,24 +106,50 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+int n, m;
+
+struct segtree {
+    int st[N << 2];
+    void build(int rt, int l, int r) {
+        if(l == r) {
+            st[rt] = read();
+            return;
+        }
+        int mid = l + r >> 1;
+        build(lc, l, mid);
+        build(rc, mid + 1, r);
+        st[rt] = max(st[lc], st[rc]);
+    }
+    int query(int rt, int l, int r, int x, int y) {
+        if(l == x && y == r) return st[rt];
+        int mid = l + r >> 1;
+        if(y <= mid) return query(lc, l, mid, x, y);
+        else if(x > mid) return query(rc, mid + 1, r, x, y);
+        else return max(query(lc, l, mid, x, mid), query(rc, mid + 1, r, mid + 1, y));
+    }
+} st;
 
 inline void solve(){
-    int n = read();
-    vi a(5);
-    a[1] = read(), a[2] = read(), a[3] = read();
-    vi x;
-    x.pb(n);
-    while(x.back() != 0) {
-        x.pb(a[x.back()]);
+    read(n), read(m);
+    st.build(1, 1, m);
+    int q = read();
+    while(q--) {
+        int a = read(), b = read(), c = read(), d = read(), e = read();
+        if(abs(c - a) % e || abs(b - d) % e) {
+            puts("NO");
+            continue;
+        }
+        int x = 1ll * (n - a) / e * e + a;
+        puts(st.query(1, 1, m, min(b, d), max(b, d)) < x ? "YES" : "NO");
     }
-    puts(x.size() == 4 ? "YES" : "NO");
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0

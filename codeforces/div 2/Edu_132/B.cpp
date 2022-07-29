@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-21 14:14:49
+ * @date    2022-07-21 14:19:49
  * @version 1.0.0
  */
 
@@ -106,24 +106,30 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e5 + 5;
+ll a[N], psa[N], psa2[N];
 
 inline void solve(){
-    int n = read();
-    vi a(5);
-    a[1] = read(), a[2] = read(), a[3] = read();
-    vi x;
-    x.pb(n);
-    while(x.back() != 0) {
-        x.pb(a[x.back()]);
+    int n = read(), m = read();
+    for(int i = 1;i<=n;++i) {
+        read(a[i]);
+        psa[i] = psa[i - 1] + max(0ll, a[i - 1] - a[i]);
     }
-    puts(x.size() == 4 ? "YES" : "NO");
+    for(int i = n;i;--i) {
+        psa2[i] = psa2[i + 1] + max(0ll, a[i + 1] - a[i]);
+    }
+    while(m--) {
+        int u = read(), v = read();
+        if(u < v) print(psa[v] - psa[u], '\n');
+        else print(psa2[v] - psa2[u], '\n');
+    }
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0
