@@ -726,6 +726,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+Atcoder DP | S | complete | digit dp | **
 Atcoder DP | R | complete | matrices | **
 Atcoder DP | Q | complete | segtree | **
 Atcoder DP | M | complete | prefix sum, dp | **
