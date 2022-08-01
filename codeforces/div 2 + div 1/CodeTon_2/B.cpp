@@ -105,26 +105,34 @@ inline void init1(){
 //-------------------  end of initialize  --------------------
 
 //--------------------- start of program ---------------------
+#define int long long
+ll x;
 
-const int N = 55;
-char s[N], t[N];
+bool ok(ll& l, ll& r, ll b) {
+    ll u = b - x;
+    ll v = b + x;
+    if(l > v || r < u) return 0;
+    ckmax(l, u);
+    ckmin(r, v);
+    return 1;
+}
 
 inline void solve(){
-    int n = read(), m = read();
-    scanf("%s", s + 1);
-    scanf("%s", t + 1);
-    for(int i = 2;i + m - 1<=n;++i) {
-        if(s[i] != s[i - 1]) {
-            s[i] = t[1];
-        } 
+    ll n = read();
+    x = read();
+    vll a(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    int i = 1, j = 1, ans = 0;
+    ll l = a[1] - x, r = a[1] + x;
+    while(i <= n) {
+        while(i <= n && ok(l, r, a[i])) ++i;
+        if(i > n) break;
+        j = i;
+        l = a[j] - x;
+        r = a[j] + x;
+        ++ans;
     }
-    // for(int i = 1;i<=n;++i) putchar(s[i]);
-    // putchar('\n');
-    bool flag = 1;
-    for(int i = n - m + 1;i<=n;++i) {
-        flag &= s[i] == t[i - n + m];
-    }
-    puts(flag ? "YES" : "NO");
+    print(ans, '\n');
 }
 
 

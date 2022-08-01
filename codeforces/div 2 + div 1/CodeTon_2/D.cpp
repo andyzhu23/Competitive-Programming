@@ -105,26 +105,64 @@ inline void init1(){
 //-------------------  end of initialize  --------------------
 
 //--------------------- start of program ---------------------
+#define int long long
+int n, m;
 
-const int N = 55;
-char s[N], t[N];
+bool cmp(vi& x, vi& y) {
+    vi z(m + 5);
+    for(int i = 1;i<=m;++i) {
+        z[i] = y[i] - x[i];
+    }
+    ll u = 0;
+    for(int i = 1;i<=m;++i) {
+        int tmp = -z[i];
+        u += tmp;
+        z[i] += tmp;
+        z[i + 1] -= tmp;
+    }
+    bool flag = 1;
+    for(int i = 1;i<=m;++i) {
+        flag &= z[i] == 0;
+    }
+    return flag && u == 0;
+}
+
+ll get(vi& x, vi& y) {
+    vi z(m + 5);
+    for(int i = 1;i<=m;++i) {
+        z[i] = x[i] - y[i];
+    }
+    ll cnt = 0;
+    for(int i = 1;i<=m;++i) {
+        ll tmp = -z[i];
+        z[i] += tmp;
+        z[i + 1] -= tmp;
+        cnt += tmp;
+    }
+    return cnt;
+}
 
 inline void solve(){
-    int n = read(), m = read();
-    scanf("%s", s + 1);
-    scanf("%s", t + 1);
-    for(int i = 2;i + m - 1<=n;++i) {
-        if(s[i] != s[i - 1]) {
-            s[i] = t[1];
-        } 
+    n = read(), m = read();
+    vec<vi> a(n + 5, vi(m + 5));
+    for(int i = 1;i<=n;++i) {
+        for(int j = 1;j<=m;++j) {
+            read(a[i][j]);
+        }
     }
-    // for(int i = 1;i<=n;++i) putchar(s[i]);
-    // putchar('\n');
-    bool flag = 1;
-    for(int i = n - m + 1;i<=n;++i) {
-        flag &= s[i] == t[i - n + m];
+    int cnt = 0, mark = 0;
+    for(int i = 2;i<=n;++i) {
+        if(!cmp(a[1], a[i])) {
+            ++cnt;
+            mark = i;
+        }
     }
-    puts(flag ? "YES" : "NO");
+    if(cnt > 1) mark = 1;
+    print(mark, ' ');
+    for(int i = 1;i<=n;++i) if(i != mark) {
+        print(get(a[mark], a[i]), '\n');
+        break;
+    }
 }
 
 

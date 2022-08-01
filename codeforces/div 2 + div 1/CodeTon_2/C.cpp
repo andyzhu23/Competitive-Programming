@@ -105,26 +105,31 @@ inline void init1(){
 //-------------------  end of initialize  --------------------
 
 //--------------------- start of program ---------------------
-
-const int N = 55;
-char s[N], t[N];
+#define int long long 
+int n, m;
 
 inline void solve(){
-    int n = read(), m = read();
-    scanf("%s", s + 1);
-    scanf("%s", t + 1);
-    for(int i = 2;i + m - 1<=n;++i) {
-        if(s[i] != s[i - 1]) {
-            s[i] = t[1];
-        } 
+    read(n), read(m);
+    vll a(m + 5);
+    pq<ll> heap;
+    for(int i = 1;i<=m;++i) {
+        read(a[i]);
     }
-    // for(int i = 1;i<=n;++i) putchar(s[i]);
-    // putchar('\n');
-    bool flag = 1;
-    for(int i = n - m + 1;i<=n;++i) {
-        flag &= s[i] == t[i - n + m];
+    sort(a.begin() + 1, a.begin() + m + 1);
+    for(int i = 2;i<=m;++i) 
+        heap.push(a[i] - a[i - 1] - 1);
+    heap.push(n - a[m] + a[1] - 1);
+    int t = 0;
+    ll ans = 0;
+    while(!heap.empty()) {
+        int u = heap.top(); heap.pop();
+        if(u - t * 2 == 1) {
+            u = 1;
+        } else u = max(0ll, u - t * 2 - 1);
+        t += 2;
+        ans += u;
     }
-    puts(flag ? "YES" : "NO");
+    print(n - ans, '\n');
 }
 
 
