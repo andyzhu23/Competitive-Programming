@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-08-01 08:38:54
+ * @date    2022-08-01 08:08:27
  * @version 1.0.0
  */
 
@@ -108,22 +108,21 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read(), H = read(), M = read();
-    int ans = inf;
+    int n = read();
+    vll a(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
     for(int i = 1;i<=n;++i) {
-        int u = read(), v = read();
-        int h = H, m = M;
-        int cnt = 0;
-        while(h != u || m != v) {
-            ++m;
-            ++cnt;
-            h += m / 60;
-            m %= 60;
-            h %= 24;
-        }
-        ckmin(ans, cnt);
+        if(a[i] % 10 == 5) a[i] += 5;
     }
-    print(ans / 60, ' '), print(ans % 60, '\n');
+    for(int i = 1;i<=n;++i) {
+        if(a[i] % 10 != 0) {
+            while(a[i] % 10 != 2) a[i] += a[i] % 10;
+            a[i] %= 20;
+        } 
+    }
+    bool flag = 1;
+    for(int i = 1;i<=n;++i) flag &= a[1] == a[i];
+    puts(flag ? "YES" : "NO");
 }
 
 

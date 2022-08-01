@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-08-01 08:38:54
+ * @date    2022-08-01 08:47:48
  * @version 1.0.0
  */
 
@@ -106,24 +106,23 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+int t = 45;
+int cnt = 0;
+
 
 inline void solve(){
-    int n = read(), H = read(), M = read();
-    int ans = inf;
-    for(int i = 1;i<=n;++i) {
-        int u = read(), v = read();
-        int h = H, m = M;
-        int cnt = 0;
-        while(h != u || m != v) {
-            ++m;
-            ++cnt;
-            h += m / 60;
-            m %= 60;
-            h %= 24;
-        }
-        ckmin(ans, cnt);
+    int n = ++cnt;
+    vi a;
+    for(int i = 9;i && n;--i) {
+        if(n < i) a.pb(n);
+        else a.pb(i);
+        n -= i; ckmax(n, 0);
     }
-    print(ans / 60, ' '), print(ans % 60, '\n');
+    while(a.size()) {
+        print(a.back());
+        a.pop_back();
+    }
+    putchar('\n');
 }
 
 
@@ -153,7 +152,6 @@ signed main(){
     init1();
     srand(time(0));
 #if doCase
-    int t; t = read();
     for(int i = 1;i<=t;i++) {
 #ifdef kickstart 
         printf("Case #%d: ", i);

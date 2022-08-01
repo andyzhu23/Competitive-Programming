@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-08-01 08:38:54
+ * @date    2022-08-01 08:45:44
  * @version 1.0.0
  */
 
@@ -108,22 +108,16 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read(), H = read(), M = read();
-    int ans = inf;
-    for(int i = 1;i<=n;++i) {
-        int u = read(), v = read();
-        int h = H, m = M;
-        int cnt = 0;
-        while(h != u || m != v) {
-            ++m;
-            ++cnt;
-            h += m / 60;
-            m %= 60;
-            h %= 24;
-        }
-        ckmin(ans, cnt);
+    int n = read();
+    vi a(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    int i;
+    set<int> vis;
+    for(i = n;i;--i) {
+        if(vis.count(a[i])) break;
+        vis.ins(a[i]);
     }
-    print(ans / 60, ' '), print(ans % 60, '\n');
+    print(i, '\n');
 }
 
 

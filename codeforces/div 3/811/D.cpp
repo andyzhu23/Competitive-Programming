@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-08-01 08:38:54
+ * @date    2022-08-01 08:28:56
  * @version 1.0.0
  */
 
@@ -108,22 +108,39 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read(), H = read(), M = read();
-    int ans = inf;
-    for(int i = 1;i<=n;++i) {
-        int u = read(), v = read();
-        int h = H, m = M;
-        int cnt = 0;
-        while(h != u || m != v) {
-            ++m;
-            ++cnt;
-            h += m / 60;
-            m %= 60;
-            h %= 24;
+    string s; cin>>s;
+    int len = s.size();
+    s = '@' + s;
+    int n = read();
+    vec<string> t(n + 5);
+    vi dp(len + 5, inf), a(len + 5), b(len + 5);
+    dp[0] = 0;
+    for(int i = 1;i<=n;++i) cin>>t[i];
+    for(int i = 1;i<=len;++i) {
+        for(int j = 1;j<=n;++j) if(t[j].size() <= i) {
+            string tmp = s.substr(i - t[j].size() + 1, t[j].size());
+            if(tmp == t[j]) {
+                for(int k = i - t[j].size();k<i;++k) {
+                    if(dp[i] > dp[k] + 1) {
+                        a[i] = j;
+                        b[i] = k;
+                    }
+                    ckmin(dp[i], dp[k] + 1);
+                }
+            }
         }
-        ckmin(ans, cnt);
     }
-    print(ans / 60, ' '), print(ans % 60, '\n');
+    if(dp[len] == inf) {
+        puts("-1");
+        return;
+    }
+    print(dp[len], '\n');
+    int x = len;
+    while(x) {
+        print(a[x], ' ');
+        print(x - t[a[x]].size() + 1, '\n');
+        x = b[x];
+    }
 }
 
 

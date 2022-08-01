@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-08-01 08:38:54
+ * @date    2022-08-01 07:31:26
  * @version 1.0.0
  */
 
@@ -106,24 +106,46 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+int n, f[N][22];
+ll a[N], b[N], dep[N];
+vi e[N];
+
+void dfs(int u = 1, int fa = 0) {
+    dep[u] = dep[fa] + 1;
+    a[u] += a[fa];
+    b[u] += b[fa];
+    f[u][0] = fa;
+    for(int i = 1;i<=20;++i) f[u][i] = f[f[u][i - 1]][i - 1];
+    for(int v : e[u]) if(v != fa) {
+        dfs(v, u);
+    }
+}
 
 inline void solve(){
-    int n = read(), H = read(), M = read();
-    int ans = inf;
-    for(int i = 1;i<=n;++i) {
-        int u = read(), v = read();
-        int h = H, m = M;
-        int cnt = 0;
-        while(h != u || m != v) {
-            ++m;
-            ++cnt;
-            h += m / 60;
-            m %= 60;
-            h %= 24;
-        }
-        ckmin(ans, cnt);
+    read(n);
+    for(int i = 2;i<=n;++i) {
+        int p = read();
+        a[i] = read(), b[i] = read();
+        e[i].pb(p);
+        e[p].pb(i);
     }
-    print(ans / 60, ' '), print(ans % 60, '\n');
+    dfs();
+    for(int i = 2;i<=n;++i) {
+        int u = i;
+        if(b[u] <= a[i]) {
+            print(dep[u] - 1, " \n"[i==n]);
+            continue;
+        }
+        for(int j = 20;~j;--j) {
+            if(b[f[u][j]] > a[i]) u = f[u][j];
+        }
+        print(dep[f[u][0]] - 1, " \n"[i==n]);
+    }
+    for(int i = 1;i<=n;++i) {
+        e[i].clear(), a[i] = 0, b[i] = 0, dep[i] = 0;
+        for(int j = 0;j<=20;++j) f[i][j] = 0;
+    }
 }
 
 
