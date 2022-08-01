@@ -403,6 +403,12 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 811 | G | complete | simple binary lifting | **
+CF 811 | E | complete | turn everything into 2 suffix and check modulo 20 | **
+CF 811 | D | complete | dp | **
+CF 811 | C | complete | pattern | *
+CF 811 | B | complete | don't be dumb | *
+CF 811 | A | complete | don't be dumb | *
 CodeTon 2 | D | complete | subtracting two sequences | ***
 CodeTon 2 | C | complete | simple math | **
 CodeTon 2 | B | complete | set up range | **
