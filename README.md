@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CodeTon 2 | July 31st | 7:05 | 3167 | Do problems faster
 CF 804 | July 4th | 7:35 | 2732 | Didn't solve D :( 
 CF 803 | June 28th | 7:35 | 1857 | got hacked :(
 DMOPC | June 27th | 9:00 | 235 | failed to solve P2, actually took 2 hour to think, brain is so slow
@@ -402,6 +403,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CodeTon 2 | D | complete | subtracting two sequences | ***
+CodeTon 2 | C | complete | simple math | **
+CodeTon 2 | B | complete | set up range | **
+CodeTon 2 | A | complete | check suffix | *
 CF 810 | C | complete | just at least two columns for every color | **
 CF 810 | B | complete | basic thinking | *
 CF 810 | A | complete | big brain observation | *
