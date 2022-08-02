@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-30 16:45:26
+ * @date    2022-07-30 16:00:33
  * @version 1.0.0
  */
 
@@ -106,9 +106,15 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+
 inline void solve(){
-    int n = read(), m = read();
-    print((n - m) * fp(2ll, mod - 2, mod) % mod, '\n');
+    string s; cin>>s;
+    string ans;
+    for(int i = 0;i < s.size();++i) {
+        if(i + 14 < s.size() && s.substr(i, 15) == "std::make_tuple") i += 15;
+        ans += s[i];
+    }
+    cout<<ans<<'\n';
 }
 
 

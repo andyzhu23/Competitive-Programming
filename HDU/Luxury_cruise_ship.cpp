@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-30 16:45:26
+ * @date    2022-08-02 10:20:23
  * @version 1.0.0
  */
 
@@ -98,17 +98,33 @@ const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
 
 //------------------- start of initialize --------------------
 // initialize for all cases
-inline void init1(){
 
+const int N = 7 * 31 * 365 + 10;
+ll dp[N];
+
+inline void init1(){
+    memset(dp, 0x3f, sizeof dp);
+    dp[0] = 0;
+    for(int i = 1;i<N;++i) {
+        if(i >= 7) ckmin(dp[i], dp[i - 7] + 1);
+        if(i >= 31) ckmin(dp[i], dp[i - 31] + 1);
+        if(i >= 365) ckmin(dp[i], dp[i - 365] + 1);
+    }
 }
 
 //-------------------  end of initialize  --------------------
 
 //--------------------- start of program ---------------------
 
+
 inline void solve(){
-    int n = read(), m = read();
-    print((n - m) * fp(2ll, mod - 2, mod) % mod, '\n');
+    ll n = readLL();
+    ll ans = n / (7 * 31 * 365);
+    ans = ans * 7 * 31;
+    n %= 7 * 31 * 365;
+    ans += dp[n];
+    if(ans >= llinf) ans = -1;
+    print(ans, '\n');
 }
 
 

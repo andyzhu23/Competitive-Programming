@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-30 16:45:26
+ * @date    2022-08-02 13:38:39
  * @version 1.0.0
  */
 
@@ -106,9 +106,137 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-inline void solve(){
-    int n = read(), m = read();
-    print((n - m) * fp(2ll, mod - 2, mod) % mod, '\n');
+const int N = 2e5 + 5;
+
+struct segtree {
+    int st[N << 2], lazy[N << 2];
+    void push_up(int rt) {
+        st[rt] = st[lc] + st[rc];
+    }
+    void push_down(int rt, int l, int r, int mid) {
+        if(~lazy[rt]) {
+            st[lc] = (mid - l + 1) * lazy[rt];
+            st[rc] = (r - mid) * lazy[rt];
+            lazy[lc] = lazy[rc] = lazy[rt];
+            lazy[rt] = -1;
+        }
+    } 
+    void update(int rt, int l, int r, int x, int y, int val) {
+        if(l == x && y == r) {
+            st[rt] = val * (r - l + 1);
+            lazy[rt] = val;
+            return;
+        }
+        int mid = l + r >> 1;
+        push_down(rt, l, r, mid);
+        if(y <= mid) update(lc, l, mid, x, y, val);
+        else if(x > mid) update(rc, mid + 1, r, x, y, val);
+        else update(lc, l, mid, x, mid, val), update(rc, mid + 1, r, mid + 1, y, val);
+        push_up(rt);
+    }
+    int query(int rt, int l, int r, int x, int y) {
+        if(l == x && y == r) return st[rt];
+        int mid = l + r >> 1;
+        push_down(rt, l, r, mid);
+        if(y <= mid) return query(lc, l, mid, x, y);
+        else if(x > mid) return query(rc, mid + 1, r, x, y);
+        else return query(lc, l, mid, x, mid) + query(rc, mid + 1, r, mid + 1, y);
+    }
+    void clear(int n) {
+        update(1, 1, n, 1, n, 0);
+    }
+} A, AB;
+
+int n, q, f[N][25];
+vi e[N];
+
+int fa[N], top[N], hson[N], sz[N], dfn[N], dep[N], tot;
+
+void dfs1(int u = 1, int ff = 0) {
+    fa[u] = ff;
+    sz[u] = 1;
+    dep[u] = dep[ff] + 1;
+    f[u][0] = ff;
+    for(int i = 1;i<=20;++i) {
+        f[u][i] = f[f[u][i - 1]][i - 1];
+    }
+    for(int v : e[u]) if(ff != v) {
+        dfs1(v, u);
+        sz[u] += sz[v];
+        if(sz[hson[u]] < sz[v]) hson[u] = v;
+    }
+}
+
+void dfs2(int u = 1, int ff = 0, int tp = 1) {
+    dfn[u] = ++tot;
+    top[u] = tp;
+    if(hson[u]) dfs2(hson[u], u, tp);
+    for(int v : e[u]) if(v != ff && v != hson[u]) {
+        dfs2(v, u, v);
+    }
+}
+
+void update(segtree& st, int x) {
+    while(x) {
+        st.update(1, 1, n, dfn[top[x]], dfn[x], 1);
+        x = fa[top[x]];
+    }
+}
+
+void init() {
+    memset(A.lazy, -1, sizeof A.lazy);
+    memset(AB.lazy, -1, sizeof AB.lazy);
+    memset(A.st, 0, sizeof A.st);
+    memset(AB.st, 0, sizeof AB.st);
+    memset(f, 0, sizeof f);
+    memset(fa, 0, sizeof fa);
+    memset(top, 0, sizeof top);
+    memset(hson, 0, sizeof hson);
+    memset(sz, 0, sizeof sz);
+    memset(dfn, 0, sizeof dfn);
+    memset(dep, 0, sizeof dep);
+    tot = 0;
+    for(int i = 0;i<N;++i) e[i].clear();
+}
+
+inline void solve() {
+    init();
+    read(n), read(q);
+    for(int i = 2;i<=n;++i) {
+        int x = read();
+        e[i].pb(x);
+        e[x].pb(i);
+    }
+    dfs1();
+    dfs2();
+    while(q--) {
+        A.clear(n);
+        AB.clear(n);
+        int a = read(), b = read(), c = read();
+        for(int i = 1;i<=a;++i) {
+            int x = read();
+            update(A, x);
+        }
+        for(int i = 1;i<=b;++i) {
+            int x = read();
+            if(A.query(1, 1, n, dfn[x], dfn[x])) {
+                update(AB, x);
+                continue;
+            }
+            for(int j = 20;~j;--j) {
+                if(f[x][j] && !A.query(1, 1, n, dfn[f[x][j]], dfn[f[x][j]])) x = f[x][j];
+            }
+            x = fa[x];
+            update(AB, x);
+        }
+        int ans = 0;
+        for(int i = 1;i<=c;++i) {
+            int x = read();
+            ans += AB.query(1, 1, n, dfn[x], dfn[x] + sz[x] - 1);
+            AB.update(1, 1, n, dfn[x], dfn[x] + sz[x] - 1, 0);
+        }
+        print(ans, '\n');
+    }
 }
 
 

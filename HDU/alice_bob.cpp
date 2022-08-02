@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-30 16:45:26
+ * @date    2022-07-30 15:15:14
  * @version 1.0.0
  */
 
@@ -106,9 +106,15 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e6 + 5;
+ll a[N];
+
 inline void solve(){
-    int n = read(), m = read();
-    print((n - m) * fp(2ll, mod - 2, mod) % mod, '\n');
+    int n = read();
+    a[0] = a[n + 1] = 0;
+    for(int i = 0;i<=n;++i) read(a[i]);
+    for(int i = n;~i;--i) a[i] += a[i + 1] / 2;
+    puts(a[0] ? "Alice" : "Bob");
 }
 
 

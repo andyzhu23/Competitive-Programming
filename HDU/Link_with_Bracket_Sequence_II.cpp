@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-07-30 16:45:26
+ * @date    2022-08-02 13:23:46
  * @version 1.0.0
  */
 
@@ -105,10 +105,35 @@ inline void init1(){
 //-------------------  end of initialize  --------------------
 
 //--------------------- start of program ---------------------
+const int N = 505;
+int n, m;
+ll dp[N][N], a[N];
 
 inline void solve(){
-    int n = read(), m = read();
-    print((n - m) * fp(2ll, mod - 2, mod) % mod, '\n');
+    read(n), read(m);
+    memset(dp, 0, sizeof dp);
+    for(int i = 1;i<=n;++i) {
+        dp[i][i - 1] = 1;
+        read(a[i]);
+    }
+    dp[n + 1][n] = 1;
+    for(int l = 2;l<=n;++l) {
+        for(int i = 1;i + l - 1<=n;++i) {
+            int j = i + l - 1;
+            for(int k = i + 1;k<=j;++k) {
+                if(a[i] > 0 && a[k] < 0 && a[i] == -a[k]) {
+                    dp[i][j] = (dp[i + 1][k - 1] * dp[k + 1][j] + dp[i][j]) % mod;
+                } else if(a[i] > 0 && a[k] == 0) {
+                    dp[i][j] = (dp[i + 1][k - 1] * dp[k + 1][j] + dp[i][j]) % mod;
+                } else if(a[k] < 0 && a[i] == 0) {
+                    dp[i][j] = (dp[i + 1][k - 1] * dp[k + 1][j] + dp[i][j]) % mod;
+                } else if(a[i] == 0 && a[k] == 0) {
+                    dp[i][j] = (dp[i + 1][k - 1] * dp[k + 1][j] % mod * m % mod + dp[i][j]) % mod;
+                }
+            }
+        }
+    }
+    print(dp[1][n], '\n');
 }
 
 
