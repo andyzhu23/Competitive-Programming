@@ -107,6 +107,13 @@ USACO 21 Open Bronze | Academia I | incomplete | |
 CCF Online | 重力球 | incomplete | | 
 CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 
+### HDU
+Source | Problems | status | skills needed | rating
+-------|----------|--------|---------------|-------
+HDU | Luxury cruise ship | complete | do dp till the LCM of all three numbers | ***
+HDU | Static Query on Tree | complete | segtree, hld, binary lifting | ***
+HDU | alice bob | complete | 2 Ns can be viewed as 1 N - 1 | **
+HDU | random | complete | understand expected value | *
 
 ### mBit
 Source | Problems | status | skills needed | rating
