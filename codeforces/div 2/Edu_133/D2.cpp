@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-08-04 07:29:12
+ * @date    2022-08-04 08:43:49
  * @version 1.0.0
  */
 
@@ -92,7 +92,7 @@ using namespace fast_io;
 // common variables
 const int inf = 0x3f3f3f3f;
 const long long llinf = 0x3f3f3f3f3f3f3f3f;
-const int mod = 1e9 + 7;
+const int mod = 998244353;
 const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
 const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
 
@@ -108,23 +108,27 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read();
-    if(n == 1) {
-        print(2, '\n');
-        return;
+    int n = read(), k = read();
+    int tot = k;
+    vi ans(n + 5), dp(n + 5);
+    dp[0] = 1;
+    while(tot <= n) {
+        for(int i = k;i<=n;++i) {
+            dp[i] = (dp[i] + dp[i - k]) % mod;
+        }
+        for(int i = tot;i<=n;++i) {
+            ans[i] = (ans[i] + dp[i - tot]) % mod;
+        }
+        tot += ++k;
     }
-    int x = n / 3;
-    n %= 3;
-    if(n == 1) ++x;
-    if(n == 2) ++x;
-    print(x, '\n');
+    for(int i = 1;i<=n;++i) print(ans[i], " \n"[i==n]);
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0

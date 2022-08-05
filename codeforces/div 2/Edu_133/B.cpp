@@ -109,15 +109,16 @@ inline void init1(){
 
 inline void solve(){
     int n = read();
-    if(n == 1) {
-        print(2, '\n');
-        return;
+    vi a(n + 5);
+    for(int i = 1;i<=n;++i) a[i] = i;
+    print(n, '\n');
+    for(int i = 1;i<=n;++i) print(a[i], " \n"[i==n]);
+    swap(a[1], a[2]);
+    for(int i = 1;i<=n;++i) print(a[i], " \n"[i==n]);
+    for(int i = 3;i<=n;++i) {
+        swap(a[i], a[i - 1]);
+        for(int i = 1;i<=n;++i) print(a[i], " \n"[i==n]);
     }
-    int x = n / 3;
-    n %= 3;
-    if(n == 1) ++x;
-    if(n == 2) ++x;
-    print(x, '\n');
 }
 
 
