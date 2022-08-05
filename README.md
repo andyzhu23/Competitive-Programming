@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF Edu_133 | August 4th | 7:35 | 3 | didn't solve C, I am a failure :(
 CodeTon 2 | July 31st | 7:05 | 3167 | Do problems faster
 CF 804 | July 4th | 7:35 | 2732 | Didn't solve D :( 
 CF 803 | June 28th | 7:35 | 1857 | got hacked :(
@@ -410,6 +411,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_133 | D | complete | dp, cannot make more than around sqrt(N) jumps | ***
+CF Edu_133 | B | complete | don't be stupid | *
+CF Edu_133 | A | complete | don't be stupid | *
 CF 811 | G | complete | simple binary lifting | **
 CF 811 | E | complete | turn everything into 2 suffix and check modulo 20 | **
 CF 811 | D | complete | dp | **
