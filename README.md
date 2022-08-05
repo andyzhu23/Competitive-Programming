@@ -420,6 +420,7 @@ CF 811 | D | complete | dp | **
 CF 811 | C | complete | pattern | *
 CF 811 | B | complete | don't be dumb | *
 CF 811 | A | complete | don't be dumb | *
+CodeTon 2 | E | complete | simulate N times to remove middle 0s, topological sort add up all a | ***
 CodeTon 2 | D | complete | subtracting two sequences | ***
 CodeTon 2 | C | complete | simple math | **
 CodeTon 2 | B | complete | set up range | **
