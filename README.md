@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 812 | August 6th | 7:35 | 2806 | didn't solve D :(
 CF Edu_133 | August 4th | 7:35 | 3 | didn't solve C, I am a failure :(
 CodeTon 2 | July 31st | 7:05 | 3167 | Do problems faster
 CF 804 | July 4th | 7:35 | 2732 | Didn't solve D :( 
@@ -411,6 +412,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 812 | C | complete | dp | **
+CF 812 | B | complete | minimum must be on either side | *
+CF 812 | A | complete | don't be stupid | *
 CF Edu_133 | D | complete | dp, cannot make more than around sqrt(N) jumps | ***
 CF Edu_133 | B | complete | don't be stupid | *
 CF Edu_133 | A | complete | don't be stupid | *
