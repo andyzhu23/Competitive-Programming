@@ -412,7 +412,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-CF 812 | D | complete | interactive, eliminate 4 elements with 2 moves | ***
+CF 812 | D | complete | interactive, eliminate 3 elements with 2 moves | ***
 CF 812 | C | complete | dp | **
 CF 812 | B | complete | minimum must be on either side | *
 CF 812 | A | complete | don't be stupid | *
