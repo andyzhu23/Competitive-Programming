@@ -109,17 +109,29 @@ inline void init1(){
 
 inline void solve(){
     int n = read();
-    set<int> x, y;
-    x.ins(0);
-    y.ins(0);
-    for(int i = 1;i<=n;++i) {
-        int u = read(), v = read();
-        if(u == 0) y.ins(v);
-        else x.ins(u);
+    deque<int> a;
+    for(int i = 1;i<=n;++i) a.pb(read());
+    int mn = -inf;
+    while(a.size() > 1) {
+        if(a.front() > a.back()) {
+            int u = a.back();
+            a.pop_back();
+            if(u < mn) {
+                puts("NO");
+                return;
+            }
+            mn = u;
+        } else {
+            int u = a.front();
+            a.pop_front();
+            if(u < mn) {
+                puts("NO");
+                return;
+            }
+            mn = u;
+        }
     }
-    int ans = (*(x.rbegin()) - *(x.begin())) * 2;
-    ans += (*(y.rbegin()) - *(y.begin())) * 2;
-    print(ans, '\n');
+    puts("YES");
 }
 
 

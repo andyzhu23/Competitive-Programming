@@ -98,8 +98,22 @@ const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
 
 //------------------- start of initialize --------------------
 // initialize for all cases
+const int N = 1e5 + 5;
+bitset<N> dp;
+int last[N];
 inline void init1(){
-
+    dp[0] = 1;
+    for(int i = 1;i * i<=1e5;++i) {
+        dp[i * i] = 1;
+        last[i * i] = -1;
+    }
+    for(int i = 0;i<=1e5;++i) if(dp[i]) {
+        for(int j = 1;j * j - (i + 1)<=1e5;++j) if(j * j - (i + 1) > i) {
+            dp[j * j - (i + 1)] = 1;
+            last[j * j - (i + 1)] = i;
+        }
+    }
+    last[0] = -1;
 }
 
 //-------------------  end of initialize  --------------------
@@ -108,18 +122,20 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read();
-    set<int> x, y;
-    x.ins(0);
-    y.ins(0);
-    for(int i = 1;i<=n;++i) {
-        int u = read(), v = read();
-        if(u == 0) y.ins(v);
-        else x.ins(u);
+    int n = read() - 1;
+    if(!dp[n]) {
+        puts("-1");
+        return;
     }
-    int ans = (*(x.rbegin()) - *(x.begin())) * 2;
-    ans += (*(y.rbegin()) - *(y.begin())) * 2;
-    print(ans, '\n');
+    int x = n;
+    deque<int> ans;
+    while(~x) {
+        for(int i = last[x] + 1;i<=x;++i) {
+            ans.pf(i);
+        }
+        x = last[x];
+    }
+    for(int i = 0;i<ans.size();++i) print(ans[i], " \n"[i==ans.size() - 1]);
 }
 
 
