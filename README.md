@@ -112,6 +112,7 @@ CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 ### HDU
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+HDU | copy | complete | do operation in reverse, bitset | ***
 HDU | Link with Level Editor II | complete | two pointer, matrices | ***
 HDU | Shinobu loves trips | complete | math | **
 HDU | Luxury cruise ship | complete | do dp till the LCM of all three numbers | ***
