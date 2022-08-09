@@ -112,6 +112,7 @@ CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 ### HDU
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+HDU | backpack | complete | bitset, dp | ***
 HDU | ball | complete | bitset, sorting | ***
 HDU | copy | complete | do operation in reverse, bitset | ***
 HDU | Link with Level Editor II | complete | two pointer, matrices | ***
