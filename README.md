@@ -112,6 +112,8 @@ CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 ### HDU
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+HDU | Link with Level Editor II | complete | two pointer, matrices | ***
+HDU | Shinobu loves trips | complete | math | **
 HDU | Luxury cruise ship | complete | do dp till the LCM of all three numbers | ***
 HDU | Static Query on Tree | complete | segtree, hld, binary lifting | ***
 HDU | alice bob | complete | 2 Ns can be viewed as 1 N - 1 | **
