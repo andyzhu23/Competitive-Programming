@@ -759,6 +759,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMPG 19 | G5 | complete | centroid decomposition, LCA, lazy | ***
 CEOI 09 | Harbingers | complete | dp, convex hull trick, ternary search, maintain previous stack | ****
 Atcoder DP | S | complete | digit dp | **
 Atcoder DP | R | complete | matrices | **
