@@ -108,12 +108,26 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read(), k = read();
+    int n = read();
     vi a(n + 5);
     for(int i = 1;i<=n;++i) read(a[i]);
-    int cnt = 0;
-    for(int i = 1;i<=k;++i) if(a[i] > k) ++cnt;
-    print(cnt, '\n');
+    int mx = 0;
+    for(int i = 2;i<=n;++i) if(a[i] < a[i - 1]) {
+        mx = i - 1;
+    }
+    os<int> vis;
+    for(int i = 1;i<=mx;++i) {
+        vis.ins(a[i]);
+    }
+    ++mx;
+    while(mx <= n) {
+        while(mx <= n && vis.count(a[mx])) ++mx;
+        int tmp = mx;
+        while(mx <= n && !vis.count(a[mx])) ++mx;
+        if(mx == n + 1) break;
+        for(int i = tmp;i<=mx;++i) vis.ins(a[i]);
+    }
+    print(vis.size(), '\n');
 }
 
 

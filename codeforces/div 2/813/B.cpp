@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-08-13 07:34:01
+ * @date    2022-08-13 07:34:18
  * @version 1.0.0
  */
 
@@ -106,14 +106,16 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e5 + 5;
+int a[N];
 
 inline void solve(){
-    int n = read(), k = read();
-    vi a(n + 5);
-    for(int i = 1;i<=n;++i) read(a[i]);
-    int cnt = 0;
-    for(int i = 1;i<=k;++i) if(a[i] > k) ++cnt;
-    print(cnt, '\n');
+    int n = read();
+    iota(a, a + n + 1, 0);
+    for(int i = n;i > 1;i-=2) {
+        swap(a[i], a[i - 1]);
+    }
+    for(int i = 1;i<=n;++i) print(a[i], " \n"[i==n]);
 }
 
 
