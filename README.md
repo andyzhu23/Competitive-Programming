@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 813 | August 13th | 7:35 | 2876 | didn't solve D :(
 CF 812 | August 6th | 7:35 | 2806 | didn't solve D :(
 CF Edu_133 | August 4th | 7:35 | 3 | didn't solve C, I am a failure :(
 CodeTon 2 | July 31st | 7:05 | 3167 | Do problems faster
@@ -417,6 +418,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 813 | C | complete | greedy | **
+CF 813 | B | complete | swap adjacent | * 
+CF 813 | A | complete | easy | * 
 CF 812 | D | complete | interactive, eliminate 3 elements with 2 moves | ***
 CF 812 | C | complete | dp | **
 CF 812 | B | complete | minimum must be on either side | *
