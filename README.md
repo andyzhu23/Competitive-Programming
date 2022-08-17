@@ -409,6 +409,7 @@ CCC 2008 | S5 | complete | game theory dp | **
 ### IOI Problems
 Source | Problems | Status | Skills needed | rating 
 -------|----------|--------|---------------|-------
+IOI 2006 | P2 | complete | use fenwick on rmq | ***
 IOI 1998 | P4 | complete | coordinate compression, line sweep, difference array | **
 IOI 2010 | P3 | complete | binary search, prefix sum | ***
 IOI 2004 | Empodia | complete | montonic stack to store min and max, two nodes is okay if value - index is the same | ***
