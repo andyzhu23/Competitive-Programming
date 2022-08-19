@@ -113,6 +113,9 @@ CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 ### HDU
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+HDU | Winner Prediction | complete | greedily let 1 win for every m2 games containing 1, dinic all other games | ***
+HDU | Matryoshka Doll | complete | dp | ***
+HDU | Origrimmar | complete | answer is the same regardless, just simulate | *
 HDU | backpack | complete | bitset, dp | ***
 HDU | ball | complete | bitset, sorting | ***
 HDU | copy | complete | do operation in reverse, bitset | ***
