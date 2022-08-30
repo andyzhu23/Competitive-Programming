@@ -105,16 +105,21 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-char c[6];
-
 inline void solve(){
-    scanf("%s", c + 1);
-    scanf("%s", c + 3);
-    us<int> mp;
-    for(int i = 1;i<=4;++i) {
-        mp.ins(c[i]);
+    int n = read();
+    vi a(n + 5), b(n + 5), mn(n + 5), mx(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    for(int i = 1;i<=n;++i) read(b[i]);
+    for(int i = 1, j = 1;i<=n;++i) {
+        while(a[i] > b[j]) ++j;
+        mn[i] = b[j] - a[i];
     }
-    print(mp.size() - 1, '\n');
+    for(int i = n, j = n;i;--i) {
+        mx[i] = b[j] - a[i];
+        if(a[i] > b[i - 1]) j = i - 1;
+    }
+    for(int i = 1;i<=n;++i) print(mn[i], " \n"[i==n]);
+    for(int i = 1;i<=n;++i) print(mx[i], " \n"[i==n]);
 }
 
 

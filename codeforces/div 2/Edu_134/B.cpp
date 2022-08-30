@@ -105,16 +105,10 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-char c[6];
-
 inline void solve(){
-    scanf("%s", c + 1);
-    scanf("%s", c + 3);
-    us<int> mp;
-    for(int i = 1;i<=4;++i) {
-        mp.ins(c[i]);
-    }
-    print(mp.size() - 1, '\n');
+    int n = read(), m = read(), y = read(), x = read(), d = read();
+    if((x - d > 1 && y + d < n) || (x + d < m && y - d > 1)) print(n - 1 + m - 1, '\n');
+    else print(-1, '\n');
 }
 
 

@@ -105,16 +105,27 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-char c[6];
+const int N = 1e5 + 5;
+int n, a[N], b[N];
+
+bool get(int x) {
+    bool flag = 1;
+    map<int, int> cnt;
+    for(int i = 1;i<=n;++i) ++cnt[a[i] & x];
+    for(int i = 1;i<=n;++i) --cnt[~b[i] & x];
+    for(auto[u, v] : cnt) flag &= v == 0;
+    return flag;
+}
 
 inline void solve(){
-    scanf("%s", c + 1);
-    scanf("%s", c + 3);
-    us<int> mp;
-    for(int i = 1;i<=4;++i) {
-        mp.ins(c[i]);
+    read(n);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    for(int j = 1;j<=n;++j) read(b[j]);
+    int ans = 0;
+    for(int i = 30;~i;--i) if(get(ans | 1 << i)) {
+        ans |= 1 << i;
     }
-    print(mp.size() - 1, '\n');
+    print(ans, '\n');
 }
 
 
