@@ -422,6 +422,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_134 | D | complete | bit by bit, every number in a, there must be a reverse in b | ***
+CF Edu_134 | C | complete | for min, use two pointer, for max, find leftmost r such a[r] > b[r - 1] | ***
+CF Edu_134 | B | complete | check border | *
+CF Edu_134 | A | complete | don't be dumb | *
 CF 813 | C | complete | greedy | **
 CF 813 | B | complete | swap adjacent | * 
 CF 813 | A | complete | easy | * 
