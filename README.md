@@ -338,6 +338,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO 14 | P2 | complete | run dijkstra from A and B(reverse graph), calculate offline | **
 CCO 18 | P4 | complete | do two binary searches together | ***
 CCO 16 | P6 | complete | splay | ****
 CCO 05 | P4 | complete | use bitset, prime seiving | **
