@@ -338,6 +338,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO 20 | P2 | complete | number of swap = number of inversion, from last element, search for maximum spot to place | ***
 CCO 14 | P2 | complete | run dijkstra from A and B(reverse graph), calculate offline | **
 CCO 18 | P4 | complete | do two binary searches together | ***
 CCO 16 | P6 | complete | splay | ****
