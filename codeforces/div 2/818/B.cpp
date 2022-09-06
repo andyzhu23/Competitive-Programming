@@ -99,18 +99,42 @@ const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
 
 //------------------- start of initialize --------------------
 // initialize for all cases
-
 inline void init1(){
+
 }
 
 //-------------------  end of initialize  --------------------
 
 //--------------------- start of program ---------------------
 
+const int N = 5e2 + 5;
+
+int n, k, r, c;
+char ans[N][N];
 
 inline void solve(){
-    int n = read();
-    print(n + (n / 2 * 2) + (n / 3 * 2), '\n');
+    read(n), read(k), read(r), read(c);
+    for(int i = 1;i<=n;++i) {
+        for(int j = 1;j<=n;++j) ans[i][j] = '.';
+    }
+    ans[r][c] = 'X';
+    c += r - 1;
+    r = 1;
+    c %= k;
+    while(c <= n && r <= n) {
+        for(int i = r, j = c;i<=n && j > 0;++i, --j) {
+            ans[i][j] = 'X';
+        }
+        c += k;
+        if(c > n) {
+            r += c - n;
+            c = n;
+        }
+    }
+    for(int i = 1;i<=n;++i) {
+        for(int j = 1;j<=n;++j) putchar(ans[i][j]);
+        putchar('\n');
+    }
 }
 
 

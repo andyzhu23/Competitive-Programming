@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-09-02 07:29:44
+ * @date    2022-09-05 09:15:40
  * @version 1.0.0
  */
 
@@ -99,25 +99,38 @@ const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
 
 //------------------- start of initialize --------------------
 // initialize for all cases
-
 inline void init1(){
+
 }
 
 //-------------------  end of initialize  --------------------
 
 //--------------------- start of program ---------------------
 
+const int N = 1e5 + 5;
+int n, k;
+ll f[N];
+
+ll c(int i, int j) {
+    return f[i] * fp(f[j], mod - 2, mod) % mod * fp(f[i - j], mod - 2, mod) % mod;
+}
 
 inline void solve(){
-    int n = read();
-    print(n + (n / 2 * 2) + (n / 3 * 2), '\n');
+    read(n), read(k);
+    f[0] = 1;
+    for(int i = 1;i<=n;++i) f[i] = f[i - 1] * i % mod;
+    ll ans = 0;
+    for(int i = 0;i<=min(n, k);++i) {
+        ans = (ans + c(n, i)) % mod;
+    }
+    print(ans, '\n');
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0

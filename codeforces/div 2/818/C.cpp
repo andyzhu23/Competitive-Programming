@@ -99,8 +99,8 @@ const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
 
 //------------------- start of initialize --------------------
 // initialize for all cases
-
 inline void init1(){
+
 }
 
 //-------------------  end of initialize  --------------------
@@ -110,7 +110,32 @@ inline void init1(){
 
 inline void solve(){
     int n = read();
-    print(n + (n / 2 * 2) + (n / 3 * 2), '\n');
+    vi a(n + 5), b(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    for(int i = 1;i<=n;++i) read(b[i]);
+    for(int i = 1;i<=n;++i) if(a[i] > b[i]) {
+        puts("NO");
+        return;
+    }
+    for(int i = 1;i<=n;++i) if(a[i] != b[i]) {
+        if(b[i] > b[i + 1 == n + 1 ? 1 : i + 1] + 1) {
+            puts("NO");
+            return;
+        }
+    }
+    int mx = 0;
+    for(int i = 1;i<=n;++i) if(a[mx] < a[i]) mx = i;
+    int i = mx - 1;
+    while(i != mx) {
+        a[i] = min(b[i], a[i + 1] + 1);
+        if(a[i] == b[i]) {
+            puts("YES");
+            return;
+        }
+        --i;
+        if(i == 0) i = n;
+    }
+    puts("YES");
 }
 
 
