@@ -107,23 +107,62 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+struct DSU {
+    int f[N];
+    int Find(int x) {return f[x] == x ? x : f[x] = Find(f[x]);}
+    bool merge(int u, int v) {
+        int fu = Find(u);
+        int fv = Find(v);
+        if(fu == fv) return 0;
+        f[fu] = fv;
+        return 1;
+    }
+    void init(int n) {
+        iota(f, f + n + 1, 0);
+    }
+    bool con(int u, int v) {
+        int fu = Find(u);
+        int fv = Find(v);
+        return fu == fv;
+    }
+} r, b;
+bitset<N> ans;
 
 inline void solve(){
-    int n = read();
-    vi a(n + 5);
-    for(int i = 0;i<n;++i) {
-        read(a[i]);
+    int n = read(), m = read();
+    r.init(n), b.init(n);
+    int cnt = m - n + 1;
+    int x = -1, y = -1;
+    vpii a(m + 5);
+    bool flag = 0;
+    for(int i = 1;i<=m;++i) {
+        int u = read(), v = read();
+        a[i] = {u, v};
+        if(!r.merge(u, v)) {
+            if(!b.merge(u, v)) {
+                flag = 1;
+                x = u, y = v;
+                ans[i] = 0;
+                continue;
+            }
+            ans[i] = 1;
+        }
     }
-    int ans = 0;
-    int mx = 0, mn = inf;
-    for(int i = 0;i<n;++i) {
-        ckmax(ans, a[(i - 1 + n) % n] - a[i]);
-        ckmax(mx, a[i]);
-        ckmin(mn, a[i]);
+    flag = 1;
+    r.init(n), b.init(n);
+    for(int i = 1;i<=m;++i) {
+        if(ans[i] == 0) {
+            r.merge(a[i].fir, a[i].sec);
+            if(x != -1 && r.con(x, y) && flag) {
+                ans[i] = 1;
+                flag = 0;
+            }
+        } else b.merge(a[i].fir, a[i].sec);
+        print(ans[i]);
+        ans[i] = 0;
     }
-    ckmax(ans, mx - a[0]);
-    ckmax(ans, a[n - 1] - mn);
-    print(ans, '\n');
+    putchar('\n');
 }
 
 

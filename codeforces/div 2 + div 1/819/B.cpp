@@ -109,21 +109,31 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read();
-    vi a(n + 5);
-    for(int i = 0;i<n;++i) {
-        read(a[i]);
+    int n = read(), m = read();
+    if(n == 1) {
+        puts("YES");
+        print(m, '\n');
+        return;
     }
-    int ans = 0;
-    int mx = 0, mn = inf;
-    for(int i = 0;i<n;++i) {
-        ckmax(ans, a[(i - 1 + n) % n] - a[i]);
-        ckmax(mx, a[i]);
-        ckmin(mn, a[i]);
+    if(n > m) {
+        puts("NO");
+        return;
     }
-    ckmax(ans, mx - a[0]);
-    ckmax(ans, a[n - 1] - mn);
-    print(ans, '\n');
+    if(n & 1) {
+        puts("YES");
+        for(int i = 1;i<n;++i) print(1, ' ');
+        print(m - n + 1, '\n');
+        return;
+    } else {
+        if(m & 1) {
+            puts("NO");
+            return;
+        }
+        puts("YES");
+        for(int i = 1;i<n - 1;++i) print(1, ' ');
+        print((m - n + 2) / 2, ' '), print((m - n + 2) / 2, '\n');
+        return;
+    }
 }
 
 

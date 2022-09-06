@@ -107,22 +107,39 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+char c[N];
+
+int f[N];
+int Find(int x) {return f[x] == x ? x : f[x] = Find(f[x]);}
+void merge(int u, int v) {
+    int fu = Find(u);
+    int fv = Find(v);
+    f[fu] = fv;
+}
 
 inline void solve(){
     int n = read();
-    vi a(n + 5);
-    for(int i = 0;i<n;++i) {
-        read(a[i]);
+    scanf("%s", c + 1);
+    iota(f, f + n * 2 + 1, 0);
+    vi level(2 * n + 4);
+    vi stk;
+    for(int i = 1;i<=n * 2;++i) {
+        if(c[i] == '(') {
+            stk.pb(i);
+            if(level[stk.size()] == 0) level[stk.size()] = i;
+        } else if(!stk.empty()) {
+            int x = stk.back();
+            stk.pop_back();
+            merge(x, i);
+            merge(x, level[stk.size() + 1]);
+            level[stk.size() + 2] = 0;
+        }
     }
     int ans = 0;
-    int mx = 0, mn = inf;
-    for(int i = 0;i<n;++i) {
-        ckmax(ans, a[(i - 1 + n) % n] - a[i]);
-        ckmax(mx, a[i]);
-        ckmin(mn, a[i]);
+    for(int i = 1;i<=n * 2;++i) {
+        if(c[i] == ')' && i == Find(i)) ++ans;
     }
-    ckmax(ans, mx - a[0]);
-    ckmax(ans, a[n - 1] - mn);
     print(ans, '\n');
 }
 
