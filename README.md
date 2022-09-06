@@ -425,6 +425,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 819 | D | complete | dsu, use red to do a tree, remaining edge might form cycle, in that case, relink edges | ***
+CF 819 | C | complete | logic | **
+CF 819 | B | complete | case by case | *
+CF 819 | A | complete | case by case | *
 CF Edu_134 | D | complete | bit by bit, every number in a, there must be a reverse in b | ***
 CF Edu_134 | C | complete | for min, use two pointer, for max, find leftmost r such a[r] > b[r - 1] | ***
 CF Edu_134 | B | complete | check border | *
