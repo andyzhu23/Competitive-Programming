@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 819 | Sept 6th | 7:35 | 2980 | too slow, clear array for every test case 
 CF 813 | August 13th | 7:35 | 2876 | didn't solve D :(
 CF 812 | August 6th | 7:35 | 2806 | didn't solve D :(
 CF Edu_133 | August 4th | 7:35 | 3 | didn't solve C, I am a failure :(
