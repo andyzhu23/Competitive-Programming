@@ -432,6 +432,9 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_135 | D | complete | dp | **
+CF Edu_135 | B | complete | pattern | *
+CF Edu_135 | A | complete | easy | *
 CF 819 | D | complete | dsu, use red to do a tree, remaining edge might form cycle, in that case, relink edges | ***
 CF 819 | C | complete | logic | **
 CF 819 | B | complete | case by case | *
