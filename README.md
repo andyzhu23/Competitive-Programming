@@ -320,6 +320,7 @@ USACO 2021 US Open Gold | United Cows of Farmer John | complete | enumerate r, b
 USACO 2008 Nov Gold | Switching light | complete | Segment Tree, interval update | **
 USACO 2017 Jan Gold | Balanced Photo | complete | Segment Tree, discretization | **
 USACO 2021 Feb Gold | Modern Art 3 | complete | Dynamic Programming | ***
+USACO 2017 Dec Silver | P1 | complete | psa | **
 USACO 2021 Dec Silver | P3 | complete | lazy array | **
 USACO 2021 Dec Silver | P2 | complete | DSU, find length to 1 and n | **
 USACO 2020 Jan Silver | Loan_Repayment | complete | skipping repeated terms | ***
