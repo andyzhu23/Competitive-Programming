@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-09-08 10:45:42
+ * @date    2022-09-08 11:11:09
  * @version 1.0.0
  */
 
@@ -107,17 +107,56 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-const int N = 25;
-int n;
-pii a[N];
+const int N = 2e3 + 5;
+int dp[N][N];
+
+void update(int& x, int i) {
+    if(i == 1) x = 1;
+    if(x != 1 && i == 0) x = 0;
+}
 
 inline void solve(){
-    read(n);
-    for(int i = 1;i<=n;++i) {
-        a[i] = {read(), i};
+    string s; cin>>s;
+    int n = s.size();
+    s = '@' + s;
+    for(int i = 1;i<n;++i) {
+        dp[i][i + 1] = s[i] != s[i + 1];
     }
-    sort(a + 1, a + n + 1);
-    print(a[n].sec, '\n');
+    for(int l = 4;l<=n;l += 2) {
+        for(int i = 1;i + l - 1<=n;++i) {
+            int j = i + l - 1;
+            dp[i][j] = 2;
+            // take left one
+            if(dp[i + 1][j - 1] == 1 && dp[i + 2][j] == 1) update(dp[i][j], 1);
+            if(dp[i + 1][j - 1] == 2 || dp[i + 2][j] == 2) update(dp[i][j], 2);
+            else {
+                if(dp[i + 1][j - 1] == 0) {
+                    if(s[i] < s[j]) update(dp[i][j], 1);
+                    if(s[i] == s[j]) update(dp[i][j], 0);
+                }
+                if(dp[i + 2][j] == 0) {
+                    if(s[i] < s[i + 1]) update(dp[i][j], 1);
+                    if(s[i] == s[i + 1]) update(dp[i][j], 0);
+                }
+            }
+            // take right one
+            if(dp[i + 1][j - 1] == 1 && dp[i][j - 2] == 1) update(dp[i][j], 1);
+            if(dp[i + 1][j - 1] == 2 || dp[i][j - 2] == 2) update(dp[i][j], 2);
+            else {
+                if(dp[i + 1][j - 1] == 0) {
+                    if(s[i] > s[j]) update(dp[i][j], 1);
+                    if(s[i] == s[j]) update(dp[i][j], 0);
+                }
+                if(dp[i][j - 2] == 0) {
+                    if(s[j] < s[j - 1]) update(dp[i][j], 1);
+                    if(s[j] == s[j - 1]) update(dp[i][j], 0);
+                }
+            }
+        }
+    }
+    if(dp[1][n] == 1) puts("Alice");
+    else if(dp[1][n] == 2) puts("Bob");
+    else puts("Draw");
 }
 
 

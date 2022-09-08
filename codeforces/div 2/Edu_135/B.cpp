@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-09-08 10:45:42
+ * @date    2022-09-08 10:52:18
  * @version 1.0.0
  */
 
@@ -107,17 +107,27 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-const int N = 25;
-int n;
-pii a[N];
 
 inline void solve(){
-    read(n);
-    for(int i = 1;i<=n;++i) {
-        a[i] = {read(), i};
+    int n = read() - 2;
+
+    if(n & 1) {
+        print(1, ' ');
+        print(2, ' ');
+        print(3, ' ');
+        for(int i = 4;i<=n;i += 2) {
+            print(i + 1, ' ');
+            print(i, ' ');
+        }
+    } else {
+        for(int i = 1;i<=n;i += 2) {
+            print(i + 1, ' ');
+            print(i, ' ');
+        }
     }
-    sort(a + 1, a + n + 1);
-    print(a[n].sec, '\n');
+
+    print(n + 1, ' ');
+    print(n + 2, '\n');
 }
 
 
