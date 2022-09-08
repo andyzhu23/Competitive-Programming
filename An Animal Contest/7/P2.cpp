@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-09-06 11:18:09
+ * @date    2022-09-06 11:32:08
  * @version 1.0.0
  */
 
@@ -107,21 +107,51 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+int n, dep[N], f[N], tot, root[N];
+vi e[N];
+vpii ee[N];
+
+void dfs(int u = 1, int fa = 0) {
+    dep[u] = dep[fa] + 1;
+    f[u] = fa;
+    for(int v : e[u]) if(v != fa) {
+        dfs(v, u);
+    }
+}
+
+void dfs2(int u = 1, int fa = 0) {
+    if(f[f[u]] == 0) root[u] = ++tot;
+    else {
+        root[u] = root[f[f[u]]];
+        ee[root[u]].pb({u, f[f[u]]});
+    }
+    for(int v : e[u]) if(v != fa) {
+        dfs2(v, u);
+    }
+}
 
 inline void solve(){
-    int w = read(), h = read();
-    if(w == 1 || (h == 1 && w < 7) || max(w, h) < 4) {
-        puts("bad");
-        return;
+    read(n);
+    for(int i = 1;i<n;++i) {
+        int u = read(), v = read();
+        e[u].pb(v);
+        e[v].pb(u);
     }
-    puts("good");
+    dfs();
+    dfs2();
+    print(tot, '\n');
+    for(int i = 1;i<=tot;++i) {
+        print(ee[i].size() + 1, '\n');
+        for(auto[u, v] : ee[i]) print(u, ' '), print(v, '\n');
+    }
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0

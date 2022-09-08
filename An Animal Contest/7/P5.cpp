@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-09-06 11:18:09
+ * @date    2022-09-07 10:59:38
  * @version 1.0.0
  */
 
@@ -107,21 +107,89 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 5e5 + 5;
+int n, root, dep[N], mn[N], mx, ok[N];
+vi e[N], ans;
+
+void dfs(int u = root, int fa = 0) {
+    dep[u] = dep[fa] + 1;
+    if(dep[u] > dep[root]) root = u, mx = dep[u];
+    if(dep[u] == dep[root]) ckmin(root, u);
+    for(int v : e[u]) if(v != fa) {
+        dfs(v, u);
+    }
+}
+
+void get(int u = root, int fa = 0) {
+    dep[u] = dep[fa] + 1;
+    ok[u] = dep[u] == mx;
+    mn[u] = u;
+    for(int v : e[u]) if(v != fa) {
+        get(v, u);
+        ckmin(mn[u], mn[v]);
+        ok[u] |= ok[v];
+    }
+}
+
+void calc2(int u = root, int fa = 0) {
+    sort(all(e[u]), [&](int u, int v) {
+        return mn[u] < mn[v];
+    });
+    bool flag = 1;
+    for(int v : e[u]) if(v != fa) {
+        if(u < mn[v] && flag) ans.pb(u), flag = 0;
+        calc2(v, u);
+    }
+    if(flag) ans.pb(u);
+}
+
+void calc(int u = root, int fa = 0) {
+    sort(all(e[u]), [&](int u, int v) {
+        return mn[u] < mn[v];
+    });
+    int last = -1;
+    vector<int>::iterator x;
+    for(auto it = e[u].begin(); it != e[u].end(); ++it) {
+        if(ok[*it] && *it != fa) {
+            last = *it;
+            x = it;
+        }
+    }
+    if(~last) {
+        e[u].erase(x);
+        e[u].pb(last);
+    }
+    bool flag = 1;
+    for(int v : e[u]) if(v != fa) {
+        if((u < mn[v] || last == v) && flag) ans.pb(u), flag = 0;
+        if(last == v) calc(v, u);
+        else calc2(v, u);
+    }
+    if(flag) ans.pb(u);
+}
 
 inline void solve(){
-    int w = read(), h = read();
-    if(w == 1 || (h == 1 && w < 7) || max(w, h) < 4) {
-        puts("bad");
-        return;
+    read(n);
+    for(int i = 1;i<n;++i) {
+        int u = read(), v = read();
+        e[u].pb(v);
+        e[v].pb(u);
     }
-    puts("good");
+    root = 1;
+    dfs();
+    int tmp = root;
+    dfs();
+    ckmin(root, tmp);
+    get();
+    calc();
+    for(int i = 0;i<n;++i) print(ans[i], " \n"[i==n-1]);
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0
