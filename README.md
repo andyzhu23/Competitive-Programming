@@ -152,6 +152,9 @@ C2 | P4 | complete | prim | **
 ### An Animal Contest
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+C7 | P5 | complete | find diameter | ***
+C7 | P2 | complete | reorganize the tree | *
+C7 | P1 | complete | case by case | *
 C6 | P3 | complete | math, frequency array | ***
 C5 | P6 | complete | centroid decomposition, LCA, dijkstra | *****
 C5 | P5 | complete | fenwick, two pointer | ****
