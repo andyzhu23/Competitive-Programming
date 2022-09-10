@@ -153,6 +153,7 @@ C2 | P4 | complete | prim | **
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 C7 | P5 | complete | find diameter | ***
+C7 | P3 | complete | binary search or two pointer for the position using and not using portal | **
 C7 | P2 | complete | reorganize the tree | *
 C7 | P1 | complete | case by case | *
 C6 | P3 | complete | math, frequency array | ***
