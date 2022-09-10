@@ -343,6 +343,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO 17 | P5 | complete | same as buying everything first, assume every item lower than the want value of current one has been obtained | ***
 CCO 21 | P2 | complete | brute force dfs | ***
 CCO 21 | P1 | complete | separate into two sets, one appear more than 100 times, and another less than 100 times, swap = inversion pair | ***
 CCO 14 | P5 | complete | easy greedy | **
