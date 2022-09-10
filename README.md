@@ -433,6 +433,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
 CF Edu_135 | D | complete | dp | **
+CF Edu_135 | C | complete | look at maximum | **
 CF Edu_135 | B | complete | pattern | *
 CF Edu_135 | A | complete | easy | *
 CF 819 | D | complete | dsu, use red to do a tree, remaining edge might form cycle, in that case, relink edges | ***
