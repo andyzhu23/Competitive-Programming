@@ -792,6 +792,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+COCI 17 | P4 | complete | divid by 2 to brute force, use pbds | ***
 DMOJ | lemontree | complete | centroid decomposition, minus M at the beginning | ***
 JOI 22 Final | P2 | complete | bs answer | **
 DMPG 19 | G5 | complete | centroid decomposition, LCA, lazy | ***
