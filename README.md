@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 821 | Sept 19th | 7:35 | 3772 | bruh actually didn't think of dp for D2
 CF 819 | Sept 6th | 7:35 | 2980 | too slow, clear array for every test case 
 CF 813 | August 13th | 7:35 | 2876 | didn't solve D :(
 CF 812 | August 6th | 7:35 | 2806 | didn't solve D :(
@@ -435,6 +436,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 821 | D1 | complete | if not two consecutive, then always just use all y | **
+CF 821 | C | complete | set a[1] = a[n], then update accordingly | **
+CF 821 | B | complete | always a win follow by some lose | *
+CF 821 | A | complete | don't be dumb | *
 CF Edu_135 | D | complete | dp | **
 CF Edu_135 | C | complete | look at maximum | **
 CF Edu_135 | B | complete | pattern | *
