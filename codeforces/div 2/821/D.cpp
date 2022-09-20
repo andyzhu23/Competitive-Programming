@@ -107,20 +107,90 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 5005;
+char s[N], t[N];
+
+struct edge {
+    int l, r;
+    bool operator<(const edge& other) const {
+        return (r - l) < (other.r - other.l);
+    }
+    bool operator>(const edge& other) const {
+        return (r - l) > (other.r - other.l);
+    }
+};
 
 inline void solve(){
-    int n = read(), k = read();
-    vi a(n + 5);
-    for(int i = 1;i<=n;++i) read(a[i]);
-    ll ans = 0;
-    for(int i = 1;i<=k;++i) {
-        int mx = 0;
-        for(int j = i;j<=n;j+=k) {
-            ckmax(mx, a[j]);
+    int n = read(), x = read(), y = read();
+    vi a, cnt(n + 5), cnt2(n + 5);
+    set<int> vis;
+    vpii bst;
+    scanf("%s", s + 1);
+    scanf("%s", t + 1);
+    for(int i = 1;i<=n;++i) {
+        s[i] -= '0', t[i] -= '0';
+        if(s[i] != t[i]) {
+            a.pb(i);
+            vis.ins(i);
         }
-        ans += mx;
     }
-    print(ans, '\n');
+    ckmin(x, 2 * y);
+    if(a.size() & 1) {
+        puts("-1");
+        return;
+    }
+    if(x >= y) { 
+        ll ans = y * a.size() / 2;
+        if(a.size() == 2) {
+            if(abs(a[1] - a[0]) == 1) ans = x;
+        }
+        print(ans, '\n');
+        return;
+    }
+    vec<edge> e;
+    for(int i = 1;i<a.size();++i) {
+        if(1ll * (a[i] - a[i - 1]) * x < y)
+            e.pb({a[i - 1], a[i]});
+    }
+    // sort(all(e), [&](edge& a, edge& b) {
+    //     return a.l < b.l;
+    // });
+    // ll ans1 = 0, ans2 = 0;
+    // for(auto[l, r] : e) {
+    //     if(cnt[l] == 0) {
+    //         ans1 += 1ll * (r - l) * x;
+    //         ++cnt[l], ++cnt[r];
+    //     } else {
+    //         ans2 += 1ll * (r - l) * x;
+    //         ++cnt2[l], ++cnt2[r];
+    //     }
+    // }
+    // int tot = 0;
+    // for(auto x : a) if(!cnt[x]) ++tot;
+    // ll ans = ans1 + 1ll * tot * y / 2;
+    // tot = 0;
+    // for(auto x : a) if(!cnt2[x]) ++tot;
+    // ckmin(ans, ans2 + 1ll * tot * y / 2);
+    // print(ans, '\n');
+    
+    ll ans = 0;
+    for(auto[l, r] : e) {
+        ans += 1ll * (r - l) * x;
+        ++cnt[l], ++cnt[r];
+        // cout<<l<<' '<<r<<'\n';
+    }
+    for(auto[l, r] : e) if(cnt[l] == 2 && cnt[r] == 2) {
+        ans -= 1ll * (r - l) * x;
+        --cnt[l], --cnt[r];
+    }
+    sort(all(e), greater<edge>());
+    for(auto[l, r] : e) if(cnt[l] == 2 || cnt[r] == 2) {
+        ans -= 1ll * (r - l) * x;
+        --cnt[l], --cnt[r];
+    }
+    int tot = 0;
+    for(auto x : a) if(!cnt[x]) ++tot;
+    print(ans + 1ll * tot * y / 2, '\n');
 }
 
 

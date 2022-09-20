@@ -109,18 +109,33 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read(), k = read();
-    vi a(n + 5);
+    int n = read();
+    vi a(n + 5), b;
+    vpii ans;
     for(int i = 1;i<=n;++i) read(a[i]);
-    ll ans = 0;
-    for(int i = 1;i<=k;++i) {
-        int mx = 0;
-        for(int j = i;j<=n;j+=k) {
-            ckmax(mx, a[j]);
-        }
-        ans += mx;
+    if(n == 1) {
+        print(0, '\n');
+        return;
     }
-    print(ans, '\n');
+    if((a[1] + a[n]) % 2 == 0) {
+        ans.pb({1, n});
+        a[1] = a[n];
+    }
+    for(int i = 2;i<=n;++i) {
+        if(a[i] % 2 != a[1] % 2) {
+            ans.pb({1, i});
+            a[i] = a[1];
+        }
+    }
+    for(int i = 2;i<=n;++i) if(a[i] != a[1]) {
+        ans.pb({i, n});
+        a[i] = a[n];
+    }
+    print(ans.size(), '\n');
+    for(auto[u, v] : ans) {
+        print(u, ' ');
+        print(v, '\n');
+    }
 }
 
 
