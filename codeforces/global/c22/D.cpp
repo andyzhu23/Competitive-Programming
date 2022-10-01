@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-10-01 13:48:09
+ * @date    2022-10-01 14:14:09
  * @version 1.0.0
  */
 
@@ -107,30 +107,35 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e5 + 5;
+int a[N], n, k;
+bool flag = 0;
+vi e[N];
+
+void dfs(int u) {
+    sort(all(e[u]), [&](int a, int b) {
+        return e[a].size() < e[b].size();
+    });
+    if(u > 0 && u <= n) print(u, ' ');
+    for(int v : e[u]) {
+        dfs(v);
+    }
+}
 
 inline void solve(){
-    int n = read();
-    vi a(n + 5), b, c;
+    read(n);
+    for(int i = 0;i<=n + 1;++i) e[i].clear();
+    k = 0;
+    int mx = -inf, mn = inf;
     for(int i = 1;i<=n;++i) {
         read(a[i]);
+        e[a[i]].pb(i);
+        if(i < a[i]) ++k;
     }
-    ll ans = 0;
-    for(int i = 1;i<=n;++i) {
-        int x = read();
-        ans += x << 1;
-        if(a[i]) b.pb(x);
-        else c.pb(x);
-    }
-    sort(all(b));
-    sort(all(c));
-    if(b.size() < c.size()) swap(b, c);
-    if(b.size() == c.size()) {
-        ans -= min(b[0], c[0]);
-        print(ans, '\n');
-        return;
-    }
-    for(int i = 0;i<b.size() - c.size();++i) ans -= b[i];
-    print(ans, '\n');
+    print(k, '\n');
+    if(e[0].empty()) flag = 1, dfs(n + 1);
+    else flag = 0, dfs(0);
+    putchar('\n');
 }
 
 

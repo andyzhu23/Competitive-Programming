@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-10-01 13:48:09
+ * @date    2022-10-01 13:22:23
  * @version 1.0.0
  */
 
@@ -107,30 +107,20 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 105;
+
+int n, odd, even;
 
 inline void solve(){
-    int n = read();
-    vi a(n + 5), b, c;
-    for(int i = 1;i<=n;++i) {
-        read(a[i]);
-    }
-    ll ans = 0;
+    read(n);
+    odd = even = 0;
     for(int i = 1;i<=n;++i) {
         int x = read();
-        ans += x << 1;
-        if(a[i]) b.pb(x);
-        else c.pb(x);
+        odd += x & 1;
+        even += x & 1 ^ 1;
     }
-    sort(all(b));
-    sort(all(c));
-    if(b.size() < c.size()) swap(b, c);
-    if(b.size() == c.size()) {
-        ans -= min(b[0], c[0]);
-        print(ans, '\n');
-        return;
-    }
-    for(int i = 0;i<b.size() - c.size();++i) ans -= b[i];
-    print(ans, '\n');
+    if((odd & 1) && (even & 1)) puts("Alice");
+    else puts(odd / 2 + (odd & 1) & 1 ? "Bob" : "Alice");
 }
 
 

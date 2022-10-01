@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-10-01 13:48:09
+ * @date    2022-10-01 14:04:24
  * @version 1.0.0
  */
 
@@ -109,28 +109,14 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read();
-    vi a(n + 5), b, c;
-    for(int i = 1;i<=n;++i) {
-        read(a[i]);
-    }
-    ll ans = 0;
-    for(int i = 1;i<=n;++i) {
-        int x = read();
-        ans += x << 1;
-        if(a[i]) b.pb(x);
-        else c.pb(x);
-    }
-    sort(all(b));
-    sort(all(c));
-    if(b.size() < c.size()) swap(b, c);
-    if(b.size() == c.size()) {
-        ans -= min(b[0], c[0]);
-        print(ans, '\n');
-        return;
-    }
-    for(int i = 0;i<b.size() - c.size();++i) ans -= b[i];
-    print(ans, '\n');
+    int n = read(), k = read();
+    vll psa(n + 5, -inf), a(n + 5, inf);
+    for(int i = 1;i<=k;++i) psa[n - k + i] = read();
+    for(int i = n - k + 2;i<=n;++i) a[i] = psa[i] - psa[i - 1];
+    bool flag = 1;
+    for(int i = n - k + 3;i<=n;++i) flag &= a[i] >= a[i - 1];
+    if((n - k + 1) * a[n - k + 2] >= psa[n - k + 1] && flag) puts("Yes");
+    else puts("No");
 }
 
 
