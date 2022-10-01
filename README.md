@@ -436,6 +436,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Global 22 | D | complete | topological order | ***
+CF Global 22 | C | complete | logic | **
+CF Global 22 | B | complete | implementation | *
+CF Global 22 | A | complete | implementation | *
 CF 821 | D1 | complete | if not two consecutive, then always just use all y | **
 CF 821 | C | complete | set a[1] = a[n], then update accordingly | **
 CF 821 | B | complete | always a win follow by some lose | *
