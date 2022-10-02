@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 824 | Oct 2nd | 7:35 | 3593(192nd best so far) | took too long to solve A and B
 CF 821 | Sept 19th | 7:35 | 3772 | bruh actually didn't think of dp for D2
 CF 819 | Sept 6th | 7:35 | 2980 | too slow, clear array for every test case 
 CF 813 | August 13th | 7:35 | 2876 | didn't solve D :(
@@ -436,6 +437,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 824 | D | complete | enumerating, use set | **
+CF 824 | C | complete | dsu, implementation | **
+CF 824 | B | complete | math | *
+CF 824 | A | complete | math | *
 CF Global 22 | D | complete | topological order | ***
 CF Global 22 | C | complete | logic | **
 CF Global 22 | B | complete | implementation | *
