@@ -110,12 +110,14 @@ inline void init1(){
 
 inline void solve(){
     int n = read();
-    n -= 3;
-    int l1 = 1;
-    n -= l1;
-    int l2 = (n + 1) / 3;
-    int l3 = n - l2;
-    print(min(l2 - l1, l3 - l2), '\n');
+    vi a(n + 5);
+    int mn = inf;
+    for(int i = 1;i<=n;++i) read(a[i]), ckmin(mn, a[i]);
+    int ans = 0;
+    for(int i = 1;i<=n;++i) {
+        ans += ((a[i] - 1) / (mn + mn - 1));
+    }
+    print(ans, '\n');
 }
 
 

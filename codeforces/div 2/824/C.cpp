@@ -107,15 +107,46 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e5 + 5;
+char c[N];
+map<char, char> mp;
+int f[N];
+int Find(int x) {return f[x] == x ? x : f[x] = Find(f[x]);}
+void merge(int u, int v) {
+    int fu = Find(u);
+    int fv = Find(v);
+    f[fu] = fv;
+}
+
+bool same(int u, int v) {
+    int fu = Find(u);
+    int fv = Find(v);
+    return fu == fv;
+}
 
 inline void solve(){
     int n = read();
-    n -= 3;
-    int l1 = 1;
-    n -= l1;
-    int l2 = (n + 1) / 3;
-    int l3 = n - l2;
-    print(min(l2 - l1, l3 - l2), '\n');
+    iota(f + 1, f + 'z' + 1, 1);
+    scanf("%s", c + 1);
+    mp.clear();
+    set<char> bst;
+    for(int i = 1;i<=26;++i) bst.ins('a' + i - 1);
+    string ans;
+    for(int i = 1;i<=n;++i) {
+        if(mp.count(c[i])) ans += mp[c[i]];
+        else {
+            for(auto it = bst.begin();it != bst.end();++it) {
+                if(!same(*it, c[i]) || bst.size() == 1) {
+                    merge(*it, c[i]);
+                    mp[c[i]] = *it;
+                    ans += mp[c[i]];
+                    bst.erase(it);
+                    break;
+                }
+            }
+        }
+    }
+    cout<<ans<<'\n';
 }
 
 

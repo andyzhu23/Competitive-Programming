@@ -107,22 +107,43 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1005;
+const int K = 25;
+string a[N];
+set<string> bst;
 
 inline void solve(){
-    int n = read();
-    n -= 3;
-    int l1 = 1;
-    n -= l1;
-    int l2 = (n + 1) / 3;
-    int l3 = n - l2;
-    print(min(l2 - l1, l3 - l2), '\n');
+    int n = read(), k = read();
+    for(int i = 1;i<=n;++i) {
+        for(int j = 1;j<=k;++j) a[i] += '0' + read();
+    }
+    ll ans = 0;
+    for(int i = 1;i<=n;++i) {
+        bst.clear();
+        int cnt = 0;
+        for(int j = 1;j<=n;++j) if(i != j) {
+            string tmp;
+            for(int t = 0;t<k;++t) {
+                if(a[i][t] == a[j][t]) tmp += a[i][t];
+                else {
+                    if(min(a[i][t], a[j][t]) == '0' && max(a[i][t], a[j][t]) == '1') tmp += '2';
+                    else if(min(a[i][t], a[j][t]) == '0' && max(a[i][t], a[j][t]) == '2') tmp += '1';
+                    else if(min(a[i][t], a[j][t]) == '1' && max(a[i][t], a[j][t]) == '2') tmp += '0';
+                }
+            }
+            cnt += bst.count(tmp);
+            bst.ins(a[j]);
+        }
+        ans += 1ll * (cnt - 1) * cnt / 2;
+    }
+    print(ans, '\n');
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0
