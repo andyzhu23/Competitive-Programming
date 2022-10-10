@@ -107,29 +107,48 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+int a[N];
+
+struct segtree {
+    int st[N << 2];
+    void build(int rt, int l, int r) {
+        if(l == r) {
+            st[rt] = a[l];
+            return;
+        }
+        int mid = l + r >> 1;
+        build(lc, l, mid);
+        build(rc, mid + 1, r);
+        st[rt] = min(st[lc], st[rc]);
+    }
+    int query(int rt, int l, int r, int x, int y) {
+        if(l == x && y == r) return st[rt];
+        int mid = l + r >> 1;
+        if(y <= mid) return query(lc, l, mid, x, y);
+        else if(x > mid) return query(rc, mid + 1, r, x, y);
+        else return min(query(lc, l, mid, x, mid), query(rc, mid + 1, r, mid + 1, y));
+    }
+} st;
 
 inline void solve(){
     int n = read();
-    vi a(n + 5), b(n+ 5);
-    int tot = 0, tot2 = 0;
-    for(int i = 1;i<=n;++i) read(a[i]), tot += a[i];
-    int ans = 0;
+    ll ans = 0;
+    for(int i = 1;i<=n;++i) read(a[i]), a[i] -= i;
+    st.build(1, 1, n);
     for(int i = 1;i<=n;++i) {
-        read(b[i]);
-        ans += b[i] != a[i];
-        tot2 += b[i];
+        int l = i, r = n, ret = -1;
+        while(l <= r) {
+            int mid = l + r >> 1;
+            int x = st.query(1, 1, n, i, mid) + i - 1;
+            if(x >= 0) l = mid + 1, ret = mid;
+            else r = mid - 1;
+        }
+        if(~ret) {
+            ans += ret - i + 1;
+        }
     }
-    int x = abs(tot - tot2);
-    for(int i = 1;i<=n;++i) {
-        if(a[i] != b[i]) {
-            --x;
-            if(x < 0) {
-                print(abs(tot - tot2) + 1, '\n');
-                return;
-            }
-        } 
-    }
-    print(abs(tot - tot2), '\n');
+    print(ans, '\n');
 }
 
 

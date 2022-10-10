@@ -107,29 +107,50 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+char c[N];
 
 inline void solve(){
     int n = read();
-    vi a(n + 5), b(n+ 5);
-    int tot = 0, tot2 = 0;
-    for(int i = 1;i<=n;++i) read(a[i]), tot += a[i];
-    int ans = 0;
-    for(int i = 1;i<=n;++i) {
-        read(b[i]);
-        ans += b[i] != a[i];
-        tot2 += b[i];
+    scanf("%s", c + 1);
+    int cnt = 0;
+    for(int i = 1;i<=n * 2;++i) cnt += c[i] - '0';
+    if(cnt & 1) {
+        puts("-1");
+        return;
     }
-    int x = abs(tot - tot2);
-    for(int i = 1;i<=n;++i) {
-        if(a[i] != b[i]) {
-            --x;
-            if(x < 0) {
-                print(abs(tot - tot2) + 1, '\n');
-                return;
+    bool flag = 0;
+    vi b, p;
+    for(int i = 1;i<=n * 2;i+=2) {
+        if(c[i] != c[i + 1]) {
+            if(flag) {
+                if(c[i] == '0') b.pb(i);
+                else b.pb(i + 1);
+            } else {
+                if(c[i] == '1') b.pb(i);
+                else b.pb(i + 1);
             }
-        } 
+            flag ^= 1;
+        }
+        p.pb(i);
     }
-    print(abs(tot - tot2), '\n');
+    print(b.size(), " \n"[b.size() == 0]);
+    for(int i = 0;i<b.size();++i) print(b[i], " \n"[i==b.size()-1]);
+    for(int i = 0;i<n;++i) print(p[i], " \n"[i==n-1]);
+
+    // deque<int> p;
+    // vi b, q;
+    // for(int i = cnt + 1;i<=n * 2;++i) if(c[i] == '1') p.pb(i);
+    // for(int i = 1;i<=cnt;++i) if(c[i] == '0') {
+    //     b.pb(i);
+    //     b.pb(p[0]);
+    //     p.pop_front();
+    // }
+    // for(int i = 1;i<=cnt / 2;++i) q.pb(i);
+    // for(int i = cnt + 1;i<=cnt + (n * 2 - cnt) / 2;++i) q.pb(i);
+    // print(b.size(), " \n"[b.size() == 0]);
+    // for(int i = 0;i<b.size();++i) print(b[i], " \n"[i==b.size()-1]);
+    // for(int i = 0;i<n;++i) print(q[i], " \n"[i==n-1]);
 }
 
 

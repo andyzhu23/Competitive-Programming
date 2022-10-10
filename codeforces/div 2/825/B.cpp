@@ -110,26 +110,16 @@ inline void init1(){
 
 inline void solve(){
     int n = read();
-    vi a(n + 5), b(n+ 5);
-    int tot = 0, tot2 = 0;
-    for(int i = 1;i<=n;++i) read(a[i]), tot += a[i];
-    int ans = 0;
-    for(int i = 1;i<=n;++i) {
-        read(b[i]);
-        ans += b[i] != a[i];
-        tot2 += b[i];
+    vll a(n + 5), b(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    for(int i = 2;i<=n;++i) {
+        b[i] = lcm(a[i - 1], a[i]);
+        if(i > 2 && gcd(b[i], b[i - 1]) != a[i - 1]) {
+            puts("NO");
+            return;
+        }
     }
-    int x = abs(tot - tot2);
-    for(int i = 1;i<=n;++i) {
-        if(a[i] != b[i]) {
-            --x;
-            if(x < 0) {
-                print(abs(tot - tot2) + 1, '\n');
-                return;
-            }
-        } 
-    }
-    print(abs(tot - tot2), '\n');
+    puts("YES");
 }
 
 
