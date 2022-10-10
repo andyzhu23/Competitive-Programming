@@ -16,6 +16,7 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CF 825 | Oct 10th | 7:35 | 3829(131st best so far) | Very good job skipping C2 and did D
 CF 824 | Oct 2nd | 7:35 | 3593(192nd best so far) | took too long to solve A and B
 CF 821 | Sept 19th | 7:35 | 3772 | bruh actually didn't think of dp for D2
 CF 819 | Sept 6th | 7:35 | 2980 | too slow, clear array for every test case 
