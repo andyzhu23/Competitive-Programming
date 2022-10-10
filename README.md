@@ -438,6 +438,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 825 | D | complete | group every consecutive two numbers, connect if 01 or 10 | ***
+CF 825 | C1 | complete | segment tree + binary search | **
+CF 825 | B | complete | take lcm and check if it is okay | *
+CF 825 | A | complete | don't be dumb | *
 CF 824 | D | complete | enumerating, use set | **
 CF 824 | C | complete | dsu, implementation | **
 CF 824 | B | complete | math | *
