@@ -137,20 +137,6 @@ inline void solve(){
     print(b.size(), " \n"[b.size() == 0]);
     for(int i = 0;i<b.size();++i) print(b[i], " \n"[i==b.size()-1]);
     for(int i = 0;i<n;++i) print(p[i], " \n"[i==n-1]);
-
-    // deque<int> p;
-    // vi b, q;
-    // for(int i = cnt + 1;i<=n * 2;++i) if(c[i] == '1') p.pb(i);
-    // for(int i = 1;i<=cnt;++i) if(c[i] == '0') {
-    //     b.pb(i);
-    //     b.pb(p[0]);
-    //     p.pop_front();
-    // }
-    // for(int i = 1;i<=cnt / 2;++i) q.pb(i);
-    // for(int i = cnt + 1;i<=cnt + (n * 2 - cnt) / 2;++i) q.pb(i);
-    // print(b.size(), " \n"[b.size() == 0]);
-    // for(int i = 0;i<b.size();++i) print(b[i], " \n"[i==b.size()-1]);
-    // for(int i = 0;i<n;++i) print(q[i], " \n"[i==n-1]);
 }
 
 
