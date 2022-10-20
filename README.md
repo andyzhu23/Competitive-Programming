@@ -438,6 +438,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 828 | F | complete | go to the next smallest number, do some math for median | ***
 CF 825 | D | complete | group every consecutive two numbers, connect if 01 or 10 | ***
 CF 825 | C1 | complete | segment tree + binary search | **
 CF 825 | B | complete | take lcm and check if it is okay | *
