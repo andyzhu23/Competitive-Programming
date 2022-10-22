@@ -438,6 +438,11 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Edu_138 | E | complete | turn into graph, dijkstra | ***
+CF Edu_138 | D | complete | make sure to either mod or use __int128 | **
+CF Edu_138 | C | complete | binary search | *
+CF Edu_138 | B | complete | don't be dumb | *
+CF Edu_138 | A | complete | don't be dumb | *
 CF 828 | F | complete | go to the next smallest number, do some math for median | ***
 CF 825 | D | complete | group every consecutive two numbers, connect if 01 or 10 | ***
 CF 825 | C1 | complete | segment tree + binary search | **
