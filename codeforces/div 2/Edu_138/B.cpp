@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-10-21 17:40:38
+ * @date    2022-10-21 17:44:07
  * @version 1.0.0
  */
 
@@ -107,11 +107,20 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+int b[N];
 
 inline void solve(){
-    int n = read(), m = read();
-    for(int i = 1;i<=m;++i) read(), read();
-    puts(n > m ? "YES": "NO");
+    int n = read();
+    ll ans = 0;
+    for(int i = 1;i<=n;++i) ans += read();
+    for(int i = 1;i<=n;++i) read(b[i]);
+    int l = 1, r = n;
+    while(l < r) {
+        if(b[l] > b[r]) ans += b[r--];
+        else ans += b[l++];
+    }
+    print(ans, '\n');
 }
 
 

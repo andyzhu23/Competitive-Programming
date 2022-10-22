@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-10-21 17:40:38
+ * @date    2022-10-22 15:21:43
  * @version 1.0.0
  */
 
@@ -106,12 +106,83 @@ inline void init1(){
 //-------------------  end of initialize  --------------------
 
 //--------------------- start of program ---------------------
+const int N = 2e5 + 5;
+const int NM = 4e5 + 5;
+int n, m, dist[NM], last[NM];
+#define id(i, j) ((i - 1) * m + j)
+#define ok(i, j) (i > 0 && i <= n && j > 0 && j <= m)
+char c[N];
+bitset<NM> mark, vis;
 
+void reset() {
+    for(int i = 1;i<=n;++i) {
+        for(int j = 1;j<=m;++j) {
+            dist[id(i, j)] = inf;
+            mark[id(i, j)] = 0;
+            vis[id(i, j)] = 0;
+            last[id(i, j)] = 0;
+        }
+    }
+}
+
+struct cmp {
+    bool operator() (const int& a, const int& b) {
+        return dist[a] > dist[b];
+    }
+};
+priority_queue<int, vector<int>, cmp> heap;
 
 inline void solve(){
-    int n = read(), m = read();
-    for(int i = 1;i<=m;++i) read(), read();
-    puts(n > m ? "YES": "NO");
+    read(n), read(m);
+    reset();
+    for(int i = 1;i<=n;++i) {
+        scanf("%s", c + 1);
+        for(int j = 1;j<=m;++j) if(c[j] == '#') {
+            for(int k = 0;k<4;++k) {
+                int x = i + dir[k][0];
+                int y = j + dir[k][1];
+                if(ok(x, y)) mark[id(x, y)] = 1;
+            }
+            vis[id(i, j)] = 1;
+        }
+    }
+    for(int i = 1;i<=n;++i) if(!mark[id(i, 1)]) {
+        dist[id(i, 1)] = !vis[id(i, 1)];
+        heap.push(id(i, 1));
+    }
+    while(!heap.empty()) {
+        int tp = heap.top(); heap.pop();
+        int i = (tp - 1) / m + 1;
+        int j = (tp - 1) % m + 1;
+        for(int k = 4;k<8;++k) {
+            int x = i + dir[k][0];
+            int y = j + dir[k][1];
+            if(ok(x, y) && !mark[id(x, y)] && dist[id(x, y)] > dist[id(i, j)] + !vis[id(x, y)]) {
+                dist[id(x, y)] = dist[id(i, j)] + !vis[id(x, y)];
+                last[id(x, y)] = id(i, j);
+                heap.push(id(x, y));
+            }
+        }
+    }
+    int mn = inf;
+    int u;
+    for(int i = 1;i<=n;++i) if(mn > dist[id(i, m)]) {
+        mn = dist[id(i, m)];
+        u = id(i, m);
+    }
+    if(mn == inf) {
+        puts("NO");
+        return;
+    }
+    while(u) {
+        vis[u] = 1;
+        u = last[u];
+    }
+    puts("YES");
+    for(int i = 1;i<=n;++i) {
+        for(int j = 1;j<=m;++j) putchar(vis[id(i, j)] ? '#' : '.');
+        putchar('\n');
+    }
 }
 
 

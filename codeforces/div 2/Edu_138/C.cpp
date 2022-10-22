@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-10-21 17:40:38
+ * @date    2022-10-21 17:31:14
  * @version 1.0.0
  */
 
@@ -107,11 +107,33 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 105;
+int a[N], n;
+
+bool ok(int x) {
+    deque<int> dq;
+    for(int i = 1;i<=n;++i) dq.push_back(a[i]);
+    for(int i = 1;i<=x;++i) {
+        while(!dq.empty() && dq.back() > x - i + 1) dq.pop_back();
+        if(dq.empty()) return 0;
+        dq.pop_back();
+        if(!dq.empty()) dq.pop_front();
+    }
+    return 1;
+}
 
 inline void solve(){
-    int n = read(), m = read();
-    for(int i = 1;i<=m;++i) read(), read();
-    puts(n > m ? "YES": "NO");
+    read(n);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    sort(a + 1, a + n + 1);
+    int lo = 0, hi = (n - 1) / 2 + 1;
+    int ans = 0;
+    while(lo <= hi) {
+        int mid = lo + hi >> 1;
+        if(ok(mid)) lo = mid + 1, ans = mid;
+        else hi = mid - 1;
+    }
+    print(ans, '\n');
 }
 
 

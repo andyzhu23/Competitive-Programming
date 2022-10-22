@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-10-21 17:40:38
+ * @date    2022-10-21 16:21:54
  * @version 1.0.0
  */
 
@@ -93,7 +93,7 @@ using namespace fast_io;
 // common variables
 const int inf = 0x3f3f3f3f;
 const long long llinf = 0x3f3f3f3f3f3f3f3f;
-const int mod = 1e9 + 7;
+const int mod = 998244353;
 const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
 const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
 
@@ -107,18 +107,37 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e6 + 5;
+int n;
+bitset<N> p;
+__int128 m;
+__int128 LCM;
 
 inline void solve(){
-    int n = read(), m = read();
-    for(int i = 1;i<=m;++i) read(), read();
-    puts(n > m ? "YES": "NO");
+    read(n), read(m);
+    p[1] = 1;
+    LCM = 1;
+    ll ret = 1;
+    ll ans = 0;
+    for(int i = 1;i<=n;++i) {
+        if(!p[i]) {
+            LCM *= i;
+            if(LCM > m) break;
+            for(int j = i + i;j<N;j += i) p[j] = 1;
+        }
+        ret = (m / LCM) * ret % mod;
+        ans = (ans + ret) % mod;
+    }
+    ll tot = 0;
+    for(int i = 1;i<=n;++i) tot = (tot + fp(m, i, mod)) % mod;
+    print((tot - ans + mod) % mod, '\n');
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0
