@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-10-30 21:42:35
+ * @date    2022-10-30 21:13:07
  * @version 1.0.0
  */
 
@@ -107,10 +107,20 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+int a[N];
 
 inline void solve(){
     int n = read();
-    print(n == 2 ? 7 : 3, '\n');
+    for(int i = 1;i<=n;++i) read(a[i]);
+    sort(a + 1, a + n + 1);
+    int ans = a[n] - a[1];
+    a[0] = inf;
+    a[n + 1] = -inf;
+    for(int i = 1;i<=n;++i) {
+        ckmax(ans, max(a[i] - a[1] + a[i] - a[i - 1], a[n] - a[i] + a[i + 1] - a[i]));
+    }
+    print(ans, '\n');
 }
 
 

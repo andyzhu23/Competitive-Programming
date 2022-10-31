@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-10-30 21:42:35
+ * @date    2022-10-30 20:36:01
  * @version 1.0.0
  */
 
@@ -107,17 +107,36 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e5 + 5;
+vi e[N];
+int n, dp[N], mx[N];
+
+void dfs(int u = 1, int fa = 0) {
+    dp[u] = 1;
+    for(int v : e[u]) if(v != fa) dfs(v, u);
+    for(int v : e[u]) if(v != fa) {
+        ckmax(dp[u], dp[v] + 1);
+        mx[u] += mx[v];
+    }
+    ckmax(mx[u], dp[u]);
+}
 
 inline void solve(){
-    int n = read();
-    print(n == 2 ? 7 : 3, '\n');
+    read(n);
+    for(int i = 2;i<=n;++i) {
+        int x = read();
+        e[i].pb(x);
+        e[x].pb(i);
+    }
+    dfs();
+    print(mx[1], '\n');
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0

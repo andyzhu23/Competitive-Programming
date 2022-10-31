@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-10-30 21:42:35
+ * @date    2022-10-30 20:55:25
  * @version 1.0.0
  */
 
@@ -107,10 +107,24 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int K = 1e5 + 5;
+int n, m, k, a[K];
+bitset<K> vis;
 
 inline void solve(){
-    int n = read();
-    print(n == 2 ? 7 : 3, '\n');
+    read(n), read(m), read(k);
+    int j = k, mx = 0;
+    int prv = 0;
+    for(int i = 1;i<=k;++i) vis[i] = 0;
+    for(int i = 1;i<=k;++i) {
+        read(a[i]);
+        vis[a[i]] = 1;
+        if(a[i] == j) {
+            ckmax(mx, i - 1 - (k - j));
+            while(vis[j]) --j;
+        }
+    }
+    puts(1ll * n * m - 4 >= mx ? "YA" : "TIDAK");
 }
 
 

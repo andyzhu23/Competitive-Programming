@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-10-30 21:42:35
+ * @date    2022-10-30 21:25:44
  * @version 1.0.0
  */
 
@@ -110,7 +110,21 @@ inline void init1(){
 
 inline void solve(){
     int n = read();
-    print(n == 2 ? 7 : 3, '\n');
+    vpii a;
+    for(int i = 1;i<=n;++i) {
+        int u = read(), v = read();
+        if(u < v) swap(u, v);
+        a.pb({u, v});
+    }
+    sort(all(a));
+    int prv = 0;
+    ll ans = 0;
+    for(auto[u, v] : a) {
+        ans += 1ll * v * 2 + u - prv;
+        prv = u;
+    }
+    ans += (*a.rbegin()).fir;
+    print(ans, '\n');
 }
 
 
