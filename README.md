@@ -438,6 +438,11 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 831 | E | complete | simple dp | **
+CF 831 | D | complete | only 2 blank spaces are required | **
+CF 831 | C | complete | let a number be in 2, one of the other number must be either max or min | **
+CF 831 | B | complete | long long | *
+CF 831 | A | complete | don't be dumb | *
 CF Edu_138 | E | complete | turn into graph, dijkstra | ***
 CF Edu_138 | D | complete | make sure to either mod or use __int128 | **
 CF Edu_138 | C | complete | binary search | *
