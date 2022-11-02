@@ -440,6 +440,9 @@ CF 831 | D | complete | only 2 blank spaces are required | **
 CF 831 | C | complete | let a number be in 2, one of the other number must be either max or min | **
 CF 831 | B | complete | long long | *
 CF 831 | A | complete | don't be dumb | *
+CF 830 | C | complete | realize f(l, r) <= f(l, r + 1), enumerate first 32 non-zero L because of pigeon hole, binary search r | ***
+CF 830 | B | complete | be careful of 0 | *
+CF 830 | A | complete | answer can only be 0, 1, 2 | *
 CF Edu_138 | E | complete | turn into graph, dijkstra | ***
 CF Edu_138 | D | complete | make sure to either mod or use __int128 | **
 CF Edu_138 | C | complete | binary search | *
