@@ -5,9 +5,6 @@ Hello, my name is Andy Zhu, I am a high school student in St. George's School in
 
 [Andy.zhu23](https://codeforces.com/profile/Andy.zhu23) on codeforces
 
-[ACSL Team](https://www.scores.acsl.org/roster/783/) Henry Orz
-
-
 # to do list
 task | date | time
 -----|------|-----
