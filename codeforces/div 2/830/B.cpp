@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-11-01 17:03:53
+ * @date    2022-11-01 17:12:56
  * @version 1.0.0
  */
 
@@ -107,16 +107,15 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e5 + 5;
+char c[N];
 
 inline void solve(){
     int n = read();
-    vi a(n + 5);
-    int GCD = 0;
-    for(int i = 1;i<=n;++i) read(a[i]), GCD = gcd(GCD, a[i]);
-    if(GCD == 1) print(0, '\n');
-    else if(gcd(GCD, gcd(n, a[n])) == 1) print(1, '\n');
-    else if(gcd(GCD, gcd(n - 1, a[n - 1])) == 1) print(2, '\n');
-    else print(3, '\n');
+    scanf("%s", c + 1);
+    vi a;
+    for(int i = 1;i<=n;++i) if(c[i] != c[i - 1]) a.pb(c[i]);
+    print(a.size() - 1 - (a.size() > 1 && a[0] == '0'), '\n');
 }
 
 

@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-11-01 17:03:53
+ * @date    2022-11-01 17:20:17
  * @version 1.0.0
  */
 
@@ -107,16 +107,58 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e5 + 5;
+int a[N], nxt[N];
+ll sum[N], xsum[N];
+
+int getL(int l, int r) {
+    int lo = l, hi = r, L = l;
+    while(lo <= hi) {
+        int mid = lo + hi >> 1;
+        if(sum[mid - 1] - sum[l - 1] == (xsum[l - 1] ^ xsum[r]) - (xsum[mid - 1] ^ xsum[r])) L = mid, lo = mid + 1;
+        else hi = mid - 1;
+    }
+    return L;
+}
+
+int getR(int l, int r) {
+    int lo = l, hi = r;
+    int R = r;
+    while(lo <= hi) {
+        int mid = lo + hi >> 1;
+        if(sum[r] - sum[mid] == (xsum[r] ^ xsum[l - 1]) - (xsum[mid] ^ xsum[l - 1])) R = mid, hi = mid - 1;
+        else lo = mid + 1;
+    }
+    return R;
+}
 
 inline void solve(){
-    int n = read();
-    vi a(n + 5);
-    int GCD = 0;
-    for(int i = 1;i<=n;++i) read(a[i]), GCD = gcd(GCD, a[i]);
-    if(GCD == 1) print(0, '\n');
-    else if(gcd(GCD, gcd(n, a[n])) == 1) print(1, '\n');
-    else if(gcd(GCD, gcd(n - 1, a[n - 1])) == 1) print(2, '\n');
-    else print(3, '\n');
+    int n = read(), q = read();
+    for(int i = 1;i<=n;++i) {
+        read(a[i]);
+        sum[i] = sum[i - 1] + a[i];
+        xsum[i] = xsum[i - 1] ^ a[i];
+    }
+    int lst = n + 1;
+    for(int i = n;i;--i) {
+        nxt[i] = lst;
+        if(a[i]) lst = i;
+    }
+    while(q--) {
+        pii ans;
+        int mn = inf;
+        int l = read(), r = read();
+        int L = getL(l, r);
+        for(int i = l, j = 0;i<=L && j<=32;i=min(nxt[i], L), ++j) {
+            int R = getR(i, r);
+            if(R - i < mn) {
+                mn = R - i;
+                ans = {i, R};
+            }
+            if(i == L) break;
+        }
+        print(ans.fir, ' '), print(ans.sec, '\n');
+    }
 }
 
 
