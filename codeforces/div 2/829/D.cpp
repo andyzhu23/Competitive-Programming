@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-11-01 19:44:37
+ * @date    2022-11-03 15:29:22
  * @version 1.0.0
  */
 
@@ -107,24 +107,27 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-char c[105];
 
 inline void solve(){
-    int n = read();
-    scanf("%s", c + 1);
-    int ans = 0;
-    for(int i = 1;i<=n;++i) {
-        ans += c[i] == 'Q' ? 1 : -1;
-        ans = max(0, ans);
+    int n = read(), x = read();
+    vi cnt(x + 5);
+    for(int i = 1;i<=n;++i) ++cnt[read()];
+    for(int i = 1;i<x;++i) {
+        cnt[i + 1] += cnt[i] / (i + 1);
+        cnt[i] %= i + 1;
+        if(cnt[i]) {
+            puts("No");
+            return;
+        }
     }
-    puts(ans > 0 ? "NO" : "YES");
+    puts("Yes");
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0

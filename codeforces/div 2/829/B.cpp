@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-11-01 19:44:37
+ * @date    2022-11-01 19:51:12
  * @version 1.0.0
  */
 
@@ -107,17 +107,16 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-char c[105];
 
 inline void solve(){
     int n = read();
-    scanf("%s", c + 1);
-    int ans = 0;
-    for(int i = 1;i<=n;++i) {
-        ans += c[i] == 'Q' ? 1 : -1;
-        ans = max(0, ans);
+    int x = n / 2;
+    bool flag = 0;
+    if(n & 1) --n, flag = 1, print(1, ' ');
+    for(int i = 1;i<=n/2;++i) {
+        print(i + x + flag, ' '), print(i + flag, ' ');
     }
-    puts(ans > 0 ? "NO" : "YES");
+    putchar('\n');
 }
 
 

@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-11-01 19:44:37
+ * @date    2022-11-03 14:57:11
  * @version 1.0.0
  */
 
@@ -107,17 +107,36 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-char c[105];
 
 inline void solve(){
     int n = read();
-    scanf("%s", c + 1);
-    int ans = 0;
+    vi a(n + 5);
+    int sum = 0;
     for(int i = 1;i<=n;++i) {
-        ans += c[i] == 'Q' ? 1 : -1;
-        ans = max(0, ans);
+        read(a[i]);
+        sum += a[i];
     }
-    puts(ans > 0 ? "NO" : "YES");
+    if(sum < 0) {
+        sum *= -1;
+        for(int i = 1;i<=n;++i) a[i] = -a[i];
+    }
+    if(sum & 1) {
+        print(-1, '\n');
+        return;
+    }
+    vpii ans;
+    for(int i = 1;i<=n;++i) {
+        if(a[i] > 0 && sum > 0 && !ans.empty()) {
+            auto[l, r] = ans.back();
+            if(l == r) {
+                ans.pop_back();
+                ans.pb({l, i});
+                sum -= 2;
+            } else ans.pb({i, i});
+        } else ans.pb({i, i});
+    }
+    print(ans.size(), '\n');
+    for(auto[l, r] : ans) print(l, ' '), print(r, '\n');
 }
 
 

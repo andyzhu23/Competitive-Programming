@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-11-01 19:44:37
+ * @date    2022-11-03 15:42:41
  * @version 1.0.0
  */
 
@@ -93,7 +93,7 @@ using namespace fast_io;
 // common variables
 const int inf = 0x3f3f3f3f;
 const long long llinf = 0x3f3f3f3f3f3f3f3f;
-const int mod = 1e9 + 7;
+const int mod = 998244353;
 const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
 const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
 
@@ -107,17 +107,21 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-char c[105];
+const int N = 2e5 + 5;
+int a[N], b[N], n, cnt;
+ll dp[N];
 
 inline void solve(){
-    int n = read();
-    scanf("%s", c + 1);
-    int ans = 0;
-    for(int i = 1;i<=n;++i) {
-        ans += c[i] == 'Q' ? 1 : -1;
-        ans = max(0, ans);
-    }
-    puts(ans > 0 ? "NO" : "YES");
+    read(n);
+    for(int i = 1;i<=n;++i) read(a[i]), b[i] = a[i];
+    sort(b + 1, b + n + 1);
+    cnt = 0;
+    for(int i = 1;i<=n;++i) if(a[i] != b[i]) ++cnt;
+    cnt >>= 1;
+    dp[0] = 0;
+    ll tot = 1ll * n * (n - 1) / 2 % mod;
+    for(int i = 1;i<=cnt;++i) dp[i] = (dp[i - 1] + tot * fp(1ll * i * i, mod - 2, mod) % mod) % mod;
+    print(dp[cnt], '\n');
 }
 
 
