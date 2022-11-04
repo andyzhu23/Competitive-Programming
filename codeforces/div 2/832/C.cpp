@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-11-04 11:08:41
+ * @date    2022-11-04 11:27:29
  * @version 1.0.0
  */
 
@@ -110,9 +110,11 @@ inline void init1(){
 
 inline void solve(){
     int n = read();
-    ll ans = 0;
-    for(int i = 1;i<=n;++i) ans += read();
-    print(abs(ans), '\n');
+    vi a(n + 5);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    int mn = inf;
+    for(int i = 1;i<=n;++i) ckmin(mn, a[i]);
+    puts(mn < a[1] ? "Alice" : "Bob");
 }
 
 

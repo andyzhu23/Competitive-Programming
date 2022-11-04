@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-11-04 11:08:41
+ * @date    2022-11-04 11:29:24
  * @version 1.0.0
  */
 
@@ -108,18 +108,38 @@ inline void init1(){
 //--------------------- start of program ---------------------
 
 
+om<int, vec<int> > mp[3];
 inline void solve(){
-    int n = read();
-    ll ans = 0;
-    for(int i = 1;i<=n;++i) ans += read();
-    print(abs(ans), '\n');
+    int n = read(), q = read();
+    vi psa(n + 5), sum(n + 5), a(n + 5);
+    for(int i = 1;i<=n;++i) {
+        read(a[i]);
+        psa[i] = psa[i - 1] ^ a[i];
+        sum[i] = sum[i - 1] + a[i];
+        mp[i & 1][psa[i]].pb(i);
+    }
+    while(q--) {
+        int l = read(), r = read();
+        if(psa[r] ^ psa[l - 1]) print(-1, '\n');
+        else {
+            if(sum[r] - sum[l - 1] == 0) print(0, '\n');
+            else if(r - l + 1 & 1) print(1, '\n');
+            else if(a[l] * a[r] == 0) print(1, '\n');
+            else {
+                auto& v = mp[l & 1][psa[l - 1]];
+                auto x = ub(all(v), l);
+                if(x != v.end() && *x < r) print(2, '\n');
+                else print(-1, '\n');
+            }
+        }
+    }
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0

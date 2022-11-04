@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-11-04 11:08:41
+ * @date    2022-11-04 11:10:08
  * @version 1.0.0
  */
 
@@ -110,9 +110,12 @@ inline void init1(){
 
 inline void solve(){
     int n = read();
-    ll ans = 0;
-    for(int i = 1;i<=n;++i) ans += read();
-    print(abs(ans), '\n');
+    vpii ans;
+    for(int l = 0, r = n - 1;l <= r;++l, --r) {
+        ans.pb({l * 3 + 1, r * 3 + 2});
+    }
+    print(ans.size(), '\n');
+    for(auto[a, b] : ans) print(a, ' '), print(b, '\n');
 }
 
 
