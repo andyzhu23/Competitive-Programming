@@ -259,6 +259,7 @@ wlxsq | travel | complete | dfs | *
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO 2019 Dec Platinum | P2 | complete | Euler tour, remove operations using bst | ***
 USACO 2021 Dec Platinum | P1 | complete | segment tree store graph, build reverse graph, create super node, make sure every given segment is a single point | ****
 USACO 2017 Feb Platinum | P2 | complete | segment tree to store the dp state with the maximum roads you can have with last road on that position | ****
 USACO 2019 Dec Platinum | P1 | complete | interval dp | ****
