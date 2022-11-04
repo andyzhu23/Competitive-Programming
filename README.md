@@ -435,6 +435,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 832 | D | complete | case by case | ***
+CF 832 | C | complete | whoever have the minimum | **
+CF 832 | B | complete | don't be dumb | *
+CF 832 | A | complete | don't be dumb | *
 CF 831 | E | complete | simple dp | **
 CF 831 | D | complete | only 2 blank spaces are required | **
 CF 831 | C | complete | let a number be in 2, one of the other number must be either max or min | **
