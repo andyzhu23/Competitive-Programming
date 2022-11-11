@@ -2,8 +2,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 2505;
+using ll = long long;
 const int inf = 0x3f3f3f3f;
-int n, m, k, a[N];
+int n, m, k;
+ll a[N];
 #define all(v) v.begin(), v.end()
 #define pb push_back
 #define fir first
@@ -49,7 +51,7 @@ int main() {
         }
     }
     for(int i = 1;i<=n;++i) sort(all(dp[i]), [&](int x, int y) {return a[x] > a[y];});
-    int ans = 0;
+    ll ans = 0;
     for(int i = 2;i<=n;++i) if(!dp[i].empty()) {
         for(int j = 2;j<=n;++j) if(i != j && dist[i][j] <= k) {
             int I = 0;
@@ -60,7 +62,7 @@ int main() {
             while(J < dp[j].size() && (dp[j][J] == i || dp[j][J] == I)) ++J;
             if(J == dp[j].size()) continue;
             J = dp[j][J];
-            ans = max(ans, a[i] + a[j] + a[I] + a[J]);
+            ans = max(ans, 0ll + a[i] + a[j] + a[I] + a[J]);
         }
     }
     cout<<ans<<'\n';
