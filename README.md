@@ -111,6 +111,12 @@ USACO 21 Open Bronze | Academia I | incomplete | |
 CCF Online | 重力球 | incomplete | | 
 CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 
+### CSP
+Source | Problems | status | skills needed | rating
+-------|----------|--------|---------------|-------
+CSP 2022 | holiday | complete | travel two places, use math to combine cases | ***
+CSP 2022 | game | complete | use multiple sparse tables | **
+
 ### HDU
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
