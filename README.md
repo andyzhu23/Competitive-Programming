@@ -114,8 +114,12 @@ CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
 ### CSP
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-CSP 2022 | holiday | complete | travel two places, use math to combine cases | ***
-CSP 2022 | game | complete | use multiple sparse tables | **
+CSPJ 2022 | T4 | complete | dp | **
+CSPJ 2022 | T3 | complete | stack | **
+CSPJ 2022 | T2 | complete | binary search | **
+CSPJ 2022 | T1 | complete | don't be dumb | *
+CSPS 2022 | T1 | complete | travel two places, use math to combine cases | ***
+CSPS 2022 | T2 | complete | use multiple sparse tables | **
 
 ### HDU
 Source | Problems | status | skills needed | rating
