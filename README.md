@@ -118,6 +118,7 @@ CSPJ 2022 | T4 | complete | dp | **
 CSPJ 2022 | T3 | complete | stack | **
 CSPJ 2022 | T2 | complete | binary search | **
 CSPJ 2022 | T1 | complete | don't be dumb | *
+CSPS 2022 | T3 | complete | kind of hashing, simplify the problem | ****
 CSPS 2022 | T1 | complete | travel two places, use math to combine cases | ***
 CSPS 2022 | T2 | complete | use multiple sparse tables | **
 
