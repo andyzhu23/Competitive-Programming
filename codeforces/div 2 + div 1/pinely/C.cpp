@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-11-20 15:06:27
+ * @date    2022-11-20 15:45:34
  * @version 1.0.0
  */
 
@@ -107,11 +107,43 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 105;
+char e[N][N];
+int n, in[N];
+set<int> ans[N];
 
 inline void solve(){
-    int n = read(), a = read(), b = read();
-    if(a + b + 1 < n || (a == b && a == n)) puts("YES");
-    else puts("NO");
+    read(n);
+    for(int i = 1;i<=n;++i) in[i] = 0, ans[i].clear();
+    for(int i = 1;i<=n;++i) {
+        scanf("%s", e[i] + 1);
+        for(int j = 1;j<=n;++j) {
+            e[i][j] -= '0';
+            in[j] += e[i][j];
+        }
+    }
+    queue<int> q;
+    int tot = 0;
+    for(int i = 1;i<=n;++i) if(in[i] == 0) {
+        ans[i].ins(++tot);
+        q.push(i);
+    }
+    while(!q.empty()) {
+        int u = q.front(); q.pop();
+        for(int v = 1;v<=n;++v) if(e[u][v]) {
+            --in[v];
+            for(auto x : ans[u]) ans[v].ins(x);
+            if(in[v] == 0) {
+                q.push(v);
+                ans[v].ins(++tot);
+            }
+        }
+    }
+    for(int i = 1;i<=n;++i) {
+        print(ans[i].size(), ' ');
+        for(auto it = ans[i].begin();it!=ans[i].end();++it) print(*it, ' ');
+        putchar('\n');
+    }
 }
 
 

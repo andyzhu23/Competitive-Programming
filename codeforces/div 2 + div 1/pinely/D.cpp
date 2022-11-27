@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-11-20 15:06:27
+ * @date    2022-11-27 10:34:42
  * @version 1.0.0
  */
 
@@ -107,18 +107,44 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e6 + 5;
+int n, k;
+ll f[N];
 
 inline void solve(){
-    int n = read(), a = read(), b = read();
-    if(a + b + 1 < n || (a == b && a == n)) puts("YES");
-    else puts("NO");
+    read(n), read(k);
+    ll ans = 0;
+    if(k == 0) {
+        ans = fp(3ll, n, mod);
+        print(ans, '\n');
+        return;
+    }
+    f[0] = 1;
+    for(int i = 1;i<=n;++i) f[i] = f[i - 1] * i % mod;
+
+    auto c = [&](int a, int b) {
+        if(b > a || b < 0) return 0ll;
+        return f[a] * fp(f[b], mod - 2, mod) % mod * fp(f[a - b], mod - 2, mod) % mod;
+    };
+
+    for(int i = 1;i<=k;++i) {
+        if(n - i - i + 1 >= 0) {
+            ans = (ans + fp(3ll, n - i - i + 1, mod) * c(k - 1, i - 1) % mod * c(n - k - 1, i - 2) % mod) % mod;
+            ans = (ans + fp(3ll, n - i - i + 1, mod) * c(k - 1, i - 1) % mod * c(n - k - 1, i - 1) % mod) % mod;
+        }
+        if(n - i - i >= 0) {
+            ans = (ans + fp(3ll, n - i - i, mod) * c(k - 1, i - 1) % mod * c(n - k - 1, i - 1) % mod) % mod;
+            ans = (ans + fp(3ll, n - i - i, mod) * c(k - 1, i - 1) % mod * c(n - k - 1, i) % mod) % mod;
+        }
+    }
+    print(ans, '\n');
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0

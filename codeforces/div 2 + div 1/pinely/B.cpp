@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-11-20 15:06:27
+ * @date    2022-11-20 15:09:19
  * @version 1.0.0
  */
 
@@ -107,11 +107,19 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 105;
+int a[N], cnt[N];
 
 inline void solve(){
-    int n = read(), a = read(), b = read();
-    if(a + b + 1 < n || (a == b && a == n)) puts("YES");
-    else puts("NO");
+    int n = read();
+    fill(cnt + 1, cnt + n + 1, 0);
+    for(int i = 1;i<=n;++i) {
+        read(a[i]);
+        ++cnt[a[i]];
+    }
+    int c = 0;
+    for(int i = 1;i<=n;++i) c += cnt[i] != 0;
+    print(c == 2 ? n / 2 + 1 : n, '\n');
 }
 
 
