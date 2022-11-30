@@ -212,6 +212,7 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 22 c2 | P3 | complete | use graph theory, topological sort | ***
 DMOPC 18 c3 | P4 | complete | find centroid of all z, then sum of depth | ***
 DMOPC 19 c2 | P3 | complete | 20 fenwicks | **
 DMOPC 21 c10 | P2 | complete | either not move 1, not move 2, or move 1 and 2 | **
