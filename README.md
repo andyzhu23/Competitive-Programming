@@ -272,6 +272,7 @@ wlxsq | travel | complete | dfs | *
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO 2021 Jan Platinum | P1 | complete | segtree maintain the number of numbers not swappable before the current number | ***
 USACO 2020 Jan Platinum | P1 | complete | dsu, dp on DAG | **
 USACO 2019 Dec Platinum | P2 | complete | Euler tour, remove operations using bst | ***
 USACO 2021 Dec Platinum | P1 | complete | segment tree store graph, build reverse graph, create super node, make sure every given segment is a single point | ****
