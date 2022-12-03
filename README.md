@@ -851,6 +851,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+COCI 16 c7 | P4 | complete | maintain ending 0s | **
 DMOJ | wac3p5 | complete | dp, psa | **
 DMOJ | acmtryouts1e | complete | dp, psa | **
 DMOJ | acc3p4 | complete | two segtree, interval update i * a[i] value | ***
