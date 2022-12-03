@@ -355,7 +355,11 @@ USACO 2021 Jan Silver | Spaced Out | complete | enumeration, knowing two lines g
 USACO 2020 Dec Silver | Cowntagion | complete | Graph Theory, Tree | **
 USACO 2020 Dec Silver | Rectangular Pasture | complete | 2D Prefix - sum, Multiplication Principle | ****
 USACO 2020 Dec Silver | Stuck in a Rut | complete | Discretization, priority_queue, Topological order | *****
+USACO 2020 Feb Silver | P1 | complete | binary lifting | **
+USACO 2020 US Open Bronze | P2 | complete | don't be dumb | *
+USACO 2016 US Open Bronze | P1 | complete | psa | *
 USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_queue | *****
+
 
 ### CCO Problems
 Source | Problems | status | skills needed | rating
