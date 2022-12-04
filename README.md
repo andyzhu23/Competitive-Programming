@@ -212,6 +212,7 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 19 c6 | P4 | complete | map on fenwick tree, don't use segment | **
 DMOPC 15 c5 | P5 | complete | don't use HLD, use fenwick + Euler tour | **
 DMOPC 22 c2 | P2 | complete | inverse pair | **
 DMOPC 22 c2 | P3 | complete | use graph theory, topological sort | ***
