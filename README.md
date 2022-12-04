@@ -212,6 +212,7 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 15 c5 | P5 | complete | don't use HLD, use fenwick + Euler tour | **
 DMOPC 22 c2 | P2 | complete | inverse pair | **
 DMOPC 22 c2 | P3 | complete | use graph theory, topological sort | ***
 DMOPC 18 c3 | P4 | complete | find centroid of all z, then sum of depth | ***
