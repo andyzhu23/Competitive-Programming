@@ -853,6 +853,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CEOI 18 | P2 | complete | find LIS from front and back, try to combine them | **
 COCI 16 c7 | P4 | complete | maintain ending 0s | **
 DMOJ | wac3p5 | complete | dp, psa | **
 DMOJ | acmtryouts1e | complete | dp, psa | **
