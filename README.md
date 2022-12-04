@@ -854,6 +854,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+COCI 13 c5 | P3 | complete | hash, stack | *
 CEOI 18 | P2 | complete | find LIS from front and back, try to combine them | **
 COCI 16 c7 | P4 | complete | maintain ending 0s | **
 DMOJ | wac3p5 | complete | dp, psa | **
