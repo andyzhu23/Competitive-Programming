@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-06-25 21:28:16
+ * @date    2022-12-04 08:42:51
  * @version 1.0.0
  */
 
@@ -17,6 +17,8 @@ using namespace std;
 
 // template <typename T>
 // using ordered_set = tree<T, null_type,less<T>, rb_tree_tag,tree_order_statistics_node_update>;
+// template <typename T>
+// using ordered_multiset = tree<T, null_type,less_equal<T>, rb_tree_tag,tree_order_statistics_node_update>;
 
 // pairs
 #define fir first
@@ -66,7 +68,7 @@ namespace comfun {
     template <typename T1, typename T2> inline void ckmax(T1& u, T2 v) { u = max(u, v); }
     template <typename T1, typename T2> inline void ckmin(T1& u, T2 v) { u = min(u, v); }
     template <typename T> inline T lowbit(T x){return x & (- x);}
-    template <typename T> inline T gcd(T a, T b){if(a == 0) return b; if(b == 0) return a; return gcd(b, a % b);}
+    template <typename T> inline T gcd(T a, T b){if(b == 0) return a; return gcd(b, a % b);}
     template <typename T> inline T lcm(T a, T b){return a / gcd(a, b) * b;}
     template <typename T1, typename T2> inline T1 fp(T1 a, T2 b) {T1 c = 1;while(b) {if(b & 1) c *= a;b >>= 1;a = a * a;}return c;}
     template <typename T1, typename T2, typename T3> inline T1 fp(T1 a, T2 b, T3 mod) 
@@ -79,7 +81,7 @@ namespace comfun {
 namespace fast_io {
     int read() {int x = 0, f = 0; char ch = getchar();while (!isdigit(ch)) f |= ch == '-', ch = getchar();while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();return f ? -x : x;}
     long long readLL() {long long x = 0, f = 0; char ch = getchar();while (!isdigit(ch)) f |= ch == '-', ch = getchar();while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();return f ? -x : x;}
-    void read(int& x) {x = read();} void read(long long& x) {x = readLL();}
+    template<typename T> T read(T& x) {x = 0; int f = 0; char ch = getchar();while (!isdigit(ch)) f |= ch == '-', ch = getchar();while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();x = f ? -x : x; return x;}
     template<typename T> void print(T x) {if (x < 0) putchar('-'), x = -x;if (x >= 10) print(x / 10);putchar(x % 10 + '0');}
     template<typename T> void print(T x, char let) {print(x), putchar(let);}
 }
@@ -93,6 +95,7 @@ const int inf = 0x3f3f3f3f;
 const long long llinf = 0x3f3f3f3f3f3f3f3f;
 const int mod = 1e9 + 7;
 const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
+const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
 
 //------------------- start of initialize --------------------
 // initialize for all cases
@@ -104,7 +107,6 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-
 inline void solve(){
     
 }
@@ -115,7 +117,7 @@ inline void solve(){
 
 #define doCase 0
 #define config LOCAL
-#define kickstart 0
+// #define kickstart
 #define unsync 0
 
 inline void setIO() {
