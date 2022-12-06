@@ -39,17 +39,7 @@ vector<vector<node> > e;
 
 template <typename T> 
 struct segtree {
-    T st[N << 2], lazy[N << 2];
-    bitset<(N << 2)> vis;
-    void push_down(int rt) {
-        if(vis[rt]) {
-            lazy[lc] = lazy[rt];
-            lazy[rc] = lazy[rt];
-            st[lc] = lazy[rt];
-            st[rc] = lazy[rt];
-            vis[rt] = 0;
-        }
-    }
+    T st[N << 2];
     void build(int rt, int l, int r, T a[N]) {
         if(l == r) {
             st[rt] = a[l];
@@ -60,24 +50,19 @@ struct segtree {
         build(rc, mid + 1, r, a);
         st[rt] = min(st[lc], st[rc]);
     }
-    void update(int rt, int l, int r, int x, int y, T val) {
+    void update(int rt, int l, int r, int pos, T val) {
         if(l == r) {
             st[rt] = val;
-            lazy[rt] = val;
-            vis[rt] = 1;
             return;
         }
         int mid = l + r >> 1;
-        push_down(rt);
-        if(y <= mid) update(lc, l, mid, x, y, val);
-        else if(x > mid) update(rc, mid + 1, r, x, y, val);
-        else update(lc, l, mid, x, mid, val), update(rc, mid + 1, r, mid + 1, y, val);
+        if(pos <= mid) update(lc, l, mid, pos, val);
+        else update(rc, mid + 1, r, pos, val);
         st[rt] = min(st[lc], st[rc]);
     }
     T query(int rt, int l, int r, int x, int y) {
         if(l == x && y == r) return st[rt];
         int mid = l + r >> 1;
-        push_down(rt);
         if(y <= mid) return query(lc, l, mid, x, y);
         else if(x > mid) return query(rc, mid + 1, r, x, y);
         else return min(query(lc, l, mid, x, mid), query(rc, mid + 1, r, mid + 1, y));
@@ -146,7 +131,7 @@ int main() {
         e[ans].pb(x);
         r = x.r;
         x.r = inf;
-        st.update(1, 1, m, x.pos, x.pos, x);
+        st.update(1, 1, m, x.pos, x);
     }
     ++ans;
     cout<<ans<<'\n';
