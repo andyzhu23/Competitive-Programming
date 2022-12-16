@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-12-12 11:57:37
+ * @date    2022-12-12 12:06:58
  * @version 1.0.0
  */
 
@@ -99,32 +99,48 @@ const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
 
 //------------------- start of initialize --------------------
 // initialize for all cases
-inline void init1(){
 
+const int N = 1e5;
+
+vi p;
+bitset<N> np;
+
+inline void init1(){
+    for(int i = 2;i<N;++i) if(!np[i]) {
+        p.pb(i);
+        for(int j = i + i;j<N;j+=i) np[j] = 1;
+    }
 }
 
 //-------------------  end of initialize  --------------------
 
 //--------------------- start of program ---------------------
 
-const int N = 1e5 + 5;
-int a[N], n;
 
 inline void solve(){
-    read(n);
-    for(int i = 1;i<=n;++i) read(a[i]);
-    int mx = *max_element(a + 1, a + n + 1);
-    int mn = *min_element(a + 1, a + n + 1);
-    int c1 = 0, c2 = 0;
+    int n = read();
+    vi a(n + 5);
+    map<int, int> cnt;
     for(int i = 1;i<=n;++i) {
-        c1 += a[i] == mx;
-        c2 += a[i] == mn;
+        read(a[i]);
     }
-    if(mn == mx) {
-        print(1ll * c1 * (c1 - 1), '\n');
-        return;
+    for(int i = 1;i<=n;++i) {
+        for(auto x : p) if(a[i] % x == 0) {
+            if(cnt[x]) {
+                puts("YES");
+                return;
+            }
+            ++cnt[x];
+            while(a[i] % x == 0) a[i] /= x;
+        }
+        if(a[i] == 1) continue;
+        if(cnt[a[i]]) {
+            puts("YES");
+            return;
+        }
+        ++cnt[a[i]];
     }
-    print(2ll * c1 * c2, '\n');
+    puts("NO");
 }
 
 

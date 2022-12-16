@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-12-12 11:57:37
+ * @date    2022-12-15 20:19:23
  * @version 1.0.0
  */
 
@@ -107,24 +107,52 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-const int N = 1e5 + 5;
-int a[N], n;
+const int N = 2e3 + 5;
+
+vi e[N];
+int n, root, go[N][N], dp[N][N];
+bool vis[N][N];
+char c[N];
+
+void dfs(int u, int fa = 0) {
+    go[u][root] = fa;
+    for(int v : e[u]) if(v != fa) {
+        dfs(v, u);
+    }
+}
+
+int get(int u, int v) {
+    if(vis[u][v]) return dp[u][v];
+    vis[u][v] = 1;
+    if(go[u][v] == v) dp[u][v] = max(1, (c[u] == c[v]) * 2);
+    else dp[u][v] = max({get(go[u][v], v), get(u, go[v][u]), get(go[u][v], go[v][u]) + (c[u] == c[v]) * 2});
+    return dp[u][v];
+}
 
 inline void solve(){
     read(n);
-    for(int i = 1;i<=n;++i) read(a[i]);
-    int mx = *max_element(a + 1, a + n + 1);
-    int mn = *min_element(a + 1, a + n + 1);
-    int c1 = 0, c2 = 0;
+    scanf("%s", c + 1);
+    for(int i = 1;i<n;++i) {
+        int u = read(), v = read();
+        e[u].pb(v);
+        e[v].pb(u);
+    }
     for(int i = 1;i<=n;++i) {
-        c1 += a[i] == mx;
-        c2 += a[i] == mn;
+        root = i;
+        dfs(i);
     }
-    if(mn == mx) {
-        print(1ll * c1 * (c1 - 1), '\n');
-        return;
+    int ans = 1;
+    for(int i = 1;i<=n;++i) dp[i][i] = vis[i][i] = 1;
+    for(int i = 1;i<=n;++i) {
+        for(int j = 1;j<=n;++j) if(i != j) {
+            ckmax(ans, get(i, j));
+        }
     }
-    print(2ll * c1 * c2, '\n');
+    print(ans, '\n');
+    for(int i = 1;i<=n;++i) {
+        e[i].clear();
+        for(int j = 1;j<=n;++j) vis[i][j] = dp[i][j] = go[i][j] = 0;
+    }
 }
 
 

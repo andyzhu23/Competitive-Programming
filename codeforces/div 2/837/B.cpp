@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-12-12 11:57:37
+ * @date    2022-12-12 12:01:55
  * @version 1.0.0
  */
 
@@ -107,24 +107,22 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-const int N = 1e5 + 5;
-int a[N], n;
-
 inline void solve(){
-    read(n);
-    for(int i = 1;i<=n;++i) read(a[i]);
-    int mx = *max_element(a + 1, a + n + 1);
-    int mn = *min_element(a + 1, a + n + 1);
-    int c1 = 0, c2 = 0;
+    int n = read(), m = read();
+    vec<vi> e(n + 5);
+    multiset<int> bst;
+    for(int i = 1;i<=m;++i) {
+        int x = read(), y = read();
+        e[min(x, y)].pb(max(x, y));
+        bst.ins(max(x, y));
+    }
+    ll ans = 0;
     for(int i = 1;i<=n;++i) {
-        c1 += a[i] == mx;
-        c2 += a[i] == mn;
+        if(bst.empty()) ans += n - i + 1;
+        else ans += *bst.begin() - i;
+        for(auto x : e[i]) bst.erase(bst.lb(x));
     }
-    if(mn == mx) {
-        print(1ll * c1 * (c1 - 1), '\n');
-        return;
-    }
-    print(2ll * c1 * c2, '\n');
+    print(ans, '\n');
 }
 
 
