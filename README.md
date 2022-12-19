@@ -460,6 +460,11 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Polynomial Round 2022 | E | complete | binary lifting | **
+CF Polynomial Round 2022 | D | complete | two pointer | **
+CF Polynomial Round 2022 | C | complete | observation | **
+CF Polynomial Round 2022 | B | complete | sort | **
+CF Polynomial Round 2022 | A | complete | change everytime see 1 | *
 CF 832 | D | complete | case by case | ***
 CF 832 | C | complete | whoever have the minimum | **
 CF 832 | B | complete | don't be dumb | *
