@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-12-18 20:09:37
+ * @date    2022-12-18 20:58:09
  * @version 1.0.0
  */
 
@@ -107,25 +107,63 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-const int N = 105;
-char c[N];
+const int N = 2e5 + 5;
+int n, d, m1, m2, f[N][22], ans;
+bool a[N], b[N];
+vi e[N];
+
+void dfs(int u = 1, int fa = 0) {
+    f[u][0] = fa;
+    for(int i = 1;i<=20;++i) f[u][i] = f[f[u][i - 1]][i - 1];
+    for(int v : e[u]) if(v != fa) {
+        dfs(v, u);
+    }
+}
+
+int getd(int u) {
+    for(int i = 20;~i;--i) if(d >> i & 1) u = f[u][i];
+    return u;
+}
+
+void dfs2(int u = 1, int fa = 0) {
+    for(int v : e[u]) if(v != fa) {
+        dfs2(v, u);
+        a[u] |= a[v];
+        b[u] |= b[v];
+        if(a[v]) ans += 2;
+        if(b[v]) ans += 2;
+    }
+}
 
 inline void solve(){
-    int n = read();
-    scanf("%s", c + 1);
-    bool flag = 1;
-    for(int i = 2;i<=n;++i) {
-        putchar(flag ? '-' : '+');
-        flag ^= c[i] == '1';
-    } 
-    putchar('\n');
+    read(n), read(d);
+    for(int i = 1;i<n;++i) {
+        int u = read(), v = read();
+        e[u].pb(v);
+        e[v].pb(u);
+    }
+    dfs();
+    read(m1);
+    for(int i = 1;i<=m1;++i) {
+        int x = read();
+        a[x] = 1;
+        b[getd(x)] = 1;
+    }
+    read(m2);
+    for(int i = 1;i<=m2;++i) {
+        int x = read();
+        b[x] = 1;
+        a[getd(x)] = 1;
+    }
+    dfs2();
+    print(ans, '\n');
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0

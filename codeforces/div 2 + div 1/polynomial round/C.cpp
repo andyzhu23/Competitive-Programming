@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-12-18 20:09:37
+ * @date    2022-12-18 20:24:21
  * @version 1.0.0
  */
 
@@ -107,18 +107,18 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-const int N = 105;
+const int N = 2e5 + 5;
+int n, les, more, dp[N];
 char c[N];
 
 inline void solve(){
-    int n = read();
+    read(n);
     scanf("%s", c + 1);
-    bool flag = 1;
     for(int i = 2;i<=n;++i) {
-        putchar(flag ? '-' : '+');
-        flag ^= c[i] == '1';
-    } 
-    putchar('\n');
+        if(c[i - 1] == c[i - 2]) dp[i] = dp[i - 1] + 1;
+        else dp[i] = 1;
+        print(i - dp[i], " \n"[i==n]);
+    }
 }
 
 

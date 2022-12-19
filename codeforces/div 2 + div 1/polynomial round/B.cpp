@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-12-18 20:09:37
+ * @date    2022-12-18 20:13:35
  * @version 1.0.0
  */
 
@@ -107,18 +107,19 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-const int N = 105;
-char c[N];
+const int N = 1e5 + 5;
+int a[N], n, m, k;
+ll tot;
 
 inline void solve(){
-    int n = read();
-    scanf("%s", c + 1);
+    read(n), read(m), read(k);
+    for(int i = 1;i<=m;++i) read(a[i]);
+    sort(a + 1, a + m + 1, greater<int>());
     bool flag = 1;
-    for(int i = 2;i<=n;++i) {
-        putchar(flag ? '-' : '+');
-        flag ^= c[i] == '1';
-    } 
-    putchar('\n');
+    for(int i = 1;i<=m;++i) {
+        flag &= a[i] <= n / k + (n % k >= i);
+    }
+    puts(flag ? "YES" : "NO");
 }
 
 

@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-12-18 20:09:37
+ * @date    2022-12-18 20:36:01
  * @version 1.0.0
  */
 
@@ -107,18 +107,53 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-const int N = 105;
-char c[N];
+const int N = 1e5 + 5;
+int n, m, cnt[N], tot, k;
+set<int> les, more;
 
 inline void solve(){
-    int n = read();
-    scanf("%s", c + 1);
-    bool flag = 1;
-    for(int i = 2;i<=n;++i) {
-        putchar(flag ? '-' : '+');
-        flag ^= c[i] == '1';
-    } 
-    putchar('\n');
+    read(n), read(m);
+    vec<vi> a(n + 5, vi(m + 5));
+    tot = 0;
+    for(int i = 1;i<=n;++i) {
+        cnt[i] = 0;
+        for(int j = 1;j<=m;++j) {
+            read(a[i][j]);
+            cnt[i] += a[i][j];
+        }
+        tot += cnt[i];
+    }
+    if(tot % n) {
+        puts("-1");
+        return;
+    }
+    k = tot / n;
+    for(int i = 1;i<=n;++i) {
+        if(cnt[i] < k) les.ins(i);
+        else if(cnt[i] > k) more.ins(i);
+    }
+    vec<tuple<int, int, int> > ans;
+    for(int j = 1;j<=m;++j) {
+        for(auto it = les.begin(), itt = more.begin();it != les.end();++it) {
+            if(a[*it][j] == 0) {
+                while(itt != more.end() && a[*itt][j] == 0) ++itt;
+                if(itt == more.end()) break;
+                ++cnt[*it];
+                --cnt[*itt];
+                ans.pb({*it, *itt, j});
+                ++itt;
+            }
+        }
+        vi tmp1, tmp2;
+        for(auto x : les) if(cnt[x] == k) tmp1.pb(x);
+        for(auto x : more) if(cnt[x] == k) tmp2.pb(x);
+        for(auto x : tmp1) les.erase(x);
+        for(auto x : tmp2) more.erase(x);
+    }
+    print(ans.size(), '\n');
+    for(auto[x, y, z] : ans) {
+        print(x, ' '), print(y, ' '), print(z, '\n');
+    }
 }
 
 
