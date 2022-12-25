@@ -275,6 +275,7 @@ wlxsq | travel | complete | dfs | *
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO 2022 Dec Platinum | P2 | complete | dsu, merge small to big | ***
 USACO 2021 Jan Platinum | P1 | complete | segtree maintain the number of numbers not swappable before the current number | ***
 USACO 2020 Jan Platinum | P1 | complete | dsu, dp on DAG | **
 USACO 2019 Dec Platinum | P2 | complete | Euler tour, remove operations using bst | ***
@@ -288,6 +289,7 @@ USACO 2017 Jan Platinum | Promotion Counting | complete | Persistent tree, dfs o
 USACO 2017 Feb Platinum | Why did the Cow Cross the Road I | complete | Fenwick, shift both a and b | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
+USACO 2022 Dec Gold | P3 | complete | greedy forward, dsu backward | ***
 USACO 2017 Open Gold | P3 | complete | pick interval end earliest, use linked list to check whether or not possible | ***
 USACO 2017 Jan Gold | Hoof, Paper, Scissors | complete | prefix mx | **
 USACO 2006 October Gold | Building the Moat | complete | convex hull | **
