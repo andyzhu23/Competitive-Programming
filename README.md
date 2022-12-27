@@ -275,6 +275,7 @@ wlxsq | travel | complete | dfs | *
 ### USACO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+USACO 2022 Dec Platinum | P1 | complete | only run dfs if going through edge is better, this solution probably cheese | ***
 USACO 2022 Dec Platinum | P2 | complete | dsu, merge small to big | ***
 USACO 2021 Jan Platinum | P1 | complete | segtree maintain the number of numbers not swappable before the current number | ***
 USACO 2020 Jan Platinum | P1 | complete | dsu, dp on DAG | **
