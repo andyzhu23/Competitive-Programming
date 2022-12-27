@@ -347,6 +347,9 @@ USACO 2021 US Open Gold | United Cows of Farmer John | complete | enumerate r, b
 USACO 2008 Nov Gold | Switching light | complete | Segment Tree, interval update | **
 USACO 2017 Jan Gold | Balanced Photo | complete | Segment Tree, discretization | **
 USACO 2021 Feb Gold | Modern Art 3 | complete | Dynamic Programming | ***
+USACO 2022 Dec Silver | P3 | complete | get an answer from adjacent, check the answer | **
+USACO 2022 Dec Silver | P2 | complete | game theory, realize formula | ***
+USACO 2022 Dec Silver | P1 | complete | first send up, then send down | ***
 USACO 2017 Dec Silver | P1 | complete | psa | **
 USACO 2021 Dec Silver | P3 | complete | lazy array | **
 USACO 2021 Dec Silver | P2 | complete | DSU, find length to 1 and n | **
