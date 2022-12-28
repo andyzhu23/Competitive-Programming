@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-12-27 11:48:03
+ * @date    2022-12-27 12:14:50
  * @version 1.0.0
  */
 
@@ -99,25 +99,44 @@ const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
 
 //------------------- start of initialize --------------------
 // initialize for all cases
-inline void init1(){
+const int N = 2e5 + 5;
 
+vi b;
+
+inline void init1(){
+    for(int i = 1;(1 << (i - 1)) < N;++i) {
+        b.pb(1 << i);    
+    }
 }
 
 //-------------------  end of initialize  --------------------
 
 //--------------------- start of program ---------------------
 
+int mp[N << 2], a[N];
+
+ll get(int n, int ii) {
+    mp[0] = 1;
+    ll ans = 0;
+    for(int i = 1;i<=n;++i) {
+        ans += mp[a[i] ^ ii];
+        ++mp[a[i]];
+    }
+    for(int i = 1;i<=n;++i) --mp[a[i]];
+    return ans;
+}
 
 inline void solve(){
     int n = read();
-    vll a(n + 5);
-    ll ans = 1;
-    for(int i = 1;i<=n;++i) {
-        read(a[i]);
-        ans *= a[i];
+    for(int i = 1;i<=n;++i) a[i] = a[i - 1] ^ read();
+    int m = *ub(all(b), n);
+    ll ans = 0;
+    for(int i = 0;i * i <= m;++i) {
+        int ii = i * i;
+        ans += get(n, ii);
     }
-    ans += n - 1;
-    print(ans * 2022, '\n');
+    ans = 1ll * n * (n + 1) / 2 - ans;
+    print(ans, '\n');
 }
 
 

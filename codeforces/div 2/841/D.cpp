@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-12-27 11:48:03
+ * @date    2022-12-27 13:38:05
  * @version 1.0.0
  */
 
@@ -107,17 +107,36 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e6 + 5;
 
 inline void solve(){
-    int n = read();
-    vll a(n + 5);
-    ll ans = 1;
+    int n = read(), m = read();
+    vec<vi> a(n + 5, vi(m + 5));
+    vec<vi> b(n + 5, vi(m + 5));
     for(int i = 1;i<=n;++i) {
-        read(a[i]);
-        ans *= a[i];
+        for(int j = 1;j<=m;++j) read(a[i][j]);
     }
-    ans += n - 1;
-    print(ans * 2022, '\n');
+    int lo = 1, hi = min(n, m);
+    int ans = 0;
+    while(lo <= hi) {
+        int mid = lo + hi >> 1;
+        bool flag = 0;
+        for(int i = 1;i<=n;++i) {
+            for(int j = 1;j<=m;++j) {
+                b[i][j] = b[i][j - 1] + b[i - 1][j] - b[i - 1][j - 1] + (a[i][j] < mid);
+            }
+        }
+        for(int i = 1;i + mid - 1<=n;++i) {
+            for(int j = 1;j + mid - 1<=m;++j) {
+                int x = i + mid - 1;
+                int y = j + mid - 1;
+                flag |= b[x][y] - b[x][j - 1] - b[i - 1][y] + b[i - 1][j - 1] == 0;
+            }
+        }
+        if(flag) lo = mid + 1, ans = mid;
+        else hi = mid - 1;
+    }
+    print(ans, '\n');
 }
 
 

@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-12-27 11:48:03
+ * @date    2022-12-27 14:21:41
  * @version 1.0.0
  */
 
@@ -107,17 +107,26 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e6 + 5;
+int n;
+ll m, ans;
+ll dp[N], mx[N];
 
 inline void solve(){
-    int n = read();
-    vll a(n + 5);
-    ll ans = 1;
-    for(int i = 1;i<=n;++i) {
-        read(a[i]);
-        ans *= a[i];
+    read(n), read(m);
+    for(int i = 1;i<=n;++i) dp[i] = mx[i] = 0;
+    ans = 0;
+    for(int i = n;i > 1;--i) {
+        dp[i] = 1ll * (n / i) * (n / i - 1) / 2;
+        for(int j = i * 2;j<=n;j += i) dp[i] -= dp[j];
+        mx[i] = dp[i] / (i - 1) * (i - 1);
     }
-    ans += n - 1;
-    print(ans * 2022, '\n');
+    for(int i = n;i > 1;--i) {
+        ll cnt = min(mx[i], 1ll * m / (i - 1) * (i - 1));
+        m -= cnt;
+        ans += cnt / (i - 1) * i;
+    }
+    print(m ? -1 : ans, '\n');
 }
 
 

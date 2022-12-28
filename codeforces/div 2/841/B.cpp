@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-12-27 11:48:03
+ * @date    2022-12-27 11:51:49
  * @version 1.0.0
  */
 
@@ -109,15 +109,11 @@ inline void init1(){
 
 
 inline void solve(){
-    int n = read();
-    vll a(n + 5);
-    ll ans = 1;
-    for(int i = 1;i<=n;++i) {
-        read(a[i]);
-        ans *= a[i];
-    }
-    ans += n - 1;
-    print(ans * 2022, '\n');
+    ll n = read();
+    ll ans = 0;
+    ans = n % mod * (n + 1) % mod * (2 * n + 1) % mod * fp(6ll, mod - 2, mod) % mod;
+    ans = ((ans + ans) % mod - n * (n + 1) % mod * fp(2ll, mod - 2, mod) % mod + mod) % mod;
+    print(ans * 2022 % mod, '\n');
 }
 
 
