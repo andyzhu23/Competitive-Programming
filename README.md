@@ -377,6 +377,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO 01 | P6 | complete | easily check "will become", use dinic to check "may"/"will not" | ***
 CCO 11 | P4 | complete | multiset, greedy | *
 CCO 20 | P1 | complete | coordinate compression, difference array | **
 CCO 17 | P5 | complete | same as buying everything first, assume every item lower than the want value of current one has been obtained | ***
