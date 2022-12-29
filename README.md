@@ -871,7 +871,8 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
-COCI 22 C1 | P5 | complete | enumerate r, find l, only logMax possible l | ***
+DMOJ | Traffic Light | complete | shortest path | **
+COCI 22 c1 | P5 | complete | enumerate r, find l, only logMax possible l | ***
 COCI 13 c5 | P3 | complete | hash, stack | *
 CEOI 18 | P2 | complete | find LIS from front and back, try to combine them | **
 COCI 16 c7 | P4 | complete | maintain ending 0s | **
