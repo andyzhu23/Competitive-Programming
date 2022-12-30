@@ -871,6 +871,8 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+Atcoder DP | T | cmoplete | psa | ***
+DMOJ | invperm | complete | swap first with last, do a cyclic shift | **
 DMOJ | Traffic Light | complete | shortest path | **
 COCI 22 c1 | P5 | complete | enumerate r, find l, only logMax possible l | ***
 COCI 13 c5 | P3 | complete | hash, stack | *
