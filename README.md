@@ -470,6 +470,10 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF Hello 2023 | D | complete | monotonic stack, dsu | **
+CF Hello 2023 | C | complete | use min or max instead of current element | **
+CF Hello 2023 | B | complete | do some algebra | *
+CF Hello 2023 | A | complete | trivial | *
 CF Polynomial Round 2022 | E | complete | binary lifting | **
 CF Polynomial Round 2022 | D | complete | two pointer | **
 CF Polynomial Round 2022 | C | complete | observation | **
