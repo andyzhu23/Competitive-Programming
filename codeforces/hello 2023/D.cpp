@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-01-03 11:45:00
+ * @date    2023-01-03 14:04:22
  * @version 1.0.0
  */
 
@@ -107,31 +107,56 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-const int N = 1e5 + 5;
-char c[N];
-int n;
-ll ans;
+const int N = 2e5 + 5;
+int a[N], b[N], n, m, f[N];
+bool g[N];
+om<int, int> mp;
+om<int, int> cnt;
+vi stk;
+
+int Find(int x) {return f[x] == x ? x : f[x] = Find(f[x]);}
+void merge(int u, int v) {
+    int fu = Find(u);
+    int fv = Find(v);
+    f[fu] = fv;
+    g[fv] &= g[fu];
+}
 
 inline void solve(){
+    mp.clear();
+    cnt.clear();
+    stk.clear();
     read(n);
-    scanf("%s", c + 1);
-    int l = 0;
-    ans = 0;
+    iota(f, f + n + 1, 0);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    for(int i = 1;i<=n;++i) read(b[i]), g[i] = a[i] == b[i];
+    
+    read(m);
+    for(int i = 1;i<=m;++i) ++mp[read()];
     bool flag = 0;
-    for(int i = 2;i<=n;++i) {
-        flag |= c[i] != c[i - 1];
-    }
-    if(!flag) {
-        print(-1, '\n');
+    for(int i = 1;i<=n;++i) flag |= a[i] < b[i];
+    if(flag) {
+        puts("NO");
         return;
     }
-    for(int i = 1;i<n;++i) {
-        if(c[i] == 'L' && c[i + 1] == 'R') {
-            print(i, '\n');
-            return;
+    for(int i = 1;i<=n;++i) {
+        while(!stk.empty() && b[stk.back()] <= b[i]) {
+            if(b[stk.back()] == b[i]) merge(i, stk.back());
+            stk.pop_back();
+        }
+        stk.pb(i);
+    }
+    for(int i = 1;i<=n;++i) {
+        if(!g[Find(i)]) {
+            ++cnt[b[i]];
+            g[Find(i)] = 1;
         }
     }
-    print(0, '\n');
+    flag = 1;
+    for(auto[u, v] : cnt) {
+        flag &= v <= mp[u];
+    }
+    puts(flag ? "YES" : "NO");
 }
 
 

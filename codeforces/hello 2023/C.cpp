@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-01-03 11:45:00
+ * @date    2023-01-03 12:15:49
  * @version 1.0.0
  */
 
@@ -107,31 +107,37 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-const int N = 1e5 + 5;
-char c[N];
-int n;
-ll ans;
+const int N = 2e5 + 5;
+int a[N], n, m;
+ll psa[N];
 
 inline void solve(){
-    read(n);
-    scanf("%s", c + 1);
-    int l = 0;
-    ans = 0;
-    bool flag = 0;
-    for(int i = 2;i<=n;++i) {
-        flag |= c[i] != c[i - 1];
-    }
-    if(!flag) {
-        print(-1, '\n');
-        return;
-    }
-    for(int i = 1;i<n;++i) {
-        if(c[i] == 'L' && c[i + 1] == 'R') {
-            print(i, '\n');
-            return;
+    read(n), read(m);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    psa[m] = 0;
+    int ans = 0;
+    pqg<int> mn;
+    pq<int> mx;
+    for(int i = m + 1;i<=n;++i) {
+        psa[i] = psa[i - 1] + a[i];
+        mn.push(a[i]);
+        if(psa[i] < 0) {
+            psa[i] -= mn.top() * 2;
+            ++ans;
+            mn.pop();
         }
     }
-    print(0, '\n');
+    psa[m + 1] = 0;
+    for(int i = m;i>1;--i) {
+        psa[i] = psa[i + 1] + a[i];
+        mx.push(a[i]);
+        if(psa[i] > 0) {
+            psa[i] -= mx.top() * 2;
+            ++ans;
+            mx.pop();
+        }
+    }
+    print(ans, '\n');
 }
 
 

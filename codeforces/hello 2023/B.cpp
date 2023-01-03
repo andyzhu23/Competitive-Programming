@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-01-03 11:45:00
+ * @date    2023-01-03 11:55:45
  * @version 1.0.0
  */
 
@@ -107,31 +107,25 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-const int N = 1e5 + 5;
-char c[N];
-int n;
-ll ans;
 
 inline void solve(){
-    read(n);
-    scanf("%s", c + 1);
-    int l = 0;
-    ans = 0;
-    bool flag = 0;
-    for(int i = 2;i<=n;++i) {
-        flag |= c[i] != c[i - 1];
-    }
-    if(!flag) {
-        print(-1, '\n');
+    int n = read();
+    if(n == 3) {
+        puts("NO");
         return;
     }
-    for(int i = 1;i<n;++i) {
-        if(c[i] == 'L' && c[i + 1] == 'R') {
-            print(i, '\n');
-            return;
+    puts("YES");
+    if(n & 1) {
+        int x = n / 2 - 1;
+        int y = -n / 2;
+        for(int i = 1;i<=n;++i) {
+            print(i & 1 ? x : y, " \n"[i==n]);
         }
+        return;
     }
-    print(0, '\n');
+    for(int i = 1;i<=n;i+=2) {
+        print(1, ' '), print(-1, " \n"[i==n-1]);
+    }
 }
 
 
