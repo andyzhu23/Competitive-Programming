@@ -877,6 +877,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+POI | TEL-Teleportation | complete | layered graph | ***
 NA | 孤岛营救问题 | complete | layered graph for all possible key combinations | ***
 JLOI2011 | 飞行路线 | complete | layered graph | **
 Atcoder DP | T | cmoplete | psa | ***
