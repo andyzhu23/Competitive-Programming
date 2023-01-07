@@ -290,7 +290,7 @@ USACO 2017 Jan Platinum | Promotion Counting | complete | Persistent tree, dfs o
 USACO 2017 Feb Platinum | Why did the Cow Cross the Road I | complete | Fenwick, shift both a and b | ***
 USACO 2016 Feb Platinum | Fenced In | complete | Greedy, MST, open up all row or col at once | *****
 USACO 2015 Dec Platinum | Max Flow | complete | Lazy, sparse table lca | ***
-USACO 2015 Jan Gold | P3 | complete | layered graph | ***
+USACO 2015 Jan Gold | P3 | complete | layered graph, tarjan | ***
 USACO 2022 Dec Gold | P1 | complete | dp, sort according to x, set x to 0 after using it as much as possible | ***
 USACO 2022 Dec Gold | P2 | complete | monotonic set, use segtree instead of std::set | ***
 USACO 2022 Dec Gold | P3 | complete | greedy forward, dsu backward | ***
