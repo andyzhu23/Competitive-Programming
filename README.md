@@ -148,6 +148,7 @@ Source | Problems | status | skills needed | rating
 ### NOIP && NOI
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+NOI 2009 | P4 | complete | minimum cut, get rid of cycle with tarjan | ***
 NOI 2008 | P3 | complete | max flow, assume hire inf employers and build graph | ***
 NOI 2006 | P4 | complete | minimum cut, flow means profit lost | ****
 NOIP 2015 | Substring | complete | dp, rolling array | ***
