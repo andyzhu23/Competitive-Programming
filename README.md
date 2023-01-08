@@ -414,6 +414,7 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2022 | S5 | complete | cancerous tree dp | ***
 CCC 2011 | S4 | complete | maximum flow | **
 CCC 2022 | S3 | complete | put numbers in increasing order | ***
 CCC 2022 | J5 | complete | sorted based on x axis | ***
