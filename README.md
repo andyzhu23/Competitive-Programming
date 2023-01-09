@@ -214,6 +214,7 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 19 c4 | P3 | complete | dp | **
 DMOPC 19 c6 | P4 | complete | map on fenwick tree, don't use segment | **
 DMOPC 15 c5 | P5 | complete | don't use HLD, use fenwick + Euler tour | **
 DMOPC 22 c2 | P2 | complete | inverse pair | **
@@ -880,6 +881,8 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+COCI 19 c6 | P5 | complete | hash, don't dare using aho korasick | ***
+COCI 07 c1 | P5 | complete | count big and small | *
 SHOI 2012 | 回家的路 | complete | layered graph | **
 POI | TEL-Teleportation | complete | layered graph | ***
 NA | 孤岛营救问题 | complete | layered graph for all possible key combinations | ***
