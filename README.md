@@ -881,6 +881,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | cheapsegments | complete | sort l, put r into segtree | **
 COCI 19 c6 | P5 | complete | hash, don't dare using aho korasick | ***
 COCI 07 c1 | P5 | complete | count big and small | *
 SHOI 2012 | 回家的路 | complete | layered graph | **
