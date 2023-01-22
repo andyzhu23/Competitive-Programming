@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-01-21 15:07:43
+ * @date    2023-01-21 15:10:12
  * @version 1.0.0
  */
 
@@ -99,24 +99,25 @@ const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
 
 //------------------- start of initialize --------------------
 // initialize for all cases
-inline void init1(){
 
+const int N = 1e5 + 5;
+
+ll f[N];
+
+inline void init1(){
+    f[0] = 1;
+    for(int i = 1;i<N;++i) f[i] = f[i - 1] * i % mod;
 }
 
 //-------------------  end of initialize  --------------------
 
 //--------------------- start of program ---------------------
 
+int n;
 
 inline void solve(){
-    int n = read();
-    vi a(n + 5);
-    int ans = 0;
-    for(int i = 1;i<=n;++i) {
-        read(a[i]);
-        if(i > 1 && (a[i] & 1) == (a[i - 1] & 1)) ++ans;
-    }
-    print(ans, '\n');
+    read(n);
+    print(f[n] * n % mod * (n - 1) % mod, '\n');
 }
 
 

@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-01-21 15:07:43
+ * @date    2023-01-22 12:26:53
  * @version 1.0.0
  */
 
@@ -107,15 +107,31 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+vi e[N];
+int n, dep[N];
+ll ans;
+
+void dfs(int u = 1, int fa = 0) {
+    dep[u] = 1;
+    for(int v : e[u]) if(v != fa) {
+        dfs(v, u);
+        dep[u] = max(dep[u], dep[v] + 1);
+    }
+    ans = (ans + dep[u]) % mod;
+}
 
 inline void solve(){
-    int n = read();
-    vi a(n + 5);
-    int ans = 0;
-    for(int i = 1;i<=n;++i) {
-        read(a[i]);
-        if(i > 1 && (a[i] & 1) == (a[i - 1] & 1)) ++ans;
+    read(n);
+    ans = 0;
+    for(int i = 1;i<=n;++i) e[i].clear();
+    for(int i = 1;i<n;++i) {
+        int u = read(), v = read();
+        e[u].pb(v);
+        e[v].pb(u);
     }
+    dfs();
+    ans = ans * fp(2ll, n - 1, mod) % mod;
     print(ans, '\n');
 }
 

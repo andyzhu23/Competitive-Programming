@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-01-21 15:07:43
+ * @date    2023-01-22 12:44:39
  * @version 1.0.0
  */
 
@@ -107,14 +107,86 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+int n, m;
+struct edge {
+    int u, v, w;
+    bool operator<(const edge& o) const {
+        return w < o.w;
+    }    
+};
+vec<edge> e;
+
+int f[N];
+int Find(int x) {return f[x] == x ? x : f[x] = Find(f[x]);}
+void merge(int u, int v) {
+    int fu = Find(u);
+    int fv = Find(v);
+    f[fu] = fv;
+}
+
+vi ee[N];
+int c[N], color, in[N], dfn[N], low[N], tot;
+bitset<N> vis;
+vi stk;
+
+void tarjan(int u) {
+    dfn[u] = low[u] = ++tot;
+    stk.pb(u);
+    vis[u] = 1;
+    for(int v : ee[u]) {
+        if(!dfn[v]) {
+            tarjan(v);
+            low[u] = min(low[u], low[v]);
+        } else if(vis[v]) low[u] = min(low[u], dfn[v]);
+    }
+    if(dfn[u] == low[u]) {
+        ++color;
+        while(stk.back() != u) {
+            c[stk.back()] = color;
+            vis[stk.back()] = 0;
+            stk.pop_back();
+        }
+        c[stk.back()] = color;
+        vis[stk.back()] = 0;
+        stk.pop_back();
+    }
+}
+
+bool ok(int x) {
+    tot = color = 0;
+    for(int i = 1;i<=n;++i) {
+        ee[i].clear();
+        f[i] = i;
+        in[i] = c[i] = dfn[i] = low[i] = 0;
+    }
+    for(auto[u, v, w] : e) if(w <= x) {
+        merge(u, v);
+    }
+    for(auto[u, v, w] : e) if(w > x) {
+        ee[Find(u)].pb(Find(v));
+    }
+    for(int i = 1;i<=n;++i) if(!dfn[Find(i)]) tarjan(Find(i));
+    for(auto[u, v, w] : e) if(w > x && c[Find(u)] != c[Find(v)]) {
+        ++in[c[Find(v)]];
+    }
+    int cnt = 0;
+    for(int i = 1;i<=color;++i) cnt += in[i] == 0;
+    return cnt == 1;
+}
 
 inline void solve(){
-    int n = read();
-    vi a(n + 5);
-    int ans = 0;
-    for(int i = 1;i<=n;++i) {
-        read(a[i]);
-        if(i > 1 && (a[i] & 1) == (a[i - 1] & 1)) ++ans;
+    read(n), read(m);
+    e.clear();
+    for(int i = 1;i<=m;++i) {
+        int u = read(), v = read(), w = read();
+        e.pb({u, v, w});
+    }
+    ll lo = 0, hi = 1e9, ans = -1;
+    while(lo <= hi) {
+        int mid = lo + hi >> 1;
+        if(ok(mid)) ans = mid, hi = mid - 1;
+        else lo = mid + 1;
     }
     print(ans, '\n');
 }

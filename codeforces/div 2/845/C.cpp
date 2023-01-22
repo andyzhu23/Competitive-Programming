@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-01-21 15:07:43
+ * @date    2023-01-21 15:18:24
  * @version 1.0.0
  */
 
@@ -99,6 +99,7 @@ const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
 
 //------------------- start of initialize --------------------
 // initialize for all cases
+
 inline void init1(){
 
 }
@@ -107,16 +108,44 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e5 + 5;
+int n, m, a[N], tot, b[N];
+
+void add(int x) {
+    for(int i = 1;i * i<=x && i <= m;++i) if(x % i == 0) {
+        tot += b[i] == 0;
+        ++b[i];
+        if(x / i <= m && x / i != i) {
+            tot += b[x / i] == 0;
+            ++b[x / i];
+        }
+    }
+}
+
+void remove(int x) {
+    for(int i = 1;i * i<=x && i <= m;++i) if(x % i == 0) {
+        --b[i];
+        tot -= b[i] == 0;
+        if(x / i <= m && x / i != i) {
+            --b[x / i];
+            tot -= b[x / i] == 0;
+        }
+    }
+}
 
 inline void solve(){
-    int n = read();
-    vi a(n + 5);
-    int ans = 0;
+    read(n), read(m);
+    for(int i = 1;i<=n;++i) read(a[i]);
+    sort(a + 1, a + n + 1);
+    for(int i = 1;i<=m;++i) b[i] = 0;
+    int j = 0;
+    int ans = inf;
     for(int i = 1;i<=n;++i) {
-        read(a[i]);
-        if(i > 1 && (a[i] & 1) == (a[i - 1] & 1)) ++ans;
+        while(j < n && tot != m) add(a[++j]);
+        if(tot == m) ckmin(ans, a[j] - a[i]);
+        remove(a[i]);
     }
-    print(ans, '\n');
+    print(ans == inf ? -1 : ans, '\n');
 }
 
 
