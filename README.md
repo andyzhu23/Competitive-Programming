@@ -475,6 +475,11 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 845 | E | complete | binary search, scc, dsu | ***
+CF 845 | D | complete | expected value | ***
+CF 845 | C | complete | sort, two pointer | **
+CF 845 | B | complete | math, all permutation are the same | *
+CF 845 | A | complete | trivial | *
 CF Hello 2023 | F | complete | odd tree makes no difference even can be turned to 0 | ***
 CF Hello 2023 | D | complete | monotonic stack, dsu | **
 CF Hello 2023 | C | complete | use min or max instead of current element | **
