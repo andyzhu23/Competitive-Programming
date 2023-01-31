@@ -214,6 +214,7 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 16 c4 | P4 | complete | Mo's algorithm | **
 DMOPC 19 c4 | P3 | complete | dp | **
 DMOPC 19 c6 | P4 | complete | map on fenwick tree, don't use segment | **
 DMOPC 15 c5 | P5 | complete | don't use HLD, use fenwick + Euler tour | **
