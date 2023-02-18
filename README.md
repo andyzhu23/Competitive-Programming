@@ -95,27 +95,6 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 
 # problems
 
-
-### incomplete Problems
-Source | Problems | status | skills needed | rating
--------|----------|--------|---------------|-------
-CF 728 | D | incomplete | expected value dp | **
-USACO 2017 US Open Platinum | P3 | incomplete
-P3002 | | incomplete
-DMOPC 21 May | P4 | incomplete | unsynchronized calculation, changing root dp |
-USACO 15 Jan Gold |  Moovie Mooving | incomplete | bitmasking, dynamic programming |
-NA | 过河问题 | incomplete | Greedy | 
-CCC 2019/DMOJ add on | J5 | incomplete | Divide and Conquer | |
-USACO 21 Feb Gold | Count the Cows | incomplete | |
-USACO 21 Open Gold | Permutation | incomplete | |
-USACO 21 Open Silver | Academia I | incomplete | |
-USACO 21 Open Silver | Maze Tac Toe | incomplete | |
-USACO 21 Open Bronze | Academia III | incomplete | |
-USACO 21 Open Bronze | Academia II | incomplete | |
-USACO 21 Open Bronze | Academia I | incomplete | |
-CCF Online | 重力球 | incomplete | | 
-CCF Online | 吃豆人 | incomplete | Prefix Sum, enumeration, greedy | ****
-
 ### CSP
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
