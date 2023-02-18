@@ -3,7 +3,9 @@ Hello, my name is Andy Zhu, I am a high school student in St. George's School in
 
 [andy_zhu23](https://dmoj.ca/user) on DMOJ
 
-[Andy.zhu23](https://codeforces.com/profile/Andy.zhu23) on codeforces
+[Wizard_of_Orz](https://codeforces.com/profile/Wizard_of_Orz) on codeforces
+
+[Wizard_of_Orz](https://leetcode.com/Wizard_of_Orz/) on LeetCode
 
 # to do list
 task | date | time
