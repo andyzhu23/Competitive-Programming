@@ -13,6 +13,8 @@ task | date | time
 # past events
 task | date | time | score | reflection
 -----|------|------|-------|-----------
+CCC 2023 | Feb 15th | 8:00am | 63 | FINALLY HAD ONE GOOD CCC
+USACO Jan 2022 Platinum | Jan 30th | 9:00 | 100 | too hard
 USACO Dec 2022 Platinum | Dec 19th | 9:00 | 550(89th) | Solved 1 problem, solve 2 next time :)
 CF 825 | Oct 10th | 7:35 | 3829(131st best so far) | Very good job skipping C2 and did D
 CF 824 | Oct 2nd | 7:35 | 3593(192nd best so far) | took too long to solve A and B
@@ -416,6 +418,11 @@ CCO 2015 | P2 | complete | Bitmasking | ****
 ### CCC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCC 2023 | J5 | complete | easy dfs, optional hashing | **
+CCC 2023 | S4 | complete | sort edge based on C, remove based on dijkstra | **
+CCC 2023 | S3 | complete | case by case, cancerous | ***
+CCC 2023 | S2 | complete | enumerate middle and expand | *
+CCC 2023 | S1 | complete | trivial | *
 CCC 2022 | S5 | complete | cancerous tree dp | ***
 CCC 2022 | S4 | complete | psa, cancerous counting | ***
 CCC 2011 | S4 | complete | maximum flow | **
