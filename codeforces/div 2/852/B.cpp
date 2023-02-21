@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-02-12 14:04:46
+ * @date    2023-02-12 14:09:45
  * @version 1.0.0
  */
 
@@ -107,13 +107,15 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-int a, b, n, m;
 
 inline void solve(){
-    read(a), read(b), read(n), read(m);
-    ll ans = 1ll * b * n;
-    ans = min(ans, 1ll * n / (m + 1) * m * a + 1ll * n % (m + 1) * min(a, b));
-    print(ans, '\n');
+    int x = read(), y = read();
+    vi ans;
+    for(int i = x;i>y;--i) ans.pb(i);
+    for(int i = y;i<x;++i) ans.pb(i);
+    print(ans.size(), '\n');
+    for(auto x : ans) print(x, ' ');
+    putchar('\n');
 }
 
 

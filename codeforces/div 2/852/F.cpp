@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-02-12 14:04:46
+ * @date    2023-02-21 09:43:13
  * @version 1.0.0
  */
 
@@ -107,20 +107,91 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-int a, b, n, m;
+const int N = 1e6 + 5;
+int a[N], n, Q, ans[N];
+
+struct query {
+    int l, r, id;
+    bool operator<(const query& o) const {
+        return r < o.r;
+    }
+};
+
+vec<query> q[N];
+
+struct segtree {
+    int st[N << 2];
+    void update(int rt, int l, int r, int pos, int val) {
+        if(l == r) {
+            st[rt] = val;
+            return;
+        }
+        int mid = l + r >> 1;
+        if(pos <= mid) update(lc, l, mid, pos, val);
+        else if(pos > mid) update(rc, mid + 1, r, pos, val);
+        st[rt] = max(st[lc], st[rc]);
+    }
+    int query(int rt, int l, int r, int x, int y) {
+        if(l == x && y == r) return st[rt];
+        int mid = l + r >> 1;
+        if(y <= mid) return query(lc, l, mid, x, y);
+        else if(x > mid) return query(rc, mid + 1, r, x, y);
+        else return max(query(lc, l, mid, x, mid), query(rc, mid + 1, r, mid + 1, y));
+    }
+} st, mx;
+
+vector<int> e[N];
 
 inline void solve(){
-    read(a), read(b), read(n), read(m);
-    ll ans = 1ll * b * n;
-    ans = min(ans, 1ll * n / (m + 1) * m * a + 1ll * n % (m + 1) * min(a, b));
-    print(ans, '\n');
+    read(n), read(Q);
+    for(int i = 1;i<=n;++i) {
+        read(a[i]);
+        int l = a[i];
+        int r = st.query(1, 1, n, a[i], n);
+        if(r) e[i].pb(r);
+        r = a[r];
+        while(l <= r) {
+            int mid = l + r >> 1;
+            int pos = st.query(1, 1, n, l, mid);
+            if(pos == 0) break;
+            e[i].pb(pos);
+            r = a[pos];
+        }
+        l = st.query(1, 1, n, 1, a[i]);
+        r = a[i];
+        if(l) e[i].pb(l);
+        l = a[l];
+        while(l && l <= r) {
+            int mid = (l + r - 1 >> 1) + 1;
+            int pos = st.query(1, 1, n, mid, r);
+            if(pos == 0) break;
+            e[i].pb(pos);
+            l = a[pos];
+        }
+        st.update(1, 1, n, a[i], i);
+    }
+    for(int i = 1;i<=Q;++i) {
+        int l = read(), r = read();
+        q[r].pb({l, r, i});
+    }
+    memset(mx.st, -0x3f, sizeof mx.st);
+    for(int i = 1;i<=n;++i) {
+        for(auto x : e[i]) {
+            int tmp = mx.query(1, 1, n, x, x);
+            mx.update(1, 1, n, x, max(tmp, -abs(a[x] - a[i])));
+        }
+        for(auto[l, r, id] : q[i]) {
+            ans[id] = -mx.query(1, 1, n, l, r);
+        }
+    }
+    for(int i = 1;i<=Q;++i) print(ans[i], '\n');
 }
 
 
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0

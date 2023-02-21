@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-02-12 14:04:46
+ * @date    2023-02-12 14:29:11
  * @version 1.0.0
  */
 
@@ -107,12 +107,30 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-int a, b, n, m;
+const int N = 2e5 + 5;
+
+int n, a[N], b[N], c[N], d[N];
+ll ans = 1;
 
 inline void solve(){
-    read(a), read(b), read(n), read(m);
-    ll ans = 1ll * b * n;
-    ans = min(ans, 1ll * n / (m + 1) * m * a + 1ll * n % (m + 1) * min(a, b));
+    read(n);
+    for(int i = 1;i<=n;++i) read(a[i]), c[a[i]] = i;
+    for(int i = 1;i<=n;++i) read(b[i]), d[b[i]] = i;
+    int l = min(c[1], d[1]);
+    int r = max(c[1], d[1]);
+    ans += 1ll * (l - 1) * l / 2;
+    ans += 1ll * (n - r) * (n - r + 1) / 2;
+    ans += 1ll * (r - l - 1) * (r - l) / 2;
+    for(int i = 2;i<=n;++i) {
+        int prv = ans;
+        int nl = min(c[i], d[i]);
+        int nr = max(c[i], d[i]);
+        if(nl < l && nr > r) ans += 1ll * (l - nl) * (nr - r);
+        if(nl < l && nr < l) ans += 1ll * (l - nr) * (n - r + 1);
+        if(nl > r && nr > r) ans += 1ll * (nl - r) * l;
+        ckmin(l, nl);
+        ckmax(r, nr);
+    }
     print(ans, '\n');
 }
 
@@ -120,7 +138,7 @@ inline void solve(){
 //---------------------  end of program  ---------------------
 
 
-#define doCase 1
+#define doCase 0
 #define config LOCAL
 // #define kickstart
 #define unsync 0

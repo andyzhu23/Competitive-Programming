@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-02-12 14:04:46
+ * @date    2023-02-12 14:14:40
  * @version 1.0.0
  */
 
@@ -107,13 +107,29 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
-int a, b, n, m;
+const int N = 2e5 + 5;
+int n, a[N], b[N];
 
 inline void solve(){
-    read(a), read(b), read(n), read(m);
-    ll ans = 1ll * b * n;
-    ans = min(ans, 1ll * n / (m + 1) * m * a + 1ll * n % (m + 1) * min(a, b));
-    print(ans, '\n');
+    read(n);
+    for(int i = 1;i<=n;++i) {
+        read(a[i]);
+        b[a[i]] = i;
+    }
+    int l = 1, r = n, L = 1, R = n;
+    while(l <= r && (b[l] <= L || b[l] >= R || b[r] >= R || b[r] <= L)) {
+        if(b[l] < L) ++l;
+        if(b[l] > R) ++l;
+        if(b[l] == L) ++l, ++L;
+        if(b[l] == R) ++l, --R;
+        
+        if(b[r] < L) --r;
+        if(b[r] > R) --r;
+        if(b[r] == L) --r, ++L;
+        if(b[r] == R) --r, --R;
+    }
+    if(l <= r) print(L, ' '), print(R, '\n');
+    else print(-1, '\n');
 }
 
 
