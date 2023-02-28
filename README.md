@@ -197,6 +197,7 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 19 c7 | P4 | complete | matrix | ***
 DMOPC 19 c7 | P5 | complete | cdq divide and conquer | ***
 DMOPC 16 c4 | P4 | complete | Mo's algorithm | **
 DMOPC 19 c4 | P3 | complete | dp | **
