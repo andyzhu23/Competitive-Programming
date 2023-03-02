@@ -879,6 +879,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+COCI 22 c4 | P5 | complete | segtree | **
 Baltic OI | btoi18p6 | complete | math, case by case | **
 CEOI 17 | ceoi17p4 | complete | li chao tree, convex hull trick | ***
 Baltic OI | btoi17p2 | complete | matrices segtree | ***
