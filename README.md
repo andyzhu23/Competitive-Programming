@@ -366,6 +366,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO 18 | P2 | complete | cancerous thinking | **
 CCO 19 | P1 | complete | bitmask dp | **
 CCO 19 | P5 | complete | same as USACO Dec 2022 | **
 CCO 01 | P6 | complete | easily check "will become", use dinic to check "may"/"will not" | ***
