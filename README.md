@@ -883,6 +883,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOJ | wac1p4 | complete | tree dp | ***
 DMOJ | cpc21c1p6 | complete | sort A, do segtree on B and C | ***
 COCI 22 c4 | P2 | complete | dp | ***
 Japan OI | joi13op3 | complete | binary search, dynamic programming, 2 pointer | **
