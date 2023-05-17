@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-05-16 12:25:37
+ * @date    2023-05-16 17:38:08
  * @version 1.0.0
  */
 
@@ -108,23 +108,37 @@ inline void init1(){
 //--------------------- start of program ---------------------
 
 const int N = 2e5 + 5;
-int n, k, l[N], r[N];
+string s;
+int k, n;
+ll a[N], b[N];
+// a means number of operations 
+// b means number of brackets
 
 inline void solve(){
-    read(n), read(k);
-    for(int i = 1;i<=n;++i) read(l[i]);
-    for(int i = 1;i<=n;++i) read(r[i]);
-    int cnt = 0;
-    int tot = 0;
-    int ans = inf;
+    read(k);
+    cin>>s;
+    n = s.size();
+    s = '@' + s;
+    vi stk(1);
+    for(int i = 0;i<=n;++i) {
+        a[i] = 0;
+        b[i] = 0;
+    }
     for(int i = 1;i<=n;++i) {
-        if(l[i] == r[i]) ++cnt;
-        tot += r[i] - l[i] + 1;
-        if(tot >= k) {
-            ckmin(ans, r[i] - (tot - k - min(tot - k, cnt)) + (i - min(tot - k, cnt)) * 2);
+        if(s[i] == '(') stk.pb(i);
+        else {
+            int j = stk.back();
+            stk.pop_back();
+            ++b[j];
+            a[stk.back()] += a[j] + (stk.back() == 0 ? 0 : b[j]);
+            b[stk.back()] += b[j];
         }
     }
-    print(ans == inf ? -1 : ans, '\n');
+    sort(b + 1, b + n + 1);
+    for(int i = 0;i<k;++i) if(n / 2 - i > 0) {
+        a[0] -= b[n - i] - 1;
+    }
+    print(a[0], '\n');
 }
 
 
