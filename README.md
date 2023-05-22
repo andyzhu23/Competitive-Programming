@@ -366,6 +366,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO 03 | P6 | complete | tarjan | **
 CCO 09 | P5 | complete | segtree, merge operations | **
 CCO 18 | P3 | complete | dp, case by case | ***
 CCO 18 | P2 | complete | cancerous thinking | **
