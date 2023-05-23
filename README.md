@@ -474,6 +474,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 873 | E | complete | manacher + segtree + dp | ***
 CF 200 | D | complete | heavy light decomp | **
 CF Edu_111 | E | complete | binary search, bitmask dp | ***
 CF 852 | F | complete | binary search for left, everytime decrease by average, use segment tree maintain answer for l | ****
