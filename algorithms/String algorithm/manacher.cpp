@@ -28,7 +28,7 @@ int main() {
     int mid = 1, r = 1;
     int ans = 0;
     for(int i = 1;i<=n;++i) {
-        if(i < r) p[i] = min(p[mid * 2 - r], r - i);
+        if(i < r) p[i] = min(p[mid * 2 - i], r - i);
         while(i > p[i] + 1 && p[i] + 1 + i <= n && s[i - (p[i] + 1)] == s[i + p[i] + 1]) p[i]++;
         if(i + p[i] > r) mid = i, r = i + p[i];
         ans = max(ans, p[i]);
