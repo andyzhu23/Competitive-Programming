@@ -98,6 +98,7 @@ USACO 2020 December | Dec 18th | 9:00am | 900/1000 (Bronze) | Final question usi
 ### CSP
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CSPS 2021 | T2 | complete | dp, using multiple states | ***
 CSPJ 2022 | T4 | complete | dp | **
 CSPJ 2022 | T3 | complete | stack | **
 CSPJ 2022 | T2 | complete | binary search | **
