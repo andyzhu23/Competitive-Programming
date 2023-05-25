@@ -475,6 +475,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 722 | D | complete | add edges between adjacent nodes | ****
 CF 872 | D2 | complete | count number of occurence of edges, + 1 to get result for nodes | ***
 CF 873 | E | complete | manacher + segtree + dp | ***
 CF 200 | D | complete | heavy light decomp | **
