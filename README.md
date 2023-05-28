@@ -475,6 +475,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 292 | D | complete | dsu on tree, diameter of tree | ***
 CF Beta 3 | D | complete | put all ), if not okay, replace with cheapest ( | **
 CF 722 | D | complete | add edges between adjacent nodes | ****
 CF 872 | D2 | complete | count number of occurence of edges, + 1 to get result for nodes | ***
