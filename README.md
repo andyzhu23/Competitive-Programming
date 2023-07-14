@@ -894,6 +894,7 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+COCI 07 c6 | P5 | complete | array of sets, cheesed with clearing map | **
 DMOJ | wac1p4 | complete | tree dp | ***
 DMOJ | cpc21c1p6 | complete | sort A, do segtree on B and C | ***
 COCI 22 c4 | P2 | complete | dp | ***
