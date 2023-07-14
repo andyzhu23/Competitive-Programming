@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-07-11 14:21:23
+ * @date    2023-07-12 10:45:21
  * @version 1.0.0
  */
 
@@ -107,9 +107,38 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 4e3 + 5;
+int n, m, k, c[N];
+bool flag;
+vpii e[N];
+
+void dfs(int u = 1) {
+    for(auto[v, w] : e[u]) {
+        if(~c[v]) flag &= c[v] == (c[u] ^ w);
+        else {
+            c[v] = c[u] ^ w;
+            dfs(v);
+        }
+    }
+}
 
 inline void solve(){
-    print(read() + read(), '\n');
+    read(n), read(m), read(k);
+    for(int i = 0;i<=n + m;++i) {
+        e[i].clear();
+        c[i] = -1;
+    }
+    while(k--) {
+        int a = read(), b = read(), c = read(), d = read();
+        e[min(a, c)].pb({n + min(b, d), a + b != c + d});
+        e[n + min(b, d)].pb({min(a, c), a + b != c + d});
+    }
+    flag = 1;
+    for(int i = 1;i<=n + m;++i) if(c[i] == -1) {
+        c[i] = 0;
+        dfs(i);
+    }
+    puts(flag ? "YES" : "NO");
 }
 
 

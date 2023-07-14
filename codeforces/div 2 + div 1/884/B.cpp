@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-07-11 14:21:23
+ * @date    2023-07-11 14:23:44
  * @version 1.0.0
  */
 
@@ -109,7 +109,19 @@ inline void init1(){
 
 
 inline void solve(){
-    print(read() + read(), '\n');
+    int n = read();
+    if(n == 2) {
+        print(1, ' ');
+        print(2, '\n');
+        return;
+    }
+    vi a(n + 5);
+    a[1] = 2;
+    a[n] = 3;
+    a[(n - 1) / 2 + 1] = 1;
+    int cnt = 3;
+    for(int i = 1;i<=n;++i) if(!a[i]) a[i] = ++cnt;
+    for(int i = 1;i<=n;++i) print(a[i], " \n"[i==n]);
 }
 
 

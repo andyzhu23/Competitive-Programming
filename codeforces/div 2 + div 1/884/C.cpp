@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-07-11 14:21:23
+ * @date    2023-07-11 14:45:28
  * @version 1.0.0
  */
 
@@ -107,9 +107,22 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 2e5 + 5;
+
+int n, a[N];
+ll dp[N], mx[2];
 
 inline void solve(){
-    print(read() + read(), '\n');
+    read(n);
+    mx[0] = mx[1] = 0;
+    ll ans = -llinf;
+    for(int i = 1;i<=n;++i) {
+        read(a[i]);
+        dp[i] = mx[i & 1] + a[i];
+        ckmax(mx[i & 1], dp[i]);
+        ckmax(ans, dp[i]);
+    }
+    print(ans, '\n');
 }
 
 

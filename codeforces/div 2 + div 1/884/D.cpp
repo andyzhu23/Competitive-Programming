@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2023-07-11 14:21:23
+ * @date    2023-07-11 15:13:25
  * @version 1.0.0
  */
 
@@ -107,9 +107,32 @@ inline void init1(){
 
 //--------------------- start of program ---------------------
 
+const int N = 1e6 + 5;
+
+int n;
+char ans[N];
+int mp[26];
 
 inline void solve(){
-    print(read() + read(), '\n');
+    read(n);
+    for(int i = 1;i<=n;++i) ans[i] = 'a';
+    set<int> dis;
+    for(int i = 1;i * i<=n;++i) if(n % i == 0) {
+        dis.ins(i);
+        dis.ins(n / i);
+    }
+    for(int i = 1;i<=n;++i) {
+        memset(mp, 0, sizeof mp);
+        for(auto x : dis) if(i - x > 0) {
+            ++mp[ans[i - x] - 'a'];
+        }
+        for(int j = 0;j<26;++j) if(mp[j] == 0) {
+            ans[i] = 'a' + j;
+            break;
+        }
+    }
+    for(int i = 1;i<=n;++i) putchar(ans[i]);
+    putchar('\n');
 }
 
 
