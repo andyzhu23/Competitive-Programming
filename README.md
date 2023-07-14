@@ -475,6 +475,8 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 884 | D | complete | dp, get all factors | **
+CF 884 | C | complete | dp, odd length can be 0 | **
 CF 292 | D | complete | dsu on tree, diameter of tree | ***
 CF Beta 3 | D | complete | put all ), if not okay, replace with cheapest ( | **
 CF 722 | D | complete | add edges between adjacent nodes | ****
