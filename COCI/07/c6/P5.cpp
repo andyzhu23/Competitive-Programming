@@ -144,7 +144,7 @@ inline void solve(){
         A: y increase
         B: x increase
         C: x decrease
-        D: y increase
+        D: y decrease
     */
     for(int i = 1;i<=k;++i) {
         row[xx].erase({yy, id});
