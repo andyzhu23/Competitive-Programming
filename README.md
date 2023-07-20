@@ -198,6 +198,7 @@ Source | Problems | status | skills needed | rating
 ### DMOPC Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+DMOPC 19 c3 | P4 | complete | dp | **
 DMOPC 19 c7 | P4 | complete | matrix | ***
 DMOPC 19 c7 | P5 | complete | cdq divide and conquer | ***
 DMOPC 16 c4 | P4 | complete | Mo's algorithm | **
@@ -367,6 +368,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO 08 | P3 | complete | brute force checking, use dep and sz to optimize | **
 CCO 03 | P6 | complete | tarjan | **
 CCO 09 | P5 | complete | segtree, merge operations | **
 CCO 18 | P3 | complete | dp, case by case | ***
@@ -896,6 +898,8 @@ Hard | Median of Two Sorted Arrays | complete | priority queue one small one big
 ### Other Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+braziloi 19 | P2 | complete | graph theory | ***
+JOI 17 | P4 | complete | dijkstra | ***
 COCI 07 c6 | P5 | complete | array of sets, cheesed with clearing map | **
 DMOJ | wac1p4 | complete | tree dp | ***
 DMOJ | cpc21c1p6 | complete | sort A, do segtree on B and C | ***
