@@ -368,6 +368,7 @@ USACO 2020 Dec Bronze | Stuck in a Rut | complete | Discretization, priority_que
 ### CCO Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CCO 19 | P2 | complete | heap, simulation, dsu | ***
 CCO 08 | P3 | complete | brute force checking, use dep and sz to optimize | **
 CCO 03 | P6 | complete | tarjan | **
 CCO 09 | P5 | complete | segtree, merge operations | **
