@@ -480,6 +480,7 @@ IOI 1994 | The Triangle | complete | standard dp | *
 ### Codeforces Problems
 Source | Problems | status | skills needed | rating
 -------|----------|--------|---------------|-------
+CF 604 | E | complete | minimize $\frac{x^2}{2}$ using max flow | ****
 CF 884 | D | complete | dp, get all factors | **
 CF 884 | C | complete | dp, odd length can be 0 | **
 CF 292 | D | complete | dsu on tree, diameter of tree | ***
