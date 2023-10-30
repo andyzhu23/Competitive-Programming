@@ -1,5 +1,5 @@
 # Welcome!
-Hello, my name is Andy Zhu, I am ~~a high school student at St. George's School~~ an undergrad at the University of Cambridge interested in Competitive Programming. This repo is just for me to review my own solutions
+Hello, I am Andy Zhu, I am ~~a high school student at St. George's School~~ an undergrad at the University of Cambridge interested in Competitive Programming. This repo is just for me to review my own solutions
 
 [andy_zhu23](https://dmoj.ca/user) on DMOJ
 
