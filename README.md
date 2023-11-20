@@ -7,6 +7,8 @@ Hello, I am Andy Zhu, I am ~~a high school student at St. George's School~~ an u
 
 [Wizard_of_Orz](https://leetcode.com/Wizard_of_Orz/) on LeetCode
 
+[Wizard_of_Orz](https://atcoder.jp/users/Wizard_of_Orz) on AtCoder
+
 # to do list
 task | date | time
 -----|------|-----
