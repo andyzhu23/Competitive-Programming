@@ -1,6 +1,6 @@
 /*
  * Author: Andy Zhu
- * @date    2022-12-04 08:42:51
+ * @date    2024-06-17 16:52:32
  * @version 1.0.0
  */
 
@@ -23,10 +23,6 @@ using namespace std;
 // pairs
 #define fir first
 #define sec second
-
-// segment tree
-#define lc (rt << 1)
-#define rc (rt << 1 | 1)
 
 // STL Data Structures
 #define eb emplace_back
@@ -51,7 +47,6 @@ using pll = pair<long long, long long>;
 template <typename T> using vec = vector<T>;
 template <typename T> using us = unordered_set<T>;
 template <typename T> using os = set<T>;
-template <typename T> using ms = multiset<T>;
 template <typename T1, typename T2> using um = unordered_map<T1, T2>;
 template <typename T1, typename T2> using om = map<T1, T2>;
 template <typename T> using pq = priority_queue<T>; 
@@ -67,23 +62,55 @@ using vb = vector<bool>;
 namespace comfun {
     template <typename T1, typename T2> inline void ckmax(T1& u, T2 v) { u = max(u, v); }
     template <typename T1, typename T2> inline void ckmin(T1& u, T2 v) { u = min(u, v); }
-    template <typename T> inline T lowbit(T x){return x & (- x);}
-    template <typename T> inline T gcd(T a, T b){if(b == 0) return a; return gcd(b, a % b);}
-    template <typename T> inline T lcm(T a, T b){return a / gcd(a, b) * b;}
-    template <typename T1, typename T2> inline T1 fp(T1 a, T2 b) {T1 c = 1;while(b) {if(b & 1) c *= a;b >>= 1;a = a * a;}return c;}
     template <typename T1, typename T2, typename T3> inline T1 fp(T1 a, T2 b, T3 mod) 
     {T1 c = 1;while(b) {if(b & 1) c = c * a % mod;b >>= 1;a = a * a % mod;}return c;}
-    template <typename T> inline bool is_prime(T x){if(x == 1) return false; for(T i = 2; i * i <= x;i++) if(x % i == 0) return false; return true;}
+    template <typename T1, typename T2> inline T1 fp(T1 a, T2 b) 
+    {if(b == 1) return a;T1 tmp = fp(a, b >> 1);if(b & 1) return tmp * tmp * a;else return tmp * tmp;}
 }
 
-#define error(args...) { string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); err(_it, args); }
+#ifndef ONLINE_JUDGE
+template<typename T>
+concept Printable = requires(T a) { { cerr << a }; };
+
+struct Debug {
+    template<typename T, typename U>
+    Debug& operator<<(const pair<T, U>& a) { *this << '(' << a.first << ", " << a.second << ')'; return *this; }
+    Debug& operator<<(const char& a) { cerr << '\'' << a << '\''; return *this; }
+    Debug& operator<<(const string& a) { cerr << '\"' << a << '\"'; return *this; }
+    template<Printable T>
+    Debug& operator<<(const T& a) { cerr << boolalpha << a; return *this; }
+    template<typename T>
+    Debug& operator<<(const T& a) {
+        cerr << '{';
+        for (auto it = begin(a); it != end(a); it++){
+            *this << *it;
+            if (next(it) != end(a)) { cerr << ", "; }
+        }
+        cerr << '}';
+        return *this;
+    }
+};
+
+template<typename T, typename... U>
+void __print(T t, U... u) { 
+    Debug() << t; 
+    if constexpr (sizeof...(u)) { 
+        cerr << ", "; 
+        __print(u...);
+    }
+}
+
+#define dbg(x...) cerr << "[DEBUG] "<<__func__<<": "<<__LINE__<<", [" << #x << "] = ["; __print(x); cerr << "]" << endl;
+#else
+#define dbg(x...) ;
+#endif
 
 namespace fast_io {
     int read() {int x = 0, f = 0; char ch = getchar();while (!isdigit(ch)) f |= ch == '-', ch = getchar();while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();return f ? -x : x;}
     long long readLL() {long long x = 0, f = 0; char ch = getchar();while (!isdigit(ch)) f |= ch == '-', ch = getchar();while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();return f ? -x : x;}
-    template<typename T> T read(T& x) {x = 0; int f = 0; char ch = getchar();while (!isdigit(ch)) f |= ch == '-', ch = getchar();while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();x = f ? -x : x; return x;}
-    template<typename T> void print(T x) {if (x < 0) putchar('-'), x = -x;if (x >= 10) print(x / 10);putchar(x % 10 + '0');}
-    template<typename T> void print(T x, char let) {print(x), putchar(let);}
+    template <typename T> T read(T& x) {x = 0; int f = 0; char ch = getchar();while (!isdigit(ch)) f |= ch == '-', ch = getchar();while (isdigit(ch)) x = 10 * x + ch - '0', ch = getchar();x = f ? -x : x; return x;}
+    template <typename T> void print(T x) {if (x < 0) putchar('-'), x = -x;if (x >= 10) print(x / 10);putchar(x % 10 + '0');}
+    template <typename T> void print(T x, char let) {print(x), putchar(let);}
 }
 
 // using namespaces
@@ -95,7 +122,7 @@ const int inf = 0x3f3f3f3f;
 const long long llinf = 0x3f3f3f3f3f3f3f3f;
 const int mod = 1e9 + 7;
 const int dir[8][2] = {{0, 1}, {0, -1}, {-1, 0}, {1, 0}, {-1, 1}, {1, -1}, {-1, -1}, {1, 1}};
-const unordered_set<int> vowel = {'a', 'e', 'i', 'o', 'u'};
+const unordered_set<char> vowel = {'a', 'e', 'i', 'o', 'u'};
 
 //------------------- start of initialize --------------------
 // initialize for all cases
@@ -106,6 +133,7 @@ inline void init1(){
 //-------------------  end of initialize  --------------------
 
 //--------------------- start of program ---------------------
+
 
 inline void solve(){
     
